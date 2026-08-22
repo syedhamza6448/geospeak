@@ -1,0 +1,46 @@
+# ── Secrets — NEVER commit these ──────────────────────────────
+.env
+
+# ── Python ────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.whl
+
+# ── Virtual environments ───────────────────────────────────────
+venv/
+.venv/
+env/
+ENV/
+
+# ── Sentence-transformers model cache ─────────────────────────
+# (downloaded automatically on first run — no need to commit)
+.cache/
+models/
+
+# ── FAISS index dumps (if you ever persist to disk) ───────────
+*.index
+*.faiss
+
+# ── OS junk ───────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Editor / IDE ───────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Pytest / coverage ─────────────────────────────────────────
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml
