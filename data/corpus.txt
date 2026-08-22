@@ -1,3 +1,52 @@
-# GeoSpeak Sample Corpus
+# GeoSpeak Parallel Corpus
 # Format: source_lang|target_lang|source_text|target_text
-# Placeholder — will be populated in Phase 2
+# ~40 rows — English to French, Spanish, German, Urdu
+
+en|fr|Hello, how are you?|Bonjour, comment allez-vous ?
+en|fr|Good morning!|Bonjour !
+en|fr|Good evening.|Bonsoir.
+en|fr|What is your name?|Comment vous appelez-vous ?
+en|fr|My name is Alex.|Je m'appelle Alex.
+en|fr|Please help me.|Aidez-moi, s'il vous plaît.
+en|fr|Where is the nearest hospital?|Où est l'hôpital le plus proche ?
+en|fr|I would like a glass of water.|Je voudrais un verre d'eau.
+en|fr|How much does this cost?|Combien cela coûte-t-il ?
+en|fr|Thank you very much.|Merci beaucoup.
+en|fr|I don't understand.|Je ne comprends pas.
+en|fr|Can you speak more slowly?|Pouvez-vous parler plus lentement ?
+en|es|Hello, how are you?|Hola, ¿cómo estás?
+en|es|Good morning!|¡Buenos días!
+en|es|Good evening.|Buenas noches.
+en|es|What is your name?|¿Cómo te llamas?
+en|es|My name is Alex.|Me llamo Alex.
+en|es|Please help me.|Por favor, ayúdame.
+en|es|Where is the nearest hospital?|¿Dónde está el hospital más cercano?
+en|es|I would like a glass of water.|Me gustaría un vaso de agua.
+en|es|How much does this cost?|¿Cuánto cuesta esto?
+en|es|Thank you very much.|Muchas gracias.
+en|es|I don't understand.|No entiendo.
+en|es|Can you speak more slowly?|¿Puedes hablar más despacio?
+en|de|Hello, how are you?|Hallo, wie geht es Ihnen?
+en|de|Good morning!|Guten Morgen!
+en|de|Good evening.|Guten Abend.
+en|de|What is your name?|Wie heißen Sie?
+en|de|My name is Alex.|Ich heiße Alex.
+en|de|Please help me.|Bitte helfen Sie mir.
+en|de|Where is the nearest hospital?|Wo ist das nächste Krankenhaus?
+en|de|I would like a glass of water.|Ich hätte gerne ein Glas Wasser.
+en|de|How much does this cost?|Wie viel kostet das?
+en|de|Thank you very much.|Vielen Dank.
+en|de|I don't understand.|Ich verstehe nicht.
+en|de|Can you speak more slowly?|Können Sie bitte langsamer sprechen?
+en|ur|Hello, how are you?|ہیلو، آپ کیسے ہیں؟
+en|ur|Good morning!|صبح بخیر!
+en|ur|Good evening.|شام بخیر۔
+en|ur|What is your name?|آپ کا نام کیا ہے؟
+en|ur|My name is Alex.|میرا نام ایلکس ہے۔
+en|ur|Please help me.|براہ کرم میری مدد کریں۔
+en|ur|Where is the nearest hospital?|قریب ترین ہسپتال کہاں ہے؟
+en|ur|I would like a glass of water.|مجھے ایک گلاس پانی چاہیے۔
+en|ur|How much does this cost?|اس کی قیمت کتنی ہے؟
+en|ur|Thank you very much.|بہت بہت شکریہ۔
+en|ur|I don't understand.|مجھے سمجھ نہیں آیا۔
+en|ur|Can you speak more slowly?|کیا آپ ذرا آہستہ بول سکتے ہیں؟

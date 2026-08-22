@@ -44,7 +44,7 @@ and tell me how to get a free Hugging Face API token.
 
 ---
 
-## ☐ Phase 2 — RAG Pipeline (Free Embeddings + Vector DB + Free LLM Translation)
+## ☑ Phase 2 — RAG Pipeline (Free Embeddings + Vector DB + Free LLM Translation) ✅
 *(Day 1, ~3 hrs — the core engine)*
 
 **Goal:** Build the GenAI pipeline using entirely free tools: local embeddings + FAISS + Hugging Face's free Inference API for translation.
@@ -87,7 +87,7 @@ In app.py, implement the GeoSpeak translation pipeline using a fully free stack:
 
 ---
 
-## ☐ Phase 3 — Brutalist Frontend UI
+## ☑ Phase 3 — Brutalist Frontend UI ✅
 *(Day 1 evening / Day 2 morning, ~2 hrs)*
 
 **Goal:** Raw, high-contrast, brutalist-style UI — thick borders, harsh shadows, mono fonts, no rounded corners, minimal color palette.

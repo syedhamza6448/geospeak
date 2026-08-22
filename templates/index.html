@@ -1,16 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="GeoSpeak — AI-powered language translation using a free, open-source RAG pipeline." />
-    <title>GeoSpeak</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="GeoSpeak — Brutalist AI language translator powered by a free RAG pipeline. Translate text to French, Spanish, German, Urdu, and Japanese instantly." />
+  <title>GEOSPEAK — AI Translator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
 </head>
 <body>
-    <h1>GeoSpeak</h1>
-    <p>Phase 1 boilerplate — UI coming in Phase 3.</p>
 
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  <!-- ══════════════════════════════════════════
+       HEADER
+  ══════════════════════════════════════════ -->
+  <header id="site-header">
+    <div id="header-tag">FREE-TIER RAG PIPELINE</div>
+    <h1 id="site-title">GEO<span class="accent">SPEAK</span></h1>
+    <p id="site-tagline">VECTOR SEARCH · LOCAL EMBEDDINGS · OPEN-SOURCE LLM</p>
+  </header>
+
+  <!-- ══════════════════════════════════════════
+       MAIN GRID
+  ══════════════════════════════════════════ -->
+  <main id="main-grid">
+
+    <!-- ── LEFT / INPUT PANEL ── -->
+    <section id="input-panel" aria-label="Translation input">
+      <div class="panel-label">INPUT</div>
+
+      <label for="source-text" class="field-label">SOURCE TEXT</label>
+      <textarea
+        id="source-text"
+        name="source-text"
+        rows="8"
+        maxlength="1000"
+        placeholder="TYPE YOUR TEXT HERE…"
+        spellcheck="false"
+        aria-describedby="char-count"
+      ></textarea>
+      <div id="char-count"><span id="char-num">0</span> / 1000</div>
+
+      <label for="target-lang" class="field-label">TARGET LANGUAGE</label>
+      <div id="select-wrapper">
+        <select id="target-lang" name="target-lang">
+          <option value="" disabled selected>— SELECT —</option>
+          <option value="French">FRENCH</option>
+          <option value="Spanish">SPANISH</option>
+          <option value="German">GERMAN</option>
+          <option value="Urdu">URDU</option>
+          <option value="Japanese">JAPANESE</option>
+        </select>
+        <span id="select-arrow">▼</span>
+      </div>
+
+      <button id="translate-btn" type="button">TRANSLATE NOW</button>
+    </section>
+
+    <!-- ── RIGHT / OUTPUT PANEL ── -->
+    <section id="output-panel" aria-label="Translation output" aria-live="polite">
+      <div class="panel-label">OUTPUT</div>
+
+      <!-- Default idle state -->
+      <div id="state-idle" class="output-state active">
+        <div id="idle-graphic">
+          <span>[ Ø ]</span>
+          <p>AWAITING INPUT</p>
+        </div>
+      </div>
+
+      <!-- Loading state -->
+      <div id="state-loading" class="output-state" role="status" aria-label="Translating">
+        <div id="loading-inner">
+          <div id="loading-blocks" aria-hidden="true">
+            <span class="blk"></span>
+            <span class="blk"></span>
+            <span class="blk"></span>
+            <span class="blk"></span>
+            <span class="blk"></span>
+          </div>
+          <p id="loading-text">TRANSLATING…</p>
+          <p id="loading-note">First request may take 20–40 s<br>due to Hugging Face free-tier cold start.</p>
+        </div>
+      </div>
+
+      <!-- Success state -->
+      <div id="state-result" class="output-state">
+        <div id="result-header">
+          <span id="result-lang-badge"></span>
+          <span id="result-label">TRANSLATION</span>
+        </div>
+        <div id="result-text" lang="auto"></div>
+        <button id="copy-btn" type="button" aria-label="Copy translation">[ COPY ]</button>
+        <div id="copy-confirm" aria-live="polite">COPIED!</div>
+      </div>
+
+      <!-- Error state -->
+      <div id="state-error" class="output-state" role="alert">
+        <div id="error-code"></div>
+        <div id="error-message"></div>
+        <div id="error-hint"></div>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer id="site-footer">
+    <span>GEOSPEAK © 2026</span>
+    <span id="footer-divider">|</span>
+    <span>SENTENCE-TRANSFORMERS · FAISS · MISTRAL-7B · FLASK</span>
+    <span id="footer-divider2">|</span>
+    <span>100% FREE STACK</span>
+  </footer>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>
