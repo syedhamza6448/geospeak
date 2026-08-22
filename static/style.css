@@ -1,0 +1,18 @@
+/* GeoSpeak — Phase 1 placeholder stylesheet */
+/* Phase 3 will replace this with the full brutalist design system */
+
+body {
+    font-family: monospace;
+    background: #fff;
+    color: #000;
+    margin: 0;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border-bottom: 4px solid #000;
+    padding-bottom: 0.5rem;
+}

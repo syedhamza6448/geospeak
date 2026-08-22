@@ -12,7 +12,7 @@ A 5-phase build plan for GeoSpeak, designed to be completed in 2 days using a **
 
 ---
 
-## ☐ Phase 1 — Project Setup & Boilerplate
+## ☑ Phase 1 — Project Setup & Boilerplate ✅
 *(Day 1, ~1 hr)*
 
 **Goal:** Flask skeleton, folder structure, free-tier dependencies, Hugging Face key wiring.
