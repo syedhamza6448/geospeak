@@ -30,6 +30,9 @@ const errorCode     = document.getElementById('error-code');
 const errorMessage  = document.getElementById('error-message');
 const errorHint     = document.getElementById('error-hint');
 
+// ── RTL language set ─────────────────────────────────────────
+const RTL_LANGUAGES = new Set(['Urdu', 'Arabic']);
+
 // ── Error code → user-friendly messages ───────────────────────
 const ERROR_MESSAGES = {
   MODEL_COLD_START: {
@@ -148,6 +151,12 @@ async function handleTranslate() {
     // ── Success ─────────────────────────────────────────────
     resultBadge.textContent = targetLang.toUpperCase();
     resultText.textContent  = data.translation || '(empty response)';
+
+    // Apply RTL/LTR direction based on target language
+    const isRTL = RTL_LANGUAGES.has(targetLang);
+    resultText.setAttribute('dir', isRTL ? 'rtl' : 'ltr');
+    resultText.style.textAlign = isRTL ? 'right' : 'left';
+
     copyConfirm.classList.remove('show');
     showState(stateResult);
 

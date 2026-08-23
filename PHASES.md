@@ -124,7 +124,7 @@ and error states, and display the result in the output panel.
 
 ---
 
-## ☐ Phase 4 — Integration, Testing & Edge Cases
+## ☑ Phase 4 — Integration, Testing & Edge Cases ✅
 *(Day 2 morning, ~2 hrs)*
 
 **Goal:** Make sure the app actually works end-to-end and handles the non-functional requirements (security, reliability, error handling) within free-tier constraints.
