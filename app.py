@@ -7,21 +7,13 @@ Architecture:
   2. FAISS (in-memory)                        — vector similarity search
   3. Hugging Face Inference API (free tier)   — hosted LLM for translation
 
-Model choice trade-off (used in get_translation):
-  - mistralai/Mistral-7B-Instruct-v0.2
-      PRO : General instruction-following; handles any language pair and nuanced
-            prompts well; produces natural, conversational translations.
-      CON : Larger model → longer cold-start on free tier (~20-40 s); may pad
-            output with extra commentary that needs stripping.
-
-  - facebook/nllb-200-distilled-600M
-      PRO : Purpose-built multilingual translation model; faster inference;
-            more predictable output format (raw translation, no commentary).
-      CON : Requires BCP-47 language codes (e.g. "fra_Latn") instead of plain
-            language names; less flexible for custom prompts.
-
-  Decision: We default to Mistral-7B-Instruct because our RAG prompt is
-  instruction-formatted. Switch HF_MODEL below to nllb if you prefer speed.
+Model choice:
+  - meta-llama/Llama-3.2-3B-Instruct
+      PRO : Lightweight instruct model ideal for free-tier endpoints. Fast inference
+            with minimal latency; handles instruction-following translation tasks
+            exceptionally well when guided by few-shot RAG examples.
+      CON : Smaller capacity than 7B/8B models; relies heavily on clean RAG context
+            to maintain target language vocabulary and style accuracy.
 """
 
 import os
@@ -41,9 +33,11 @@ log = logging.getLogger(__name__)
 
 HUGGINGFACE_API_KEY = os.getenv("HUGGINGFACE_API_KEY")
 
-# Hugging Face Inference API endpoint — swap to nllb model string if desired
-HF_MODEL = "mistralai/Mistral-7B-Instruct-v0.2"
-HF_API_URL = f"https://api-inference.huggingface.co/models/{HF_MODEL}"
+# Hugging Face Settings
+HF_API_URL = "https://router.huggingface.co/v1/chat/completions"
+# The ":featherless-ai" suffix pins the provider explicitly, since Hugging Face's
+# router doesn't reliably auto-select a working provider for every model.
+HF_MODEL = "meta-llama/Llama-3.2-3B-Instruct:featherless-ai"
 HF_HEADERS = {"Authorization": f"Bearer {HUGGINGFACE_API_KEY}"}
 
 # Retry settings for HF cold-start (503 "Model is currently loading")
@@ -52,6 +46,12 @@ BACKOFF_BASE = 10  # seconds — doubles each retry: 10, 20, 40 …
 
 # Supported target languages (plain-name keys shown in UI)
 SUPPORTED_LANGUAGES = {"French", "Spanish", "German", "Urdu", "Japanese"}
+
+# Map UI language names → corpus 2-letter ISO codes
+LANGUAGE_CODE_MAP = {
+    "French": "fr", "Spanish": "es", "German": "de",
+    "Urdu": "ur", "Japanese": "ja",
+}
 
 app = Flask(__name__)
 
@@ -176,7 +176,7 @@ def retrieve_examples(text: str, target_lang: str, k: int = 3) -> list[dict]:
             corpus_entries[i]
             for i in indices[0]
             if i < len(corpus_entries)
-            and corpus_entries[i]["target_lang"].lower() == target_lang[:2].lower()
+            and corpus_entries[i]["target_lang"].lower() == LANGUAGE_CODE_MAP.get(target_lang, "").lower()
         ]
 
         if not filtered:
@@ -209,9 +209,9 @@ def build_prompt(text: str, target_lang: str, examples: list[dict]) -> str:
         )
 
     prompt = (
-        f"[INST] You are an expert translator. {example_block}"
+        f"You are an expert translator. {example_block}"
         f'Translate the following text to {target_lang}: \'{text}\'\n'
-        "Respond with ONLY the translated text, no explanations or extra commentary. [/INST]"
+        "Respond with ONLY the translated text, no explanations or extra commentary."
     )
     return prompt
 
@@ -227,15 +227,12 @@ def call_hf_api(prompt: str) -> str:
     """
     if not HUGGINGFACE_API_KEY or HUGGINGFACE_API_KEY == "hf_your_token_here":
         raise RuntimeError("HUGGINGFACE_API_KEY not set. Add it to your .env file.")
-
+    
     payload = {
-        "inputs": prompt,
-        "parameters": {
-            "max_new_tokens": 200,
-            "temperature": 0.3,
-            "do_sample": True,
-            "return_full_text": False,  # Only return newly generated tokens
-        },
+        "model": HF_MODEL,
+        "messages": [{"role": "user", "content": prompt}],
+        "max_tokens": 200,
+        "temperature": 0.3
     }
 
     for attempt in range(1, MAX_RETRIES + 1):
@@ -246,11 +243,27 @@ def call_hf_api(prompt: str) -> str:
         except requests.exceptions.ConnectionError as exc:
             raise RuntimeError(f"Network error reaching Hugging Face API: {exc}")
 
+        # ── Diagnostic logging on every response ──────────────────
+        log.info("HF API response — status: %d", response.status_code)
+        if response.status_code != 200:
+            log.error(
+                "HF API error details:\n"
+                "  Status : %d\n"
+                "  Headers: %s\n"
+                "  Body   : %s",
+                response.status_code,
+                dict(response.headers),
+                response.text[:1000],
+            )
+
         if response.status_code == 200:
             data = response.json()
-            # Response is a list: [{"generated_text": "..."}]
-            if isinstance(data, list) and data:
-                return data[0].get("generated_text", "").strip()
+            # Response should follow OpenAI spec: {"choices": [{"message": {"content": "..."}}]}
+            if "choices" in data and len(data["choices"]) > 0:
+                translation = data["choices"][0].get("message", {}).get("content", "").strip()
+                if translation:
+                    return translation
+            log.error("Unexpected HF API 200 response format: %s", data)
             raise RuntimeError(f"Unexpected HF API response format: {data}")
 
         if response.status_code == 503:
@@ -279,13 +292,21 @@ def call_hf_api(prompt: str) -> str:
                 "AUTH_ERROR: Invalid HUGGINGFACE_API_KEY. "
                 "Check your .env file and token at huggingface.co/settings/tokens."
             )
+            
+        if response.status_code == 403:
+            raise RuntimeError(
+                "PERMISSION_DENIED: 403 Forbidden. This authentication method does not have sufficient permissions to call Inference Providers."
+            )
 
         # Any other HTTP error
         raise RuntimeError(
-            f"HF API returned HTTP {response.status_code}: {response.text[:300]}"
+            f"HF API returned HTTP {response.status_code}: {response.text[:500]}"
         )
 
-    raise RuntimeError("Exhausted all retries calling Hugging Face API.")
+    # Should never reach here due to raises inside loop, but just in case
+    raise RuntimeError("Failed to get a response from Hugging Face API.")
+
+
 
 
 # ---------------------------------------------------------------------------
@@ -363,17 +384,6 @@ def translate():
     try:
         translation = get_translation(text, target_lang)
         return jsonify({"translation": translation})
-
-    except RuntimeError as exc:
-        msg = str(exc)
-        # Distinguish known error types for meaningful frontend messages
-        if msg.startswith("MODEL_COLD_START"):
-            return jsonify({"error": msg, "code": "MODEL_COLD_START"}), 503
-        if msg.startswith("RATE_LIMIT"):
-            return jsonify({"error": msg, "code": "RATE_LIMIT"}), 429
-        if msg.startswith("AUTH_ERROR"):
-            return jsonify({"error": msg, "code": "AUTH_ERROR"}), 401
-        return jsonify({"error": msg, "code": "PIPELINE_ERROR"}), 500
 
     except Exception as exc:
         log.exception("Unexpected error in /translate")
