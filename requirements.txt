@@ -5,3 +5,5 @@ numpy
 python-dotenv
 requests
 huggingface_hub
+pytest
+pytest-mock

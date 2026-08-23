@@ -60,6 +60,8 @@ app = Flask(__name__)
 # even when Flask's reloader spawns a child process (avoids double-loading).
 @app.before_request
 def ensure_index_built():
+    if request.path == "/health":
+        return
     global faiss_index, embedding_model
     if faiss_index is None and embedding_model is None:
         build_index()
@@ -354,6 +356,10 @@ def index():
     return render_template("index.html")
 
 
+# Simple in-memory rate limiter: { ip_address: [timestamp1, timestamp2, ...] }
+rate_limit_records = {}
+
+
 @app.route("/translate", methods=["POST"])
 def translate():
     """
@@ -361,6 +367,34 @@ def translate():
     Request JSON : {"text": "...", "target_lang": "French"}
     Response JSON: {"translation": "..."} or {"error": "...", "code": "..."}
     """
+    # --- Rate limiting ---
+    client_ip = request.remote_addr or "unknown"
+    now = time.time()
+    
+    # Get active timestamps for this IP within the last 60 seconds
+    timestamps = rate_limit_records.get(client_ip, [])
+    active_timestamps = [t for t in timestamps if now - t <= 60]
+    
+    # Prune empty IP lists from memory to prevent long-term growth
+    to_delete = []
+    for ip, ts_list in rate_limit_records.items():
+        pruned = [t for t in ts_list if now - t <= 60]
+        if not pruned:
+            to_delete.append(ip)
+        else:
+            rate_limit_records[ip] = pruned
+    for ip in to_delete:
+        rate_limit_records.pop(ip, None)
+        
+    if len(active_timestamps) >= 10:
+        return jsonify({
+            "error": "Rate limit exceeded. Please wait before retrying.",
+            "code": "RATE_LIMIT"
+        }), 429
+        
+    active_timestamps.append(now)
+    rate_limit_records[client_ip] = active_timestamps
+
     data = request.get_json(silent=True)
     if not data:
         return jsonify({"error": "Request body must be JSON.", "code": "BAD_REQUEST"}), 400
@@ -388,6 +422,12 @@ def translate():
     except Exception as exc:
         log.exception("Unexpected error in /translate")
         return jsonify({"error": f"Internal server error: {exc}", "code": "INTERNAL_ERROR"}), 500
+
+
+@app.route("/health", methods=["GET"])
+def health():
+    """GET /health - basic liveness check"""
+    return jsonify({"status": "ok"}), 200
 
 
 # ---------------------------------------------------------------------------

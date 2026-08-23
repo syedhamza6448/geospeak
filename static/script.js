@@ -48,6 +48,12 @@ const ERROR_MESSAGES = {
     hint:     'Your HUGGINGFACE_API_KEY in .env is missing or incorrect. '
             + 'Get a free token at huggingface.co/settings/tokens.',
   },
+  PERMISSION_DENIED: {
+    headline: 'API PERMISSION DENIED',
+    hint:     'Your Hugging Face token lacks "Make calls to Inference '
+            + 'Providers" permission. Generate a new fine-grained token '
+            + 'with that permission enabled.',
+  },
   EMPTY_TEXT: {
     headline: 'INPUT IS EMPTY',
     hint:     'Please type some text before hitting TRANSLATE NOW.',

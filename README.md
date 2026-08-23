@@ -37,6 +37,7 @@ Supported target languages in the UI: **French, Spanish, German, Urdu, Japanese*
 | HTTP client | [Requests](https://docs.python-requests.org/) | Calls the Hugging Face API |
 | HF utilities | [huggingface_hub](https://huggingface.co/docs/huggingface_hub/) | Hugging Face ecosystem support |
 | Environment config | [python-dotenv](https://pypi.org/project/python-dotenv/) | Loads `HUGGINGFACE_API_KEY` from `.env` |
+| Testing | [pytest](https://docs.pytest.org/) / [pytest-mock](https://pypi.org/project/pytest-mock/) | Automated test suite for the `/translate` endpoint |
 | Frontend | HTML5 / CSS / JavaScript | Brutalist UI with Space Mono font (Google Fonts) |
 
 ---
@@ -46,6 +47,7 @@ Supported target languages in the UI: **French, Spanish, German, Urdu, Japanese*
 ```
 geospeak/
 ├── app.py                  # Flask app — RAG pipeline, routes, HF API integration
+├── test_app.py             # Pytest test suite (5 tests for /translate endpoint)
 ├── requirements.txt        # Python dependencies
 ├── .env.example            # Template: HUGGINGFACE_API_KEY=hf_your_token_here
 ├── .gitignore              # Ignores .env, __pycache__, venv, model cache, etc.
@@ -154,6 +156,16 @@ http://127.0.0.1:5000
 
 > **First request will be slow.** The sentence-transformer model loads on the first incoming request, and the Hugging Face model may need 20–40 s to cold-start. Subsequent requests are faster.
 
+### 8. Run the test suite
+
+The project includes a `pytest` test suite covering the `/translate` endpoint:
+
+```bash
+pytest test_app.py -v
+```
+
+The suite contains 5 test cases: valid request, empty text, unsupported language, text too long, and simulated HF API failure. All tests mock external dependencies (FAISS, sentence-transformers, HF API) so they run offline with no API key required.
+
 ---
 
 ## Current Status
@@ -170,13 +182,14 @@ http://127.0.0.1:5000
 - ✅ **Client-side UX** — character counter (with near-limit warning), Ctrl+Enter shortcut, copy-to-clipboard with confirmation, user-friendly error messages mapped from backend error codes.
 - ✅ **Parallel corpus** — 48 entries across English → French, Spanish, German, and Urdu.
 - ✅ **Model details** — uses `meta-llama/Llama-3.2-3B-Instruct:featherless-ai` pinned to the Featherless AI provider via Hugging Face's API.
+- ✅ **`GET /health` route** — returns `{"status": "ok"}` with HTTP 200 for uptime / readiness probes.
+- ✅ **In-memory rate limiting** — `POST /translate` is limited to 10 requests per IP per 60 seconds; excess requests receive HTTP 429 with error code `RATE_LIMIT`.
+- ✅ **`PERMISSION_DENIED` frontend mapping** — `ERROR_MESSAGES` in `script.js` includes a user-friendly message for the `PERMISSION_DENIED` error code.
+- ✅ **Automated test suite** — `test_app.py` with 5 pytest test cases (valid request, empty text, unsupported language, text too long, simulated HF API failure) — all passing.
 
 ### What's missing or incomplete
 
 - ❌ **Japanese corpus data** — Japanese is listed in the UI dropdown and `SUPPORTED_LANGUAGES`, but `corpus.txt` has no Japanese (en→ja) entries. RAG retrieval falls back to unfiltered top-k results.
-- ❌ **`GET /health` route** — no health-check endpoint exists.
-- ❌ **Rate limiting middleware** — no server-side request throttling (e.g. Flask-Limiter) to protect against hitting HF's free-tier rate limits.
-- ❌ **Automated tests** — no `test_app.py` or test suite.
 - ❌ **Production server** — `app.py` runs with `debug=True`; no WSGI/Gunicorn configuration for production deployment.
 
 ---
@@ -188,7 +201,7 @@ Based on the [PHASES.md](PHASES.md) build plan and gaps identified in the codeba
 - [x] **Phase 1** — Project setup & boilerplate (Flask skeleton, folder structure, dependencies)
 - [x] **Phase 2** — RAG pipeline (local embeddings, FAISS index, HF Inference API integration)
 - [x] **Phase 3** — Brutalist frontend UI (complete with loading/error states and responsive layout)
-- [ ] **Phase 4** — Integration & testing (add `/health` route, rate limiting, `test_app.py` with pytest)
+- [x] **Phase 4** — Integration & testing (add `/health` route, rate limiting, `test_app.py` with pytest)
 - [ ] **Phase 5** — Documentation, deliverables & submission prep (blog post, demo video, submission package)
 
 **Additional improvements to consider:**
