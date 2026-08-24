@@ -1,6 +1,6 @@
 # GeoSpeak Parallel Corpus
 # Format: source_lang|target_lang|source_text|target_text
-# ~40 rows — English to French, Spanish, German, Urdu
+# ~58 rows — English to French, Spanish, German, Urdu (includes idiom pairs)
 
 en|fr|Hello, how are you?|Bonjour, comment allez-vous ?
 en|fr|Good morning!|Bonjour !
@@ -50,3 +50,48 @@ en|ur|How much does this cost?|اس کی قیمت کتنی ہے؟
 en|ur|Thank you very much.|بہت بہت شکریہ۔
 en|ur|I don't understand.|مجھے سمجھ نہیں آیا۔
 en|ur|Can you speak more slowly?|کیا آپ ذرا آہستہ بول سکتے ہیں؟
+
+# --- Idioms & figurative expressions (natural equivalents, NOT literal translations) ---
+
+# French idioms
+en|fr|It's raining cats and dogs.|Il pleut des cordes.
+en|fr|Break the ice.|Briser la glace.
+en|fr|The ball is in your court.|La balle est dans ton camp.
+en|fr|Spill the beans.|Cracher le morceau.
+en|fr|Once in a blue moon.|Tous les trente-six du mois.
+en|fr|Hit the nail on the head.|Taper dans le mille.
+en|fr|Under the weather.|Ne pas être dans son assiette.
+en|fr|Piece of cake.|C'est du gâteau.
+en|fr|Let the cat out of the bag.|Vendre la mèche.
+
+# Spanish idioms
+en|es|It's raining cats and dogs.|Está lloviendo a cántaros.
+en|es|Break the ice.|Romper el hielo.
+en|es|The ball is in your court.|La pelota está en tu tejado.
+en|es|Spill the beans.|Irse de la lengua.
+en|es|Once in a blue moon.|De higos a brevas.
+en|es|Hit the nail on the head.|Dar en el clavo.
+en|es|Under the weather.|Estar pachucho.
+en|es|Piece of cake.|Pan comido.
+en|es|Cost an arm and a leg.|Costar un ojo de la cara.
+
+# German idioms
+en|de|It's raining cats and dogs.|Es regnet in Strömen.
+en|de|Break the ice.|Das Eis brechen.
+en|de|The ball is in your court.|Der Ball liegt in deinem Feld.
+en|de|Spill the beans.|Die Katze aus dem Sack lassen.
+en|de|Once in a blue moon.|Alle Jubeljahre einmal.
+en|de|Hit the nail on the head.|Den Nagel auf den Kopf treffen.
+en|de|Piece of cake.|Ein Kinderspiel.
+en|de|Cost an arm and a leg.|Ein Vermögen kosten.
+
+# Urdu idioms
+en|ur|It's raining cats and dogs.|موسلا دھار بارش ہو رہی ہے۔
+en|ur|Break the ice.|بات چیت کا آغاز کرنا۔
+en|ur|The ball is in your court.|اب آپ کی باری ہے۔
+en|ur|Spill the beans.|راز فاش کرنا۔
+en|ur|Hit the nail on the head.|بالکل درست بات کہنا۔
+en|ur|Piece of cake.|بائیں ہاتھ کا کھیل۔
+en|ur|Under the weather.|طبیعت خراب ہونا۔
+en|ur|Cost an arm and a leg.|بہت مہنگا پڑنا۔
+en|ur|Back to square one.|وہیں کے وہیں۔

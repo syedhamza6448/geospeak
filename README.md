@@ -31,7 +31,7 @@ Supported target languages in the UI: **French, Spanish, German, Urdu, Japanese*
 |---|---|---|
 | Backend framework | [Flask](https://flask.palletsprojects.com/) | Routes, JSON API, template rendering |
 | Local embeddings | [sentence-transformers](https://www.sbert.net/) (`all-MiniLM-L6-v2`) | Encodes corpus & user input into vectors — runs locally, zero cost |
-| Vector search | [FAISS](https://github.com/facebookresearch/faiss) (`faiss-cpu`) | In-memory cosine-similarity search over corpus embeddings |
+| Vector search | [FAISS](https://github.com/facebookresearch/faiss) (`faiss-cpu`) | In-memory vector similarity search engine — fulfills the Vector Database role described in the SRS architecture, without the overhead of a standalone database service |
 | LLM translation | [Hugging Face Inference API](https://huggingface.co/inference-api) (free tier) | Calls `meta-llama/Llama-3.2-3B-Instruct:featherless-ai` (pinned to the Featherless AI provider) |
 | Numerical computing | [NumPy](https://numpy.org/) | Embedding array operations |
 | HTTP client | [Requests](https://docs.python-requests.org/) | Calls the Hugging Face API |
@@ -191,6 +191,16 @@ The suite contains 5 test cases: valid request, empty text, unsupported language
 
 - ❌ **Japanese corpus data** — Japanese is listed in the UI dropdown and `SUPPORTED_LANGUAGES`, but `corpus.txt` has no Japanese (en→ja) entries. RAG retrieval falls back to unfiltered top-k results.
 - ❌ **Production server** — `app.py` runs with `debug=True`; no WSGI/Gunicorn configuration for production deployment.
+
+---
+
+## Assumptions
+
+- The SRS's "Vector Database" component is implemented using FAISS, an in-memory vector similarity search library. This fulfills the same architectural role — storing embeddings and retrieving similar examples — without requiring a persistent, standalone database service, keeping the stack 100% free and simple to run locally.
+- The parallel corpus is small enough to fit entirely in memory; FAISS re-indexes it on every application restart.
+- The Hugging Face free-tier Inference API is available and not permanently rate-limited during usage.
+- Users have an internet connection for the Hugging Face API calls and (on first run) for downloading the sentence-transformer model.
+- The supported target languages are limited to those with corpus entries (French, Spanish, German, Urdu) plus Japanese (which falls back to unfiltered retrieval).
 
 ---
 

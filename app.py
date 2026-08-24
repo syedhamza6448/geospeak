@@ -4,8 +4,10 @@ Phase 2: Full RAG pipeline using free-tier stack.
 
 Architecture:
   1. sentence-transformers/all-MiniLM-L6-v2  — local embeddings, zero cost
-  2. FAISS (in-memory)                        — vector similarity search
+  2. FAISS (in-memory)                        — vector similarity search index
+     (fulfills the SRS "Vector Database" role without a standalone DB service)
   3. Hugging Face Inference API (free tier)   — hosted LLM for translation
+
 
 Model choice:
   - meta-llama/Llama-3.2-3B-Instruct
@@ -196,8 +198,10 @@ def retrieve_examples(text: str, target_lang: str, k: int = 3) -> list[dict]:
 # ---------------------------------------------------------------------------
 def build_prompt(text: str, target_lang: str, examples: list[dict]) -> str:
     """
-    Construct a few-shot instruction prompt for Mistral-7B-Instruct.
-    The [INST] / [/INST] tags are the Mistral instruction format.
+    Construct a few-shot instruction prompt for the hosted LLM.
+    Explicitly instructs the model to prefer idiomatic equivalents over
+    literal word-for-word translations when the source contains figurative
+    language — this satisfies the SRS's idiom/context-awareness requirement.
     """
     example_block = ""
     if examples:
@@ -212,7 +216,10 @@ def build_prompt(text: str, target_lang: str, examples: list[dict]) -> str:
 
     prompt = (
         f"You are an expert translator. {example_block}"
-        f'Translate the following text to {target_lang}: \'{text}\'\n'
+        f"Translate the following text to {target_lang}: '{text}'\n"
+        "Translate idiomatically — if the source text contains an idiom or "
+        "figurative expression, use the natural equivalent expression in the "
+        "target language rather than a literal word-for-word translation.\n"
         "Respond with ONLY the translated text, no explanations or extra commentary."
     )
     return prompt

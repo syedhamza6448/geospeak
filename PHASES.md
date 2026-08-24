@@ -5,7 +5,7 @@ A 5-phase build plan for GeoSpeak, designed to be completed in 2 days using a **
 **Free-tier stack swap:**
 - ~~OpenAI Embeddings~~ → **sentence-transformers** (`all-MiniLM-L6-v2`) — runs locally, no API key, no cost
 - ~~OpenAI GPT (chat completion)~~ → **Hugging Face Inference API** (free tier) using an open model like `mistralai/Mistral-7B-Instruct-v0.2` or a dedicated translation model like `facebook/nllb-200-distilled-600M`
-- Vector DB stays **FAISS** (free, local)
+- Vector DB role stays **FAISS** (free, local, in-memory vector similarity search)
 - Everything else (Flask, HTML5/CSS/JS) unchanged
 
 > Note: Hugging Face's free Inference API tier is rate-limited and can have cold-start delays on first request — mention this in your documentation/demo video as a known limitation.
@@ -44,7 +44,7 @@ and tell me how to get a free Hugging Face API token.
 
 ---
 
-## ☑ Phase 2 — RAG Pipeline (Free Embeddings + Vector DB + Free LLM Translation) ✅
+## ☑ Phase 2 — RAG Pipeline (Free Embeddings + Vector Search + Free LLM Translation) ✅
 *(Day 1, ~3 hrs — the core engine)*
 
 **Goal:** Build the GenAI pipeline using entirely free tools: local embeddings + FAISS + Hugging Face's free Inference API for translation.
@@ -163,7 +163,7 @@ Help me finalize GeoSpeak's submission package:
 1. Write a Problem Definition section (150-200 words) explaining the language 
    barrier problem GeoSpeak solves.
 2. Write Design Specifications summarizing the architecture (local embedding 
-   model → FAISS vector DB → context-aware prompt → Hugging Face-hosted LLM → 
+   model → FAISS in-memory vector search → context-aware prompt → Hugging Face-hosted LLM → 
    output), noting this is a fully free/open-source stack.
 3. Describe a User Flow Diagram in text form (steps a user takes from landing 
    on the page to getting a translation) that I can turn into a simple diagram.
