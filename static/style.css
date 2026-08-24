@@ -20,6 +20,13 @@
   --font:       'Space Mono', 'JetBrains Mono', 'Courier New', monospace;
 }
 
+body.dark-mode {
+  --black:      #F4F4F4;
+  --white:      #111111;
+  --grey-light: #2A2A2A;
+  --grey-mid:   #777777;
+}
+
 /* ── Reset ────────────────────────────────────────────────────── */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -52,15 +59,40 @@ body {
   position: relative;
 }
 
+#header-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
 #header-tag {
   font-size: 0.65rem;
   letter-spacing: 0.25em;
   color: var(--yellow);
   text-transform: uppercase;
-  margin-bottom: 0.75rem;
   border: 2px solid var(--yellow);
   display: inline-block;
   padding: 2px 8px;
+}
+
+#theme-toggle {
+  font-family: var(--font);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  background: var(--black);
+  color: var(--yellow);
+  border: 2px solid var(--yellow);
+  padding: 2px 8px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: none;
+}
+
+#theme-toggle:hover {
+  background: var(--yellow);
+  color: var(--black);
 }
 
 #site-title {
@@ -163,10 +195,16 @@ body {
 
 #char-count.near-limit { color: var(--red); font-weight: 700; }
 
-/* ── Select ───────────────────────────────────────────────────── */
+/* ── Select & Swap Row ────────────────────────────────────────── */
+#lang-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
 #select-wrapper {
   position: relative;
   display: block;
+  flex: 1;
 }
 
 #target-lang {
@@ -199,6 +237,34 @@ body {
   pointer-events: none;
   font-size: 0.8rem;
   font-weight: 700;
+}
+
+/* ── Swap Button ──────────────────────────────────────────────── */
+#swap-btn {
+  font-family: var(--font);
+  font-size: 1.1rem;
+  font-weight: 700;
+  background: var(--white);
+  color: var(--black);
+  border: var(--border-fat);
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: none;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#swap-btn:hover {
+  background: var(--black);
+  color: var(--yellow);
+  box-shadow: none;
+  transform: translate(4px, 4px);
+}
+
+#swap-btn:active {
+  transform: translate(6px, 6px);
 }
 
 /* ── Translate button ─────────────────────────────────────────── */
@@ -373,6 +439,21 @@ body {
   text-transform: uppercase;
 }
 
+#result-confidence-badge {
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  background: var(--black);
+  color: var(--yellow);
+  padding: 3px 10px;
+  border: 2px solid var(--black);
+  text-transform: uppercase;
+  display: none;
+}
+#result-confidence-badge.show {
+  display: inline-block;
+}
+
 #result-label {
   font-size: 0.6rem;
   letter-spacing: 0.3em;
@@ -422,6 +503,81 @@ body {
 }
 
 #copy-confirm.show { opacity: 1; }
+
+/* ── Context / Why Panel ─────────────────────────────────────── */
+#context-panel {
+  margin-top: 1rem;
+  border-top: var(--border);
+  padding-top: 0.75rem;
+}
+
+#context-toggle {
+  font-family: var(--font);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  background: var(--white);
+  color: var(--black);
+  border: var(--border);
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  padding: 0.4rem 0.8rem;
+  transition: none;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: left;
+}
+
+#context-toggle:hover {
+  background: var(--black);
+  color: var(--yellow);
+  transform: translate(4px, 4px);
+  box-shadow: none;
+}
+
+#context-list {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+#context-panel.collapsed #context-list {
+  display: none;
+}
+
+.context-item {
+  border: 2px solid var(--black);
+  padding: 0.75rem;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  background: var(--grey-light);
+}
+
+.context-item-label {
+  font-size: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  color: var(--grey-mid);
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+
+.context-item-source {
+  margin-bottom: 0.4rem;
+}
+
+.context-item-arrow {
+  color: var(--yellow);
+  font-weight: 700;
+  margin: 0 0.3rem;
+}
+
+.context-empty {
+  font-size: 0.75rem;
+  color: var(--grey-mid);
+  font-style: italic;
+}
 
 /* ── Error state ──────────────────────────────────────────────── */
 #state-error {
@@ -479,6 +635,105 @@ body {
 #footer-divider,
 #footer-divider2 {
   color: var(--yellow);
+}
+
+/* ── History Panel ────────────────────────────────────────────── */
+#history-panel {
+  border-bottom: var(--border-fat);
+  background: var(--grey-light);
+  display: flex;
+  flex-direction: column;
+}
+
+#history-header {
+  padding: 1rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: var(--border);
+  background: var(--white);
+}
+
+#history-controls {
+  display: flex;
+  gap: 1rem;
+}
+
+#history-controls button {
+  font-family: var(--font);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  padding: 0.4rem 0.8rem;
+  background: var(--white);
+  color: var(--black);
+  border: var(--border);
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: none;
+  text-transform: uppercase;
+}
+
+#history-controls button:hover {
+  background: var(--black);
+  color: var(--yellow);
+  transform: translate(4px, 4px);
+  box-shadow: none;
+}
+
+#history-list {
+  padding: 2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+#history-panel.collapsed #history-list {
+  display: none;
+}
+
+.history-item {
+  border: var(--border);
+  background: var(--white);
+  padding: 1rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.history-item-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid var(--black);
+  padding-bottom: 0.5rem;
+}
+
+.history-lang {
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  background: var(--yellow);
+  color: var(--black);
+  padding: 2px 8px;
+  border: 2px solid var(--black);
+  text-transform: uppercase;
+}
+
+.history-source {
+  font-size: 0.85rem;
+  color: var(--grey-mid);
+  margin-bottom: 0.5rem;
+  font-style: italic;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.history-target {
+  font-size: 1.1rem;
+  font-weight: 700;
+  white-space: pre-wrap;
+  word-break: break-word;
 }
 
 /* ── Responsive ───────────────────────────────────────────────── */

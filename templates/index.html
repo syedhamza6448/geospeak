@@ -16,7 +16,10 @@
        HEADER
   ══════════════════════════════════════════ -->
   <header id="site-header">
-    <div id="header-tag">FREE-TIER RAG PIPELINE</div>
+    <div id="header-top-row">
+      <div id="header-tag">FREE-TIER RAG PIPELINE</div>
+      <button id="theme-toggle" aria-label="Toggle dark mode">[ INVERT ]</button>
+    </div>
     <h1 id="site-title">GEO<span class="accent">SPEAK</span></h1>
     <p id="site-tagline">VECTOR SEARCH · LOCAL EMBEDDINGS · OPEN-SOURCE LLM</p>
   </header>
@@ -43,16 +46,19 @@
       <div id="char-count"><span id="char-num">0</span> / 1000</div>
 
       <label for="target-lang" class="field-label">TARGET LANGUAGE</label>
-      <div id="select-wrapper">
-        <select id="target-lang" name="target-lang">
-          <option value="" disabled selected>— SELECT —</option>
-          <option value="French">FRENCH</option>
-          <option value="Spanish">SPANISH</option>
-          <option value="German">GERMAN</option>
-          <option value="Urdu">URDU</option>
-          <option value="Japanese">JAPANESE</option>
-        </select>
-        <span id="select-arrow">▼</span>
+      <div id="lang-row">
+        <div id="select-wrapper">
+          <select id="target-lang" name="target-lang">
+            <option value="" disabled selected>— SELECT —</option>
+            <option value="French">FRENCH</option>
+            <option value="Spanish">SPANISH</option>
+            <option value="German">GERMAN</option>
+            <option value="Urdu">URDU</option>
+            <option value="Japanese">JAPANESE</option>
+          </select>
+          <span id="select-arrow">▼</span>
+        </div>
+        <button id="swap-btn" type="button" aria-label="Swap result to input" title="Swap result to input">[ ⇄ ]</button>
       </div>
 
       <button id="translate-btn" type="button">TRANSLATE NOW</button>
@@ -89,11 +95,18 @@
       <div id="state-result" class="output-state">
         <div id="result-header">
           <span id="result-lang-badge"></span>
+          <span id="result-confidence-badge"></span>
           <span id="result-label">TRANSLATION</span>
         </div>
         <div id="result-text" lang="auto"></div>
         <button id="copy-btn" type="button" aria-label="Copy translation">[ COPY ]</button>
         <div id="copy-confirm" aria-live="polite">COPIED!</div>
+
+        <!-- Why this translation? -->
+        <div id="context-panel" class="collapsed">
+          <button id="context-toggle" type="button">[ + WHY THIS TRANSLATION? ]</button>
+          <div id="context-list"></div>
+        </div>
       </div>
 
       <!-- Error state -->
@@ -105,6 +118,20 @@
 
     </section>
   </main>
+
+  <!-- ══════════════════════════════════════════
+       HISTORY PANEL
+  ══════════════════════════════════════════ -->
+  <section id="history-panel" class="collapsed">
+    <div id="history-header">
+      <div class="panel-label">HISTORY</div>
+      <div id="history-controls">
+        <button id="clear-history-btn" type="button">CLEAR HISTORY</button>
+        <button id="toggle-history-btn" type="button">[+] EXPAND</button>
+      </div>
+    </div>
+    <div id="history-list"></div>
+  </section>
 
   <!-- ══════════════════════════════════════════
        FOOTER

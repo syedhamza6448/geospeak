@@ -25,6 +25,13 @@ import requests
 import numpy as np
 from flask import Flask, render_template, request, jsonify
 from dotenv import load_dotenv
+import sys
+
+# Ensure proper utf-8 encoding for terminal output on Windows
+if sys.stdout.encoding.lower() != 'utf-8':
+    sys.stdout.reconfigure(encoding='utf-8')
+if sys.stderr.encoding.lower() != 'utf-8':
+    sys.stderr.reconfigure(encoding='utf-8')
 
 # ---------------------------------------------------------------------------
 # Environment & logging
@@ -157,14 +164,14 @@ def build_index():
 # ---------------------------------------------------------------------------
 # RAG retrieval
 # ---------------------------------------------------------------------------
-def retrieve_examples(text: str, target_lang: str, k: int = 3) -> list[dict]:
+def retrieve_examples(text: str, target_lang: str, k: int = 3) -> tuple[list[dict], float | None]:
     """
     Embed input text and retrieve top-k similar corpus entries
     filtered by the requested target language.
     Falls back to unfiltered top-k if no lang-filtered results exist.
     """
     if faiss_index is None or embedding_model is None:
-        return []
+        return [], None
 
     try:
         import faiss as faiss_lib
@@ -176,21 +183,29 @@ def retrieve_examples(text: str, target_lang: str, k: int = 3) -> list[dict]:
         distances, indices = faiss_index.search(query_vec, search_k)
 
         # Filter to target language, keeping insertion order
-        filtered = [
-            corpus_entries[i]
-            for i in indices[0]
+        filtered_with_scores = [
+            (corpus_entries[i], distances[0][idx])
+            for idx, i in enumerate(indices[0])
             if i < len(corpus_entries)
             and corpus_entries[i]["target_lang"].lower() == LANGUAGE_CODE_MAP.get(target_lang, "").lower()
         ]
 
-        if not filtered:
+        if not filtered_with_scores:
             # No lang-specific examples — fall back to top-k regardless of lang
-            filtered = [corpus_entries[i] for i in indices[0] if i < len(corpus_entries)]
+            filtered_with_scores = [
+                (corpus_entries[i], distances[0][idx]) 
+                for idx, i in enumerate(indices[0]) 
+                if i < len(corpus_entries)
+            ]
 
-        return filtered[:k]
+        top_k = filtered_with_scores[:k]
+        examples = [item[0] for item in top_k]
+        top_score = float(top_k[0][1]) if top_k else None
+        
+        return examples, top_score
     except Exception as exc:
         log.warning("FAISS retrieval failed: %s", exc)
-        return []
+        return [], None
 
 
 # ---------------------------------------------------------------------------
@@ -215,11 +230,11 @@ def build_prompt(text: str, target_lang: str, examples: list[dict]) -> str:
         )
 
     prompt = (
-        f"You are an expert translator. {example_block}"
+        f"You are an expert translator. If the source text matches or closely "
+        f"resembles one of the examples below, you MUST use that example's exact "
+        f"target-language phrasing as your answer, not a literal word-for-word "
+        f"translation.\n\n{example_block}"
         f"Translate the following text to {target_lang}: '{text}'\n"
-        "Translate idiomatically — if the source text contains an idiom or "
-        "figurative expression, use the natural equivalent expression in the "
-        "target language rather than a literal word-for-word translation.\n"
         "Respond with ONLY the translated text, no explanations or extra commentary."
     )
     return prompt
@@ -321,15 +336,15 @@ def call_hf_api(prompt: str) -> str:
 # ---------------------------------------------------------------------------
 # Main translation function
 # ---------------------------------------------------------------------------
-def get_translation(text: str, target_lang: str) -> str:
+def get_translation(text: str, target_lang: str) -> tuple[str, float | None, list[dict]]:
     """
     Full RAG pipeline:
       1. Retrieve similar corpus examples via FAISS
       2. Build few-shot instruction prompt
       3. Call HF Inference API
-      4. Clean and return translation
+      4. Clean and return translation + confidence + examples
     """
-    examples = retrieve_examples(text, target_lang)
+    examples, confidence = retrieve_examples(text, target_lang)
     log.info("Retrieved %d examples for target_lang='%s'", len(examples), target_lang)
 
     prompt = build_prompt(text, target_lang, examples)
@@ -351,7 +366,7 @@ def get_translation(text: str, target_lang: str) -> str:
         if cleaned.lower().startswith(prefix.lower()):
             cleaned = cleaned[len(prefix):].strip()
 
-    return cleaned
+    return cleaned, confidence, examples
 
 
 # ---------------------------------------------------------------------------
@@ -423,8 +438,15 @@ def translate():
 
     # --- Run pipeline ---
     try:
-        translation = get_translation(text, target_lang)
-        return jsonify({"translation": translation})
+        translation, confidence, examples = get_translation(text, target_lang)
+        resp = {"translation": translation}
+        if confidence is not None:
+            resp["confidence"] = round(confidence, 2)
+        resp["context_examples"] = [
+            {"source_text": ex["source_text"], "target_text": ex["target_text"]}
+            for ex in examples
+        ]
+        return jsonify(resp)
 
     except Exception as exc:
         log.exception("Unexpected error in /translate")
