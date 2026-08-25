@@ -1,358 +1,412 @@
-/**
- * GeoSpeak — script.js
- * Handles the /translate fetch call, all UI state transitions,
- * character counter, and copy-to-clipboard.
- */
-
 'use strict';
+// ── DOM references ──
+const sourceTextEl = document.getElementById('source-text');
+const targetLangEl = document.getElementById('target-lang');
+const translateBtn = document.getElementById('translate-btn');
+const charNumEl = document.getElementById('char-num');
+const charCounterEl = document.getElementById('char-counter-source');
+const copyBtn = document.getElementById('copy-btn');
+const copyConfirm = document.getElementById('copy-confirm');
+const swapBtn = document.getElementById('swap-btn');
+const historyBtn = document.getElementById('history-btn');
 
-// ── DOM references ─────────────────────────────────────────────
-const sourceTextEl  = document.getElementById('source-text');
-const targetLangEl  = document.getElementById('target-lang');
-const translateBtn  = document.getElementById('translate-btn');
-const charNumEl     = document.getElementById('char-num');
-const charCountEl   = document.getElementById('char-count');
-const copyBtn       = document.getElementById('copy-btn');
-const copyConfirm   = document.getElementById('copy-confirm');
-const swapBtn       = document.getElementById('swap-btn');
+// ── NEW: Detect Language elements ──
+const detectBtn = document.getElementById('detect-lang-btn');
+const detectedLangName = document.getElementById('detected-lang-name');
+const sourceLangEl = document.getElementById('source-lang');
 
-// Output state panels
-const stateIdle     = document.getElementById('state-idle');
-const stateLoading  = document.getElementById('state-loading');
-const stateResult   = document.getElementById('state-result');
-const stateError    = document.getElementById('state-error');
+const stateIdle = document.getElementById('state-idle');
+const stateLoading = document.getElementById('state-loading');
+const stateResult = document.getElementById('state-result');
+const stateError = document.getElementById('state-error');
 
-// Result panel elements
-const resultText    = document.getElementById('result-text');
-const resultBadge   = document.getElementById('result-lang-badge');
-const confidenceBadge = document.getElementById('result-confidence-badge');
-const contextPanel  = document.getElementById('context-panel');
-const contextToggle = document.getElementById('context-toggle');
-const contextList   = document.getElementById('context-list');
+const resultText = document.getElementById('result-text');
+const contextHintBody = document.getElementById('context-hint-body');
+const contextToggleBtn = document.getElementById('context-toggle-btn');
+const contextDetail = document.getElementById('context-detail');
+const contextDetailText = document.getElementById('context-detail-text');
+const contextExamplesList = document.getElementById('context-examples-list');
 
-// Error panel elements
-const errorCode     = document.getElementById('error-code');
-const errorMessage  = document.getElementById('error-message');
-const errorHint     = document.getElementById('error-hint');
+const errorCode = document.getElementById('error-code');
+const errorMessage = document.getElementById('error-message');
+const errorHint = document.getElementById('error-hint');
 
-// ── RTL language set ─────────────────────────────────────────
+const historyPanel = document.getElementById('history-panel');
+const historyList = document.getElementById('history-list');
+const toggleHistoryBtn = document.getElementById('toggle-history-btn');
+const clearHistoryBtn = document.getElementById('clear-history-btn');
+const historyCount = document.getElementById('history-count');
+const historyHeaderToggle = document.getElementById('history-header-toggle');
+
+const contextualExamples = document.getElementById('contextual-examples');
+
 const RTL_LANGUAGES = new Set(['Urdu', 'Arabic']);
 
-// ── Error code → user-friendly messages ───────────────────────
 const ERROR_MESSAGES = {
-  MODEL_COLD_START: {
-    headline: 'MODEL WARMING UP — RETRY IN 20s',
-    hint:     'Hugging Face free-tier models spin down when idle. '
-            + 'The server retried 5 times automatically. '
-            + 'Please wait ~20 seconds and try again.',
-  },
-  RATE_LIMIT: {
-    headline: 'RATE LIMIT HIT — WAIT 60s',
-    hint:     'The Hugging Face free-tier rate limit has been reached. '
-            + 'Please wait about one minute before sending another request.',
-  },
-  AUTH_ERROR: {
-    headline: 'API KEY INVALID',
-    hint:     'Your HUGGINGFACE_API_KEY in .env is missing or incorrect. '
-            + 'Get a free token at huggingface.co/settings/tokens.',
-  },
-  PERMISSION_DENIED: {
-    headline: 'API PERMISSION DENIED',
-    hint:     'Your Hugging Face token lacks "Make calls to Inference '
-            + 'Providers" permission. Generate a new fine-grained token '
-            + 'with that permission enabled.',
-  },
-  EMPTY_TEXT: {
-    headline: 'INPUT IS EMPTY',
-    hint:     'Please type some text before hitting TRANSLATE NOW.',
-  },
-  TEXT_TOO_LONG: {
-    headline: 'TEXT TOO LONG',
-    hint:     'Maximum 1000 characters allowed. Shorten your input.',
-  },
-  UNSUPPORTED_LANGUAGE: {
-    headline: 'LANGUAGE NOT SUPPORTED',
-    hint:     'Select a supported language from the dropdown.',
-  },
-  PIPELINE_ERROR: {
-    headline: 'PIPELINE FAILURE',
-    hint:     'An error occurred in the translation backend. Check the Flask console for details.',
-  },
-  INTERNAL_ERROR: {
-    headline: 'INTERNAL SERVER ERROR',
-    hint:     'Something unexpected went wrong. Check the Flask console.',
-  },
-  NETWORK_ERROR: {
-    headline: 'NETWORK ERROR',
-    hint:     'Could not reach the GeoSpeak server. Make sure Flask is running.',
-  },
+    MODEL_COLD_START: { headline: 'Model warming up — retry in 20s', hint: 'Hugging Face free-tier models spin down when idle. The server retried 5 times automatically. Please wait ~20 seconds and try again.' },
+    RATE_LIMIT: { headline: 'Rate limit hit — wait 60s', hint: 'The Hugging Face free-tier rate limit has been reached. Please wait about one minute before sending another request.' },
+    AUTH_ERROR: { headline: 'API key invalid', hint: 'Your HUGGINGFACE_API_KEY in .env is missing or incorrect. Get a free token at huggingface.co/settings/tokens.' },
+    PERMISSION_DENIED: { headline: 'API permission denied', hint: 'Your Hugging Face token lacks "Make calls to Inference Providers" permission. Generate a new fine-grained token with that permission enabled.' },
+    EMPTY_TEXT: { headline: 'Input is empty', hint: 'Please type some text before hitting Translate.' },
+    TEXT_TOO_LONG: { headline: 'Text too long', hint: 'Maximum 1000 characters allowed. Shorten your input.' },
+    UNSUPPORTED_LANGUAGE: { headline: 'Language not supported', hint: 'Select a supported language from the dropdown.' },
+    PIPELINE_ERROR: { headline: 'Pipeline failure', hint: 'An error occurred in the translation backend. Check the Flask console for details.' },
+    INTERNAL_ERROR: { headline: 'Internal server error', hint: 'Something unexpected went wrong. Check the Flask console.' },
+    NETWORK_ERROR: { headline: 'Network error', hint: 'Could not reach the GeoSpeak server. Make sure Flask is running.' },
 };
 
-// ── State machine ──────────────────────────────────────────────
 const ALL_STATES = [stateIdle, stateLoading, stateResult, stateError];
 
 function showState(activeEl) {
-  ALL_STATES.forEach(el => el.classList.remove('active'));
-  activeEl.classList.add('active');
+    ALL_STATES.forEach(el => el.classList.remove('active'));
+    activeEl.classList.add('active');
 }
 
-// ── Character counter ──────────────────────────────────────────
+// ── Character counter & reset detection badge ──
 sourceTextEl.addEventListener('input', () => {
-  const len = sourceTextEl.value.length;
-  charNumEl.textContent = len;
-  charCountEl.classList.toggle('near-limit', len > 900);
+    const len = sourceTextEl.value.length;
+    charNumEl.textContent = len;
+    if (charCounterEl) charCounterEl.classList.toggle('near-limit', len > 900);
+    // Reset detection badge when text changes
+    if (detectBtn) detectBtn.classList.remove('has-result');
 });
 
-// ── Translate & Swap ───────────────────────────────────────────
 translateBtn.addEventListener('click', handleTranslate);
+sourceTextEl.addEventListener('keydown', e => {
+    if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) { e.preventDefault(); handleTranslate(); }
+});
 
 if (swapBtn) {
-  swapBtn.addEventListener('click', () => {
-    const lastResult = resultText.textContent.trim();
-    if (lastResult && lastResult !== '(empty response)') {
-      sourceTextEl.value = lastResult;
-      // trigger char counter update
-      sourceTextEl.dispatchEvent(new Event('input'));
-    }
-  });
+    swapBtn.addEventListener('click', () => {
+        const lastResult = resultText.textContent.trim();
+        if (lastResult && lastResult !== '(empty response)' && lastResult !== 'Translation will appear here…') {
+            sourceTextEl.value = lastResult;
+            sourceTextEl.dispatchEvent(new Event('input'));
+            swapBtn.classList.toggle('swapped');
+            setTimeout(() => swapBtn.classList.toggle('swapped'), 600);
+        }
+    });
 }
 
-// Also allow Ctrl+Enter from the textarea
-sourceTextEl.addEventListener('keydown', e => {
-  if (e.key === 'Enter' && (e.ctrlKey || e.metaKey)) {
-    e.preventDefault();
-    handleTranslate();
-  }
+copyBtn.addEventListener('click', async () => {
+    const text = resultText.textContent.trim();
+    if (!text || text === 'Translation will appear here…') return;
+    try { await navigator.clipboard.writeText(text); } catch {
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+    }
+    copyConfirm.style.opacity = '1';
+    setTimeout(() => copyConfirm.style.opacity = '0', 1500);
 });
 
-async function handleTranslate() {
-  const text       = sourceTextEl.value.trim();
-  const targetLang = targetLangEl.value;
+if (historyBtn) {
+    historyBtn.addEventListener('click', () => {
+        if (historyPanel) {
+            historyPanel.classList.toggle('collapsed');
+            if (toggleHistoryBtn) toggleHistoryBtn.textContent = historyPanel.classList.contains('collapsed') ?
+                '[ + Expand ]' : '[ - Collapse ]';
+        }
+    });
+}
 
-  // ── Client-side quick validation ───────────────────────────
-  if (!text) {
-    showError('EMPTY_TEXT', '');
-    return;
-  }
-  if (text.length > 1000) {
-    showError('TEXT_TOO_LONG', '');
-    return;
-  }
-  if (!targetLang) {
-    showError('UNSUPPORTED_LANGUAGE', 'Please select a target language from the dropdown.');
-    return;
-  }
+if (contextToggleBtn && contextDetail) {
+    contextToggleBtn.addEventListener('click', () => {
+        const isOpen = contextDetail.classList.toggle('open');
+        contextToggleBtn.textContent = isOpen ? '[ - Context Hint ]' : '[ + Context Hint ]';
+    });
+}
 
-  // ── Show loading ────────────────────────────────────────────
-  setLoading(true);
-  showState(stateLoading);
+if (toggleHistoryBtn && historyPanel) {
+    toggleHistoryBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        historyPanel.classList.toggle('collapsed');
+        toggleHistoryBtn.textContent = historyPanel.classList.contains('collapsed') ? '[ + Expand ]' : '[ - Collapse ]';
+    });
+}
+if (historyHeaderToggle && historyPanel) {
+    historyHeaderToggle.addEventListener('click', (e) => {
+        if (e.target.closest('button')) return;
+        historyPanel.classList.toggle('collapsed');
+        if (toggleHistoryBtn) toggleHistoryBtn.textContent = historyPanel.classList.contains('collapsed') ?
+            '[ + Expand ]' : '[ - Collapse ]';
+    });
+}
+if (clearHistoryBtn) {
+    clearHistoryBtn.addEventListener('click', () => { historyData = []; renderHistory(); });
+}
 
-  try {
-    const response = await fetch('/translate', {
-      method:  'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body:    JSON.stringify({ text, target_lang: targetLang }),
+// ── NEW: Detect Language logic ──
+if (detectBtn) {
+    detectBtn.addEventListener('click', function() {
+        const text = sourceTextEl.value.trim();
+        if (!text) {
+            this.style.borderColor = 'rgba(255,199,0,0.4)';
+            setTimeout(() => { this.style.borderColor = ''; }, 600);
+            return;
+        }
+
+        const detected = detectLanguage(text);
+        const langName = detected.name;
+
+        // Update source language selector
+        const options = sourceLangEl.options;
+        let found = false;
+        for (let i = 0; i < options.length; i++) {
+            if (options[i].value === detected.code || options[i].text.includes(langName)) {
+                sourceLangEl.selectedIndex = i;
+                found = true;
+                break;
+            }
+        }
+        if (!found) {
+            const opt = document.createElement('option');
+            opt.value = detected.code;
+            opt.textContent = langName;
+            sourceLangEl.appendChild(opt);
+            sourceLangEl.value = detected.code;
+        }
+
+        // Show detected badge
+        detectedLangName.textContent = langName;
+        detectBtn.classList.add('has-result');
+
+        // flash feedback
+        detectBtn.style.borderColor = 'rgba(0,240,255,0.4)';
+        setTimeout(() => { detectBtn.style.borderColor = ''; }, 600);
+    });
+}
+
+// ── NEW: Language detector (client‑side) ──
+function detectLanguage(text) {
+    const lower = text.toLowerCase();
+    const langMap = [
+        { code: 'English', name: 'English', indicators: ['the', 'and', 'for', 'with', 'you', 'this', 'that', 'from', 'have', 'are'] },
+        { code: 'Spanish', name: 'Spanish', indicators: ['el', 'la', 'de', 'que', 'y', 'en', 'un', 'por', 'con', 'no', 'una', 'los', 'las', 'del', 'para'] },
+        { code: 'French', name: 'French', indicators: ['le', 'la', 'de', 'et', 'en', 'un', 'une', 'pour', 'que', 'dans', 'avec', 'est', 'vous', 'qui'] },
+        { code: 'German', name: 'German', indicators: ['der', 'die', 'das', 'und', 'für', 'mit', 'auf', 'von', 'den', 'dem', 'ich', 'du', 'er', 'sie'] },
+        { code: 'Urdu', name: 'Urdu', indicators: ['اور', 'کی', 'کا', 'میں', 'ہے', 'نے', 'کو', 'سے', 'ہیں', 'تھا', 'تھی'] },
+        { code: 'Japanese', name: 'Japanese', indicators: ['の', 'は', 'に', 'を', 'で', 'が', 'と', 'も', 'から', 'まで', 'です', 'ます', 'た'] },
+    ];
+
+    let scores = langMap.map(lang => {
+        let score = 0;
+        // script-specific bonus
+        if (lang.code === 'Japanese' && /[\u3040-\u30FF\u4E00-\u9FFF]/.test(text)) score += 3;
+        if (lang.code === 'Urdu' && /[\u0600-\u06FF]/.test(text)) score += 3;
+        // count indicator words
+        const words = lower.split(/\s+/);
+        let matchCount = 0;
+        for (const word of words) {
+            const clean = word.replace(/[^a-z\u0600-\u06FF\u3040-\u30FF\u4E00-\u9FFF]/g, '');
+            if (lang.indicators.includes(clean)) matchCount++;
+        }
+        score += matchCount * 2;
+        if (matchCount > 3) score += 2;
+        return { ...lang, score };
     });
 
-    const data = await response.json();
+    scores.sort((a, b) => b.score - a.score);
+    const top = scores[0];
 
-    if (!response.ok) {
-      // Server returned a structured error
-      const code  = data.code  || 'PIPELINE_ERROR';
-      const extra = data.error || '';
-      showError(code, extra);
-      return;
+    if (top.score === 0 || text.replace(/[^a-zA-Z\u0600-\u06FF\u3040-\u30FF\u4E00-\u9FFF]/g, '').trim().length < 3) {
+        return { code: 'English', name: 'English' };
     }
-
-    // ── Success ─────────────────────────────────────────────
-    resultBadge.textContent = targetLang.toUpperCase();
-    resultText.textContent  = data.translation || '(empty response)';
-
-    if (data.confidence !== undefined && data.confidence !== null) {
-      confidenceBadge.textContent = `MATCH CONFIDENCE: ${Math.round(data.confidence * 100)}%`;
-      confidenceBadge.classList.add('show');
-    } else {
-      confidenceBadge.classList.remove('show');
-    }
-
-    // Apply RTL/LTR direction based on target language
-    const isRTL = RTL_LANGUAGES.has(targetLang);
-    resultText.setAttribute('dir', isRTL ? 'rtl' : 'ltr');
-    resultText.style.textAlign = isRTL ? 'right' : 'left';
-
-    copyConfirm.classList.remove('show');
-    showState(stateResult);
-    addToHistory(text, targetLang, data.translation || '(empty response)');
-    renderContextExamples(data.context_examples || []);
-
-  } catch (err) {
-    // Network / JSON parse failure
-    console.error('GeoSpeak fetch error:', err);
-    showError('NETWORK_ERROR', err.message);
-  } finally {
-    setLoading(false);
-  }
+    return { code: top.code, name: top.name };
 }
 
-// ── Error helper ───────────────────────────────────────────────
+// ── Translation handler (unchanged) ──
+async function handleTranslate() {
+    const text = sourceTextEl.value.trim();
+    const targetLang = targetLangEl.value;
+    if (!text) { showError('EMPTY_TEXT', ''); return; }
+    if (text.length > 1000) { showError('TEXT_TOO_LONG', ''); return; }
+    if (!targetLang) { showError('UNSUPPORTED_LANGUAGE', 'Please select a target language from the dropdown.'); return; }
+    setLoading(true);
+    showState(stateLoading);
+    try {
+        const response = await fetch('/translate', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ text, target_lang: targetLang }),
+        });
+        const data = await response.json();
+        if (!response.ok) {
+            const code = data.code || 'PIPELINE_ERROR';
+            const extra = data.error || '';
+            showError(code, extra);
+            return;
+        }
+        const translation = data.translation || '(empty response)';
+        resultText.textContent = translation;
+
+        // Match Confidence Badge handling
+        const confidenceContainer = document.getElementById('confidence-container');
+        const confidenceText = document.getElementById('confidence-text');
+        if (confidenceContainer && confidenceText) {
+            if (data.confidence !== undefined && data.confidence !== null) {
+                const pct = Math.round(data.confidence * 100);
+                confidenceText.textContent = `${pct}%`;
+                confidenceContainer.style.display = 'flex';
+            } else {
+                confidenceContainer.style.display = 'none';
+            }
+        }
+
+        // Context hints handling
+        const hasExamples = data.context_examples && data.context_examples.length > 0;
+
+        const contextInsightsPanel = document.getElementById('context-insights-panel');
+        const contextVectorTags = document.getElementById('context-vector-tags');
+        if (contextInsightsPanel && contextVectorTags) {
+            contextInsightsPanel.style.display = 'flex';
+            if (hasExamples) {
+                contextVectorTags.innerHTML = '<span class="tag">Context Matched</span>';
+            } else {
+                contextVectorTags.innerHTML =
+                    '<span style="font-size:11px; font-weight:400; color:var(--text-muted);">No specific context matched — translation generated from the model\'s general knowledge</span>';
+            }
+        }
+
+        const contextHintCard = document.getElementById('context-hint-card');
+        if (contextHintCard) {
+            if (hasExamples) {
+                contextHintCard.style.display = 'block';
+                const count = data.context_examples.length;
+                const msg =
+                    `Retrieved ${count} matching contextual example${count > 1 ? 's' : ''} from database to guide translation.`;
+                contextHintBody.textContent = msg;
+                contextDetailText.textContent = msg;
+                if (contextToggleBtn) contextToggleBtn.style.display = 'inline-block';
+            } else {
+                contextHintCard.style.display = 'none';
+            }
+        }
+
+        const isRTL = RTL_LANGUAGES.has(targetLang);
+        resultText.setAttribute('dir', isRTL ? 'rtl' : 'ltr');
+        resultText.style.textAlign = isRTL ? 'right' : 'left';
+        renderContextExamples(data.context_examples || []);
+        copyConfirm.style.opacity = '0';
+        showState(stateResult);
+        addToHistory(text, targetLang, translation);
+        updateContextualExamples(data.context_examples || []);
+    } catch (err) {
+        console.error('GeoSpeak fetch error:', err);
+        showError('NETWORK_ERROR', err.message);
+    } finally { setLoading(false); }
+}
+
 function showError(code, rawMessage) {
-  const map    = ERROR_MESSAGES[code] || {};
-  const header = map.headline || code.replace(/_/g, ' ');
-  const hint   = map.hint     || rawMessage || '';
-
-  errorCode.textContent    = `[ERROR: ${code}]`;
-  errorMessage.textContent = header;
-  errorHint.textContent    = hint;
-
-  setLoading(false);
-  showState(stateError);
+    const map = ERROR_MESSAGES[code] || {};
+    const header = map.headline || code.replace(/_/g, ' ');
+    const hint = map.hint || rawMessage || '';
+    errorCode.textContent = `[ERROR: ${code}]`;
+    errorMessage.textContent = header;
+    errorHint.textContent = hint;
+    setLoading(false);
+    showState(stateError);
 }
 
-// ── Loading guard (disable button while in-flight) ─────────────
 function setLoading(isLoading) {
-  translateBtn.disabled    = isLoading;
-  translateBtn.textContent = isLoading ? 'TRANSLATING…' : 'TRANSLATE NOW';
-}
-
-// ── Context / Why Panel ────────────────────────────────────────
-if (contextToggle && contextPanel) {
-  contextToggle.addEventListener('click', () => {
-    const isCollapsed = contextPanel.classList.toggle('collapsed');
-    contextToggle.textContent = isCollapsed
-      ? '[ + WHY THIS TRANSLATION? ]'
-      : '[ - WHY THIS TRANSLATION? ]';
-  });
+    translateBtn.disabled = isLoading;
+    translateBtn.innerHTML = isLoading ? '<span class="icon">⟳</span> Translating…' :
+        '<span class="icon">✦</span> Translate';
 }
 
 function renderContextExamples(examples) {
-  if (!contextList || !contextPanel) return;
-  contextList.innerHTML = '';
-  // Reset to collapsed state
-  contextPanel.classList.add('collapsed');
-  if (contextToggle) contextToggle.textContent = '[ + WHY THIS TRANSLATION? ]';
-
-  if (!examples || examples.length === 0) {
-    contextList.innerHTML =
-      '<div class="context-empty">No matching examples found \u2014 translation generated from the model\'s general knowledge.</div>';
-    return;
-  }
-
-  examples.forEach(ex => {
-    const div = document.createElement('div');
-    div.className = 'context-item';
-    div.innerHTML = `
-      <div class="context-item-label">RETRIEVED EXAMPLE</div>
-      <div class="context-item-source">Source: ${escapeHTML(ex.source_text)}</div>
-      <div>Target: ${escapeHTML(ex.target_text)}</div>
-    `;
-    contextList.appendChild(div);
-  });
+    if (!contextExamplesList) return;
+    contextExamplesList.innerHTML = '';
+    if (!examples || examples.length === 0) {
+        contextExamplesList.innerHTML =
+            '<div class="cx-empty">No matching examples found — translation generated from the model\'s general knowledge.</div>';
+        return;
+    }
+    examples.forEach(ex => {
+        const div = document.createElement('div');
+        div.className = 'cx-item';
+        div.innerHTML = `
+              <span class="cx-label">Retrieved example</span>
+              <div><strong>Source:</strong> ${escapeHTML(ex.source_text)}</div>
+              <div><strong>Target:</strong> ${escapeHTML(ex.target_text)}</div>
+            `;
+        contextExamplesList.appendChild(div);
+    });
 }
 
-// ── Copy to clipboard ──────────────────────────────────────────
-copyBtn.addEventListener('click', async () => {
-  const text = resultText.textContent;
-  if (!text) return;
+function updateContextualExamples(examples) {
+    if (!contextualExamples) return;
+    if (!examples || examples.length === 0) {
+        contextualExamples.style.display = 'flex';
+        contextualExamples.innerHTML =
+            '<span style="font-size:11px; font-weight:400; color:var(--text-muted);">No specific context matched &mdash; translation generated from the model\'s general knowledge</span>';
+        return;
+    }
+    contextualExamples.style.display = 'grid';
+    contextualExamples.innerHTML = '<span class="ex-label">Examples</span>';
 
-  try {
-    await navigator.clipboard.writeText(text);
-  } catch {
-    // Fallback for older browsers / non-HTTPS
-    const ta = document.createElement('textarea');
-    ta.value = text;
-    ta.style.position = 'fixed';
-    ta.style.opacity  = '0';
-    document.body.appendChild(ta);
-    ta.select();
-    document.execCommand('copy');
-    document.body.removeChild(ta);
-  }
+    examples.slice(0, 2).forEach((ex, i) => {
+        const cxNum = i + 1;
+        const c1 = document.createElement('div');
+        c1.className = `example-card context-${cxNum}`;
+        c1.innerHTML = `
+            <div class="card-header">Matched Context</div>
+            <div class="card-body">${escapeHTML(ex.source_text)}</div>
+        `;
+        contextualExamples.appendChild(c1);
 
-  copyConfirm.classList.add('show');
-  setTimeout(() => copyConfirm.classList.remove('show'), 1500);
-});
+        const c2 = document.createElement('div');
+        c2.className = 'example-card translation-card';
+        c2.innerHTML = `
+            <div class="card-header">Translation Example</div>
+            <div class="card-body">${escapeHTML(ex.target_text)}</div>
+        `;
+        contextualExamples.appendChild(c2);
+    });
+}
 
-// ── History Logic ──────────────────────────────────────────────
 let historyData = [];
 
-const toggleHistoryBtn = document.getElementById('toggle-history-btn');
-const clearHistoryBtn = document.getElementById('clear-history-btn');
-const historyPanel = document.getElementById('history-panel');
-const historyList = document.getElementById('history-list');
-
-if (toggleHistoryBtn && clearHistoryBtn && historyPanel && historyList) {
-  toggleHistoryBtn.addEventListener('click', () => {
-    const isCollapsed = historyPanel.classList.toggle('collapsed');
-    toggleHistoryBtn.textContent = isCollapsed ? '[+] EXPAND' : '[-] COLLAPSE';
-  });
-
-  clearHistoryBtn.addEventListener('click', () => {
-    historyData = [];
-    renderHistory();
-  });
-
-  renderHistory(); // Initial render
-}
-
 function addToHistory(source, targetLang, result) {
-  if (!historyList) return;
-  historyData.unshift({ source, targetLang, result });
-  if (historyData.length > 10) {
-    historyData.pop();
-  }
-  renderHistory();
+    if (!historyList) return;
+    historyData.unshift({ source, targetLang, result });
+    if (historyData.length > 10) historyData.pop();
+    renderHistory();
 }
 
 function renderHistory() {
-  if (!historyList) return;
-  historyList.innerHTML = '';
-  if (historyData.length === 0) {
-    historyList.innerHTML = '<div style="font-size:0.8rem; color:var(--grey-mid); font-weight:700;">NO HISTORY YET.</div>';
-    return;
-  }
-  
-  historyData.forEach(item => {
-    const isRTL = RTL_LANGUAGES.has(item.targetLang);
-    const dir = isRTL ? 'rtl' : 'ltr';
-    const align = isRTL ? 'right' : 'left';
-    
-    const div = document.createElement('div');
-    div.className = 'history-item';
-    div.innerHTML = `
-      <div class="history-item-header">
-        <span class="history-lang">${escapeHTML(item.targetLang)}</span>
-      </div>
-      <div class="history-source">${escapeHTML(item.source)}</div>
-      <div class="history-target" dir="${dir}" style="text-align: ${align};">${escapeHTML(item.result)}</div>
-    `;
-    historyList.appendChild(div);
-  });
+    if (!historyList) return;
+    historyList.innerHTML = '';
+    if (historyData.length === 0) {
+        historyList.innerHTML = '<div class="history-empty">No translations yet.</div>';
+        if (historyCount) historyCount.textContent = '(0)';
+        return;
+    }
+    if (historyCount) historyCount.textContent = `(${historyData.length})`;
+    historyData.forEach(item => {
+        const isRTL = RTL_LANGUAGES.has(item.targetLang);
+        const dir = isRTL ? 'rtl' : 'ltr';
+        const align = isRTL ? 'right' : 'left';
+        const div = document.createElement('div');
+        div.className = 'history-item';
+        div.innerHTML = `
+              <div class="h-item-header"><span class="h-item-lang">${escapeHTML(item.targetLang)}</span></div>
+              <div class="h-item-source">${escapeHTML(item.source)}</div>
+              <div class="h-item-target" dir="${dir}" style="text-align:${align};">${escapeHTML(item.result)}</div>
+            `;
+        historyList.appendChild(div);
+    });
 }
 
 function escapeHTML(str) {
-  return str.replace(/[&<>'"]/g, 
-    tag => ({
-      '&': '&amp;',
-      '<': '&lt;',
-      '>': '&gt;',
-      "'": '&#39;',
-      '"': '&quot;'
-    }[tag] || tag)
-  );
+    if (!str) return '';
+    return str.replace(/[&<>'"]/g, tag => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' } [tag] || tag));
 }
 
-// ── Theme Toggle ───────────────────────────────────────────────
-const themeToggle = document.getElementById('theme-toggle');
-if (themeToggle) {
-  // Check local storage for existing preference
-  const isDarkMode = localStorage.getItem('geospeak-theme') === 'dark';
-  if (isDarkMode) {
-    document.body.classList.add('dark-mode');
-  }
-
-  themeToggle.addEventListener('click', () => {
-    document.body.classList.toggle('dark-mode');
-    const mode = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
-    localStorage.setItem('geospeak-theme', mode);
-  });
-}
+renderHistory();
+console.log('GeoSpeak AI — Self-contained robot avatar active.');
