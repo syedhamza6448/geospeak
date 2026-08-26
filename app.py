@@ -27,6 +27,10 @@ from flask import Flask, render_template, request, jsonify
 from dotenv import load_dotenv
 import sys
 
+# Real language detection (offline, free, no API calls needed)
+from langdetect import detect as langdetect_detect, DetectorFactory, LangDetectException
+DetectorFactory.seed = 0  # deterministic results across runs
+
 # Ensure proper utf-8 encoding for terminal output on Windows
 if sys.stdout.encoding.lower() != 'utf-8':
     sys.stdout.reconfigure(encoding='utf-8')
@@ -54,12 +58,29 @@ MAX_RETRIES = 5
 BACKOFF_BASE = 10  # seconds — doubles each retry: 10, 20, 40 …
 
 # Supported target languages (plain-name keys shown in UI)
-SUPPORTED_LANGUAGES = {"French", "Spanish", "German", "Urdu", "Japanese"}
+# NOTE: keep this in sync with the <option> values in templates/index.html
+SUPPORTED_LANGUAGES = {
+    "French", "Spanish", "German", "Urdu", "Japanese",
+    "Italian", "Portuguese", "Dutch", "Russian", "Chinese",
+    "Korean", "Arabic", "Hindi", "Turkish",
+}
 
 # Map UI language names → corpus 2-letter ISO codes
 LANGUAGE_CODE_MAP = {
     "French": "fr", "Spanish": "es", "German": "de",
     "Urdu": "ur", "Japanese": "ja",
+    "Italian": "it", "Portuguese": "pt", "Dutch": "nl",
+    "Russian": "ru", "Chinese": "zh", "Korean": "ko",
+    "Arabic": "ar", "Hindi": "hi", "Turkish": "tr",
+}
+
+# Map langdetect's ISO 639-1 codes → display names used in the UI dropdowns.
+# langdetect returns "zh-cn"/"zh-tw" for Chinese variants, hence the special case.
+DETECT_CODE_TO_NAME = {
+    "en": "English", "fr": "French", "es": "Spanish", "de": "German",
+    "ur": "Urdu", "ja": "Japanese", "it": "Italian", "pt": "Portuguese",
+    "nl": "Dutch", "ru": "Russian", "zh-cn": "Chinese", "zh-tw": "Chinese",
+    "ko": "Korean", "ar": "Arabic", "hi": "Hindi", "tr": "Turkish",
 }
 
 app = Flask(__name__)
@@ -193,15 +214,15 @@ def retrieve_examples(text: str, target_lang: str, k: int = 3) -> tuple[list[dic
         if not filtered_with_scores:
             # No lang-specific examples — fall back to top-k regardless of lang
             filtered_with_scores = [
-                (corpus_entries[i], distances[0][idx]) 
-                for idx, i in enumerate(indices[0]) 
+                (corpus_entries[i], distances[0][idx])
+                for idx, i in enumerate(indices[0])
                 if i < len(corpus_entries)
             ]
 
         top_k = filtered_with_scores[:k]
         examples = [item[0] for item in top_k]
         top_score = float(top_k[0][1]) if top_k else None
-        
+
         return examples, top_score
     except Exception as exc:
         log.warning("FAISS retrieval failed: %s", exc)
@@ -251,7 +272,7 @@ def call_hf_api(prompt: str) -> str:
     """
     if not HUGGINGFACE_API_KEY or HUGGINGFACE_API_KEY == "hf_your_token_here":
         raise RuntimeError("HUGGINGFACE_API_KEY not set. Add it to your .env file.")
-    
+
     payload = {
         "model": HF_MODEL,
         "messages": [{"role": "user", "content": prompt}],
@@ -316,7 +337,7 @@ def call_hf_api(prompt: str) -> str:
                 "AUTH_ERROR: Invalid HUGGINGFACE_API_KEY. "
                 "Check your .env file and token at huggingface.co/settings/tokens."
             )
-            
+
         if response.status_code == 403:
             raise RuntimeError(
                 "PERMISSION_DENIED: 403 Forbidden. This authentication method does not have sufficient permissions to call Inference Providers."
@@ -392,11 +413,11 @@ def translate():
     # --- Rate limiting ---
     client_ip = request.remote_addr or "unknown"
     now = time.time()
-    
+
     # Get active timestamps for this IP within the last 60 seconds
     timestamps = rate_limit_records.get(client_ip, [])
     active_timestamps = [t for t in timestamps if now - t <= 60]
-    
+
     # Prune empty IP lists from memory to prevent long-term growth
     to_delete = []
     for ip, ts_list in rate_limit_records.items():
@@ -407,13 +428,13 @@ def translate():
             rate_limit_records[ip] = pruned
     for ip in to_delete:
         rate_limit_records.pop(ip, None)
-        
+
     if len(active_timestamps) >= 10:
         return jsonify({
             "error": "Rate limit exceeded. Please wait before retrying.",
             "code": "RATE_LIMIT"
         }), 429
-        
+
     active_timestamps.append(now)
     rate_limit_records[client_ip] = active_timestamps
 
@@ -451,6 +472,46 @@ def translate():
     except Exception as exc:
         log.exception("Unexpected error in /translate")
         return jsonify({"error": f"Internal server error: {exc}", "code": "INTERNAL_ERROR"}), 500
+
+
+@app.route("/detect-language", methods=["POST"])
+def detect_language():
+    """
+    POST /detect-language
+    Request JSON : {"text": "..."}
+    Response JSON: {"language": "French", "code": "fr"}
+                or {"error": "...", "code": "..."}
+
+    Uses langdetect (offline, statistical n-gram detection) — a real
+    detector, not a keyword heuristic. Free, no API calls, no cost.
+    """
+    data = request.get_json(silent=True)
+    if not data:
+        return jsonify({"error": "Request body must be JSON.", "code": "BAD_REQUEST"}), 400
+
+    text = data.get("text", "").strip()
+    if not text:
+        return jsonify({"error": "Field 'text' is required and cannot be empty.", "code": "EMPTY_TEXT"}), 400
+
+    try:
+        detected_code = langdetect_detect(text)
+    except LangDetectException:
+        return jsonify({
+            "error": "Could not reliably detect the language of the given text.",
+            "code": "DETECTION_FAILED",
+        }), 422
+
+    language_name = DETECT_CODE_TO_NAME.get(detected_code)
+    if not language_name:
+        # Detected a real language, just not one GeoSpeak has UI support for
+        return jsonify({
+            "error": f"Detected language code '{detected_code}' is not supported by GeoSpeak's UI.",
+            "code": "UNSUPPORTED_LANGUAGE",
+            "detected_code": detected_code,
+        }), 422
+
+    log.info("Detected language: %s (code=%s) for input text.", language_name, detected_code)
+    return jsonify({"language": language_name, "code": detected_code})
 
 
 @app.route("/health", methods=["GET"])

@@ -1,6 +1,8 @@
 # GeoSpeak Parallel Corpus
 # Format: source_lang|target_lang|source_text|target_text
-# ~58 rows — English to French, Spanish, German, Urdu (includes idiom pairs)
+# English to: French, Spanish, German, Urdu, Japanese, Italian, Portuguese,
+# Dutch, Russian, Chinese, Korean, Arabic, Hindi, Turkish
+# (includes idiom pairs per language)
 
 en|fr|Hello, how are you?|Bonjour, comment allez-vous ?
 en|fr|Good morning!|Bonjour !
@@ -118,3 +120,219 @@ en|ja|Hit the nail on the head.|図星を指す。
 en|ja|Piece of cake.|朝飯前。
 en|ja|Under the weather.|体調が優れない。
 en|ja|Cost an arm and a leg.|非常に高くつく。
+
+# --- Italian ---
+en|it|Hello, how are you?|Ciao, come stai?
+en|it|Good morning!|Buongiorno!
+en|it|Good evening.|Buonasera.
+en|it|What is your name?|Come ti chiami?
+en|it|My name is Alex.|Mi chiamo Alex.
+en|it|Please help me.|Per favore, aiutami.
+en|it|Where is the nearest hospital?|Dov'è l'ospedale più vicino?
+en|it|I would like a glass of water.|Vorrei un bicchiere d'acqua.
+en|it|How much does this cost?|Quanto costa questo?
+en|it|Thank you very much.|Grazie mille.
+en|it|I don't understand.|Non capisco.
+en|it|Can you speak more slowly?|Puoi parlare più lentamente?
+
+# Italian idioms
+en|it|It's raining cats and dogs.|Piove a catinelle.
+en|it|Break the ice.|Rompere il ghiaccio.
+en|it|The ball is in your court.|La palla è nel tuo campo.
+en|it|Spill the beans.|Vuotare il sacco.
+en|it|Once in a blue moon.|Ogni morte di papa.
+en|it|Hit the nail on the head.|Colpire nel segno.
+en|it|Piece of cake.|Un gioco da ragazzi.
+en|it|Cost an arm and a leg.|Costare un occhio della testa.
+
+# --- Portuguese ---
+en|pt|Hello, how are you?|Olá, como você está?
+en|pt|Good morning!|Bom dia!
+en|pt|Good evening.|Boa noite.
+en|pt|What is your name?|Qual é o seu nome?
+en|pt|My name is Alex.|Meu nome é Alex.
+en|pt|Please help me.|Por favor, me ajude.
+en|pt|Where is the nearest hospital?|Onde fica o hospital mais próximo?
+en|pt|I would like a glass of water.|Eu gostaria de um copo de água.
+en|pt|How much does this cost?|Quanto custa isso?
+en|pt|Thank you very much.|Muito obrigado.
+en|pt|I don't understand.|Eu não entendo.
+en|pt|Can you speak more slowly?|Você pode falar mais devagar?
+
+# Portuguese idioms
+en|pt|It's raining cats and dogs.|Está chovendo canivetes.
+en|pt|Break the ice.|Quebrar o gelo.
+en|pt|The ball is in your court.|A bola está com você.
+en|pt|Spill the beans.|Deixar escapar o gato.
+en|pt|Once in a blue moon.|Once em uma lua azul... de vez em nunca.
+en|pt|Hit the nail on the head.|Acertar na mosca.
+en|pt|Piece of cake.|Moleza.
+en|pt|Cost an arm and a leg.|Custar os olhos da cara.
+
+# --- Dutch ---
+en|nl|Hello, how are you?|Hallo, hoe gaat het met je?
+en|nl|Good morning!|Goedemorgen!
+en|nl|Good evening.|Goedenavond.
+en|nl|What is your name?|Hoe heet je?
+en|nl|My name is Alex.|Ik heet Alex.
+en|nl|Please help me.|Help me alsjeblieft.
+en|nl|Where is the nearest hospital?|Waar is het dichtstbijzijnde ziekenhuis?
+en|nl|I would like a glass of water.|Ik wil graag een glas water.
+en|nl|How much does this cost?|Hoeveel kost dit?
+en|nl|Thank you very much.|Heel erg bedankt.
+en|nl|I don't understand.|Ik begrijp het niet.
+en|nl|Can you speak more slowly?|Kun je langzamer praten?
+
+# Dutch idioms
+en|nl|It's raining cats and dogs.|Het regent pijpenstelen.
+en|nl|Break the ice.|Het ijs breken.
+en|nl|The ball is in your court.|De bal ligt bij jou.
+en|nl|Spill the beans.|Uit de school klappen.
+en|nl|Once in a blue moon.|Eens in de tijd dat de kraaien wit zien.
+en|nl|Hit the nail on the head.|De spijker op zijn kop slaan.
+en|nl|Piece of cake.|Een fluitje van een cent.
+en|nl|Cost an arm and a leg.|Een fortuin kosten.
+
+# --- Russian ---
+en|ru|Hello, how are you?|Привет, как ты?
+en|ru|Good morning!|Доброе утро!
+en|ru|Good evening.|Добрый вечер.
+en|ru|What is your name?|Как тебя зовут?
+en|ru|My name is Alex.|Меня зовут Алекс.
+en|ru|Please help me.|Пожалуйста, помоги мне.
+en|ru|Where is the nearest hospital?|Где ближайшая больница?
+en|ru|I would like a glass of water.|Я хотел бы стакан воды.
+en|ru|How much does this cost?|Сколько это стоит?
+en|ru|Thank you very much.|Большое спасибо.
+en|ru|I don't understand.|Я не понимаю.
+en|ru|Can you speak more slowly?|Вы можете говорить медленнее?
+
+# Russian idioms
+en|ru|It's raining cats and dogs.|Льёт как из ведра.
+en|ru|Break the ice.|Растопить лёд.
+en|ru|The ball is in your court.|Мяч на твоей стороне.
+en|ru|Spill the beans.|Проболтаться.
+en|ru|Once in a blue moon.|Раз в сто лет.
+en|ru|Hit the nail on the head.|Попасть в самую точку.
+en|ru|Piece of cake.|Проще пареной репы.
+en|ru|Cost an arm and a leg.|Влететь в копеечку.
+
+# --- Chinese (Simplified) ---
+en|zh|Hello, how are you?|你好，你好吗？
+en|zh|Good morning!|早上好！
+en|zh|Good evening.|晚上好。
+en|zh|What is your name?|你叫什么名字？
+en|zh|My name is Alex.|我叫亚历克斯。
+en|zh|Please help me.|请帮帮我。
+en|zh|Where is the nearest hospital?|最近的医院在哪里？
+en|zh|I would like a glass of water.|我想要一杯水。
+en|zh|How much does this cost?|这个多少钱？
+en|zh|Thank you very much.|非常感谢。
+en|zh|I don't understand.|我不明白。
+en|zh|Can you speak more slowly?|你能说慢一点吗？
+
+# Chinese idioms
+en|zh|It's raining cats and dogs.|倾盆大雨。
+en|zh|Break the ice.|打破僵局。
+en|zh|The ball is in your court.|球在你那边了。
+en|zh|Spill the beans.|泄露秘密。
+en|zh|Once in a blue moon.|千载难逢。
+en|zh|Hit the nail on the head.|一针见血。
+en|zh|Piece of cake.|小菜一碟。
+en|zh|Cost an arm and a leg.|花费一大笔钱。
+
+# --- Korean ---
+en|ko|Hello, how are you?|안녕하세요, 어떻게 지내세요?
+en|ko|Good morning!|좋은 아침입니다!
+en|ko|Good evening.|좋은 저녁입니다.
+en|ko|What is your name?|이름이 뭐예요?
+en|ko|My name is Alex.|제 이름은 알렉스입니다.
+en|ko|Please help me.|도와주세요.
+en|ko|Where is the nearest hospital?|가장 가까운 병원이 어디인가요?
+en|ko|I would like a glass of water.|물 한 잔 주세요.
+en|ko|How much does this cost?|이거 얼마예요?
+en|ko|Thank you very much.|정말 감사합니다.
+en|ko|I don't understand.|이해가 안 돼요.
+en|ko|Can you speak more slowly?|좀 더 천천히 말씀해 주시겠어요?
+
+# Korean idioms
+en|ko|It's raining cats and dogs.|비가 억수같이 온다.
+en|ko|Break the ice.|어색한 분위기를 깨다.
+en|ko|The ball is in your court.|이제 당신 차례예요.
+en|ko|Spill the beans.|비밀을 누설하다.
+en|ko|Once in a blue moon.|가뭄에 콩 나듯.
+en|ko|Hit the nail on the head.|정곡을 찌르다.
+en|ko|Piece of cake.|식은 죽 먹기.
+en|ko|Cost an arm and a leg.|엄청난 돈이 들다.
+
+# --- Arabic (RTL) ---
+en|ar|Hello, how are you?|مرحبًا، كيف حالك؟
+en|ar|Good morning!|صباح الخير!
+en|ar|Good evening.|مساء الخير.
+en|ar|What is your name?|ما اسمك؟
+en|ar|My name is Alex.|اسمي أليكس.
+en|ar|Please help me.|من فضلك ساعدني.
+en|ar|Where is the nearest hospital?|أين أقرب مستشفى؟
+en|ar|I would like a glass of water.|أريد كوب ماء من فضلك.
+en|ar|How much does this cost?|كم يكلف هذا؟
+en|ar|Thank you very much.|شكرًا جزيلاً.
+en|ar|I don't understand.|أنا لا أفهم.
+en|ar|Can you speak more slowly?|هل يمكنك التحدث ببطء أكثر؟
+
+# Arabic idioms
+en|ar|It's raining cats and dogs.|إنها تمطر بغزارة شديدة.
+en|ar|Break the ice.|كسر الجليد.
+en|ar|The ball is in your court.|الكرة الآن في ملعبك.
+en|ar|Spill the beans.|يفشي السر.
+en|ar|Once in a blue moon.|مرة كل هجوم.
+en|ar|Hit the nail on the head.|يصيب المسمار على رأسه.
+en|ar|Piece of cake.|أسهل من شرب الماء.
+en|ar|Cost an arm and a leg.|يكلف ثروة.
+
+# --- Hindi ---
+en|hi|Hello, how are you?|नमस्ते, आप कैसे हैं?
+en|hi|Good morning!|सुप्रभात!
+en|hi|Good evening.|शुभ संध्या।
+en|hi|What is your name?|आपका नाम क्या है?
+en|hi|My name is Alex.|मेरा नाम एलेक्स है।
+en|hi|Please help me.|कृपया मेरी मदद करें।
+en|hi|Where is the nearest hospital?|सबसे नज़दीकी अस्पताल कहाँ है?
+en|hi|I would like a glass of water.|मुझे एक गिलास पानी चाहिए।
+en|hi|How much does this cost?|इसकी कीमत कितनी है?
+en|hi|Thank you very much.|बहुत बहुत धन्यवाद।
+en|hi|I don't understand.|मुझे समझ नहीं आया।
+en|hi|Can you speak more slowly?|क्या आप थोड़ा धीरे बोल सकते हैं?
+
+# Hindi idioms
+en|hi|It's raining cats and dogs.|मूसलाधार बारिश हो रही है।
+en|hi|Break the ice.|बातचीत की शुरुआत करना।
+en|hi|The ball is in your court.|अब बारी आपकी है।
+en|hi|Spill the beans.|राज़ खोल देना।
+en|hi|Once in a blue moon.|कभी-कभार।
+en|hi|Hit the nail on the head.|बिल्कुल सही बात कहना।
+en|hi|Piece of cake.|बाएँ हाथ का खेल।
+en|hi|Cost an arm and a leg.|बहुत महंगा पड़ना।
+
+# --- Turkish ---
+en|tr|Hello, how are you?|Merhaba, nasılsın?
+en|tr|Good morning!|Günaydın!
+en|tr|Good evening.|İyi akşamlar.
+en|tr|What is your name?|Adın ne?
+en|tr|My name is Alex.|Benim adım Alex.
+en|tr|Please help me.|Lütfen bana yardım et.
+en|tr|Where is the nearest hospital?|En yakın hastane nerede?
+en|tr|I would like a glass of water.|Bir bardak su istiyorum.
+en|tr|How much does this cost?|Bu ne kadar?
+en|tr|Thank you very much.|Çok teşekkür ederim.
+en|tr|I don't understand.|Anlamıyorum.
+en|tr|Can you speak more slowly?|Daha yavaş konuşabilir misiniz?
+
+# Turkish idioms
+en|tr|It's raining cats and dogs.|Bardaktan boşanırcasına yağmur yağıyor.
+en|tr|Break the ice.|Buzları eritmek.
+en|tr|The ball is in your court.|Top şimdi sende.
+en|tr|Spill the beans.|Baklayı ağzından çıkarmak.
+en|tr|Once in a blue moon.|Kırk yılda bir.
+en|tr|Hit the nail on the head.|Tam üstüne basmak.
+en|tr|Piece of cake.|Çocuk oyuncağı.
+en|tr|Cost an arm and a leg.|Bir servet kaybetmek.
