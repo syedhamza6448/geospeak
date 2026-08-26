@@ -10,7 +10,7 @@ const copyConfirm = document.getElementById('copy-confirm');
 const swapBtn = document.getElementById('swap-btn');
 const historyBtn = document.getElementById('history-btn');
 
-// ── NEW: Detect Language elements ──
+// ── Detect Language elements ──
 const detectBtn = document.getElementById('detect-lang-btn');
 const detectedLangName = document.getElementById('detected-lang-name');
 const sourceLangEl = document.getElementById('source-lang');
@@ -53,6 +53,7 @@ const ERROR_MESSAGES = {
     PIPELINE_ERROR: { headline: 'Pipeline failure', hint: 'An error occurred in the translation backend. Check the Flask console for details.' },
     INTERNAL_ERROR: { headline: 'Internal server error', hint: 'Something unexpected went wrong. Check the Flask console.' },
     NETWORK_ERROR: { headline: 'Network error', hint: 'Could not reach the GeoSpeak server. Make sure Flask is running.' },
+    DETECTION_FAILED: { headline: 'Could not detect language', hint: 'The text was too short or ambiguous to reliably detect. Try a longer sentence.' },
 };
 
 const ALL_STATES = [stateIdle, stateLoading, stateResult, stateError];
@@ -67,7 +68,7 @@ sourceTextEl.addEventListener('input', () => {
     const len = sourceTextEl.value.length;
     charNumEl.textContent = len;
     if (charCounterEl) charCounterEl.classList.toggle('near-limit', len > 900);
-    // Reset detection badge when text changes
+    // Reset detection badge when text changes — stale detection shouldn't linger
     if (detectBtn) detectBtn.classList.remove('has-result');
 });
 
@@ -141,9 +142,11 @@ if (clearHistoryBtn) {
     clearHistoryBtn.addEventListener('click', () => { historyData = []; renderHistory(); });
 }
 
-// ── NEW: Detect Language logic ──
+// ── Detect Language — now calls the real backend detector ──
+// Replaces the old client-side keyword-matching heuristic with a genuine
+// statistical language detector (langdetect) running server-side.
 if (detectBtn) {
-    detectBtn.addEventListener('click', function() {
+    detectBtn.addEventListener('click', async function() {
         const text = sourceTextEl.value.trim();
         if (!text) {
             this.style.borderColor = 'rgba(255,199,0,0.4)';
@@ -151,73 +154,65 @@ if (detectBtn) {
             return;
         }
 
-        const detected = detectLanguage(text);
-        const langName = detected.name;
+        detectBtn.classList.add('detecting');
+        detectBtn.disabled = true;
 
-        // Update source language selector
-        const options = sourceLangEl.options;
-        let found = false;
-        for (let i = 0; i < options.length; i++) {
-            if (options[i].value === detected.code || options[i].text.includes(langName)) {
-                sourceLangEl.selectedIndex = i;
-                found = true;
-                break;
+        try {
+            const response = await fetch('/detect-language', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ text }),
+            });
+            const data = await response.json();
+
+            if (!response.ok) {
+                // Detection failed or language not supported by the UI —
+                // flash red and leave the source selector untouched.
+                console.warn('Language detection issue:', data.error || data.code);
+                detectBtn.style.borderColor = 'rgba(255,80,80,0.5)';
+                setTimeout(() => { detectBtn.style.borderColor = ''; }, 800);
+                return;
             }
-        }
-        if (!found) {
-            const opt = document.createElement('option');
-            opt.value = detected.code;
-            opt.textContent = langName;
-            sourceLangEl.appendChild(opt);
-            sourceLangEl.value = detected.code;
-        }
 
-        // Show detected badge
-        detectedLangName.textContent = langName;
-        detectBtn.classList.add('has-result');
+            const langName = data.language;
 
-        // flash feedback
-        detectBtn.style.borderColor = 'rgba(0,240,255,0.4)';
-        setTimeout(() => { detectBtn.style.borderColor = ''; }, 600);
+            // Update source language selector to match the real detection
+            if (sourceLangEl) {
+                const options = sourceLangEl.options;
+                let found = false;
+                for (let i = 0; i < options.length; i++) {
+                    if (options[i].value === langName) {
+                        sourceLangEl.selectedIndex = i;
+                        found = true;
+                        break;
+                    }
+                }
+                if (!found) {
+                    const opt = document.createElement('option');
+                    opt.value = langName;
+                    opt.textContent = langName;
+                    sourceLangEl.appendChild(opt);
+                    sourceLangEl.value = langName;
+                }
+            }
+
+            // Show detected badge
+            if (detectedLangName) detectedLangName.textContent = langName;
+            detectBtn.classList.add('has-result');
+
+            // flash success feedback
+            detectBtn.style.borderColor = 'rgba(0,240,255,0.4)';
+            setTimeout(() => { detectBtn.style.borderColor = ''; }, 600);
+
+        } catch (err) {
+            console.error('Language detection network error:', err);
+            detectBtn.style.borderColor = 'rgba(255,80,80,0.5)';
+            setTimeout(() => { detectBtn.style.borderColor = ''; }, 800);
+        } finally {
+            detectBtn.classList.remove('detecting');
+            detectBtn.disabled = false;
+        }
     });
-}
-
-// ── NEW: Language detector (client‑side) ──
-function detectLanguage(text) {
-    const lower = text.toLowerCase();
-    const langMap = [
-        { code: 'English', name: 'English', indicators: ['the', 'and', 'for', 'with', 'you', 'this', 'that', 'from', 'have', 'are'] },
-        { code: 'Spanish', name: 'Spanish', indicators: ['el', 'la', 'de', 'que', 'y', 'en', 'un', 'por', 'con', 'no', 'una', 'los', 'las', 'del', 'para'] },
-        { code: 'French', name: 'French', indicators: ['le', 'la', 'de', 'et', 'en', 'un', 'une', 'pour', 'que', 'dans', 'avec', 'est', 'vous', 'qui'] },
-        { code: 'German', name: 'German', indicators: ['der', 'die', 'das', 'und', 'für', 'mit', 'auf', 'von', 'den', 'dem', 'ich', 'du', 'er', 'sie'] },
-        { code: 'Urdu', name: 'Urdu', indicators: ['اور', 'کی', 'کا', 'میں', 'ہے', 'نے', 'کو', 'سے', 'ہیں', 'تھا', 'تھی'] },
-        { code: 'Japanese', name: 'Japanese', indicators: ['の', 'は', 'に', 'を', 'で', 'が', 'と', 'も', 'から', 'まで', 'です', 'ます', 'た'] },
-    ];
-
-    let scores = langMap.map(lang => {
-        let score = 0;
-        // script-specific bonus
-        if (lang.code === 'Japanese' && /[\u3040-\u30FF\u4E00-\u9FFF]/.test(text)) score += 3;
-        if (lang.code === 'Urdu' && /[\u0600-\u06FF]/.test(text)) score += 3;
-        // count indicator words
-        const words = lower.split(/\s+/);
-        let matchCount = 0;
-        for (const word of words) {
-            const clean = word.replace(/[^a-z\u0600-\u06FF\u3040-\u30FF\u4E00-\u9FFF]/g, '');
-            if (lang.indicators.includes(clean)) matchCount++;
-        }
-        score += matchCount * 2;
-        if (matchCount > 3) score += 2;
-        return { ...lang, score };
-    });
-
-    scores.sort((a, b) => b.score - a.score);
-    const top = scores[0];
-
-    if (top.score === 0 || text.replace(/[^a-zA-Z\u0600-\u06FF\u3040-\u30FF\u4E00-\u9FFF]/g, '').trim().length < 3) {
-        return { code: 'English', name: 'English' };
-    }
-    return { code: top.code, name: top.name };
 }
 
 // ── Translation handler (unchanged) ──
@@ -409,4 +404,4 @@ function escapeHTML(str) {
 }
 
 renderHistory();
-console.log('GeoSpeak AI — Self-contained robot avatar active.');
+console.log('GeoSpeak AI — real backend language detection active.');
