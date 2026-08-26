@@ -81,7 +81,7 @@ def test_unsupported_language(client):
     """POST /translate with unsupported language returns 400 with code UNSUPPORTED_LANGUAGE."""
     resp = client.post("/translate", json={
         "text": "Hello",
-        "target_lang": "Italian",
+        "target_lang": "Klingon",
     })
 
     assert resp.status_code == 400
@@ -124,3 +124,15 @@ def test_hf_api_failure(client):
     data = resp.get_json()
     assert "error" in data
     assert data["code"] == "INTERNAL_ERROR"
+
+
+# ---------------------------------------------------------------------------
+# 6. Health check endpoint (for keep-alive & Render monitoring)
+# ---------------------------------------------------------------------------
+def test_health_check(client):
+    """GET /health returns 200 with status ok."""
+    resp = client.get("/health")
+    assert resp.status_code == 200
+    data = resp.get_json()
+    assert data == {"status": "ok"}
+
