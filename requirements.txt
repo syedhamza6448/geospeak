@@ -8,3 +8,4 @@ huggingface_hub
 pytest
 pytest-mock
 langdetect
+gunicorn
