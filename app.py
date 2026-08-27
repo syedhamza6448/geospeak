@@ -21,6 +21,7 @@ Model choice:
 import os
 import time
 import logging
+import threading
 import requests
 import numpy as np
 from flask import Flask, render_template, request, jsonify
@@ -57,6 +58,11 @@ HF_HEADERS = {"Authorization": f"Bearer {HUGGINGFACE_API_KEY}"}
 MAX_RETRIES = 5
 BACKOFF_BASE = 10  # seconds — doubles each retry: 10, 20, 40 …
 
+# Keep-alive settings (for Render / free hosting tier 5-minute self-ping)
+KEEP_ALIVE_INTERVAL = int(os.getenv("KEEP_ALIVE_INTERVAL", "300"))  # 300 seconds = 5 minutes
+KEEP_ALIVE_ENABLED = os.getenv("KEEP_ALIVE_ENABLED", "true").lower() in ("true", "1", "yes")
+_keep_alive_started = False
+
 # Supported target languages (plain-name keys shown in UI)
 # NOTE: keep this in sync with the <option> values in templates/index.html
 SUPPORTED_LANGUAGES = {
@@ -86,10 +92,50 @@ DETECT_CODE_TO_NAME = {
 app = Flask(__name__)
 
 
+# ---------------------------------------------------------------------------
+# Background Keep-Alive Self-Ping (Render Free Tier Keep-Alive)
+# ---------------------------------------------------------------------------
+def _keep_alive_worker():
+    """
+    Background daemon thread that periodically pings the /health endpoint
+    every 5 minutes (300 seconds) to keep free hosting tiers (e.g. Render) awake.
+    """
+    # Short initial delay to let server initialize
+    time.sleep(10)
+    log.info("Keep-alive worker active. Pinging every %ds.", KEEP_ALIVE_INTERVAL)
+
+    while True:
+        # Render automatically sets RENDER_EXTERNAL_URL in production (e.g. https://geospeak.onrender.com)
+        target_url = os.getenv("PING_URL") or os.getenv("RENDER_EXTERNAL_URL")
+        if not target_url:
+            port = os.getenv("PORT", "5000")
+            target_url = f"http://127.0.0.1:{port}"
+
+        target_endpoint = target_url.rstrip("/") + "/health"
+        try:
+            res = requests.get(target_endpoint, timeout=10)
+            log.info("Keep-alive ping sent to %s -> Status: %d", target_endpoint, res.status_code)
+        except Exception as exc:
+            log.warning("Keep-alive ping to %s failed: %s", target_endpoint, exc)
+
+        time.sleep(KEEP_ALIVE_INTERVAL)
+
+
+def start_keep_alive():
+    """Start the keep-alive background worker thread if not already running."""
+    global _keep_alive_started
+    if _keep_alive_started or not KEEP_ALIVE_ENABLED or app.config.get("TESTING"):
+        return
+    _keep_alive_started = True
+    thread = threading.Thread(target=_keep_alive_worker, daemon=True, name="KeepAliveWorker")
+    thread.start()
+
+
 # Build the index when the first request arrives — this guarantees it runs
 # even when Flask's reloader spawns a child process (avoids double-loading).
 @app.before_request
 def ensure_index_built():
+    start_keep_alive()
     if request.path == "/health":
         return
     global faiss_index, embedding_model
@@ -524,5 +570,7 @@ def health():
 # Entry point
 # ---------------------------------------------------------------------------
 if __name__ == "__main__":
+    start_keep_alive()
     build_index()
-    app.run(debug=True)
+    port = int(os.getenv("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=False)
