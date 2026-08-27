@@ -336,3 +336,1118 @@ en|tr|Once in a blue moon.|Kırk yılda bir.
 en|tr|Hit the nail on the head.|Tam üstüne basmak.
 en|tr|Piece of cake.|Çocuk oyuncağı.
 en|tr|Cost an arm and a leg.|Bir servet kaybetmek.
+
+# --- Additional everyday phrases ---
+en|fr|How's it going?|Ça va ?
+en|fr|What are you up to?|Qu'est-ce que tu fais ?
+en|fr|See you later.|À plus tard.
+en|fr|Take care!|Prends soin de toi !
+en|fr|No worries.|Pas de souci.
+en|fr|Sounds good.|Ça marche.
+en|fr|I'm on my way.|J'arrive.
+en|fr|Give me a minute.|Donne-moi une minute.
+en|fr|I'll be right back.|Je reviens tout de suite.
+en|fr|What do you mean?|Qu'est-ce que tu veux dire ?
+en|fr|It depends.|Ça dépend.
+en|fr|I have no idea.|Je n'en ai aucune idée.
+en|fr|That's a good point.|C'est un bon point.
+en|fr|Just kidding.|Je plaisante.
+en|fr|I'm running late.|Je suis en retard.
+en|fr|Keep in touch.|Reste en contact.
+en|fr|Long time no see.|Ça fait longtemps !
+en|fr|Hang in there.|Tiens bon.
+en|fr|Take your time.|Prends ton temps.
+en|fr|I totally agree.|Je suis tout à fait d'accord.
+en|es|How's it going?|¿Cómo va?
+en|es|What are you up to?|¿Qué haces?
+en|es|See you later.|Hasta luego.
+en|es|Take care!|¡Cuídate!
+en|es|No worries.|No te preocupes.
+en|es|Sounds good.|Suena bien.
+en|es|I'm on my way.|Estoy de camino.
+en|es|Give me a minute.|Dame un minuto.
+en|es|I'll be right back.|Ahora vuelvo.
+en|es|What do you mean?|¿Qué quieres decir?
+en|es|It depends.|Depende.
+en|es|I have no idea.|No tengo ni idea.
+en|es|That's a good point.|Es un buen punto.
+en|es|Just kidding.|Es broma.
+en|es|I'm running late.|Voy tarde.
+en|es|Keep in touch.|Mantente en contacto.
+en|es|Long time no see.|¡Cuánto tiempo sin verte!
+en|es|Hang in there.|Aguanta.
+en|es|Take your time.|Tómate tu tiempo.
+en|es|I totally agree.|Estoy totalmente de acuerdo.
+en|de|How's it going?|Wie läuft's?
+en|de|What are you up to?|Was machst du?
+en|de|See you later.|Bis später.
+en|de|Take care!|Pass auf dich auf!
+en|de|No worries.|Kein Problem.
+en|de|Sounds good.|Klingt gut.
+en|de|I'm on my way.|Ich bin unterwegs.
+en|de|Give me a minute.|Gib mir eine Minute.
+en|de|I'll be right back.|Ich bin gleich zurück.
+en|de|What do you mean?|Was meinst du?
+en|de|It depends.|Das kommt darauf an.
+en|de|I have no idea.|Ich habe keine Ahnung.
+en|de|That's a good point.|Das ist ein guter Punkt.
+en|de|Just kidding.|Nur ein Scherz.
+en|de|I'm running late.|Ich bin spät dran.
+en|de|Keep in touch.|Bleib in Kontakt.
+en|de|Long time no see.|Lange nicht gesehen!
+en|de|Hang in there.|Halte durch.
+en|de|Take your time.|Lass dir Zeit.
+en|de|I totally agree.|Da stimme ich völlig zu.
+en|ur|How's it going?|کیا حال ہے؟
+en|ur|What are you up to?|کیا کر رہے ہو؟
+en|ur|See you later.|پھر ملتے ہیں۔
+en|ur|Take care!|اپنا خیال رکھنا!
+en|ur|No worries.|کوئی بات نہیں۔
+en|ur|Sounds good.|اچھا ہے۔
+en|ur|I'm on my way.|میں راستے میں ہوں۔
+en|ur|Give me a minute.|مجھے ایک منٹ دو۔
+en|ur|I'll be right back.|میں ابھی واپس آتا ہوں۔
+en|ur|What do you mean?|آپ کا کیا مطلب ہے؟
+en|ur|It depends.|یہ منحصر ہے۔
+en|ur|I have no idea.|مجھے بالکل نہیں معلوم۔
+en|ur|That's a good point.|یہ اچھی بات ہے۔
+en|ur|Just kidding.|میں مذاق کر رہا ہوں۔
+en|ur|I'm running late.|مجھے دیر ہو رہی ہے۔
+en|ur|Keep in touch.|رابطے میں رہنا۔
+en|ur|Long time no see.|بہت عرصے بعد ملاقات ہوئی!
+en|ur|Hang in there.|ہمت رکھو۔
+en|ur|Take your time.|اپنا وقت لو۔
+en|ur|I totally agree.|میں بالکل متفق ہوں۔
+en|ja|How's it going?|調子はどう？
+en|ja|What are you up to?|何してるの？
+en|ja|See you later.|また後でね。
+en|ja|Take care!|気をつけてね！
+en|ja|No worries.|心配しないで。
+en|ja|Sounds good.|いいね。
+en|ja|I'm on my way.|今向かってるよ。
+en|ja|Give me a minute.|ちょっと待って。
+en|ja|I'll be right back.|すぐ戻るね。
+en|ja|What do you mean?|どういう意味？
+en|ja|It depends.|場合によるよ。
+en|ja|I have no idea.|全然わからない。
+en|ja|That's a good point.|それはいい指摘だね。
+en|ja|Just kidding.|冗談だよ。
+en|ja|I'm running late.|遅れそう。
+en|ja|Keep in touch.|連絡を取り合おう。
+en|ja|Long time no see.|久しぶり！
+en|ja|Hang in there.|頑張って。
+en|ja|Take your time.|ゆっくりでいいよ。
+en|ja|I totally agree.|全く同感です。
+en|it|How's it going?|Come va?
+en|it|What are you up to?|Che fai?
+en|it|See you later.|A dopo.
+en|it|Take care!|Stammi bene!
+en|it|No worries.|Nessun problema.
+en|it|Sounds good.|Va bene.
+en|it|I'm on my way.|Sto arrivando.
+en|it|Give me a minute.|Dammi un minuto.
+en|it|I'll be right back.|Torno subito.
+en|it|What do you mean?|Cosa intendi?
+en|it|It depends.|Dipende.
+en|it|I have no idea.|Non ne ho idea.
+en|it|That's a good point.|È un buon punto.
+en|it|Just kidding.|Scherzo.
+en|it|I'm running late.|Sono in ritardo.
+en|it|Keep in touch.|Restiamo in contatto.
+en|it|Long time no see.|Quanto tempo!
+en|it|Hang in there.|Tieni duro.
+en|it|Take your time.|Fai con calma.
+en|it|I totally agree.|Sono completamente d'accordo.
+en|pt|How's it going?|Como vai?
+en|pt|What are you up to?|O que você está fazendo?
+en|pt|See you later.|Até mais tarde.
+en|pt|Take care!|Cuide-se!
+en|pt|No worries.|Sem problemas.
+en|pt|Sounds good.|Parece bom.
+en|pt|I'm on my way.|Estou a caminho.
+en|pt|Give me a minute.|Me dê um minuto.
+en|pt|I'll be right back.|Já volto.
+en|pt|What do you mean?|O que você quer dizer?
+en|pt|It depends.|Depende.
+en|pt|I have no idea.|Não faço ideia.
+en|pt|That's a good point.|É um bom ponto.
+en|pt|Just kidding.|Estou brincando.
+en|pt|I'm running late.|Estou atrasado.
+en|pt|Keep in touch.|Mantenha contato.
+en|pt|Long time no see.|Quanto tempo!
+en|pt|Hang in there.|Aguente firme.
+en|pt|Take your time.|Não tenha pressa.
+en|pt|I totally agree.|Concordo totalmente.
+en|nl|How's it going?|Hoe gaat het?
+en|nl|What are you up to?|Wat ben je aan het doen?
+en|nl|See you later.|Tot later.
+en|nl|Take care!|Pas goed op jezelf!
+en|nl|No worries.|Geen zorgen.
+en|nl|Sounds good.|Klinkt goed.
+en|nl|I'm on my way.|Ik ben onderweg.
+en|nl|Give me a minute.|Geef me een minuut.
+en|nl|I'll be right back.|Ik ben zo terug.
+en|nl|What do you mean?|Wat bedoel je?
+en|nl|It depends.|Dat hangt ervan af.
+en|nl|I have no idea.|Ik heb geen idee.
+en|nl|That's a good point.|Dat is een goed punt.
+en|nl|Just kidding.|Ik maak maar een grapje.
+en|nl|I'm running late.|Ik ben laat.
+en|nl|Keep in touch.|Houd contact.
+en|nl|Long time no see.|Lang niet gezien!
+en|nl|Hang in there.|Hou vol.
+en|nl|Take your time.|Neem je tijd.
+en|nl|I totally agree.|Daar ben ik het helemaal mee eens.
+en|ru|How's it going?|Как дела?
+en|ru|What are you up to?|Что делаешь?
+en|ru|See you later.|До встречи.
+en|ru|Take care!|Береги себя!
+en|ru|No worries.|Не переживай.
+en|ru|Sounds good.|Звучит хорошо.
+en|ru|I'm on my way.|Я уже в пути.
+en|ru|Give me a minute.|Дай мне минуту.
+en|ru|I'll be right back.|Я сейчас вернусь.
+en|ru|What do you mean?|Что ты имеешь в виду?
+en|ru|It depends.|Зависит от ситуации.
+en|ru|I have no idea.|Понятия не имею.
+en|ru|That's a good point.|Хорошая мысль.
+en|ru|Just kidding.|Я шучу.
+en|ru|I'm running late.|Я опаздываю.
+en|ru|Keep in touch.|Будем на связи.
+en|ru|Long time no see.|Давно не виделись!
+en|ru|Hang in there.|Держись.
+en|ru|Take your time.|Не спеши.
+en|ru|I totally agree.|Я полностью согласен.
+en|zh|How's it going?|最近怎么样？
+en|zh|What are you up to?|你在做什么？
+en|zh|See you later.|待会儿见。
+en|zh|Take care!|保重！
+en|zh|No worries.|别担心。
+en|zh|Sounds good.|听起来不错。
+en|zh|I'm on my way.|我在路上。
+en|zh|Give me a minute.|给我一分钟。
+en|zh|I'll be right back.|我马上回来。
+en|zh|What do you mean?|你是什么意思？
+en|zh|It depends.|看情况。
+en|zh|I have no idea.|我完全不知道。
+en|zh|That's a good point.|说得有道理。
+en|zh|Just kidding.|开玩笑的。
+en|zh|I'm running late.|我要迟到了。
+en|zh|Keep in touch.|保持联系。
+en|zh|Long time no see.|好久不见！
+en|zh|Hang in there.|坚持住。
+en|zh|Take your time.|慢慢来。
+en|zh|I totally agree.|我完全同意。
+en|ko|How's it going?|잘 지내?
+en|ko|What are you up to?|뭐 하고 있어?
+en|ko|See you later.|나중에 봐.
+en|ko|Take care!|잘 지내!
+en|ko|No worries.|걱정하지 마.
+en|ko|Sounds good.|좋아.
+en|ko|I'm on my way.|지금 가는 중이야.
+en|ko|Give me a minute.|잠깐만 기다려 줘.
+en|ko|I'll be right back.|금방 돌아올게.
+en|ko|What do you mean?|무슨 뜻이야?
+en|ko|It depends.|상황에 따라 달라.
+en|ko|I have no idea.|전혀 모르겠어.
+en|ko|That's a good point.|좋은 지적이야.
+en|ko|Just kidding.|농담이야.
+en|ko|I'm running late.|늦을 것 같아.
+en|ko|Keep in touch.|계속 연락하자.
+en|ko|Long time no see.|오랜만이야!
+en|ko|Hang in there.|조금만 더 힘내.
+en|ko|Take your time.|천천히 해.
+en|ko|I totally agree.|전적으로 동의해.
+en|ar|How's it going?|كيف حالك؟
+en|ar|What are you up to?|ماذا تفعل؟
+en|ar|See you later.|أراك لاحقًا.
+en|ar|Take care!|اعتنِ بنفسك!
+en|ar|No worries.|لا تقلق.
+en|ar|Sounds good.|يبدو جيدًا.
+en|ar|I'm on my way.|أنا في الطريق.
+en|ar|Give me a minute.|أعطني دقيقة.
+en|ar|I'll be right back.|سأعود حالًا.
+en|ar|What do you mean?|ماذا تقصد؟
+en|ar|It depends.|هذا يعتمد.
+en|ar|I have no idea.|ليس لدي أي فكرة.
+en|ar|That's a good point.|هذه نقطة جيدة.
+en|ar|Just kidding.|أنا أمزح فقط.
+en|ar|I'm running late.|سأتأخر.
+en|ar|Keep in touch.|ابقَ على تواصل.
+en|ar|Long time no see.|منذ وقت طويل لم نرك!
+en|ar|Hang in there.|تمسّك بالأمل.
+en|ar|Take your time.|خذ وقتك.
+en|ar|I totally agree.|أوافق تمامًا.
+en|hi|How's it going?|कैसे चल रहा है?
+en|hi|What are you up to?|क्या कर रहे हो?
+en|hi|See you later.|बाद में मिलते हैं।
+en|hi|Take care!|अपना ख्याल रखना!
+en|hi|No worries.|कोई बात नहीं।
+en|hi|Sounds good.|अच्छा लगता है।
+en|hi|I'm on my way.|मैं रास्ते में हूँ।
+en|hi|Give me a minute.|मुझे एक मिनट दो।
+en|hi|I'll be right back.|मैं अभी वापस आता हूँ।
+en|hi|What do you mean?|तुम्हारा क्या मतलब है?
+en|hi|It depends.|यह निर्भर करता है।
+en|hi|I have no idea.|मुझे बिल्कुल पता नहीं।
+en|hi|That's a good point.|यह अच्छी बात है।
+en|hi|Just kidding.|मैं मज़ाक कर रहा हूँ।
+en|hi|I'm running late.|मुझे देर हो रही है।
+en|hi|Keep in touch.|संपर्क में रहना।
+en|hi|Long time no see.|बहुत समय बाद मिले!
+en|hi|Hang in there.|हिम्मत रखो।
+en|hi|Take your time.|अपना समय लो।
+en|hi|I totally agree.|मैं पूरी तरह सहमत हूँ।
+en|tr|How's it going?|Nasıl gidiyor?
+en|tr|What are you up to?|Ne yapıyorsun?
+en|tr|See you later.|Sonra görüşürüz.
+en|tr|Take care!|Kendine iyi bak!
+en|tr|No worries.|Sorun değil.
+en|tr|Sounds good.|Kulağa hoş geliyor.
+en|tr|I'm on my way.|Yoldayım.
+en|tr|Give me a minute.|Bana bir dakika ver.
+en|tr|I'll be right back.|Hemen döneceğim.
+en|tr|What do you mean?|Ne demek istiyorsun?
+en|tr|It depends.|Duruma bağlı.
+en|tr|I have no idea.|Hiçbir fikrim yok.
+en|tr|That's a good point.|Bu iyi bir nokta.
+en|tr|Just kidding.|Şaka yapıyorum.
+en|tr|I'm running late.|Geç kalıyorum.
+en|tr|Keep in touch.|İletişimde kalalım.
+en|tr|Long time no see.|Uzun zamandır görüşmedik!
+en|tr|Hang in there.|Dayan.
+en|tr|Take your time.|Acele etme.
+en|tr|I totally agree.|Kesinlikle katılıyorum.
+
+# --- Additional common idioms & expressions ---
+# fr additional idioms
+en|fr|Get the ball rolling.|Mettre les choses en route.
+en|fr|Bite the bullet.|Prendre son courage à deux mains.
+en|fr|A blessing in disguise.|Un mal pour un bien.
+en|fr|Call it a day.|Arrêter pour aujourd'hui.
+en|fr|On the same page.|Être sur la même longueur d'onde.
+en|fr|Go the extra mile.|Faire un effort supplémentaire.
+en|fr|Keep an eye on it.|Garder un œil dessus.
+en|fr|It's up to you.|C'est à toi de décider.
+# es additional idioms
+en|es|Get the ball rolling.|Poner manos a la obra.
+en|es|Bite the bullet.|Morder la bala.
+en|es|A blessing in disguise.|No hay mal que por bien no venga.
+en|es|Call it a day.|Dar por terminado el día.
+en|es|On the same page.|Estar en la misma sintonía.
+en|es|Go the extra mile.|Hacer un esfuerzo adicional.
+en|es|Keep an eye on it.|Echarle un ojo.
+en|es|It's up to you.|Depende de ti.
+# de additional idioms
+en|de|Get the ball rolling.|Die Sache ins Rollen bringen.
+en|de|Bite the bullet.|In den sauren Apfel beißen.
+en|de|A blessing in disguise.|Ein Glück im Unglück.
+en|de|Call it a day.|Feierabend machen.
+en|de|On the same page.|Auf derselben Wellenlänge sein.
+en|de|Go the extra mile.|Sich besonders ins Zeug legen.
+en|de|Keep an eye on it.|Ein Auge darauf haben.
+en|de|It's up to you.|Das liegt bei dir.
+# ur additional idioms
+en|ur|Get the ball rolling.|کام شروع کرنا۔
+en|ur|Bite the bullet.|مشکل کا سامنا کرنا۔
+en|ur|A blessing in disguise.|مصیبت میں رحمت۔
+en|ur|Call it a day.|آج کے لیے کام ختم کرنا۔
+en|ur|On the same page.|ایک ہی بات پر متفق ہونا۔
+en|ur|Go the extra mile.|اضافی کوشش کرنا۔
+en|ur|Keep an eye on it.|اس پر نظر رکھنا۔
+en|ur|It's up to you.|یہ آپ پر منحصر ہے۔
+# ja additional idioms
+en|ja|Get the ball rolling.|物事を始める。
+en|ja|Bite the bullet.|腹をくくる。
+en|ja|A blessing in disguise.|災い転じて福となす。
+en|ja|Call it a day.|今日はここまでにする。
+en|ja|On the same page.|認識を合わせる。
+en|ja|Go the extra mile.|一歩踏み込んで努力する。
+en|ja|Keep an eye on it.|注意して見ておく。
+en|ja|It's up to you.|あなた次第です。
+# it additional idioms
+en|it|Get the ball rolling.|Dare il via alle danze.
+en|it|Bite the bullet.|Stringere i denti.
+en|it|A blessing in disguise.|Non tutto il male viene per nuocere.
+en|it|Call it a day.|Chiudere per oggi.
+en|it|On the same page.|Essere sulla stessa lunghezza d'onda.
+en|it|Go the extra mile.|Fare uno sforzo in più.
+en|it|Keep an eye on it.|Tenere d'occhio.
+en|it|It's up to you.|Dipende da te.
+# pt additional idioms
+en|pt|Get the ball rolling.|Dar início às coisas.
+en|pt|Bite the bullet.|Encarar a situação.
+en|pt|A blessing in disguise.|Há males que vêm para o bem.
+en|pt|Call it a day.|Encerrar por hoje.
+en|pt|On the same page.|Estar na mesma sintonia.
+en|pt|Go the extra mile.|Fazer um esforço a mais.
+en|pt|Keep an eye on it.|Ficar de olho nisso.
+en|pt|It's up to you.|Depende de você.
+# nl additional idioms
+en|nl|Get the ball rolling.|De zaak op gang brengen.
+en|nl|Bite the bullet.|Door de zure appel heen bijten.
+en|nl|A blessing in disguise.|Een geluk bij een ongeluk.
+en|nl|Call it a day.|Er een punt achter zetten voor vandaag.
+en|nl|On the same page.|Op één lijn zitten.
+en|nl|Go the extra mile.|Een stapje extra zetten.
+en|nl|Keep an eye on it.|Het in de gaten houden.
+en|nl|It's up to you.|Dat is aan jou.
+# ru additional idioms
+en|ru|Get the ball rolling.|Запустить дело.
+en|ru|Bite the bullet.|Стиснуть зубы.
+en|ru|A blessing in disguise.|Не было бы счастья, да несчастье помогло.
+en|ru|Call it a day.|Закончить на сегодня.
+en|ru|On the same page.|Быть на одной волне.
+en|ru|Go the extra mile.|Сделать больше необходимого.
+en|ru|Keep an eye on it.|Следить за этим.
+en|ru|It's up to you.|Решать тебе.
+# zh additional idioms
+en|zh|Get the ball rolling.|开始行动。
+en|zh|Bite the bullet.|硬着头皮面对。
+en|zh|A blessing in disguise.|因祸得福。
+en|zh|Call it a day.|今天就到这里。
+en|zh|On the same page.|达成共识。
+en|zh|Go the extra mile.|付出额外努力。
+en|zh|Keep an eye on it.|留意一下。
+en|zh|It's up to you.|由你决定。
+# ko additional idioms
+en|ko|Get the ball rolling.|일을 시작하다.
+en|ko|Bite the bullet.|이를 악물고 견디다.
+en|ko|A blessing in disguise.|전화위복.
+en|ko|Call it a day.|오늘은 여기까지 하다.
+en|ko|On the same page.|같은 생각을 하고 있다.
+en|ko|Go the extra mile.|한 걸음 더 노력하다.
+en|ko|Keep an eye on it.|잘 지켜보다.
+en|ko|It's up to you.|네가 결정해.
+# ar additional idioms
+en|ar|Get the ball rolling.|نبدأ العمل.
+en|ar|Bite the bullet.|يواجه الأمر بشجاعة.
+en|ar|A blessing in disguise.|رب ضارة نافعة.
+en|ar|Call it a day.|ننهي العمل لهذا اليوم.
+en|ar|On the same page.|متفقون في الرأي.
+en|ar|Go the extra mile.|يبذل جهدًا إضافيًا.
+en|ar|Keep an eye on it.|راقبه جيدًا.
+en|ar|It's up to you.|الأمر متروك لك.
+# hi additional idioms
+en|hi|Get the ball rolling.|काम शुरू करना।
+en|hi|Bite the bullet.|मुश्किल का सामना करना।
+en|hi|A blessing in disguise.|आपदा में अवसर।
+en|hi|Call it a day.|आज के लिए काम खत्म करना।
+en|hi|On the same page.|एक ही बात पर सहमत होना।
+en|hi|Go the extra mile.|अतिरिक्त प्रयास करना।
+en|hi|Keep an eye on it.|इस पर नज़र रखना।
+en|hi|It's up to you.|यह आप पर निर्भर है।
+# tr additional idioms
+en|tr|Get the ball rolling.|İşe koyulmak.
+en|tr|Bite the bullet.|Dişini sıkmak.
+en|tr|A blessing in disguise.|Her şerde bir hayır vardır.
+en|tr|Call it a day.|Bugünlük işi bitirmek.
+en|tr|On the same page.|Aynı fikirde olmak.
+en|tr|Go the extra mile.|Ekstra çaba göstermek.
+en|tr|Keep an eye on it.|Göz kulak olmak.
+en|tr|It's up to you.|Sana kalmış.
+
+# --- Reverse entries: translating INTO English (for xx -> English RAG support) ---
+
+# French to English
+fr|en|Bonjour, comment allez-vous ?|Hello, how are you?
+fr|en|Bonjour !|Good morning!
+fr|en|Bonsoir.|Good evening.
+fr|en|Comment vous appelez-vous ?|What is your name?
+fr|en|Je m'appelle Alex.|My name is Alex.
+fr|en|Aidez-moi, s'il vous plaît.|Please help me.
+fr|en|Où est l'hôpital le plus proche ?|Where is the nearest hospital?
+fr|en|Je voudrais un verre d'eau.|I would like a glass of water.
+fr|en|Combien cela coûte-t-il ?|How much does this cost?
+fr|en|Merci beaucoup.|Thank you very much.
+fr|en|Je ne comprends pas.|I don't understand.
+fr|en|Pouvez-vous parler plus lentement ?|Can you speak more slowly?
+fr|en|Il pleut des cordes.|It's raining cats and dogs.
+fr|en|Briser la glace.|Break the ice.
+fr|en|La balle est dans ton camp.|The ball is in your court.
+fr|en|Cracher le morceau.|Spill the beans.
+fr|en|Tous les trente-six du mois.|Once in a blue moon.
+fr|en|Taper dans le mille.|Hit the nail on the head.
+fr|en|Ne pas être dans son assiette.|Under the weather.
+fr|en|C'est du gâteau.|Piece of cake.
+fr|en|Vendre la mèche.|Let the cat out of the bag.
+fr|en|Ça va ?|How's it going?
+fr|en|Qu'est-ce que tu fais ?|What are you up to?
+fr|en|À plus tard.|See you later.
+fr|en|Prends soin de toi !|Take care!
+fr|en|Pas de souci.|No worries.
+fr|en|Ça marche.|Sounds good.
+fr|en|J'arrive.|I'm on my way.
+fr|en|Donne-moi une minute.|Give me a minute.
+fr|en|Je reviens tout de suite.|I'll be right back.
+fr|en|Qu'est-ce que tu veux dire ?|What do you mean?
+fr|en|Ça dépend.|It depends.
+fr|en|Je n'en ai aucune idée.|I have no idea.
+fr|en|C'est un bon point.|That's a good point.
+fr|en|Je plaisante.|Just kidding.
+fr|en|Je suis en retard.|I'm running late.
+fr|en|Reste en contact.|Keep in touch.
+fr|en|Ça fait longtemps !|Long time no see.
+fr|en|Tiens bon.|Hang in there.
+fr|en|Prends ton temps.|Take your time.
+fr|en|Je suis tout à fait d'accord.|I totally agree.
+fr|en|Mettre les choses en route.|Get the ball rolling.
+fr|en|Prendre son courage à deux mains.|Bite the bullet.
+fr|en|Un mal pour un bien.|A blessing in disguise.
+fr|en|Arrêter pour aujourd'hui.|Call it a day.
+fr|en|Être sur la même longueur d'onde.|On the same page.
+fr|en|Faire un effort supplémentaire.|Go the extra mile.
+fr|en|Garder un œil dessus.|Keep an eye on it.
+fr|en|C'est à toi de décider.|It's up to you.
+
+# Spanish to English
+es|en|Hola, ¿cómo estás?|Hello, how are you?
+es|en|¡Buenos días!|Good morning!
+es|en|Buenas noches.|Good evening.
+es|en|¿Cómo te llamas?|What is your name?
+es|en|Me llamo Alex.|My name is Alex.
+es|en|Por favor, ayúdame.|Please help me.
+es|en|¿Dónde está el hospital más cercano?|Where is the nearest hospital?
+es|en|Me gustaría un vaso de agua.|I would like a glass of water.
+es|en|¿Cuánto cuesta esto?|How much does this cost?
+es|en|Muchas gracias.|Thank you very much.
+es|en|No entiendo.|I don't understand.
+es|en|¿Puedes hablar más despacio?|Can you speak more slowly?
+es|en|Está lloviendo a cántaros.|It's raining cats and dogs.
+es|en|Romper el hielo.|Break the ice.
+es|en|La pelota está en tu tejado.|The ball is in your court.
+es|en|Irse de la lengua.|Spill the beans.
+es|en|De higos a brevas.|Once in a blue moon.
+es|en|Dar en el clavo.|Hit the nail on the head.
+es|en|Estar pachucho.|Under the weather.
+es|en|Pan comido.|Piece of cake.
+es|en|Costar un ojo de la cara.|Cost an arm and a leg.
+es|en|¿Cómo va?|How's it going?
+es|en|¿Qué haces?|What are you up to?
+es|en|Hasta luego.|See you later.
+es|en|¡Cuídate!|Take care!
+es|en|No te preocupes.|No worries.
+es|en|Suena bien.|Sounds good.
+es|en|Estoy de camino.|I'm on my way.
+es|en|Dame un minuto.|Give me a minute.
+es|en|Ahora vuelvo.|I'll be right back.
+es|en|¿Qué quieres decir?|What do you mean?
+es|en|Depende.|It depends.
+es|en|No tengo ni idea.|I have no idea.
+es|en|Es un buen punto.|That's a good point.
+es|en|Es broma.|Just kidding.
+es|en|Voy tarde.|I'm running late.
+es|en|Mantente en contacto.|Keep in touch.
+es|en|¡Cuánto tiempo sin verte!|Long time no see.
+es|en|Aguanta.|Hang in there.
+es|en|Tómate tu tiempo.|Take your time.
+es|en|Estoy totalmente de acuerdo.|I totally agree.
+es|en|Poner manos a la obra.|Get the ball rolling.
+es|en|Morder la bala.|Bite the bullet.
+es|en|No hay mal que por bien no venga.|A blessing in disguise.
+es|en|Dar por terminado el día.|Call it a day.
+es|en|Estar en la misma sintonía.|On the same page.
+es|en|Hacer un esfuerzo adicional.|Go the extra mile.
+es|en|Echarle un ojo.|Keep an eye on it.
+es|en|Depende de ti.|It's up to you.
+
+# German to English
+de|en|Hallo, wie geht es Ihnen?|Hello, how are you?
+de|en|Guten Morgen!|Good morning!
+de|en|Guten Abend.|Good evening.
+de|en|Wie heißen Sie?|What is your name?
+de|en|Ich heiße Alex.|My name is Alex.
+de|en|Bitte helfen Sie mir.|Please help me.
+de|en|Wo ist das nächste Krankenhaus?|Where is the nearest hospital?
+de|en|Ich hätte gerne ein Glas Wasser.|I would like a glass of water.
+de|en|Wie viel kostet das?|How much does this cost?
+de|en|Vielen Dank.|Thank you very much.
+de|en|Ich verstehe nicht.|I don't understand.
+de|en|Können Sie bitte langsamer sprechen?|Can you speak more slowly?
+de|en|Es regnet in Strömen.|It's raining cats and dogs.
+de|en|Das Eis brechen.|Break the ice.
+de|en|Der Ball liegt in deinem Feld.|The ball is in your court.
+de|en|Die Katze aus dem Sack lassen.|Spill the beans.
+de|en|Alle Jubeljahre einmal.|Once in a blue moon.
+de|en|Den Nagel auf den Kopf treffen.|Hit the nail on the head.
+de|en|Ein Kinderspiel.|Piece of cake.
+de|en|Ein Vermögen kosten.|Cost an arm and a leg.
+de|en|Wie läuft's?|How's it going?
+de|en|Was machst du?|What are you up to?
+de|en|Bis später.|See you later.
+de|en|Pass auf dich auf!|Take care!
+de|en|Kein Problem.|No worries.
+de|en|Klingt gut.|Sounds good.
+de|en|Ich bin unterwegs.|I'm on my way.
+de|en|Gib mir eine Minute.|Give me a minute.
+de|en|Ich bin gleich zurück.|I'll be right back.
+de|en|Was meinst du?|What do you mean?
+de|en|Das kommt darauf an.|It depends.
+de|en|Ich habe keine Ahnung.|I have no idea.
+de|en|Das ist ein guter Punkt.|That's a good point.
+de|en|Nur ein Scherz.|Just kidding.
+de|en|Ich bin spät dran.|I'm running late.
+de|en|Bleib in Kontakt.|Keep in touch.
+de|en|Lange nicht gesehen!|Long time no see.
+de|en|Halte durch.|Hang in there.
+de|en|Lass dir Zeit.|Take your time.
+de|en|Da stimme ich völlig zu.|I totally agree.
+de|en|Die Sache ins Rollen bringen.|Get the ball rolling.
+de|en|In den sauren Apfel beißen.|Bite the bullet.
+de|en|Ein Glück im Unglück.|A blessing in disguise.
+de|en|Feierabend machen.|Call it a day.
+de|en|Auf derselben Wellenlänge sein.|On the same page.
+de|en|Sich besonders ins Zeug legen.|Go the extra mile.
+de|en|Ein Auge darauf haben.|Keep an eye on it.
+de|en|Das liegt bei dir.|It's up to you.
+
+# Urdu to English
+ur|en|ہیلو، آپ کیسے ہیں؟|Hello, how are you?
+ur|en|صبح بخیر!|Good morning!
+ur|en|شام بخیر۔|Good evening.
+ur|en|آپ کا نام کیا ہے؟|What is your name?
+ur|en|میرا نام ایلکس ہے۔|My name is Alex.
+ur|en|براہ کرم میری مدد کریں۔|Please help me.
+ur|en|قریب ترین ہسپتال کہاں ہے؟|Where is the nearest hospital?
+ur|en|مجھے ایک گلاس پانی چاہیے۔|I would like a glass of water.
+ur|en|اس کی قیمت کتنی ہے؟|How much does this cost?
+ur|en|بہت بہت شکریہ۔|Thank you very much.
+ur|en|مجھے سمجھ نہیں آیا۔|I don't understand.
+ur|en|کیا آپ ذرا آہستہ بول سکتے ہیں؟|Can you speak more slowly?
+ur|en|موسلا دھار بارش ہو رہی ہے۔|It's raining cats and dogs.
+ur|en|بات چیت کا آغاز کرنا۔|Break the ice.
+ur|en|اب آپ کی باری ہے۔|The ball is in your court.
+ur|en|راز فاش کرنا۔|Spill the beans.
+ur|en|بالکل درست بات کہنا۔|Hit the nail on the head.
+ur|en|بائیں ہاتھ کا کھیل۔|Piece of cake.
+ur|en|طبیعت خراب ہونا۔|Under the weather.
+ur|en|بہت مہنگا پڑنا۔|Cost an arm and a leg.
+ur|en|وہیں کے وہیں۔|Back to square one.
+ur|en|کیا حال ہے؟|How's it going?
+ur|en|کیا کر رہے ہو؟|What are you up to?
+ur|en|پھر ملتے ہیں۔|See you later.
+ur|en|اپنا خیال رکھنا!|Take care!
+ur|en|کوئی بات نہیں۔|No worries.
+ur|en|اچھا ہے۔|Sounds good.
+ur|en|میں راستے میں ہوں۔|I'm on my way.
+ur|en|مجھے ایک منٹ دو۔|Give me a minute.
+ur|en|میں ابھی واپس آتا ہوں۔|I'll be right back.
+ur|en|آپ کا کیا مطلب ہے؟|What do you mean?
+ur|en|یہ منحصر ہے۔|It depends.
+ur|en|مجھے بالکل نہیں معلوم۔|I have no idea.
+ur|en|یہ اچھی بات ہے۔|That's a good point.
+ur|en|میں مذاق کر رہا ہوں۔|Just kidding.
+ur|en|مجھے دیر ہو رہی ہے۔|I'm running late.
+ur|en|رابطے میں رہنا۔|Keep in touch.
+ur|en|بہت عرصے بعد ملاقات ہوئی!|Long time no see.
+ur|en|ہمت رکھو۔|Hang in there.
+ur|en|اپنا وقت لو۔|Take your time.
+ur|en|میں بالکل متفق ہوں۔|I totally agree.
+ur|en|کام شروع کرنا۔|Get the ball rolling.
+ur|en|مشکل کا سامنا کرنا۔|Bite the bullet.
+ur|en|مصیبت میں رحمت۔|A blessing in disguise.
+ur|en|آج کے لیے کام ختم کرنا۔|Call it a day.
+ur|en|ایک ہی بات پر متفق ہونا۔|On the same page.
+ur|en|اضافی کوشش کرنا۔|Go the extra mile.
+ur|en|اس پر نظر رکھنا۔|Keep an eye on it.
+ur|en|یہ آپ پر منحصر ہے۔|It's up to you.
+
+# Japanese to English
+ja|en|こんにちは、お元気ですか？|Hello, how are you?
+ja|en|おはようございます！|Good morning!
+ja|en|こんばんは。|Good evening.
+ja|en|お名前は何ですか？|What is your name?
+ja|en|私の名前はアレックスです。|My name is Alex.
+ja|en|助けてください。|Please help me.
+ja|en|一番近い病院はどこですか？|Where is the nearest hospital?
+ja|en|お水を一杯いただけますか。|I would like a glass of water.
+ja|en|これはいくらですか？|How much does this cost?
+ja|en|本当にありがとうございます。|Thank you very much.
+ja|en|わかりません。|I don't understand.
+ja|en|もう少しゆっくり話していただけますか？|Can you speak more slowly?
+ja|en|土砂降りだ。|It's raining cats and dogs.
+ja|en|場を和ませる。|Break the ice.
+ja|en|次はあなたの番です。|The ball is in your court.
+ja|en|秘密を漏らす。|Spill the beans.
+ja|en|図星を指す。|Hit the nail on the head.
+ja|en|朝飯前。|Piece of cake.
+ja|en|体調が優れない。|Under the weather.
+ja|en|非常に高くつく。|Cost an arm and a leg.
+ja|en|調子はどう？|How's it going?
+ja|en|何してるの？|What are you up to?
+ja|en|また後でね。|See you later.
+ja|en|気をつけてね！|Take care!
+ja|en|心配しないで。|No worries.
+ja|en|いいね。|Sounds good.
+ja|en|今向かってるよ。|I'm on my way.
+ja|en|ちょっと待って。|Give me a minute.
+ja|en|すぐ戻るね。|I'll be right back.
+ja|en|どういう意味？|What do you mean?
+ja|en|場合によるよ。|It depends.
+ja|en|全然わからない。|I have no idea.
+ja|en|それはいい指摘だね。|That's a good point.
+ja|en|冗談だよ。|Just kidding.
+ja|en|遅れそう。|I'm running late.
+ja|en|連絡を取り合おう。|Keep in touch.
+ja|en|久しぶり！|Long time no see.
+ja|en|頑張って。|Hang in there.
+ja|en|ゆっくりでいいよ。|Take your time.
+ja|en|全く同感です。|I totally agree.
+ja|en|物事を始める。|Get the ball rolling.
+ja|en|腹をくくる。|Bite the bullet.
+ja|en|災い転じて福となす。|A blessing in disguise.
+ja|en|今日はここまでにする。|Call it a day.
+ja|en|認識を合わせる。|On the same page.
+ja|en|一歩踏み込んで努力する。|Go the extra mile.
+ja|en|注意して見ておく。|Keep an eye on it.
+ja|en|あなた次第です。|It's up to you.
+
+# Italian to English
+it|en|Ciao, come stai?|Hello, how are you?
+it|en|Buongiorno!|Good morning!
+it|en|Buonasera.|Good evening.
+it|en|Come ti chiami?|What is your name?
+it|en|Mi chiamo Alex.|My name is Alex.
+it|en|Per favore, aiutami.|Please help me.
+it|en|Dov'è l'ospedale più vicino?|Where is the nearest hospital?
+it|en|Vorrei un bicchiere d'acqua.|I would like a glass of water.
+it|en|Quanto costa questo?|How much does this cost?
+it|en|Grazie mille.|Thank you very much.
+it|en|Non capisco.|I don't understand.
+it|en|Puoi parlare più lentamente?|Can you speak more slowly?
+it|en|Piove a catinelle.|It's raining cats and dogs.
+it|en|Rompere il ghiaccio.|Break the ice.
+it|en|La palla è nel tuo campo.|The ball is in your court.
+it|en|Vuotare il sacco.|Spill the beans.
+it|en|Ogni morte di papa.|Once in a blue moon.
+it|en|Colpire nel segno.|Hit the nail on the head.
+it|en|Un gioco da ragazzi.|Piece of cake.
+it|en|Costare un occhio della testa.|Cost an arm and a leg.
+it|en|Come va?|How's it going?
+it|en|Che fai?|What are you up to?
+it|en|A dopo.|See you later.
+it|en|Stammi bene!|Take care!
+it|en|Nessun problema.|No worries.
+it|en|Va bene.|Sounds good.
+it|en|Sto arrivando.|I'm on my way.
+it|en|Dammi un minuto.|Give me a minute.
+it|en|Torno subito.|I'll be right back.
+it|en|Cosa intendi?|What do you mean?
+it|en|Dipende.|It depends.
+it|en|Non ne ho idea.|I have no idea.
+it|en|È un buon punto.|That's a good point.
+it|en|Scherzo.|Just kidding.
+it|en|Sono in ritardo.|I'm running late.
+it|en|Restiamo in contatto.|Keep in touch.
+it|en|Quanto tempo!|Long time no see.
+it|en|Tieni duro.|Hang in there.
+it|en|Fai con calma.|Take your time.
+it|en|Sono completamente d'accordo.|I totally agree.
+it|en|Dare il via alle danze.|Get the ball rolling.
+it|en|Stringere i denti.|Bite the bullet.
+it|en|Non tutto il male viene per nuocere.|A blessing in disguise.
+it|en|Chiudere per oggi.|Call it a day.
+it|en|Essere sulla stessa lunghezza d'onda.|On the same page.
+it|en|Fare uno sforzo in più.|Go the extra mile.
+it|en|Tenere d'occhio.|Keep an eye on it.
+it|en|Dipende da te.|It's up to you.
+
+# Portuguese to English
+pt|en|Olá, como você está?|Hello, how are you?
+pt|en|Bom dia!|Good morning!
+pt|en|Boa noite.|Good evening.
+pt|en|Qual é o seu nome?|What is your name?
+pt|en|Meu nome é Alex.|My name is Alex.
+pt|en|Por favor, me ajude.|Please help me.
+pt|en|Onde fica o hospital mais próximo?|Where is the nearest hospital?
+pt|en|Eu gostaria de um copo de água.|I would like a glass of water.
+pt|en|Quanto custa isso?|How much does this cost?
+pt|en|Muito obrigado.|Thank you very much.
+pt|en|Eu não entendo.|I don't understand.
+pt|en|Você pode falar mais devagar?|Can you speak more slowly?
+pt|en|Está chovendo canivetes.|It's raining cats and dogs.
+pt|en|Quebrar o gelo.|Break the ice.
+pt|en|A bola está com você.|The ball is in your court.
+pt|en|Deixar escapar o gato.|Spill the beans.
+pt|en|Once em uma lua azul... de vez em nunca.|Once in a blue moon.
+pt|en|Acertar na mosca.|Hit the nail on the head.
+pt|en|Moleza.|Piece of cake.
+pt|en|Custar os olhos da cara.|Cost an arm and a leg.
+pt|en|Como vai?|How's it going?
+pt|en|O que você está fazendo?|What are you up to?
+pt|en|Até mais tarde.|See you later.
+pt|en|Cuide-se!|Take care!
+pt|en|Sem problemas.|No worries.
+pt|en|Parece bom.|Sounds good.
+pt|en|Estou a caminho.|I'm on my way.
+pt|en|Me dê um minuto.|Give me a minute.
+pt|en|Já volto.|I'll be right back.
+pt|en|O que você quer dizer?|What do you mean?
+pt|en|Depende.|It depends.
+pt|en|Não faço ideia.|I have no idea.
+pt|en|É um bom ponto.|That's a good point.
+pt|en|Estou brincando.|Just kidding.
+pt|en|Estou atrasado.|I'm running late.
+pt|en|Mantenha contato.|Keep in touch.
+pt|en|Quanto tempo!|Long time no see.
+pt|en|Aguente firme.|Hang in there.
+pt|en|Não tenha pressa.|Take your time.
+pt|en|Concordo totalmente.|I totally agree.
+pt|en|Dar início às coisas.|Get the ball rolling.
+pt|en|Encarar a situação.|Bite the bullet.
+pt|en|Há males que vêm para o bem.|A blessing in disguise.
+pt|en|Encerrar por hoje.|Call it a day.
+pt|en|Estar na mesma sintonia.|On the same page.
+pt|en|Fazer um esforço a mais.|Go the extra mile.
+pt|en|Ficar de olho nisso.|Keep an eye on it.
+pt|en|Depende de você.|It's up to you.
+
+# Dutch to English
+nl|en|Hallo, hoe gaat het met je?|Hello, how are you?
+nl|en|Goedemorgen!|Good morning!
+nl|en|Goedenavond.|Good evening.
+nl|en|Hoe heet je?|What is your name?
+nl|en|Ik heet Alex.|My name is Alex.
+nl|en|Help me alsjeblieft.|Please help me.
+nl|en|Waar is het dichtstbijzijnde ziekenhuis?|Where is the nearest hospital?
+nl|en|Ik wil graag een glas water.|I would like a glass of water.
+nl|en|Hoeveel kost dit?|How much does this cost?
+nl|en|Heel erg bedankt.|Thank you very much.
+nl|en|Ik begrijp het niet.|I don't understand.
+nl|en|Kun je langzamer praten?|Can you speak more slowly?
+nl|en|Het regent pijpenstelen.|It's raining cats and dogs.
+nl|en|Het ijs breken.|Break the ice.
+nl|en|De bal ligt bij jou.|The ball is in your court.
+nl|en|Uit de school klappen.|Spill the beans.
+nl|en|Eens in de tijd dat de kraaien wit zien.|Once in a blue moon.
+nl|en|De spijker op zijn kop slaan.|Hit the nail on the head.
+nl|en|Een fluitje van een cent.|Piece of cake.
+nl|en|Een fortuin kosten.|Cost an arm and a leg.
+nl|en|Hoe gaat het?|How's it going?
+nl|en|Wat ben je aan het doen?|What are you up to?
+nl|en|Tot later.|See you later.
+nl|en|Pas goed op jezelf!|Take care!
+nl|en|Geen zorgen.|No worries.
+nl|en|Klinkt goed.|Sounds good.
+nl|en|Ik ben onderweg.|I'm on my way.
+nl|en|Geef me een minuut.|Give me a minute.
+nl|en|Ik ben zo terug.|I'll be right back.
+nl|en|Wat bedoel je?|What do you mean?
+nl|en|Dat hangt ervan af.|It depends.
+nl|en|Ik heb geen idee.|I have no idea.
+nl|en|Dat is een goed punt.|That's a good point.
+nl|en|Ik maak maar een grapje.|Just kidding.
+nl|en|Ik ben laat.|I'm running late.
+nl|en|Houd contact.|Keep in touch.
+nl|en|Lang niet gezien!|Long time no see.
+nl|en|Hou vol.|Hang in there.
+nl|en|Neem je tijd.|Take your time.
+nl|en|Daar ben ik het helemaal mee eens.|I totally agree.
+nl|en|De zaak op gang brengen.|Get the ball rolling.
+nl|en|Door de zure appel heen bijten.|Bite the bullet.
+nl|en|Een geluk bij een ongeluk.|A blessing in disguise.
+nl|en|Er een punt achter zetten voor vandaag.|Call it a day.
+nl|en|Op één lijn zitten.|On the same page.
+nl|en|Een stapje extra zetten.|Go the extra mile.
+nl|en|Het in de gaten houden.|Keep an eye on it.
+nl|en|Dat is aan jou.|It's up to you.
+
+# Russian to English
+ru|en|Привет, как ты?|Hello, how are you?
+ru|en|Доброе утро!|Good morning!
+ru|en|Добрый вечер.|Good evening.
+ru|en|Как тебя зовут?|What is your name?
+ru|en|Меня зовут Алекс.|My name is Alex.
+ru|en|Пожалуйста, помоги мне.|Please help me.
+ru|en|Где ближайшая больница?|Where is the nearest hospital?
+ru|en|Я хотел бы стакан воды.|I would like a glass of water.
+ru|en|Сколько это стоит?|How much does this cost?
+ru|en|Большое спасибо.|Thank you very much.
+ru|en|Я не понимаю.|I don't understand.
+ru|en|Вы можете говорить медленнее?|Can you speak more slowly?
+ru|en|Льёт как из ведра.|It's raining cats and dogs.
+ru|en|Растопить лёд.|Break the ice.
+ru|en|Мяч на твоей стороне.|The ball is in your court.
+ru|en|Проболтаться.|Spill the beans.
+ru|en|Раз в сто лет.|Once in a blue moon.
+ru|en|Попасть в самую точку.|Hit the nail on the head.
+ru|en|Проще пареной репы.|Piece of cake.
+ru|en|Влететь в копеечку.|Cost an arm and a leg.
+ru|en|Как дела?|How's it going?
+ru|en|Что делаешь?|What are you up to?
+ru|en|До встречи.|See you later.
+ru|en|Береги себя!|Take care!
+ru|en|Не переживай.|No worries.
+ru|en|Звучит хорошо.|Sounds good.
+ru|en|Я уже в пути.|I'm on my way.
+ru|en|Дай мне минуту.|Give me a minute.
+ru|en|Я сейчас вернусь.|I'll be right back.
+ru|en|Что ты имеешь в виду?|What do you mean?
+ru|en|Зависит от ситуации.|It depends.
+ru|en|Понятия не имею.|I have no idea.
+ru|en|Хорошая мысль.|That's a good point.
+ru|en|Я шучу.|Just kidding.
+ru|en|Я опаздываю.|I'm running late.
+ru|en|Будем на связи.|Keep in touch.
+ru|en|Давно не виделись!|Long time no see.
+ru|en|Держись.|Hang in there.
+ru|en|Не спеши.|Take your time.
+ru|en|Я полностью согласен.|I totally agree.
+ru|en|Запустить дело.|Get the ball rolling.
+ru|en|Стиснуть зубы.|Bite the bullet.
+ru|en|Не было бы счастья, да несчастье помогло.|A blessing in disguise.
+ru|en|Закончить на сегодня.|Call it a day.
+ru|en|Быть на одной волне.|On the same page.
+ru|en|Сделать больше необходимого.|Go the extra mile.
+ru|en|Следить за этим.|Keep an eye on it.
+ru|en|Решать тебе.|It's up to you.
+
+# Chinese to English
+zh|en|你好，你好吗？|Hello, how are you?
+zh|en|早上好！|Good morning!
+zh|en|晚上好。|Good evening.
+zh|en|你叫什么名字？|What is your name?
+zh|en|我叫亚历克斯。|My name is Alex.
+zh|en|请帮帮我。|Please help me.
+zh|en|最近的医院在哪里？|Where is the nearest hospital?
+zh|en|我想要一杯水。|I would like a glass of water.
+zh|en|这个多少钱？|How much does this cost?
+zh|en|非常感谢。|Thank you very much.
+zh|en|我不明白。|I don't understand.
+zh|en|你能说慢一点吗？|Can you speak more slowly?
+zh|en|倾盆大雨。|It's raining cats and dogs.
+zh|en|打破僵局。|Break the ice.
+zh|en|球在你那边了。|The ball is in your court.
+zh|en|泄露秘密。|Spill the beans.
+zh|en|千载难逢。|Once in a blue moon.
+zh|en|一针见血。|Hit the nail on the head.
+zh|en|小菜一碟。|Piece of cake.
+zh|en|花费一大笔钱。|Cost an arm and a leg.
+zh|en|最近怎么样？|How's it going?
+zh|en|你在做什么？|What are you up to?
+zh|en|待会儿见。|See you later.
+zh|en|保重！|Take care!
+zh|en|别担心。|No worries.
+zh|en|听起来不错。|Sounds good.
+zh|en|我在路上。|I'm on my way.
+zh|en|给我一分钟。|Give me a minute.
+zh|en|我马上回来。|I'll be right back.
+zh|en|你是什么意思？|What do you mean?
+zh|en|看情况。|It depends.
+zh|en|我完全不知道。|I have no idea.
+zh|en|说得有道理。|That's a good point.
+zh|en|开玩笑的。|Just kidding.
+zh|en|我要迟到了。|I'm running late.
+zh|en|保持联系。|Keep in touch.
+zh|en|好久不见！|Long time no see.
+zh|en|坚持住。|Hang in there.
+zh|en|慢慢来。|Take your time.
+zh|en|我完全同意。|I totally agree.
+zh|en|开始行动。|Get the ball rolling.
+zh|en|硬着头皮面对。|Bite the bullet.
+zh|en|因祸得福。|A blessing in disguise.
+zh|en|今天就到这里。|Call it a day.
+zh|en|达成共识。|On the same page.
+zh|en|付出额外努力。|Go the extra mile.
+zh|en|留意一下。|Keep an eye on it.
+zh|en|由你决定。|It's up to you.
+
+# Korean to English
+ko|en|안녕하세요, 어떻게 지내세요?|Hello, how are you?
+ko|en|좋은 아침입니다!|Good morning!
+ko|en|좋은 저녁입니다.|Good evening.
+ko|en|이름이 뭐예요?|What is your name?
+ko|en|제 이름은 알렉스입니다.|My name is Alex.
+ko|en|도와주세요.|Please help me.
+ko|en|가장 가까운 병원이 어디인가요?|Where is the nearest hospital?
+ko|en|물 한 잔 주세요.|I would like a glass of water.
+ko|en|이거 얼마예요?|How much does this cost?
+ko|en|정말 감사합니다.|Thank you very much.
+ko|en|이해가 안 돼요.|I don't understand.
+ko|en|좀 더 천천히 말씀해 주시겠어요?|Can you speak more slowly?
+ko|en|비가 억수같이 온다.|It's raining cats and dogs.
+ko|en|어색한 분위기를 깨다.|Break the ice.
+ko|en|이제 당신 차례예요.|The ball is in your court.
+ko|en|비밀을 누설하다.|Spill the beans.
+ko|en|가뭄에 콩 나듯.|Once in a blue moon.
+ko|en|정곡을 찌르다.|Hit the nail on the head.
+ko|en|식은 죽 먹기.|Piece of cake.
+ko|en|엄청난 돈이 들다.|Cost an arm and a leg.
+ko|en|잘 지내?|How's it going?
+ko|en|뭐 하고 있어?|What are you up to?
+ko|en|나중에 봐.|See you later.
+ko|en|잘 지내!|Take care!
+ko|en|걱정하지 마.|No worries.
+ko|en|좋아.|Sounds good.
+ko|en|지금 가는 중이야.|I'm on my way.
+ko|en|잠깐만 기다려 줘.|Give me a minute.
+ko|en|금방 돌아올게.|I'll be right back.
+ko|en|무슨 뜻이야?|What do you mean?
+ko|en|상황에 따라 달라.|It depends.
+ko|en|전혀 모르겠어.|I have no idea.
+ko|en|좋은 지적이야.|That's a good point.
+ko|en|농담이야.|Just kidding.
+ko|en|늦을 것 같아.|I'm running late.
+ko|en|계속 연락하자.|Keep in touch.
+ko|en|오랜만이야!|Long time no see.
+ko|en|조금만 더 힘내.|Hang in there.
+ko|en|천천히 해.|Take your time.
+ko|en|전적으로 동의해.|I totally agree.
+ko|en|일을 시작하다.|Get the ball rolling.
+ko|en|이를 악물고 견디다.|Bite the bullet.
+ko|en|전화위복.|A blessing in disguise.
+ko|en|오늘은 여기까지 하다.|Call it a day.
+ko|en|같은 생각을 하고 있다.|On the same page.
+ko|en|한 걸음 더 노력하다.|Go the extra mile.
+ko|en|잘 지켜보다.|Keep an eye on it.
+ko|en|네가 결정해.|It's up to you.
+
+# Arabic to English
+ar|en|مرحبًا، كيف حالك؟|Hello, how are you?
+ar|en|صباح الخير!|Good morning!
+ar|en|مساء الخير.|Good evening.
+ar|en|ما اسمك؟|What is your name?
+ar|en|اسمي أليكس.|My name is Alex.
+ar|en|من فضلك ساعدني.|Please help me.
+ar|en|أين أقرب مستشفى؟|Where is the nearest hospital?
+ar|en|أريد كوب ماء من فضلك.|I would like a glass of water.
+ar|en|كم يكلف هذا؟|How much does this cost?
+ar|en|شكرًا جزيلاً.|Thank you very much.
+ar|en|أنا لا أفهم.|I don't understand.
+ar|en|هل يمكنك التحدث ببطء أكثر؟|Can you speak more slowly?
+ar|en|إنها تمطر بغزارة شديدة.|It's raining cats and dogs.
+ar|en|كسر الجليد.|Break the ice.
+ar|en|الكرة الآن في ملعبك.|The ball is in your court.
+ar|en|يفشي السر.|Spill the beans.
+ar|en|مرة كل هجوم.|Once in a blue moon.
+ar|en|يصيب المسمار على رأسه.|Hit the nail on the head.
+ar|en|أسهل من شرب الماء.|Piece of cake.
+ar|en|يكلف ثروة.|Cost an arm and a leg.
+ar|en|كيف حالك؟|How's it going?
+ar|en|ماذا تفعل؟|What are you up to?
+ar|en|أراك لاحقًا.|See you later.
+ar|en|اعتنِ بنفسك!|Take care!
+ar|en|لا تقلق.|No worries.
+ar|en|يبدو جيدًا.|Sounds good.
+ar|en|أنا في الطريق.|I'm on my way.
+ar|en|أعطني دقيقة.|Give me a minute.
+ar|en|سأعود حالًا.|I'll be right back.
+ar|en|ماذا تقصد؟|What do you mean?
+ar|en|هذا يعتمد.|It depends.
+ar|en|ليس لدي أي فكرة.|I have no idea.
+ar|en|هذه نقطة جيدة.|That's a good point.
+ar|en|أنا أمزح فقط.|Just kidding.
+ar|en|سأتأخر.|I'm running late.
+ar|en|ابقَ على تواصل.|Keep in touch.
+ar|en|منذ وقت طويل لم نرك!|Long time no see.
+ar|en|تمسّك بالأمل.|Hang in there.
+ar|en|خذ وقتك.|Take your time.
+ar|en|أوافق تمامًا.|I totally agree.
+ar|en|نبدأ العمل.|Get the ball rolling.
+ar|en|يواجه الأمر بشجاعة.|Bite the bullet.
+ar|en|رب ضارة نافعة.|A blessing in disguise.
+ar|en|ننهي العمل لهذا اليوم.|Call it a day.
+ar|en|متفقون في الرأي.|On the same page.
+ar|en|يبذل جهدًا إضافيًا.|Go the extra mile.
+ar|en|راقبه جيدًا.|Keep an eye on it.
+ar|en|الأمر متروك لك.|It's up to you.
+
+# Hindi to English
+hi|en|नमस्ते, आप कैसे हैं?|Hello, how are you?
+hi|en|सुप्रभात!|Good morning!
+hi|en|शुभ संध्या।|Good evening.
+hi|en|आपका नाम क्या है?|What is your name?
+hi|en|मेरा नाम एलेक्स है।|My name is Alex.
+hi|en|कृपया मेरी मदद करें।|Please help me.
+hi|en|सबसे नज़दीकी अस्पताल कहाँ है?|Where is the nearest hospital?
+hi|en|मुझे एक गिलास पानी चाहिए।|I would like a glass of water.
+hi|en|इसकी कीमत कितनी है?|How much does this cost?
+hi|en|बहुत बहुत धन्यवाद।|Thank you very much.
+hi|en|मुझे समझ नहीं आया।|I don't understand.
+hi|en|क्या आप थोड़ा धीरे बोल सकते हैं?|Can you speak more slowly?
+hi|en|मूसलाधार बारिश हो रही है।|It's raining cats and dogs.
+hi|en|बातचीत की शुरुआत करना।|Break the ice.
+hi|en|अब बारी आपकी है।|The ball is in your court.
+hi|en|राज़ खोल देना।|Spill the beans.
+hi|en|कभी-कभार।|Once in a blue moon.
+hi|en|बिल्कुल सही बात कहना।|Hit the nail on the head.
+hi|en|बाएँ हाथ का खेल।|Piece of cake.
+hi|en|बहुत महंगा पड़ना।|Cost an arm and a leg.
+hi|en|कैसे चल रहा है?|How's it going?
+hi|en|क्या कर रहे हो?|What are you up to?
+hi|en|बाद में मिलते हैं।|See you later.
+hi|en|अपना ख्याल रखना!|Take care!
+hi|en|कोई बात नहीं।|No worries.
+hi|en|अच्छा लगता है।|Sounds good.
+hi|en|मैं रास्ते में हूँ।|I'm on my way.
+hi|en|मुझे एक मिनट दो।|Give me a minute.
+hi|en|मैं अभी वापस आता हूँ।|I'll be right back.
+hi|en|तुम्हारा क्या मतलब है?|What do you mean?
+hi|en|यह निर्भर करता है।|It depends.
+hi|en|मुझे बिल्कुल पता नहीं।|I have no idea.
+hi|en|यह अच्छी बात है।|That's a good point.
+hi|en|मैं मज़ाक कर रहा हूँ।|Just kidding.
+hi|en|मुझे देर हो रही है।|I'm running late.
+hi|en|संपर्क में रहना।|Keep in touch.
+hi|en|बहुत समय बाद मिले!|Long time no see.
+hi|en|हिम्मत रखो।|Hang in there.
+hi|en|अपना समय लो।|Take your time.
+hi|en|मैं पूरी तरह सहमत हूँ।|I totally agree.
+hi|en|काम शुरू करना।|Get the ball rolling.
+hi|en|मुश्किल का सामना करना।|Bite the bullet.
+hi|en|आपदा में अवसर।|A blessing in disguise.
+hi|en|आज के लिए काम खत्म करना।|Call it a day.
+hi|en|एक ही बात पर सहमत होना।|On the same page.
+hi|en|अतिरिक्त प्रयास करना।|Go the extra mile.
+hi|en|इस पर नज़र रखना।|Keep an eye on it.
+hi|en|यह आप पर निर्भर है।|It's up to you.
+
+# Turkish to English
+tr|en|Merhaba, nasılsın?|Hello, how are you?
+tr|en|Günaydın!|Good morning!
+tr|en|İyi akşamlar.|Good evening.
+tr|en|Adın ne?|What is your name?
+tr|en|Benim adım Alex.|My name is Alex.
+tr|en|Lütfen bana yardım et.|Please help me.
+tr|en|En yakın hastane nerede?|Where is the nearest hospital?
+tr|en|Bir bardak su istiyorum.|I would like a glass of water.
+tr|en|Bu ne kadar?|How much does this cost?
+tr|en|Çok teşekkür ederim.|Thank you very much.
+tr|en|Anlamıyorum.|I don't understand.
+tr|en|Daha yavaş konuşabilir misiniz?|Can you speak more slowly?
+tr|en|Bardaktan boşanırcasına yağmur yağıyor.|It's raining cats and dogs.
+tr|en|Buzları eritmek.|Break the ice.
+tr|en|Top şimdi sende.|The ball is in your court.
+tr|en|Baklayı ağzından çıkarmak.|Spill the beans.
+tr|en|Kırk yılda bir.|Once in a blue moon.
+tr|en|Tam üstüne basmak.|Hit the nail on the head.
+tr|en|Çocuk oyuncağı.|Piece of cake.
+tr|en|Bir servet kaybetmek.|Cost an arm and a leg.
+tr|en|Nasıl gidiyor?|How's it going?
+tr|en|Ne yapıyorsun?|What are you up to?
+tr|en|Sonra görüşürüz.|See you later.
+tr|en|Kendine iyi bak!|Take care!
+tr|en|Sorun değil.|No worries.
+tr|en|Kulağa hoş geliyor.|Sounds good.
+tr|en|Yoldayım.|I'm on my way.
+tr|en|Bana bir dakika ver.|Give me a minute.
+tr|en|Hemen döneceğim.|I'll be right back.
+tr|en|Ne demek istiyorsun?|What do you mean?
+tr|en|Duruma bağlı.|It depends.
+tr|en|Hiçbir fikrim yok.|I have no idea.
+tr|en|Bu iyi bir nokta.|That's a good point.
+tr|en|Şaka yapıyorum.|Just kidding.
+tr|en|Geç kalıyorum.|I'm running late.
+tr|en|İletişimde kalalım.|Keep in touch.
+tr|en|Uzun zamandır görüşmedik!|Long time no see.
+tr|en|Dayan.|Hang in there.
+tr|en|Acele etme.|Take your time.
+tr|en|Kesinlikle katılıyorum.|I totally agree.
+tr|en|İşe koyulmak.|Get the ball rolling.
+tr|en|Dişini sıkmak.|Bite the bullet.
+tr|en|Her şerde bir hayır vardır.|A blessing in disguise.
+tr|en|Bugünlük işi bitirmek.|Call it a day.
+tr|en|Aynı fikirde olmak.|On the same page.
+tr|en|Ekstra çaba göstermek.|Go the extra mile.
+tr|en|Göz kulak olmak.|Keep an eye on it.
+tr|en|Sana kalmış.|It's up to you.

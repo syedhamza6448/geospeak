@@ -1696,5 +1696,6407 @@
     "target_lang": "tr",
     "source_text": "Cost an arm and a leg.",
     "target_text": "Bir servet kaybetmek."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "How's it going?",
+    "target_text": "Ça va ?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "What are you up to?",
+    "target_text": "Qu'est-ce que tu fais ?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "See you later.",
+    "target_text": "À plus tard."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "Take care!",
+    "target_text": "Prends soin de toi !"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "No worries.",
+    "target_text": "Pas de souci."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "Sounds good.",
+    "target_text": "Ça marche."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "I'm on my way.",
+    "target_text": "J'arrive."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "Give me a minute.",
+    "target_text": "Donne-moi une minute."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "I'll be right back.",
+    "target_text": "Je reviens tout de suite."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "What do you mean?",
+    "target_text": "Qu'est-ce que tu veux dire ?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "It depends.",
+    "target_text": "Ça dépend."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "I have no idea.",
+    "target_text": "Je n'en ai aucune idée."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "That's a good point.",
+    "target_text": "C'est un bon point."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "Just kidding.",
+    "target_text": "Je plaisante."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "I'm running late.",
+    "target_text": "Je suis en retard."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "Keep in touch.",
+    "target_text": "Reste en contact."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "Long time no see.",
+    "target_text": "Ça fait longtemps !"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "Hang in there.",
+    "target_text": "Tiens bon."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "Take your time.",
+    "target_text": "Prends ton temps."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "I totally agree.",
+    "target_text": "Je suis tout à fait d'accord."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "How's it going?",
+    "target_text": "¿Cómo va?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "What are you up to?",
+    "target_text": "¿Qué haces?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "See you later.",
+    "target_text": "Hasta luego."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "Take care!",
+    "target_text": "¡Cuídate!"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "No worries.",
+    "target_text": "No te preocupes."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "Sounds good.",
+    "target_text": "Suena bien."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "I'm on my way.",
+    "target_text": "Estoy de camino."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "Give me a minute.",
+    "target_text": "Dame un minuto."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "I'll be right back.",
+    "target_text": "Ahora vuelvo."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "What do you mean?",
+    "target_text": "¿Qué quieres decir?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "It depends.",
+    "target_text": "Depende."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "I have no idea.",
+    "target_text": "No tengo ni idea."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "That's a good point.",
+    "target_text": "Es un buen punto."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "Just kidding.",
+    "target_text": "Es broma."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "I'm running late.",
+    "target_text": "Voy tarde."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "Keep in touch.",
+    "target_text": "Mantente en contacto."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "Long time no see.",
+    "target_text": "¡Cuánto tiempo sin verte!"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "Hang in there.",
+    "target_text": "Aguanta."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "Take your time.",
+    "target_text": "Tómate tu tiempo."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "I totally agree.",
+    "target_text": "Estoy totalmente de acuerdo."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "How's it going?",
+    "target_text": "Wie läuft's?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "What are you up to?",
+    "target_text": "Was machst du?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "See you later.",
+    "target_text": "Bis später."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "Take care!",
+    "target_text": "Pass auf dich auf!"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "No worries.",
+    "target_text": "Kein Problem."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "Sounds good.",
+    "target_text": "Klingt gut."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "I'm on my way.",
+    "target_text": "Ich bin unterwegs."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "Give me a minute.",
+    "target_text": "Gib mir eine Minute."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "I'll be right back.",
+    "target_text": "Ich bin gleich zurück."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "What do you mean?",
+    "target_text": "Was meinst du?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "It depends.",
+    "target_text": "Das kommt darauf an."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "I have no idea.",
+    "target_text": "Ich habe keine Ahnung."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "That's a good point.",
+    "target_text": "Das ist ein guter Punkt."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "Just kidding.",
+    "target_text": "Nur ein Scherz."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "I'm running late.",
+    "target_text": "Ich bin spät dran."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "Keep in touch.",
+    "target_text": "Bleib in Kontakt."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "Long time no see.",
+    "target_text": "Lange nicht gesehen!"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "Hang in there.",
+    "target_text": "Halte durch."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "Take your time.",
+    "target_text": "Lass dir Zeit."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "I totally agree.",
+    "target_text": "Da stimme ich völlig zu."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "How's it going?",
+    "target_text": "کیا حال ہے؟"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "What are you up to?",
+    "target_text": "کیا کر رہے ہو؟"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "See you later.",
+    "target_text": "پھر ملتے ہیں۔"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "Take care!",
+    "target_text": "اپنا خیال رکھنا!"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "No worries.",
+    "target_text": "کوئی بات نہیں۔"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "Sounds good.",
+    "target_text": "اچھا ہے۔"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "I'm on my way.",
+    "target_text": "میں راستے میں ہوں۔"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "Give me a minute.",
+    "target_text": "مجھے ایک منٹ دو۔"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "I'll be right back.",
+    "target_text": "میں ابھی واپس آتا ہوں۔"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "What do you mean?",
+    "target_text": "آپ کا کیا مطلب ہے؟"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "It depends.",
+    "target_text": "یہ منحصر ہے۔"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "I have no idea.",
+    "target_text": "مجھے بالکل نہیں معلوم۔"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "That's a good point.",
+    "target_text": "یہ اچھی بات ہے۔"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "Just kidding.",
+    "target_text": "میں مذاق کر رہا ہوں۔"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "I'm running late.",
+    "target_text": "مجھے دیر ہو رہی ہے۔"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "Keep in touch.",
+    "target_text": "رابطے میں رہنا۔"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "Long time no see.",
+    "target_text": "بہت عرصے بعد ملاقات ہوئی!"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "Hang in there.",
+    "target_text": "ہمت رکھو۔"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "Take your time.",
+    "target_text": "اپنا وقت لو۔"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "I totally agree.",
+    "target_text": "میں بالکل متفق ہوں۔"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "How's it going?",
+    "target_text": "調子はどう？"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "What are you up to?",
+    "target_text": "何してるの？"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "See you later.",
+    "target_text": "また後でね。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "Take care!",
+    "target_text": "気をつけてね！"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "No worries.",
+    "target_text": "心配しないで。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "Sounds good.",
+    "target_text": "いいね。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "I'm on my way.",
+    "target_text": "今向かってるよ。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "Give me a minute.",
+    "target_text": "ちょっと待って。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "I'll be right back.",
+    "target_text": "すぐ戻るね。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "What do you mean?",
+    "target_text": "どういう意味？"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "It depends.",
+    "target_text": "場合によるよ。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "I have no idea.",
+    "target_text": "全然わからない。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "That's a good point.",
+    "target_text": "それはいい指摘だね。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "Just kidding.",
+    "target_text": "冗談だよ。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "I'm running late.",
+    "target_text": "遅れそう。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "Keep in touch.",
+    "target_text": "連絡を取り合おう。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "Long time no see.",
+    "target_text": "久しぶり！"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "Hang in there.",
+    "target_text": "頑張って。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "Take your time.",
+    "target_text": "ゆっくりでいいよ。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "I totally agree.",
+    "target_text": "全く同感です。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "How's it going?",
+    "target_text": "Come va?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "What are you up to?",
+    "target_text": "Che fai?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "See you later.",
+    "target_text": "A dopo."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "Take care!",
+    "target_text": "Stammi bene!"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "No worries.",
+    "target_text": "Nessun problema."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "Sounds good.",
+    "target_text": "Va bene."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "I'm on my way.",
+    "target_text": "Sto arrivando."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "Give me a minute.",
+    "target_text": "Dammi un minuto."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "I'll be right back.",
+    "target_text": "Torno subito."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "What do you mean?",
+    "target_text": "Cosa intendi?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "It depends.",
+    "target_text": "Dipende."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "I have no idea.",
+    "target_text": "Non ne ho idea."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "That's a good point.",
+    "target_text": "È un buon punto."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "Just kidding.",
+    "target_text": "Scherzo."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "I'm running late.",
+    "target_text": "Sono in ritardo."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "Keep in touch.",
+    "target_text": "Restiamo in contatto."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "Long time no see.",
+    "target_text": "Quanto tempo!"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "Hang in there.",
+    "target_text": "Tieni duro."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "Take your time.",
+    "target_text": "Fai con calma."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "I totally agree.",
+    "target_text": "Sono completamente d'accordo."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "How's it going?",
+    "target_text": "Como vai?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "What are you up to?",
+    "target_text": "O que você está fazendo?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "See you later.",
+    "target_text": "Até mais tarde."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "Take care!",
+    "target_text": "Cuide-se!"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "No worries.",
+    "target_text": "Sem problemas."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "Sounds good.",
+    "target_text": "Parece bom."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "I'm on my way.",
+    "target_text": "Estou a caminho."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "Give me a minute.",
+    "target_text": "Me dê um minuto."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "I'll be right back.",
+    "target_text": "Já volto."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "What do you mean?",
+    "target_text": "O que você quer dizer?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "It depends.",
+    "target_text": "Depende."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "I have no idea.",
+    "target_text": "Não faço ideia."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "That's a good point.",
+    "target_text": "É um bom ponto."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "Just kidding.",
+    "target_text": "Estou brincando."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "I'm running late.",
+    "target_text": "Estou atrasado."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "Keep in touch.",
+    "target_text": "Mantenha contato."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "Long time no see.",
+    "target_text": "Quanto tempo!"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "Hang in there.",
+    "target_text": "Aguente firme."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "Take your time.",
+    "target_text": "Não tenha pressa."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "I totally agree.",
+    "target_text": "Concordo totalmente."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "How's it going?",
+    "target_text": "Hoe gaat het?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "What are you up to?",
+    "target_text": "Wat ben je aan het doen?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "See you later.",
+    "target_text": "Tot later."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "Take care!",
+    "target_text": "Pas goed op jezelf!"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "No worries.",
+    "target_text": "Geen zorgen."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "Sounds good.",
+    "target_text": "Klinkt goed."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "I'm on my way.",
+    "target_text": "Ik ben onderweg."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "Give me a minute.",
+    "target_text": "Geef me een minuut."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "I'll be right back.",
+    "target_text": "Ik ben zo terug."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "What do you mean?",
+    "target_text": "Wat bedoel je?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "It depends.",
+    "target_text": "Dat hangt ervan af."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "I have no idea.",
+    "target_text": "Ik heb geen idee."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "That's a good point.",
+    "target_text": "Dat is een goed punt."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "Just kidding.",
+    "target_text": "Ik maak maar een grapje."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "I'm running late.",
+    "target_text": "Ik ben laat."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "Keep in touch.",
+    "target_text": "Houd contact."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "Long time no see.",
+    "target_text": "Lang niet gezien!"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "Hang in there.",
+    "target_text": "Hou vol."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "Take your time.",
+    "target_text": "Neem je tijd."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "I totally agree.",
+    "target_text": "Daar ben ik het helemaal mee eens."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "How's it going?",
+    "target_text": "Как дела?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "What are you up to?",
+    "target_text": "Что делаешь?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "See you later.",
+    "target_text": "До встречи."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "Take care!",
+    "target_text": "Береги себя!"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "No worries.",
+    "target_text": "Не переживай."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "Sounds good.",
+    "target_text": "Звучит хорошо."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "I'm on my way.",
+    "target_text": "Я уже в пути."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "Give me a minute.",
+    "target_text": "Дай мне минуту."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "I'll be right back.",
+    "target_text": "Я сейчас вернусь."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "What do you mean?",
+    "target_text": "Что ты имеешь в виду?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "It depends.",
+    "target_text": "Зависит от ситуации."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "I have no idea.",
+    "target_text": "Понятия не имею."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "That's a good point.",
+    "target_text": "Хорошая мысль."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "Just kidding.",
+    "target_text": "Я шучу."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "I'm running late.",
+    "target_text": "Я опаздываю."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "Keep in touch.",
+    "target_text": "Будем на связи."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "Long time no see.",
+    "target_text": "Давно не виделись!"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "Hang in there.",
+    "target_text": "Держись."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "Take your time.",
+    "target_text": "Не спеши."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "I totally agree.",
+    "target_text": "Я полностью согласен."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "How's it going?",
+    "target_text": "最近怎么样？"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "What are you up to?",
+    "target_text": "你在做什么？"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "See you later.",
+    "target_text": "待会儿见。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "Take care!",
+    "target_text": "保重！"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "No worries.",
+    "target_text": "别担心。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "Sounds good.",
+    "target_text": "听起来不错。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "I'm on my way.",
+    "target_text": "我在路上。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "Give me a minute.",
+    "target_text": "给我一分钟。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "I'll be right back.",
+    "target_text": "我马上回来。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "What do you mean?",
+    "target_text": "你是什么意思？"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "It depends.",
+    "target_text": "看情况。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "I have no idea.",
+    "target_text": "我完全不知道。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "That's a good point.",
+    "target_text": "说得有道理。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "Just kidding.",
+    "target_text": "开玩笑的。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "I'm running late.",
+    "target_text": "我要迟到了。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "Keep in touch.",
+    "target_text": "保持联系。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "Long time no see.",
+    "target_text": "好久不见！"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "Hang in there.",
+    "target_text": "坚持住。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "Take your time.",
+    "target_text": "慢慢来。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "I totally agree.",
+    "target_text": "我完全同意。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "How's it going?",
+    "target_text": "잘 지내?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "What are you up to?",
+    "target_text": "뭐 하고 있어?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "See you later.",
+    "target_text": "나중에 봐."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "Take care!",
+    "target_text": "잘 지내!"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "No worries.",
+    "target_text": "걱정하지 마."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "Sounds good.",
+    "target_text": "좋아."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "I'm on my way.",
+    "target_text": "지금 가는 중이야."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "Give me a minute.",
+    "target_text": "잠깐만 기다려 줘."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "I'll be right back.",
+    "target_text": "금방 돌아올게."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "What do you mean?",
+    "target_text": "무슨 뜻이야?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "It depends.",
+    "target_text": "상황에 따라 달라."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "I have no idea.",
+    "target_text": "전혀 모르겠어."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "That's a good point.",
+    "target_text": "좋은 지적이야."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "Just kidding.",
+    "target_text": "농담이야."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "I'm running late.",
+    "target_text": "늦을 것 같아."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "Keep in touch.",
+    "target_text": "계속 연락하자."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "Long time no see.",
+    "target_text": "오랜만이야!"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "Hang in there.",
+    "target_text": "조금만 더 힘내."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "Take your time.",
+    "target_text": "천천히 해."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "I totally agree.",
+    "target_text": "전적으로 동의해."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "How's it going?",
+    "target_text": "كيف حالك؟"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "What are you up to?",
+    "target_text": "ماذا تفعل؟"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "See you later.",
+    "target_text": "أراك لاحقًا."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "Take care!",
+    "target_text": "اعتنِ بنفسك!"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "No worries.",
+    "target_text": "لا تقلق."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "Sounds good.",
+    "target_text": "يبدو جيدًا."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "I'm on my way.",
+    "target_text": "أنا في الطريق."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "Give me a minute.",
+    "target_text": "أعطني دقيقة."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "I'll be right back.",
+    "target_text": "سأعود حالًا."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "What do you mean?",
+    "target_text": "ماذا تقصد؟"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "It depends.",
+    "target_text": "هذا يعتمد."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "I have no idea.",
+    "target_text": "ليس لدي أي فكرة."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "That's a good point.",
+    "target_text": "هذه نقطة جيدة."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "Just kidding.",
+    "target_text": "أنا أمزح فقط."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "I'm running late.",
+    "target_text": "سأتأخر."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "Keep in touch.",
+    "target_text": "ابقَ على تواصل."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "Long time no see.",
+    "target_text": "منذ وقت طويل لم نرك!"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "Hang in there.",
+    "target_text": "تمسّك بالأمل."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "Take your time.",
+    "target_text": "خذ وقتك."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "I totally agree.",
+    "target_text": "أوافق تمامًا."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "How's it going?",
+    "target_text": "कैसे चल रहा है?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "What are you up to?",
+    "target_text": "क्या कर रहे हो?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "See you later.",
+    "target_text": "बाद में मिलते हैं।"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "Take care!",
+    "target_text": "अपना ख्याल रखना!"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "No worries.",
+    "target_text": "कोई बात नहीं।"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "Sounds good.",
+    "target_text": "अच्छा लगता है।"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "I'm on my way.",
+    "target_text": "मैं रास्ते में हूँ।"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "Give me a minute.",
+    "target_text": "मुझे एक मिनट दो।"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "I'll be right back.",
+    "target_text": "मैं अभी वापस आता हूँ।"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "What do you mean?",
+    "target_text": "तुम्हारा क्या मतलब है?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "It depends.",
+    "target_text": "यह निर्भर करता है।"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "I have no idea.",
+    "target_text": "मुझे बिल्कुल पता नहीं।"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "That's a good point.",
+    "target_text": "यह अच्छी बात है।"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "Just kidding.",
+    "target_text": "मैं मज़ाक कर रहा हूँ।"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "I'm running late.",
+    "target_text": "मुझे देर हो रही है।"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "Keep in touch.",
+    "target_text": "संपर्क में रहना।"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "Long time no see.",
+    "target_text": "बहुत समय बाद मिले!"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "Hang in there.",
+    "target_text": "हिम्मत रखो।"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "Take your time.",
+    "target_text": "अपना समय लो।"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "I totally agree.",
+    "target_text": "मैं पूरी तरह सहमत हूँ।"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "How's it going?",
+    "target_text": "Nasıl gidiyor?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "What are you up to?",
+    "target_text": "Ne yapıyorsun?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "See you later.",
+    "target_text": "Sonra görüşürüz."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "Take care!",
+    "target_text": "Kendine iyi bak!"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "No worries.",
+    "target_text": "Sorun değil."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "Sounds good.",
+    "target_text": "Kulağa hoş geliyor."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "I'm on my way.",
+    "target_text": "Yoldayım."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "Give me a minute.",
+    "target_text": "Bana bir dakika ver."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "I'll be right back.",
+    "target_text": "Hemen döneceğim."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "What do you mean?",
+    "target_text": "Ne demek istiyorsun?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "It depends.",
+    "target_text": "Duruma bağlı."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "I have no idea.",
+    "target_text": "Hiçbir fikrim yok."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "That's a good point.",
+    "target_text": "Bu iyi bir nokta."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "Just kidding.",
+    "target_text": "Şaka yapıyorum."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "I'm running late.",
+    "target_text": "Geç kalıyorum."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "Keep in touch.",
+    "target_text": "İletişimde kalalım."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "Long time no see.",
+    "target_text": "Uzun zamandır görüşmedik!"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "Hang in there.",
+    "target_text": "Dayan."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "Take your time.",
+    "target_text": "Acele etme."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "I totally agree.",
+    "target_text": "Kesinlikle katılıyorum."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "Get the ball rolling.",
+    "target_text": "Mettre les choses en route."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "Bite the bullet.",
+    "target_text": "Prendre son courage à deux mains."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "A blessing in disguise.",
+    "target_text": "Un mal pour un bien."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "Call it a day.",
+    "target_text": "Arrêter pour aujourd'hui."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "On the same page.",
+    "target_text": "Être sur la même longueur d'onde."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "Go the extra mile.",
+    "target_text": "Faire un effort supplémentaire."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "Keep an eye on it.",
+    "target_text": "Garder un œil dessus."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "It's up to you.",
+    "target_text": "C'est à toi de décider."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "Get the ball rolling.",
+    "target_text": "Poner manos a la obra."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "Bite the bullet.",
+    "target_text": "Morder la bala."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "A blessing in disguise.",
+    "target_text": "No hay mal que por bien no venga."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "Call it a day.",
+    "target_text": "Dar por terminado el día."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "On the same page.",
+    "target_text": "Estar en la misma sintonía."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "Go the extra mile.",
+    "target_text": "Hacer un esfuerzo adicional."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "Keep an eye on it.",
+    "target_text": "Echarle un ojo."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "It's up to you.",
+    "target_text": "Depende de ti."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "Get the ball rolling.",
+    "target_text": "Die Sache ins Rollen bringen."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "Bite the bullet.",
+    "target_text": "In den sauren Apfel beißen."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "A blessing in disguise.",
+    "target_text": "Ein Glück im Unglück."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "Call it a day.",
+    "target_text": "Feierabend machen."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "On the same page.",
+    "target_text": "Auf derselben Wellenlänge sein."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "Go the extra mile.",
+    "target_text": "Sich besonders ins Zeug legen."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "Keep an eye on it.",
+    "target_text": "Ein Auge darauf haben."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "It's up to you.",
+    "target_text": "Das liegt bei dir."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "Get the ball rolling.",
+    "target_text": "کام شروع کرنا۔"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "Bite the bullet.",
+    "target_text": "مشکل کا سامنا کرنا۔"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "A blessing in disguise.",
+    "target_text": "مصیبت میں رحمت۔"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "Call it a day.",
+    "target_text": "آج کے لیے کام ختم کرنا۔"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "On the same page.",
+    "target_text": "ایک ہی بات پر متفق ہونا۔"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "Go the extra mile.",
+    "target_text": "اضافی کوشش کرنا۔"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "Keep an eye on it.",
+    "target_text": "اس پر نظر رکھنا۔"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "It's up to you.",
+    "target_text": "یہ آپ پر منحصر ہے۔"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "Get the ball rolling.",
+    "target_text": "物事を始める。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "Bite the bullet.",
+    "target_text": "腹をくくる。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "A blessing in disguise.",
+    "target_text": "災い転じて福となす。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "Call it a day.",
+    "target_text": "今日はここまでにする。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "On the same page.",
+    "target_text": "認識を合わせる。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "Go the extra mile.",
+    "target_text": "一歩踏み込んで努力する。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "Keep an eye on it.",
+    "target_text": "注意して見ておく。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "It's up to you.",
+    "target_text": "あなた次第です。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "Get the ball rolling.",
+    "target_text": "Dare il via alle danze."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "Bite the bullet.",
+    "target_text": "Stringere i denti."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "A blessing in disguise.",
+    "target_text": "Non tutto il male viene per nuocere."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "Call it a day.",
+    "target_text": "Chiudere per oggi."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "On the same page.",
+    "target_text": "Essere sulla stessa lunghezza d'onda."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "Go the extra mile.",
+    "target_text": "Fare uno sforzo in più."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "Keep an eye on it.",
+    "target_text": "Tenere d'occhio."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "It's up to you.",
+    "target_text": "Dipende da te."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "Get the ball rolling.",
+    "target_text": "Dar início às coisas."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "Bite the bullet.",
+    "target_text": "Encarar a situação."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "A blessing in disguise.",
+    "target_text": "Há males que vêm para o bem."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "Call it a day.",
+    "target_text": "Encerrar por hoje."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "On the same page.",
+    "target_text": "Estar na mesma sintonia."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "Go the extra mile.",
+    "target_text": "Fazer um esforço a mais."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "Keep an eye on it.",
+    "target_text": "Ficar de olho nisso."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "It's up to you.",
+    "target_text": "Depende de você."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "Get the ball rolling.",
+    "target_text": "De zaak op gang brengen."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "Bite the bullet.",
+    "target_text": "Door de zure appel heen bijten."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "A blessing in disguise.",
+    "target_text": "Een geluk bij een ongeluk."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "Call it a day.",
+    "target_text": "Er een punt achter zetten voor vandaag."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "On the same page.",
+    "target_text": "Op één lijn zitten."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "Go the extra mile.",
+    "target_text": "Een stapje extra zetten."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "Keep an eye on it.",
+    "target_text": "Het in de gaten houden."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "It's up to you.",
+    "target_text": "Dat is aan jou."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "Get the ball rolling.",
+    "target_text": "Запустить дело."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "Bite the bullet.",
+    "target_text": "Стиснуть зубы."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "A blessing in disguise.",
+    "target_text": "Не было бы счастья, да несчастье помогло."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "Call it a day.",
+    "target_text": "Закончить на сегодня."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "On the same page.",
+    "target_text": "Быть на одной волне."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "Go the extra mile.",
+    "target_text": "Сделать больше необходимого."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "Keep an eye on it.",
+    "target_text": "Следить за этим."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "It's up to you.",
+    "target_text": "Решать тебе."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "Get the ball rolling.",
+    "target_text": "开始行动。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "Bite the bullet.",
+    "target_text": "硬着头皮面对。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "A blessing in disguise.",
+    "target_text": "因祸得福。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "Call it a day.",
+    "target_text": "今天就到这里。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "On the same page.",
+    "target_text": "达成共识。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "Go the extra mile.",
+    "target_text": "付出额外努力。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "Keep an eye on it.",
+    "target_text": "留意一下。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "It's up to you.",
+    "target_text": "由你决定。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "Get the ball rolling.",
+    "target_text": "일을 시작하다."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "Bite the bullet.",
+    "target_text": "이를 악물고 견디다."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "A blessing in disguise.",
+    "target_text": "전화위복."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "Call it a day.",
+    "target_text": "오늘은 여기까지 하다."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "On the same page.",
+    "target_text": "같은 생각을 하고 있다."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "Go the extra mile.",
+    "target_text": "한 걸음 더 노력하다."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "Keep an eye on it.",
+    "target_text": "잘 지켜보다."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "It's up to you.",
+    "target_text": "네가 결정해."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "Get the ball rolling.",
+    "target_text": "نبدأ العمل."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "Bite the bullet.",
+    "target_text": "يواجه الأمر بشجاعة."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "A blessing in disguise.",
+    "target_text": "رب ضارة نافعة."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "Call it a day.",
+    "target_text": "ننهي العمل لهذا اليوم."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "On the same page.",
+    "target_text": "متفقون في الرأي."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "Go the extra mile.",
+    "target_text": "يبذل جهدًا إضافيًا."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "Keep an eye on it.",
+    "target_text": "راقبه جيدًا."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "It's up to you.",
+    "target_text": "الأمر متروك لك."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "Get the ball rolling.",
+    "target_text": "काम शुरू करना।"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "Bite the bullet.",
+    "target_text": "मुश्किल का सामना करना।"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "A blessing in disguise.",
+    "target_text": "आपदा में अवसर।"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "Call it a day.",
+    "target_text": "आज के लिए काम खत्म करना।"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "On the same page.",
+    "target_text": "एक ही बात पर सहमत होना।"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "Go the extra mile.",
+    "target_text": "अतिरिक्त प्रयास करना।"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "Keep an eye on it.",
+    "target_text": "इस पर नज़र रखना।"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "It's up to you.",
+    "target_text": "यह आप पर निर्भर है।"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "Get the ball rolling.",
+    "target_text": "İşe koyulmak."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "Bite the bullet.",
+    "target_text": "Dişini sıkmak."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "A blessing in disguise.",
+    "target_text": "Her şerde bir hayır vardır."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "Call it a day.",
+    "target_text": "Bugünlük işi bitirmek."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "On the same page.",
+    "target_text": "Aynı fikirde olmak."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "Go the extra mile.",
+    "target_text": "Ekstra çaba göstermek."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "Keep an eye on it.",
+    "target_text": "Göz kulak olmak."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "It's up to you.",
+    "target_text": "Sana kalmış."
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "Bonjour, comment allez-vous ?",
+    "target_text": "Hello, how are you?"
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "Bonjour !",
+    "target_text": "Good morning!"
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "Bonsoir.",
+    "target_text": "Good evening."
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "Comment vous appelez-vous ?",
+    "target_text": "What is your name?"
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "Je m'appelle Alex.",
+    "target_text": "My name is Alex."
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "Aidez-moi, s'il vous plaît.",
+    "target_text": "Please help me."
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "Où est l'hôpital le plus proche ?",
+    "target_text": "Where is the nearest hospital?"
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "Je voudrais un verre d'eau.",
+    "target_text": "I would like a glass of water."
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "Combien cela coûte-t-il ?",
+    "target_text": "How much does this cost?"
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "Merci beaucoup.",
+    "target_text": "Thank you very much."
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "Je ne comprends pas.",
+    "target_text": "I don't understand."
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "Pouvez-vous parler plus lentement ?",
+    "target_text": "Can you speak more slowly?"
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "Il pleut des cordes.",
+    "target_text": "It's raining cats and dogs."
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "Briser la glace.",
+    "target_text": "Break the ice."
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "La balle est dans ton camp.",
+    "target_text": "The ball is in your court."
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "Cracher le morceau.",
+    "target_text": "Spill the beans."
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "Tous les trente-six du mois.",
+    "target_text": "Once in a blue moon."
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "Taper dans le mille.",
+    "target_text": "Hit the nail on the head."
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "Ne pas être dans son assiette.",
+    "target_text": "Under the weather."
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "C'est du gâteau.",
+    "target_text": "Piece of cake."
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "Vendre la mèche.",
+    "target_text": "Let the cat out of the bag."
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "Ça va ?",
+    "target_text": "How's it going?"
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "Qu'est-ce que tu fais ?",
+    "target_text": "What are you up to?"
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "À plus tard.",
+    "target_text": "See you later."
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "Prends soin de toi !",
+    "target_text": "Take care!"
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "Pas de souci.",
+    "target_text": "No worries."
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "Ça marche.",
+    "target_text": "Sounds good."
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "J'arrive.",
+    "target_text": "I'm on my way."
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "Donne-moi une minute.",
+    "target_text": "Give me a minute."
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "Je reviens tout de suite.",
+    "target_text": "I'll be right back."
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "Qu'est-ce que tu veux dire ?",
+    "target_text": "What do you mean?"
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "Ça dépend.",
+    "target_text": "It depends."
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "Je n'en ai aucune idée.",
+    "target_text": "I have no idea."
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "C'est un bon point.",
+    "target_text": "That's a good point."
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "Je plaisante.",
+    "target_text": "Just kidding."
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "Je suis en retard.",
+    "target_text": "I'm running late."
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "Reste en contact.",
+    "target_text": "Keep in touch."
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "Ça fait longtemps !",
+    "target_text": "Long time no see."
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "Tiens bon.",
+    "target_text": "Hang in there."
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "Prends ton temps.",
+    "target_text": "Take your time."
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "Je suis tout à fait d'accord.",
+    "target_text": "I totally agree."
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "Mettre les choses en route.",
+    "target_text": "Get the ball rolling."
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "Prendre son courage à deux mains.",
+    "target_text": "Bite the bullet."
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "Un mal pour un bien.",
+    "target_text": "A blessing in disguise."
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "Arrêter pour aujourd'hui.",
+    "target_text": "Call it a day."
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "Être sur la même longueur d'onde.",
+    "target_text": "On the same page."
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "Faire un effort supplémentaire.",
+    "target_text": "Go the extra mile."
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "Garder un œil dessus.",
+    "target_text": "Keep an eye on it."
+  },
+  {
+    "source_lang": "fr",
+    "target_lang": "en",
+    "source_text": "C'est à toi de décider.",
+    "target_text": "It's up to you."
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "Hola, ¿cómo estás?",
+    "target_text": "Hello, how are you?"
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "¡Buenos días!",
+    "target_text": "Good morning!"
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "Buenas noches.",
+    "target_text": "Good evening."
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "¿Cómo te llamas?",
+    "target_text": "What is your name?"
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "Me llamo Alex.",
+    "target_text": "My name is Alex."
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "Por favor, ayúdame.",
+    "target_text": "Please help me."
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "¿Dónde está el hospital más cercano?",
+    "target_text": "Where is the nearest hospital?"
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "Me gustaría un vaso de agua.",
+    "target_text": "I would like a glass of water."
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "¿Cuánto cuesta esto?",
+    "target_text": "How much does this cost?"
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "Muchas gracias.",
+    "target_text": "Thank you very much."
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "No entiendo.",
+    "target_text": "I don't understand."
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "¿Puedes hablar más despacio?",
+    "target_text": "Can you speak more slowly?"
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "Está lloviendo a cántaros.",
+    "target_text": "It's raining cats and dogs."
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "Romper el hielo.",
+    "target_text": "Break the ice."
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "La pelota está en tu tejado.",
+    "target_text": "The ball is in your court."
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "Irse de la lengua.",
+    "target_text": "Spill the beans."
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "De higos a brevas.",
+    "target_text": "Once in a blue moon."
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "Dar en el clavo.",
+    "target_text": "Hit the nail on the head."
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "Estar pachucho.",
+    "target_text": "Under the weather."
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "Pan comido.",
+    "target_text": "Piece of cake."
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "Costar un ojo de la cara.",
+    "target_text": "Cost an arm and a leg."
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "¿Cómo va?",
+    "target_text": "How's it going?"
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "¿Qué haces?",
+    "target_text": "What are you up to?"
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "Hasta luego.",
+    "target_text": "See you later."
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "¡Cuídate!",
+    "target_text": "Take care!"
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "No te preocupes.",
+    "target_text": "No worries."
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "Suena bien.",
+    "target_text": "Sounds good."
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "Estoy de camino.",
+    "target_text": "I'm on my way."
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "Dame un minuto.",
+    "target_text": "Give me a minute."
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "Ahora vuelvo.",
+    "target_text": "I'll be right back."
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "¿Qué quieres decir?",
+    "target_text": "What do you mean?"
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "Depende.",
+    "target_text": "It depends."
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "No tengo ni idea.",
+    "target_text": "I have no idea."
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "Es un buen punto.",
+    "target_text": "That's a good point."
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "Es broma.",
+    "target_text": "Just kidding."
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "Voy tarde.",
+    "target_text": "I'm running late."
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "Mantente en contacto.",
+    "target_text": "Keep in touch."
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "¡Cuánto tiempo sin verte!",
+    "target_text": "Long time no see."
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "Aguanta.",
+    "target_text": "Hang in there."
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "Tómate tu tiempo.",
+    "target_text": "Take your time."
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "Estoy totalmente de acuerdo.",
+    "target_text": "I totally agree."
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "Poner manos a la obra.",
+    "target_text": "Get the ball rolling."
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "Morder la bala.",
+    "target_text": "Bite the bullet."
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "No hay mal que por bien no venga.",
+    "target_text": "A blessing in disguise."
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "Dar por terminado el día.",
+    "target_text": "Call it a day."
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "Estar en la misma sintonía.",
+    "target_text": "On the same page."
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "Hacer un esfuerzo adicional.",
+    "target_text": "Go the extra mile."
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "Echarle un ojo.",
+    "target_text": "Keep an eye on it."
+  },
+  {
+    "source_lang": "es",
+    "target_lang": "en",
+    "source_text": "Depende de ti.",
+    "target_text": "It's up to you."
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Hallo, wie geht es Ihnen?",
+    "target_text": "Hello, how are you?"
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Guten Morgen!",
+    "target_text": "Good morning!"
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Guten Abend.",
+    "target_text": "Good evening."
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Wie heißen Sie?",
+    "target_text": "What is your name?"
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Ich heiße Alex.",
+    "target_text": "My name is Alex."
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Bitte helfen Sie mir.",
+    "target_text": "Please help me."
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Wo ist das nächste Krankenhaus?",
+    "target_text": "Where is the nearest hospital?"
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Ich hätte gerne ein Glas Wasser.",
+    "target_text": "I would like a glass of water."
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Wie viel kostet das?",
+    "target_text": "How much does this cost?"
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Vielen Dank.",
+    "target_text": "Thank you very much."
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Ich verstehe nicht.",
+    "target_text": "I don't understand."
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Können Sie bitte langsamer sprechen?",
+    "target_text": "Can you speak more slowly?"
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Es regnet in Strömen.",
+    "target_text": "It's raining cats and dogs."
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Das Eis brechen.",
+    "target_text": "Break the ice."
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Der Ball liegt in deinem Feld.",
+    "target_text": "The ball is in your court."
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Die Katze aus dem Sack lassen.",
+    "target_text": "Spill the beans."
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Alle Jubeljahre einmal.",
+    "target_text": "Once in a blue moon."
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Den Nagel auf den Kopf treffen.",
+    "target_text": "Hit the nail on the head."
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Ein Kinderspiel.",
+    "target_text": "Piece of cake."
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Ein Vermögen kosten.",
+    "target_text": "Cost an arm and a leg."
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Wie läuft's?",
+    "target_text": "How's it going?"
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Was machst du?",
+    "target_text": "What are you up to?"
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Bis später.",
+    "target_text": "See you later."
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Pass auf dich auf!",
+    "target_text": "Take care!"
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Kein Problem.",
+    "target_text": "No worries."
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Klingt gut.",
+    "target_text": "Sounds good."
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Ich bin unterwegs.",
+    "target_text": "I'm on my way."
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Gib mir eine Minute.",
+    "target_text": "Give me a minute."
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Ich bin gleich zurück.",
+    "target_text": "I'll be right back."
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Was meinst du?",
+    "target_text": "What do you mean?"
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Das kommt darauf an.",
+    "target_text": "It depends."
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Ich habe keine Ahnung.",
+    "target_text": "I have no idea."
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Das ist ein guter Punkt.",
+    "target_text": "That's a good point."
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Nur ein Scherz.",
+    "target_text": "Just kidding."
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Ich bin spät dran.",
+    "target_text": "I'm running late."
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Bleib in Kontakt.",
+    "target_text": "Keep in touch."
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Lange nicht gesehen!",
+    "target_text": "Long time no see."
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Halte durch.",
+    "target_text": "Hang in there."
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Lass dir Zeit.",
+    "target_text": "Take your time."
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Da stimme ich völlig zu.",
+    "target_text": "I totally agree."
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Die Sache ins Rollen bringen.",
+    "target_text": "Get the ball rolling."
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "In den sauren Apfel beißen.",
+    "target_text": "Bite the bullet."
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Ein Glück im Unglück.",
+    "target_text": "A blessing in disguise."
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Feierabend machen.",
+    "target_text": "Call it a day."
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Auf derselben Wellenlänge sein.",
+    "target_text": "On the same page."
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Sich besonders ins Zeug legen.",
+    "target_text": "Go the extra mile."
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Ein Auge darauf haben.",
+    "target_text": "Keep an eye on it."
+  },
+  {
+    "source_lang": "de",
+    "target_lang": "en",
+    "source_text": "Das liegt bei dir.",
+    "target_text": "It's up to you."
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "ہیلو، آپ کیسے ہیں؟",
+    "target_text": "Hello, how are you?"
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "صبح بخیر!",
+    "target_text": "Good morning!"
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "شام بخیر۔",
+    "target_text": "Good evening."
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "آپ کا نام کیا ہے؟",
+    "target_text": "What is your name?"
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "میرا نام ایلکس ہے۔",
+    "target_text": "My name is Alex."
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "براہ کرم میری مدد کریں۔",
+    "target_text": "Please help me."
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "قریب ترین ہسپتال کہاں ہے؟",
+    "target_text": "Where is the nearest hospital?"
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "مجھے ایک گلاس پانی چاہیے۔",
+    "target_text": "I would like a glass of water."
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "اس کی قیمت کتنی ہے؟",
+    "target_text": "How much does this cost?"
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "بہت بہت شکریہ۔",
+    "target_text": "Thank you very much."
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "مجھے سمجھ نہیں آیا۔",
+    "target_text": "I don't understand."
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "کیا آپ ذرا آہستہ بول سکتے ہیں؟",
+    "target_text": "Can you speak more slowly?"
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "موسلا دھار بارش ہو رہی ہے۔",
+    "target_text": "It's raining cats and dogs."
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "بات چیت کا آغاز کرنا۔",
+    "target_text": "Break the ice."
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "اب آپ کی باری ہے۔",
+    "target_text": "The ball is in your court."
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "راز فاش کرنا۔",
+    "target_text": "Spill the beans."
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "بالکل درست بات کہنا۔",
+    "target_text": "Hit the nail on the head."
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "بائیں ہاتھ کا کھیل۔",
+    "target_text": "Piece of cake."
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "طبیعت خراب ہونا۔",
+    "target_text": "Under the weather."
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "بہت مہنگا پڑنا۔",
+    "target_text": "Cost an arm and a leg."
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "وہیں کے وہیں۔",
+    "target_text": "Back to square one."
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "کیا حال ہے؟",
+    "target_text": "How's it going?"
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "کیا کر رہے ہو؟",
+    "target_text": "What are you up to?"
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "پھر ملتے ہیں۔",
+    "target_text": "See you later."
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "اپنا خیال رکھنا!",
+    "target_text": "Take care!"
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "کوئی بات نہیں۔",
+    "target_text": "No worries."
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "اچھا ہے۔",
+    "target_text": "Sounds good."
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "میں راستے میں ہوں۔",
+    "target_text": "I'm on my way."
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "مجھے ایک منٹ دو۔",
+    "target_text": "Give me a minute."
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "میں ابھی واپس آتا ہوں۔",
+    "target_text": "I'll be right back."
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "آپ کا کیا مطلب ہے؟",
+    "target_text": "What do you mean?"
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "یہ منحصر ہے۔",
+    "target_text": "It depends."
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "مجھے بالکل نہیں معلوم۔",
+    "target_text": "I have no idea."
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "یہ اچھی بات ہے۔",
+    "target_text": "That's a good point."
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "میں مذاق کر رہا ہوں۔",
+    "target_text": "Just kidding."
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "مجھے دیر ہو رہی ہے۔",
+    "target_text": "I'm running late."
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "رابطے میں رہنا۔",
+    "target_text": "Keep in touch."
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "بہت عرصے بعد ملاقات ہوئی!",
+    "target_text": "Long time no see."
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "ہمت رکھو۔",
+    "target_text": "Hang in there."
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "اپنا وقت لو۔",
+    "target_text": "Take your time."
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "میں بالکل متفق ہوں۔",
+    "target_text": "I totally agree."
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "کام شروع کرنا۔",
+    "target_text": "Get the ball rolling."
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "مشکل کا سامنا کرنا۔",
+    "target_text": "Bite the bullet."
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "مصیبت میں رحمت۔",
+    "target_text": "A blessing in disguise."
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "آج کے لیے کام ختم کرنا۔",
+    "target_text": "Call it a day."
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "ایک ہی بات پر متفق ہونا۔",
+    "target_text": "On the same page."
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "اضافی کوشش کرنا۔",
+    "target_text": "Go the extra mile."
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "اس پر نظر رکھنا۔",
+    "target_text": "Keep an eye on it."
+  },
+  {
+    "source_lang": "ur",
+    "target_lang": "en",
+    "source_text": "یہ آپ پر منحصر ہے۔",
+    "target_text": "It's up to you."
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "こんにちは、お元気ですか？",
+    "target_text": "Hello, how are you?"
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "おはようございます！",
+    "target_text": "Good morning!"
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "こんばんは。",
+    "target_text": "Good evening."
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "お名前は何ですか？",
+    "target_text": "What is your name?"
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "私の名前はアレックスです。",
+    "target_text": "My name is Alex."
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "助けてください。",
+    "target_text": "Please help me."
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "一番近い病院はどこですか？",
+    "target_text": "Where is the nearest hospital?"
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "お水を一杯いただけますか。",
+    "target_text": "I would like a glass of water."
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "これはいくらですか？",
+    "target_text": "How much does this cost?"
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "本当にありがとうございます。",
+    "target_text": "Thank you very much."
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "わかりません。",
+    "target_text": "I don't understand."
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "もう少しゆっくり話していただけますか？",
+    "target_text": "Can you speak more slowly?"
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "土砂降りだ。",
+    "target_text": "It's raining cats and dogs."
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "場を和ませる。",
+    "target_text": "Break the ice."
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "次はあなたの番です。",
+    "target_text": "The ball is in your court."
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "秘密を漏らす。",
+    "target_text": "Spill the beans."
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "図星を指す。",
+    "target_text": "Hit the nail on the head."
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "朝飯前。",
+    "target_text": "Piece of cake."
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "体調が優れない。",
+    "target_text": "Under the weather."
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "非常に高くつく。",
+    "target_text": "Cost an arm and a leg."
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "調子はどう？",
+    "target_text": "How's it going?"
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "何してるの？",
+    "target_text": "What are you up to?"
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "また後でね。",
+    "target_text": "See you later."
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "気をつけてね！",
+    "target_text": "Take care!"
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "心配しないで。",
+    "target_text": "No worries."
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "いいね。",
+    "target_text": "Sounds good."
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "今向かってるよ。",
+    "target_text": "I'm on my way."
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "ちょっと待って。",
+    "target_text": "Give me a minute."
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "すぐ戻るね。",
+    "target_text": "I'll be right back."
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "どういう意味？",
+    "target_text": "What do you mean?"
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "場合によるよ。",
+    "target_text": "It depends."
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "全然わからない。",
+    "target_text": "I have no idea."
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "それはいい指摘だね。",
+    "target_text": "That's a good point."
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "冗談だよ。",
+    "target_text": "Just kidding."
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "遅れそう。",
+    "target_text": "I'm running late."
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "連絡を取り合おう。",
+    "target_text": "Keep in touch."
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "久しぶり！",
+    "target_text": "Long time no see."
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "頑張って。",
+    "target_text": "Hang in there."
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "ゆっくりでいいよ。",
+    "target_text": "Take your time."
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "全く同感です。",
+    "target_text": "I totally agree."
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "物事を始める。",
+    "target_text": "Get the ball rolling."
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "腹をくくる。",
+    "target_text": "Bite the bullet."
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "災い転じて福となす。",
+    "target_text": "A blessing in disguise."
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "今日はここまでにする。",
+    "target_text": "Call it a day."
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "認識を合わせる。",
+    "target_text": "On the same page."
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "一歩踏み込んで努力する。",
+    "target_text": "Go the extra mile."
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "注意して見ておく。",
+    "target_text": "Keep an eye on it."
+  },
+  {
+    "source_lang": "ja",
+    "target_lang": "en",
+    "source_text": "あなた次第です。",
+    "target_text": "It's up to you."
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Ciao, come stai?",
+    "target_text": "Hello, how are you?"
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Buongiorno!",
+    "target_text": "Good morning!"
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Buonasera.",
+    "target_text": "Good evening."
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Come ti chiami?",
+    "target_text": "What is your name?"
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Mi chiamo Alex.",
+    "target_text": "My name is Alex."
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Per favore, aiutami.",
+    "target_text": "Please help me."
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Dov'è l'ospedale più vicino?",
+    "target_text": "Where is the nearest hospital?"
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Vorrei un bicchiere d'acqua.",
+    "target_text": "I would like a glass of water."
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Quanto costa questo?",
+    "target_text": "How much does this cost?"
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Grazie mille.",
+    "target_text": "Thank you very much."
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Non capisco.",
+    "target_text": "I don't understand."
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Puoi parlare più lentamente?",
+    "target_text": "Can you speak more slowly?"
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Piove a catinelle.",
+    "target_text": "It's raining cats and dogs."
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Rompere il ghiaccio.",
+    "target_text": "Break the ice."
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "La palla è nel tuo campo.",
+    "target_text": "The ball is in your court."
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Vuotare il sacco.",
+    "target_text": "Spill the beans."
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Ogni morte di papa.",
+    "target_text": "Once in a blue moon."
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Colpire nel segno.",
+    "target_text": "Hit the nail on the head."
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Un gioco da ragazzi.",
+    "target_text": "Piece of cake."
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Costare un occhio della testa.",
+    "target_text": "Cost an arm and a leg."
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Come va?",
+    "target_text": "How's it going?"
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Che fai?",
+    "target_text": "What are you up to?"
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "A dopo.",
+    "target_text": "See you later."
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Stammi bene!",
+    "target_text": "Take care!"
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Nessun problema.",
+    "target_text": "No worries."
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Va bene.",
+    "target_text": "Sounds good."
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Sto arrivando.",
+    "target_text": "I'm on my way."
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Dammi un minuto.",
+    "target_text": "Give me a minute."
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Torno subito.",
+    "target_text": "I'll be right back."
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Cosa intendi?",
+    "target_text": "What do you mean?"
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Dipende.",
+    "target_text": "It depends."
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Non ne ho idea.",
+    "target_text": "I have no idea."
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "È un buon punto.",
+    "target_text": "That's a good point."
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Scherzo.",
+    "target_text": "Just kidding."
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Sono in ritardo.",
+    "target_text": "I'm running late."
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Restiamo in contatto.",
+    "target_text": "Keep in touch."
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Quanto tempo!",
+    "target_text": "Long time no see."
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Tieni duro.",
+    "target_text": "Hang in there."
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Fai con calma.",
+    "target_text": "Take your time."
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Sono completamente d'accordo.",
+    "target_text": "I totally agree."
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Dare il via alle danze.",
+    "target_text": "Get the ball rolling."
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Stringere i denti.",
+    "target_text": "Bite the bullet."
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Non tutto il male viene per nuocere.",
+    "target_text": "A blessing in disguise."
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Chiudere per oggi.",
+    "target_text": "Call it a day."
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Essere sulla stessa lunghezza d'onda.",
+    "target_text": "On the same page."
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Fare uno sforzo in più.",
+    "target_text": "Go the extra mile."
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Tenere d'occhio.",
+    "target_text": "Keep an eye on it."
+  },
+  {
+    "source_lang": "it",
+    "target_lang": "en",
+    "source_text": "Dipende da te.",
+    "target_text": "It's up to you."
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Olá, como você está?",
+    "target_text": "Hello, how are you?"
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Bom dia!",
+    "target_text": "Good morning!"
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Boa noite.",
+    "target_text": "Good evening."
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Qual é o seu nome?",
+    "target_text": "What is your name?"
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Meu nome é Alex.",
+    "target_text": "My name is Alex."
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Por favor, me ajude.",
+    "target_text": "Please help me."
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Onde fica o hospital mais próximo?",
+    "target_text": "Where is the nearest hospital?"
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Eu gostaria de um copo de água.",
+    "target_text": "I would like a glass of water."
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Quanto custa isso?",
+    "target_text": "How much does this cost?"
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Muito obrigado.",
+    "target_text": "Thank you very much."
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Eu não entendo.",
+    "target_text": "I don't understand."
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Você pode falar mais devagar?",
+    "target_text": "Can you speak more slowly?"
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Está chovendo canivetes.",
+    "target_text": "It's raining cats and dogs."
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Quebrar o gelo.",
+    "target_text": "Break the ice."
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "A bola está com você.",
+    "target_text": "The ball is in your court."
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Deixar escapar o gato.",
+    "target_text": "Spill the beans."
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Once em uma lua azul... de vez em nunca.",
+    "target_text": "Once in a blue moon."
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Acertar na mosca.",
+    "target_text": "Hit the nail on the head."
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Moleza.",
+    "target_text": "Piece of cake."
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Custar os olhos da cara.",
+    "target_text": "Cost an arm and a leg."
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Como vai?",
+    "target_text": "How's it going?"
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "O que você está fazendo?",
+    "target_text": "What are you up to?"
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Até mais tarde.",
+    "target_text": "See you later."
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Cuide-se!",
+    "target_text": "Take care!"
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Sem problemas.",
+    "target_text": "No worries."
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Parece bom.",
+    "target_text": "Sounds good."
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Estou a caminho.",
+    "target_text": "I'm on my way."
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Me dê um minuto.",
+    "target_text": "Give me a minute."
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Já volto.",
+    "target_text": "I'll be right back."
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "O que você quer dizer?",
+    "target_text": "What do you mean?"
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Depende.",
+    "target_text": "It depends."
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Não faço ideia.",
+    "target_text": "I have no idea."
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "É um bom ponto.",
+    "target_text": "That's a good point."
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Estou brincando.",
+    "target_text": "Just kidding."
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Estou atrasado.",
+    "target_text": "I'm running late."
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Mantenha contato.",
+    "target_text": "Keep in touch."
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Quanto tempo!",
+    "target_text": "Long time no see."
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Aguente firme.",
+    "target_text": "Hang in there."
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Não tenha pressa.",
+    "target_text": "Take your time."
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Concordo totalmente.",
+    "target_text": "I totally agree."
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Dar início às coisas.",
+    "target_text": "Get the ball rolling."
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Encarar a situação.",
+    "target_text": "Bite the bullet."
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Há males que vêm para o bem.",
+    "target_text": "A blessing in disguise."
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Encerrar por hoje.",
+    "target_text": "Call it a day."
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Estar na mesma sintonia.",
+    "target_text": "On the same page."
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Fazer um esforço a mais.",
+    "target_text": "Go the extra mile."
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Ficar de olho nisso.",
+    "target_text": "Keep an eye on it."
+  },
+  {
+    "source_lang": "pt",
+    "target_lang": "en",
+    "source_text": "Depende de você.",
+    "target_text": "It's up to you."
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Hallo, hoe gaat het met je?",
+    "target_text": "Hello, how are you?"
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Goedemorgen!",
+    "target_text": "Good morning!"
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Goedenavond.",
+    "target_text": "Good evening."
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Hoe heet je?",
+    "target_text": "What is your name?"
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Ik heet Alex.",
+    "target_text": "My name is Alex."
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Help me alsjeblieft.",
+    "target_text": "Please help me."
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Waar is het dichtstbijzijnde ziekenhuis?",
+    "target_text": "Where is the nearest hospital?"
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Ik wil graag een glas water.",
+    "target_text": "I would like a glass of water."
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Hoeveel kost dit?",
+    "target_text": "How much does this cost?"
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Heel erg bedankt.",
+    "target_text": "Thank you very much."
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Ik begrijp het niet.",
+    "target_text": "I don't understand."
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Kun je langzamer praten?",
+    "target_text": "Can you speak more slowly?"
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Het regent pijpenstelen.",
+    "target_text": "It's raining cats and dogs."
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Het ijs breken.",
+    "target_text": "Break the ice."
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "De bal ligt bij jou.",
+    "target_text": "The ball is in your court."
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Uit de school klappen.",
+    "target_text": "Spill the beans."
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Eens in de tijd dat de kraaien wit zien.",
+    "target_text": "Once in a blue moon."
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "De spijker op zijn kop slaan.",
+    "target_text": "Hit the nail on the head."
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Een fluitje van een cent.",
+    "target_text": "Piece of cake."
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Een fortuin kosten.",
+    "target_text": "Cost an arm and a leg."
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Hoe gaat het?",
+    "target_text": "How's it going?"
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Wat ben je aan het doen?",
+    "target_text": "What are you up to?"
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Tot later.",
+    "target_text": "See you later."
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Pas goed op jezelf!",
+    "target_text": "Take care!"
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Geen zorgen.",
+    "target_text": "No worries."
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Klinkt goed.",
+    "target_text": "Sounds good."
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Ik ben onderweg.",
+    "target_text": "I'm on my way."
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Geef me een minuut.",
+    "target_text": "Give me a minute."
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Ik ben zo terug.",
+    "target_text": "I'll be right back."
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Wat bedoel je?",
+    "target_text": "What do you mean?"
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Dat hangt ervan af.",
+    "target_text": "It depends."
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Ik heb geen idee.",
+    "target_text": "I have no idea."
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Dat is een goed punt.",
+    "target_text": "That's a good point."
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Ik maak maar een grapje.",
+    "target_text": "Just kidding."
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Ik ben laat.",
+    "target_text": "I'm running late."
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Houd contact.",
+    "target_text": "Keep in touch."
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Lang niet gezien!",
+    "target_text": "Long time no see."
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Hou vol.",
+    "target_text": "Hang in there."
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Neem je tijd.",
+    "target_text": "Take your time."
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Daar ben ik het helemaal mee eens.",
+    "target_text": "I totally agree."
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "De zaak op gang brengen.",
+    "target_text": "Get the ball rolling."
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Door de zure appel heen bijten.",
+    "target_text": "Bite the bullet."
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Een geluk bij een ongeluk.",
+    "target_text": "A blessing in disguise."
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Er een punt achter zetten voor vandaag.",
+    "target_text": "Call it a day."
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Op één lijn zitten.",
+    "target_text": "On the same page."
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Een stapje extra zetten.",
+    "target_text": "Go the extra mile."
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Het in de gaten houden.",
+    "target_text": "Keep an eye on it."
+  },
+  {
+    "source_lang": "nl",
+    "target_lang": "en",
+    "source_text": "Dat is aan jou.",
+    "target_text": "It's up to you."
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Привет, как ты?",
+    "target_text": "Hello, how are you?"
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Доброе утро!",
+    "target_text": "Good morning!"
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Добрый вечер.",
+    "target_text": "Good evening."
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Как тебя зовут?",
+    "target_text": "What is your name?"
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Меня зовут Алекс.",
+    "target_text": "My name is Alex."
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Пожалуйста, помоги мне.",
+    "target_text": "Please help me."
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Где ближайшая больница?",
+    "target_text": "Where is the nearest hospital?"
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Я хотел бы стакан воды.",
+    "target_text": "I would like a glass of water."
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Сколько это стоит?",
+    "target_text": "How much does this cost?"
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Большое спасибо.",
+    "target_text": "Thank you very much."
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Я не понимаю.",
+    "target_text": "I don't understand."
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Вы можете говорить медленнее?",
+    "target_text": "Can you speak more slowly?"
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Льёт как из ведра.",
+    "target_text": "It's raining cats and dogs."
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Растопить лёд.",
+    "target_text": "Break the ice."
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Мяч на твоей стороне.",
+    "target_text": "The ball is in your court."
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Проболтаться.",
+    "target_text": "Spill the beans."
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Раз в сто лет.",
+    "target_text": "Once in a blue moon."
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Попасть в самую точку.",
+    "target_text": "Hit the nail on the head."
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Проще пареной репы.",
+    "target_text": "Piece of cake."
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Влететь в копеечку.",
+    "target_text": "Cost an arm and a leg."
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Как дела?",
+    "target_text": "How's it going?"
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Что делаешь?",
+    "target_text": "What are you up to?"
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "До встречи.",
+    "target_text": "See you later."
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Береги себя!",
+    "target_text": "Take care!"
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Не переживай.",
+    "target_text": "No worries."
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Звучит хорошо.",
+    "target_text": "Sounds good."
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Я уже в пути.",
+    "target_text": "I'm on my way."
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Дай мне минуту.",
+    "target_text": "Give me a minute."
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Я сейчас вернусь.",
+    "target_text": "I'll be right back."
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Что ты имеешь в виду?",
+    "target_text": "What do you mean?"
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Зависит от ситуации.",
+    "target_text": "It depends."
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Понятия не имею.",
+    "target_text": "I have no idea."
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Хорошая мысль.",
+    "target_text": "That's a good point."
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Я шучу.",
+    "target_text": "Just kidding."
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Я опаздываю.",
+    "target_text": "I'm running late."
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Будем на связи.",
+    "target_text": "Keep in touch."
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Давно не виделись!",
+    "target_text": "Long time no see."
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Держись.",
+    "target_text": "Hang in there."
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Не спеши.",
+    "target_text": "Take your time."
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Я полностью согласен.",
+    "target_text": "I totally agree."
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Запустить дело.",
+    "target_text": "Get the ball rolling."
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Стиснуть зубы.",
+    "target_text": "Bite the bullet."
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Не было бы счастья, да несчастье помогло.",
+    "target_text": "A blessing in disguise."
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Закончить на сегодня.",
+    "target_text": "Call it a day."
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Быть на одной волне.",
+    "target_text": "On the same page."
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Сделать больше необходимого.",
+    "target_text": "Go the extra mile."
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Следить за этим.",
+    "target_text": "Keep an eye on it."
+  },
+  {
+    "source_lang": "ru",
+    "target_lang": "en",
+    "source_text": "Решать тебе.",
+    "target_text": "It's up to you."
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "你好，你好吗？",
+    "target_text": "Hello, how are you?"
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "早上好！",
+    "target_text": "Good morning!"
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "晚上好。",
+    "target_text": "Good evening."
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "你叫什么名字？",
+    "target_text": "What is your name?"
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "我叫亚历克斯。",
+    "target_text": "My name is Alex."
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "请帮帮我。",
+    "target_text": "Please help me."
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "最近的医院在哪里？",
+    "target_text": "Where is the nearest hospital?"
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "我想要一杯水。",
+    "target_text": "I would like a glass of water."
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "这个多少钱？",
+    "target_text": "How much does this cost?"
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "非常感谢。",
+    "target_text": "Thank you very much."
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "我不明白。",
+    "target_text": "I don't understand."
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "你能说慢一点吗？",
+    "target_text": "Can you speak more slowly?"
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "倾盆大雨。",
+    "target_text": "It's raining cats and dogs."
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "打破僵局。",
+    "target_text": "Break the ice."
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "球在你那边了。",
+    "target_text": "The ball is in your court."
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "泄露秘密。",
+    "target_text": "Spill the beans."
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "千载难逢。",
+    "target_text": "Once in a blue moon."
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "一针见血。",
+    "target_text": "Hit the nail on the head."
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "小菜一碟。",
+    "target_text": "Piece of cake."
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "花费一大笔钱。",
+    "target_text": "Cost an arm and a leg."
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "最近怎么样？",
+    "target_text": "How's it going?"
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "你在做什么？",
+    "target_text": "What are you up to?"
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "待会儿见。",
+    "target_text": "See you later."
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "保重！",
+    "target_text": "Take care!"
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "别担心。",
+    "target_text": "No worries."
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "听起来不错。",
+    "target_text": "Sounds good."
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "我在路上。",
+    "target_text": "I'm on my way."
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "给我一分钟。",
+    "target_text": "Give me a minute."
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "我马上回来。",
+    "target_text": "I'll be right back."
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "你是什么意思？",
+    "target_text": "What do you mean?"
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "看情况。",
+    "target_text": "It depends."
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "我完全不知道。",
+    "target_text": "I have no idea."
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "说得有道理。",
+    "target_text": "That's a good point."
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "开玩笑的。",
+    "target_text": "Just kidding."
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "我要迟到了。",
+    "target_text": "I'm running late."
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "保持联系。",
+    "target_text": "Keep in touch."
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "好久不见！",
+    "target_text": "Long time no see."
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "坚持住。",
+    "target_text": "Hang in there."
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "慢慢来。",
+    "target_text": "Take your time."
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "我完全同意。",
+    "target_text": "I totally agree."
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "开始行动。",
+    "target_text": "Get the ball rolling."
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "硬着头皮面对。",
+    "target_text": "Bite the bullet."
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "因祸得福。",
+    "target_text": "A blessing in disguise."
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "今天就到这里。",
+    "target_text": "Call it a day."
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "达成共识。",
+    "target_text": "On the same page."
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "付出额外努力。",
+    "target_text": "Go the extra mile."
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "留意一下。",
+    "target_text": "Keep an eye on it."
+  },
+  {
+    "source_lang": "zh",
+    "target_lang": "en",
+    "source_text": "由你决定。",
+    "target_text": "It's up to you."
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "안녕하세요, 어떻게 지내세요?",
+    "target_text": "Hello, how are you?"
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "좋은 아침입니다!",
+    "target_text": "Good morning!"
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "좋은 저녁입니다.",
+    "target_text": "Good evening."
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "이름이 뭐예요?",
+    "target_text": "What is your name?"
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "제 이름은 알렉스입니다.",
+    "target_text": "My name is Alex."
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "도와주세요.",
+    "target_text": "Please help me."
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "가장 가까운 병원이 어디인가요?",
+    "target_text": "Where is the nearest hospital?"
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "물 한 잔 주세요.",
+    "target_text": "I would like a glass of water."
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "이거 얼마예요?",
+    "target_text": "How much does this cost?"
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "정말 감사합니다.",
+    "target_text": "Thank you very much."
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "이해가 안 돼요.",
+    "target_text": "I don't understand."
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "좀 더 천천히 말씀해 주시겠어요?",
+    "target_text": "Can you speak more slowly?"
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "비가 억수같이 온다.",
+    "target_text": "It's raining cats and dogs."
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "어색한 분위기를 깨다.",
+    "target_text": "Break the ice."
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "이제 당신 차례예요.",
+    "target_text": "The ball is in your court."
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "비밀을 누설하다.",
+    "target_text": "Spill the beans."
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "가뭄에 콩 나듯.",
+    "target_text": "Once in a blue moon."
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "정곡을 찌르다.",
+    "target_text": "Hit the nail on the head."
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "식은 죽 먹기.",
+    "target_text": "Piece of cake."
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "엄청난 돈이 들다.",
+    "target_text": "Cost an arm and a leg."
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "잘 지내?",
+    "target_text": "How's it going?"
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "뭐 하고 있어?",
+    "target_text": "What are you up to?"
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "나중에 봐.",
+    "target_text": "See you later."
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "잘 지내!",
+    "target_text": "Take care!"
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "걱정하지 마.",
+    "target_text": "No worries."
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "좋아.",
+    "target_text": "Sounds good."
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "지금 가는 중이야.",
+    "target_text": "I'm on my way."
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "잠깐만 기다려 줘.",
+    "target_text": "Give me a minute."
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "금방 돌아올게.",
+    "target_text": "I'll be right back."
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "무슨 뜻이야?",
+    "target_text": "What do you mean?"
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "상황에 따라 달라.",
+    "target_text": "It depends."
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "전혀 모르겠어.",
+    "target_text": "I have no idea."
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "좋은 지적이야.",
+    "target_text": "That's a good point."
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "농담이야.",
+    "target_text": "Just kidding."
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "늦을 것 같아.",
+    "target_text": "I'm running late."
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "계속 연락하자.",
+    "target_text": "Keep in touch."
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "오랜만이야!",
+    "target_text": "Long time no see."
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "조금만 더 힘내.",
+    "target_text": "Hang in there."
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "천천히 해.",
+    "target_text": "Take your time."
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "전적으로 동의해.",
+    "target_text": "I totally agree."
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "일을 시작하다.",
+    "target_text": "Get the ball rolling."
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "이를 악물고 견디다.",
+    "target_text": "Bite the bullet."
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "전화위복.",
+    "target_text": "A blessing in disguise."
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "오늘은 여기까지 하다.",
+    "target_text": "Call it a day."
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "같은 생각을 하고 있다.",
+    "target_text": "On the same page."
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "한 걸음 더 노력하다.",
+    "target_text": "Go the extra mile."
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "잘 지켜보다.",
+    "target_text": "Keep an eye on it."
+  },
+  {
+    "source_lang": "ko",
+    "target_lang": "en",
+    "source_text": "네가 결정해.",
+    "target_text": "It's up to you."
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "مرحبًا، كيف حالك؟",
+    "target_text": "Hello, how are you?"
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "صباح الخير!",
+    "target_text": "Good morning!"
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "مساء الخير.",
+    "target_text": "Good evening."
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "ما اسمك؟",
+    "target_text": "What is your name?"
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "اسمي أليكس.",
+    "target_text": "My name is Alex."
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "من فضلك ساعدني.",
+    "target_text": "Please help me."
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "أين أقرب مستشفى؟",
+    "target_text": "Where is the nearest hospital?"
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "أريد كوب ماء من فضلك.",
+    "target_text": "I would like a glass of water."
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "كم يكلف هذا؟",
+    "target_text": "How much does this cost?"
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "شكرًا جزيلاً.",
+    "target_text": "Thank you very much."
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "أنا لا أفهم.",
+    "target_text": "I don't understand."
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "هل يمكنك التحدث ببطء أكثر؟",
+    "target_text": "Can you speak more slowly?"
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "إنها تمطر بغزارة شديدة.",
+    "target_text": "It's raining cats and dogs."
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "كسر الجليد.",
+    "target_text": "Break the ice."
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "الكرة الآن في ملعبك.",
+    "target_text": "The ball is in your court."
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "يفشي السر.",
+    "target_text": "Spill the beans."
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "مرة كل هجوم.",
+    "target_text": "Once in a blue moon."
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "يصيب المسمار على رأسه.",
+    "target_text": "Hit the nail on the head."
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "أسهل من شرب الماء.",
+    "target_text": "Piece of cake."
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "يكلف ثروة.",
+    "target_text": "Cost an arm and a leg."
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "كيف حالك؟",
+    "target_text": "How's it going?"
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "ماذا تفعل؟",
+    "target_text": "What are you up to?"
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "أراك لاحقًا.",
+    "target_text": "See you later."
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "اعتنِ بنفسك!",
+    "target_text": "Take care!"
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "لا تقلق.",
+    "target_text": "No worries."
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "يبدو جيدًا.",
+    "target_text": "Sounds good."
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "أنا في الطريق.",
+    "target_text": "I'm on my way."
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "أعطني دقيقة.",
+    "target_text": "Give me a minute."
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "سأعود حالًا.",
+    "target_text": "I'll be right back."
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "ماذا تقصد؟",
+    "target_text": "What do you mean?"
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "هذا يعتمد.",
+    "target_text": "It depends."
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "ليس لدي أي فكرة.",
+    "target_text": "I have no idea."
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "هذه نقطة جيدة.",
+    "target_text": "That's a good point."
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "أنا أمزح فقط.",
+    "target_text": "Just kidding."
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "سأتأخر.",
+    "target_text": "I'm running late."
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "ابقَ على تواصل.",
+    "target_text": "Keep in touch."
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "منذ وقت طويل لم نرك!",
+    "target_text": "Long time no see."
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "تمسّك بالأمل.",
+    "target_text": "Hang in there."
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "خذ وقتك.",
+    "target_text": "Take your time."
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "أوافق تمامًا.",
+    "target_text": "I totally agree."
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "نبدأ العمل.",
+    "target_text": "Get the ball rolling."
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "يواجه الأمر بشجاعة.",
+    "target_text": "Bite the bullet."
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "رب ضارة نافعة.",
+    "target_text": "A blessing in disguise."
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "ننهي العمل لهذا اليوم.",
+    "target_text": "Call it a day."
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "متفقون في الرأي.",
+    "target_text": "On the same page."
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "يبذل جهدًا إضافيًا.",
+    "target_text": "Go the extra mile."
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "راقبه جيدًا.",
+    "target_text": "Keep an eye on it."
+  },
+  {
+    "source_lang": "ar",
+    "target_lang": "en",
+    "source_text": "الأمر متروك لك.",
+    "target_text": "It's up to you."
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "नमस्ते, आप कैसे हैं?",
+    "target_text": "Hello, how are you?"
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "सुप्रभात!",
+    "target_text": "Good morning!"
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "शुभ संध्या।",
+    "target_text": "Good evening."
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "आपका नाम क्या है?",
+    "target_text": "What is your name?"
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "मेरा नाम एलेक्स है।",
+    "target_text": "My name is Alex."
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "कृपया मेरी मदद करें।",
+    "target_text": "Please help me."
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "सबसे नज़दीकी अस्पताल कहाँ है?",
+    "target_text": "Where is the nearest hospital?"
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "मुझे एक गिलास पानी चाहिए।",
+    "target_text": "I would like a glass of water."
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "इसकी कीमत कितनी है?",
+    "target_text": "How much does this cost?"
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "बहुत बहुत धन्यवाद।",
+    "target_text": "Thank you very much."
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "मुझे समझ नहीं आया।",
+    "target_text": "I don't understand."
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "क्या आप थोड़ा धीरे बोल सकते हैं?",
+    "target_text": "Can you speak more slowly?"
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "मूसलाधार बारिश हो रही है।",
+    "target_text": "It's raining cats and dogs."
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "बातचीत की शुरुआत करना।",
+    "target_text": "Break the ice."
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "अब बारी आपकी है।",
+    "target_text": "The ball is in your court."
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "राज़ खोल देना।",
+    "target_text": "Spill the beans."
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "कभी-कभार।",
+    "target_text": "Once in a blue moon."
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "बिल्कुल सही बात कहना।",
+    "target_text": "Hit the nail on the head."
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "बाएँ हाथ का खेल।",
+    "target_text": "Piece of cake."
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "बहुत महंगा पड़ना।",
+    "target_text": "Cost an arm and a leg."
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "कैसे चल रहा है?",
+    "target_text": "How's it going?"
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "क्या कर रहे हो?",
+    "target_text": "What are you up to?"
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "बाद में मिलते हैं।",
+    "target_text": "See you later."
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "अपना ख्याल रखना!",
+    "target_text": "Take care!"
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "कोई बात नहीं।",
+    "target_text": "No worries."
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "अच्छा लगता है।",
+    "target_text": "Sounds good."
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "मैं रास्ते में हूँ।",
+    "target_text": "I'm on my way."
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "मुझे एक मिनट दो।",
+    "target_text": "Give me a minute."
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "मैं अभी वापस आता हूँ।",
+    "target_text": "I'll be right back."
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "तुम्हारा क्या मतलब है?",
+    "target_text": "What do you mean?"
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "यह निर्भर करता है।",
+    "target_text": "It depends."
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "मुझे बिल्कुल पता नहीं।",
+    "target_text": "I have no idea."
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "यह अच्छी बात है।",
+    "target_text": "That's a good point."
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "मैं मज़ाक कर रहा हूँ।",
+    "target_text": "Just kidding."
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "मुझे देर हो रही है।",
+    "target_text": "I'm running late."
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "संपर्क में रहना।",
+    "target_text": "Keep in touch."
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "बहुत समय बाद मिले!",
+    "target_text": "Long time no see."
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "हिम्मत रखो।",
+    "target_text": "Hang in there."
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "अपना समय लो।",
+    "target_text": "Take your time."
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "मैं पूरी तरह सहमत हूँ।",
+    "target_text": "I totally agree."
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "काम शुरू करना।",
+    "target_text": "Get the ball rolling."
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "मुश्किल का सामना करना।",
+    "target_text": "Bite the bullet."
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "आपदा में अवसर।",
+    "target_text": "A blessing in disguise."
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "आज के लिए काम खत्म करना।",
+    "target_text": "Call it a day."
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "एक ही बात पर सहमत होना।",
+    "target_text": "On the same page."
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "अतिरिक्त प्रयास करना।",
+    "target_text": "Go the extra mile."
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "इस पर नज़र रखना।",
+    "target_text": "Keep an eye on it."
+  },
+  {
+    "source_lang": "hi",
+    "target_lang": "en",
+    "source_text": "यह आप पर निर्भर है।",
+    "target_text": "It's up to you."
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Merhaba, nasılsın?",
+    "target_text": "Hello, how are you?"
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Günaydın!",
+    "target_text": "Good morning!"
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "İyi akşamlar.",
+    "target_text": "Good evening."
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Adın ne?",
+    "target_text": "What is your name?"
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Benim adım Alex.",
+    "target_text": "My name is Alex."
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Lütfen bana yardım et.",
+    "target_text": "Please help me."
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "En yakın hastane nerede?",
+    "target_text": "Where is the nearest hospital?"
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Bir bardak su istiyorum.",
+    "target_text": "I would like a glass of water."
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Bu ne kadar?",
+    "target_text": "How much does this cost?"
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Çok teşekkür ederim.",
+    "target_text": "Thank you very much."
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Anlamıyorum.",
+    "target_text": "I don't understand."
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Daha yavaş konuşabilir misiniz?",
+    "target_text": "Can you speak more slowly?"
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Bardaktan boşanırcasına yağmur yağıyor.",
+    "target_text": "It's raining cats and dogs."
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Buzları eritmek.",
+    "target_text": "Break the ice."
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Top şimdi sende.",
+    "target_text": "The ball is in your court."
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Baklayı ağzından çıkarmak.",
+    "target_text": "Spill the beans."
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Kırk yılda bir.",
+    "target_text": "Once in a blue moon."
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Tam üstüne basmak.",
+    "target_text": "Hit the nail on the head."
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Çocuk oyuncağı.",
+    "target_text": "Piece of cake."
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Bir servet kaybetmek.",
+    "target_text": "Cost an arm and a leg."
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Nasıl gidiyor?",
+    "target_text": "How's it going?"
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Ne yapıyorsun?",
+    "target_text": "What are you up to?"
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Sonra görüşürüz.",
+    "target_text": "See you later."
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Kendine iyi bak!",
+    "target_text": "Take care!"
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Sorun değil.",
+    "target_text": "No worries."
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Kulağa hoş geliyor.",
+    "target_text": "Sounds good."
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Yoldayım.",
+    "target_text": "I'm on my way."
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Bana bir dakika ver.",
+    "target_text": "Give me a minute."
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Hemen döneceğim.",
+    "target_text": "I'll be right back."
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Ne demek istiyorsun?",
+    "target_text": "What do you mean?"
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Duruma bağlı.",
+    "target_text": "It depends."
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Hiçbir fikrim yok.",
+    "target_text": "I have no idea."
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Bu iyi bir nokta.",
+    "target_text": "That's a good point."
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Şaka yapıyorum.",
+    "target_text": "Just kidding."
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Geç kalıyorum.",
+    "target_text": "I'm running late."
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "İletişimde kalalım.",
+    "target_text": "Keep in touch."
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Uzun zamandır görüşmedik!",
+    "target_text": "Long time no see."
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Dayan.",
+    "target_text": "Hang in there."
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Acele etme.",
+    "target_text": "Take your time."
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Kesinlikle katılıyorum.",
+    "target_text": "I totally agree."
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "İşe koyulmak.",
+    "target_text": "Get the ball rolling."
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Dişini sıkmak.",
+    "target_text": "Bite the bullet."
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Her şerde bir hayır vardır.",
+    "target_text": "A blessing in disguise."
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Bugünlük işi bitirmek.",
+    "target_text": "Call it a day."
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Aynı fikirde olmak.",
+    "target_text": "On the same page."
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Ekstra çaba göstermek.",
+    "target_text": "Go the extra mile."
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Göz kulak olmak.",
+    "target_text": "Keep an eye on it."
+  },
+  {
+    "source_lang": "tr",
+    "target_lang": "en",
+    "source_text": "Sana kalmış.",
+    "target_text": "It's up to you."
   }
 ]

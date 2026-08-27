@@ -47,12 +47,10 @@ log = logging.getLogger(__name__)
 
 HUGGINGFACE_API_KEY = os.getenv("HUGGINGFACE_API_KEY")
 
-# Hugging Face Settings
-HF_API_URL = "https://router.huggingface.co/v1/chat/completions"
-# The ":featherless-ai" suffix pins the provider explicitly, since Hugging Face's
-# router doesn't reliably auto-select a working provider for every model.
-HF_MODEL = "meta-llama/Llama-3.2-3B-Instruct:featherless-ai"
-HF_HEADERS = {"Authorization": f"Bearer {HUGGINGFACE_API_KEY}"}
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
+HF_API_URL = "https://api.groq.com/openai/v1/chat/completions"
+HF_MODEL = "llama-3.3-70b-versatile"
+HF_HEADERS = {"Authorization": f"Bearer {GROQ_API_KEY}"}
 
 # Retry settings for HF cold-start (503 "Model is currently loading")
 MAX_RETRIES = 5
@@ -66,13 +64,14 @@ _keep_alive_started = False
 # Supported target languages (plain-name keys shown in UI)
 # NOTE: keep this in sync with the <option> values in templates/index.html
 SUPPORTED_LANGUAGES = {
-    "French", "Spanish", "German", "Urdu", "Japanese",
+    "English", "French", "Spanish", "German", "Urdu", "Japanese",
     "Italian", "Portuguese", "Dutch", "Russian", "Chinese",
     "Korean", "Arabic", "Hindi", "Turkish",
 }
 
 # Map UI language names → corpus 2-letter ISO codes
 LANGUAGE_CODE_MAP = {
+    "English": "en",
     "French": "fr", "Spanish": "es", "German": "de",
     "Urdu": "ur", "Japanese": "ja",
     "Italian": "it", "Portuguese": "pt", "Dutch": "nl",
@@ -312,9 +311,8 @@ def call_hf_api(prompt: str) -> str:
     503 (model loading / cold-start) with exponential back-off.
     Raises RuntimeError on unrecoverable failure.
     """
-    if not HUGGINGFACE_API_KEY or HUGGINGFACE_API_KEY == "hf_your_token_here":
-        raise RuntimeError("HUGGINGFACE_API_KEY not set. Add it to your .env file.")
-
+    if not GROQ_API_KEY:
+        raise RuntimeError("GROQ_API_KEY not set. Add it to your .env file.")
     payload = {
         "model": HF_MODEL,
         "messages": [{"role": "user", "content": prompt}],
@@ -534,6 +532,16 @@ def detect_language():
     text = data.get("text", "").strip()
     if not text:
         return jsonify({"error": "Field 'text' is required and cannot be empty.", "code": "EMPTY_TEXT"}), 400
+    # langdetect is unreliable on very short input (1-3 words) — it relies on
+    # character n-gram statistics that need enough text to be meaningful.
+    # Short strings frequently get misclassified as unrelated languages
+    # (e.g. short English phrases flagged as Swahili, Indonesian, etc).
+    word_count = len(text.split())
+    if word_count < 4:
+        return jsonify({
+            "error": "Text is too short to reliably detect language. Please enter at least a short sentence (4+ words).",
+            "code": "DETECTION_FAILED",
+        }), 422
 
     try:
         detected_code = langdetect_detect(text)

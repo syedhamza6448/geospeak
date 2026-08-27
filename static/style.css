@@ -1522,3 +1522,189 @@ background-image:
         var(--glow-combined),
         0 20px 50px rgba(0, 0, 0, 0.4);
 }
+/* ── CUSTOM RESPONSIVE SCROLLBAR ── */
+
+/* 1. WebKit Browsers (Chrome, Safari, Edge, Opera) */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(11, 14, 20, 0.5);
+    border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: var(--radius-full);
+    border: 2px solid rgba(11, 14, 20, 0.5);
+    backdrop-filter: blur(4px);
+    transition: background 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-gradient);
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+/* 2. Firefox Support */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.15) rgba(11, 14, 20, 0.5);
+}
+
+/* 3. Mobile Responsiveness */
+@media (max-width: 860px) {
+    ::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+    }
+}
+/* Update the mascot container image/video handling */
+.hero-mascot .mascot-container img,
+.hero-mascot .mascot-container video {
+    width: 100%;
+    height: 115%;
+    object-fit: contain;
+    object-position: bottom left;
+    filter: drop-shadow(0 12px 24px rgba(0,0,0,0.5));
+}
+
+/* ── UI ANIMATIONS & ENHANCEMENTS ── */
+
+/* A. Hero Banner Text Fade & Slide Entrance */
+.hero-text {
+    animation: heroSlideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes heroSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* B. Shimmer Effect for Accent Title */
+.hero-text h1 .accent-geo {
+    background-size: 200% auto;
+    animation: shineText 4s linear infinite;
+}
+
+@keyframes shineText {
+    to {
+        background-position: 200% center;
+    }
+}
+
+/* C. Smooth Swap Button Rotation Class */
+.swap-btn {
+    transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.35s ease;
+}
+
+.swap-btn.rotating {
+    transform: rotate(180deg) scale(1.1);
+}
+
+/* D. Shimmer Loading Effect for Translate Button */
+.translate-btn.loading-anim {
+    background-size: 200% 100%;
+    animation: btnShimmer 1.5s linear infinite;
+}
+
+@keyframes btnShimmer {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* E. Pop & Fade Animation for Output State & Badges */
+.output-state.active {
+    animation: popIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.detected-badge {
+    animation: popIn 0.25s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.97) translateY(6px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+/* ── ADVANCED INTERACTIVE ANIMATIONS ── */
+
+/* A. Interactive Glass Panel Hover Lift */
+.translation-panel {
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), 
+                box-shadow 0.35s ease, 
+                border-color 0.35s ease;
+}
+
+.translation-panel:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4), var(--glow-combined);
+}
+
+/* B. Textarea Neon Focus Pulse Ring */
+.translation-panel textarea {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.translation-panel textarea:focus {
+    transform: scale(1.002);
+    border-color: var(--accent-cyan);
+    box-shadow: 0 0 25px rgba(0, 240, 255, 0.15), inset 0 0 10px rgba(0, 240, 255, 0.05);
+}
+
+/* C. Dynamic History Item Entrance & Hover */
+.history-item {
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), 
+                background 0.25s ease, 
+                border-color 0.25s ease;
+}
+
+.history-item:hover {
+    transform: translateX(4px);
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(0, 240, 255, 0.25);
+}
+
+/* D. Smooth Context Card Expansion Toggle */
+.context-hint .hint-detail {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1), 
+                opacity 0.3s ease, 
+                margin-top 0.3s ease;
+}
+
+.context-hint .hint-detail.open {
+    max-height: 300px; /* Adjust according to context size */
+    opacity: 1;
+    margin-top: 12px;
+}
+
+/* E. Copy Button Success Pulse */
+@keyframes successPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.08); border-color: var(--accent-gold); box-shadow: 0 0 15px rgba(255, 199, 0, 0.3); }
+    100% { transform: scale(1); }
+}
+
+.pill-btn.copied {
+    animation: successPulse 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}

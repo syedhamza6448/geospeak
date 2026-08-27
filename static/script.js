@@ -80,11 +80,14 @@ sourceTextEl.addEventListener('keydown', e => {
 if (swapBtn) {
     swapBtn.addEventListener('click', () => {
         const lastResult = resultText.textContent.trim();
+        
+        // Trigger rotate animation regardless of text state
+        swapBtn.classList.add('rotating');
+        setTimeout(() => swapBtn.classList.remove('rotating'), 400);
+
         if (lastResult && lastResult !== '(empty response)' && lastResult !== 'Translation will appear here…') {
             sourceTextEl.value = lastResult;
             sourceTextEl.dispatchEvent(new Event('input'));
-            swapBtn.classList.toggle('swapped');
-            setTimeout(() => swapBtn.classList.toggle('swapped'), 600);
         }
     });
 }
@@ -92,7 +95,14 @@ if (swapBtn) {
 copyBtn.addEventListener('click', async () => {
     const text = resultText.textContent.trim();
     if (!text || text === 'Translation will appear here…') return;
-    try { await navigator.clipboard.writeText(text); } catch {
+    
+    // Trigger pop/glow animation on button
+    copyBtn.classList.add('copied');
+    setTimeout(() => copyBtn.classList.remove('copied'), 400);
+
+    try { 
+        await navigator.clipboard.writeText(text); 
+    } catch {
         const ta = document.createElement('textarea');
         ta.value = text;
         ta.style.position = 'fixed';
@@ -102,6 +112,7 @@ copyBtn.addEventListener('click', async () => {
         document.execCommand('copy');
         document.body.removeChild(ta);
     }
+    
     copyConfirm.style.opacity = '1';
     setTimeout(() => copyConfirm.style.opacity = '0', 1500);
 });
@@ -165,12 +176,24 @@ if (detectBtn) {
             });
             const data = await response.json();
 
-            if (!response.ok) {
+                       if (!response.ok) {
                 // Detection failed or language not supported by the UI —
-                // flash red and leave the source selector untouched.
+                // flash red AND show the user why, instead of failing silently.
                 console.warn('Language detection issue:', data.error || data.code);
                 detectBtn.style.borderColor = 'rgba(255,80,80,0.5)';
                 setTimeout(() => { detectBtn.style.borderColor = ''; }, 800);
+
+                const msg = data.code === 'DETECTION_FAILED'
+                    ? 'Could not detect language — try a longer sentence.'
+                    : (data.error || 'Could not detect language.');
+
+                if (detectedLangName) {
+                    detectedLangName.textContent = msg;
+                    detectBtn.classList.add('has-result');
+                    setTimeout(() => {
+                        detectBtn.classList.remove('has-result');
+                    }, 2500);
+                }
                 return;
             }
 
@@ -310,7 +333,9 @@ function showError(code, rawMessage) {
 
 function setLoading(isLoading) {
     translateBtn.disabled = isLoading;
-    translateBtn.innerHTML = isLoading ? '<span class="icon">⟳</span> Translating…' :
+    translateBtn.classList.toggle('loading-anim', isLoading);
+    translateBtn.innerHTML = isLoading ? 
+        '<span class="icon">⟳</span> Translating…' : 
         '<span class="icon">✦</span> Translate';
 }
 
@@ -383,17 +408,22 @@ function renderHistory() {
         return;
     }
     if (historyCount) historyCount.textContent = `(${historyData.length})`;
-    historyData.forEach(item => {
+    
+    historyData.forEach((item, index) => {
         const isRTL = RTL_LANGUAGES.has(item.targetLang);
         const dir = isRTL ? 'rtl' : 'ltr';
         const align = isRTL ? 'right' : 'left';
         const div = document.createElement('div');
         div.className = 'history-item';
+        
+        // Add staggered inline delay animation
+        div.style.animation = `popIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) ${index * 0.05}s backward`;
+        
         div.innerHTML = `
-              <div class="h-item-header"><span class="h-item-lang">${escapeHTML(item.targetLang)}</span></div>
-              <div class="h-item-source">${escapeHTML(item.source)}</div>
-              <div class="h-item-target" dir="${dir}" style="text-align:${align};">${escapeHTML(item.result)}</div>
-            `;
+            <div class="h-item-header"><span class="h-item-lang">${escapeHTML(item.targetLang)}</span></div>
+            <div class="h-item-source">${escapeHTML(item.source)}</div>
+            <div class="h-item-target" dir="${dir}" style="text-align:${align};">${escapeHTML(item.result)}</div>
+        `;
         historyList.appendChild(div);
     });
 }
