@@ -175,18 +175,30 @@ faiss_index = None
 embedding_model = None
 
 
+FAISS_INDEX_PATH = os.path.join(os.path.dirname(__file__), "data", "faiss_index.bin")
+CORPUS_META_PATH = os.path.join(os.path.dirname(__file__), "data", "corpus_meta.json")
+
+
 def build_index():
-    """Load sentence-transformer model and build FAISS index at startup."""
+    """Load the fastembed model and the PREBUILT FAISS index/corpus metadata.
+
+    The corpus embeddings are computed offline (see build_index_offline.py)
+    and committed to the repo as data/faiss_index.bin and data/corpus_meta.json.
+    This avoids computing embeddings for the whole corpus at server startup,
+    which was causing out-of-memory kills on Render's free tier.
+    """
     global corpus_entries, faiss_index, embedding_model
 
-    # --- Lazy-import heavy deps so missing packages give a clear error ---
     try:
         from fastembed import TextEmbedding
         import faiss as faiss_lib
+        import json
     except ImportError as exc:
         log.error("Missing dependency: %s. Run: pip install -r requirements.txt", exc)
         return
 
+    # Load the embedding model — still needed to embed each incoming query at
+    # request time (a single short string), which is cheap.
     log.info("Loading fastembed model (all-MiniLM-L6-v2, ONNX runtime)…")
     try:
         embedding_model = TextEmbedding(model_name="sentence-transformers/all-MiniLM-L6-v2")
@@ -194,27 +206,24 @@ def build_index():
         log.error("Failed to load embedding model: %s", exc)
         return
 
-    corpus_entries = load_corpus(CORPUS_PATH)
-    if not corpus_entries:
-        log.warning("Corpus is empty — FAISS index not built.")
+    if not os.path.exists(FAISS_INDEX_PATH) or not os.path.exists(CORPUS_META_PATH):
+        log.error(
+            "Prebuilt index files not found (%s, %s). "
+            "Run build_index_offline.py locally and commit the output files.",
+            FAISS_INDEX_PATH, CORPUS_META_PATH,
+        )
         return
 
-    source_texts = [e["source_text"] for e in corpus_entries]
-    log.info("Computing embeddings for %d corpus entries…", len(source_texts))
+    log.info("Loading prebuilt FAISS index and corpus metadata…")
     try:
-        embeddings = np.array(list(embedding_model.embed(source_texts)), dtype="float32")
-        # L2-normalize for cosine similarity via inner product
-        faiss_lib.normalize_L2(embeddings)
+        faiss_index = faiss_lib.read_index(FAISS_INDEX_PATH)
+        with open(CORPUS_META_PATH, encoding="utf-8") as f:
+            corpus_entries = json.load(f)
     except Exception as exc:
-        log.error("Embedding computation failed: %s", exc)
+        log.error("Failed to load prebuilt index/metadata: %s", exc)
         return
 
-    dim = embeddings.shape[1]
-    faiss_index = faiss_lib.IndexFlatIP(dim)  # Inner-product ≡ cosine on L2-normed vecs
-    faiss_index.add(embeddings)
-    log.info("FAISS index built: %d vectors, dim=%d", faiss_index.ntotal, dim)
-
-
+    log.info("Loaded FAISS index: %d vectors. Corpus entries: %d", faiss_index.ntotal, len(corpus_entries))
 # ---------------------------------------------------------------------------
 # RAG retrieval
 # ---------------------------------------------------------------------------

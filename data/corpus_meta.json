@@ -1,0 +1,1700 @@
+[
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "Hello, how are you?",
+    "target_text": "Bonjour, comment allez-vous ?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "Good morning!",
+    "target_text": "Bonjour !"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "Good evening.",
+    "target_text": "Bonsoir."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "What is your name?",
+    "target_text": "Comment vous appelez-vous ?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "My name is Alex.",
+    "target_text": "Je m'appelle Alex."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "Please help me.",
+    "target_text": "Aidez-moi, s'il vous plaît."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "Where is the nearest hospital?",
+    "target_text": "Où est l'hôpital le plus proche ?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "I would like a glass of water.",
+    "target_text": "Je voudrais un verre d'eau."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "How much does this cost?",
+    "target_text": "Combien cela coûte-t-il ?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "Thank you very much.",
+    "target_text": "Merci beaucoup."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "I don't understand.",
+    "target_text": "Je ne comprends pas."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "Can you speak more slowly?",
+    "target_text": "Pouvez-vous parler plus lentement ?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "Hello, how are you?",
+    "target_text": "Hola, ¿cómo estás?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "Good morning!",
+    "target_text": "¡Buenos días!"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "Good evening.",
+    "target_text": "Buenas noches."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "What is your name?",
+    "target_text": "¿Cómo te llamas?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "My name is Alex.",
+    "target_text": "Me llamo Alex."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "Please help me.",
+    "target_text": "Por favor, ayúdame."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "Where is the nearest hospital?",
+    "target_text": "¿Dónde está el hospital más cercano?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "I would like a glass of water.",
+    "target_text": "Me gustaría un vaso de agua."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "How much does this cost?",
+    "target_text": "¿Cuánto cuesta esto?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "Thank you very much.",
+    "target_text": "Muchas gracias."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "I don't understand.",
+    "target_text": "No entiendo."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "Can you speak more slowly?",
+    "target_text": "¿Puedes hablar más despacio?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "Hello, how are you?",
+    "target_text": "Hallo, wie geht es Ihnen?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "Good morning!",
+    "target_text": "Guten Morgen!"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "Good evening.",
+    "target_text": "Guten Abend."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "What is your name?",
+    "target_text": "Wie heißen Sie?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "My name is Alex.",
+    "target_text": "Ich heiße Alex."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "Please help me.",
+    "target_text": "Bitte helfen Sie mir."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "Where is the nearest hospital?",
+    "target_text": "Wo ist das nächste Krankenhaus?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "I would like a glass of water.",
+    "target_text": "Ich hätte gerne ein Glas Wasser."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "How much does this cost?",
+    "target_text": "Wie viel kostet das?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "Thank you very much.",
+    "target_text": "Vielen Dank."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "I don't understand.",
+    "target_text": "Ich verstehe nicht."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "Can you speak more slowly?",
+    "target_text": "Können Sie bitte langsamer sprechen?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "Hello, how are you?",
+    "target_text": "ہیلو، آپ کیسے ہیں؟"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "Good morning!",
+    "target_text": "صبح بخیر!"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "Good evening.",
+    "target_text": "شام بخیر۔"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "What is your name?",
+    "target_text": "آپ کا نام کیا ہے؟"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "My name is Alex.",
+    "target_text": "میرا نام ایلکس ہے۔"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "Please help me.",
+    "target_text": "براہ کرم میری مدد کریں۔"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "Where is the nearest hospital?",
+    "target_text": "قریب ترین ہسپتال کہاں ہے؟"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "I would like a glass of water.",
+    "target_text": "مجھے ایک گلاس پانی چاہیے۔"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "How much does this cost?",
+    "target_text": "اس کی قیمت کتنی ہے؟"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "Thank you very much.",
+    "target_text": "بہت بہت شکریہ۔"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "I don't understand.",
+    "target_text": "مجھے سمجھ نہیں آیا۔"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "Can you speak more slowly?",
+    "target_text": "کیا آپ ذرا آہستہ بول سکتے ہیں؟"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "It's raining cats and dogs.",
+    "target_text": "Il pleut des cordes."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "Break the ice.",
+    "target_text": "Briser la glace."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "The ball is in your court.",
+    "target_text": "La balle est dans ton camp."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "Spill the beans.",
+    "target_text": "Cracher le morceau."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "Once in a blue moon.",
+    "target_text": "Tous les trente-six du mois."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "Hit the nail on the head.",
+    "target_text": "Taper dans le mille."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "Under the weather.",
+    "target_text": "Ne pas être dans son assiette."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "Piece of cake.",
+    "target_text": "C'est du gâteau."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "fr",
+    "source_text": "Let the cat out of the bag.",
+    "target_text": "Vendre la mèche."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "It's raining cats and dogs.",
+    "target_text": "Está lloviendo a cántaros."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "Break the ice.",
+    "target_text": "Romper el hielo."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "The ball is in your court.",
+    "target_text": "La pelota está en tu tejado."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "Spill the beans.",
+    "target_text": "Irse de la lengua."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "Once in a blue moon.",
+    "target_text": "De higos a brevas."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "Hit the nail on the head.",
+    "target_text": "Dar en el clavo."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "Under the weather.",
+    "target_text": "Estar pachucho."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "Piece of cake.",
+    "target_text": "Pan comido."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "es",
+    "source_text": "Cost an arm and a leg.",
+    "target_text": "Costar un ojo de la cara."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "It's raining cats and dogs.",
+    "target_text": "Es regnet in Strömen."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "Break the ice.",
+    "target_text": "Das Eis brechen."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "The ball is in your court.",
+    "target_text": "Der Ball liegt in deinem Feld."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "Spill the beans.",
+    "target_text": "Die Katze aus dem Sack lassen."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "Once in a blue moon.",
+    "target_text": "Alle Jubeljahre einmal."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "Hit the nail on the head.",
+    "target_text": "Den Nagel auf den Kopf treffen."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "Piece of cake.",
+    "target_text": "Ein Kinderspiel."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "de",
+    "source_text": "Cost an arm and a leg.",
+    "target_text": "Ein Vermögen kosten."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "It's raining cats and dogs.",
+    "target_text": "موسلا دھار بارش ہو رہی ہے۔"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "Break the ice.",
+    "target_text": "بات چیت کا آغاز کرنا۔"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "The ball is in your court.",
+    "target_text": "اب آپ کی باری ہے۔"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "Spill the beans.",
+    "target_text": "راز فاش کرنا۔"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "Hit the nail on the head.",
+    "target_text": "بالکل درست بات کہنا۔"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "Piece of cake.",
+    "target_text": "بائیں ہاتھ کا کھیل۔"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "Under the weather.",
+    "target_text": "طبیعت خراب ہونا۔"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "Cost an arm and a leg.",
+    "target_text": "بہت مہنگا پڑنا۔"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ur",
+    "source_text": "Back to square one.",
+    "target_text": "وہیں کے وہیں۔"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "Hello, how are you?",
+    "target_text": "こんにちは、お元気ですか？"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "Good morning!",
+    "target_text": "おはようございます！"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "Good evening.",
+    "target_text": "こんばんは。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "What is your name?",
+    "target_text": "お名前は何ですか？"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "My name is Alex.",
+    "target_text": "私の名前はアレックスです。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "Please help me.",
+    "target_text": "助けてください。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "Where is the nearest hospital?",
+    "target_text": "一番近い病院はどこですか？"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "I would like a glass of water.",
+    "target_text": "お水を一杯いただけますか。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "How much does this cost?",
+    "target_text": "これはいくらですか？"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "Thank you very much.",
+    "target_text": "本当にありがとうございます。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "I don't understand.",
+    "target_text": "わかりません。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "Can you speak more slowly?",
+    "target_text": "もう少しゆっくり話していただけますか？"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "It's raining cats and dogs.",
+    "target_text": "土砂降りだ。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "Break the ice.",
+    "target_text": "場を和ませる。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "The ball is in your court.",
+    "target_text": "次はあなたの番です。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "Spill the beans.",
+    "target_text": "秘密を漏らす。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "Hit the nail on the head.",
+    "target_text": "図星を指す。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "Piece of cake.",
+    "target_text": "朝飯前。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "Under the weather.",
+    "target_text": "体調が優れない。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ja",
+    "source_text": "Cost an arm and a leg.",
+    "target_text": "非常に高くつく。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "Hello, how are you?",
+    "target_text": "Ciao, come stai?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "Good morning!",
+    "target_text": "Buongiorno!"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "Good evening.",
+    "target_text": "Buonasera."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "What is your name?",
+    "target_text": "Come ti chiami?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "My name is Alex.",
+    "target_text": "Mi chiamo Alex."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "Please help me.",
+    "target_text": "Per favore, aiutami."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "Where is the nearest hospital?",
+    "target_text": "Dov'è l'ospedale più vicino?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "I would like a glass of water.",
+    "target_text": "Vorrei un bicchiere d'acqua."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "How much does this cost?",
+    "target_text": "Quanto costa questo?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "Thank you very much.",
+    "target_text": "Grazie mille."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "I don't understand.",
+    "target_text": "Non capisco."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "Can you speak more slowly?",
+    "target_text": "Puoi parlare più lentamente?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "It's raining cats and dogs.",
+    "target_text": "Piove a catinelle."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "Break the ice.",
+    "target_text": "Rompere il ghiaccio."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "The ball is in your court.",
+    "target_text": "La palla è nel tuo campo."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "Spill the beans.",
+    "target_text": "Vuotare il sacco."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "Once in a blue moon.",
+    "target_text": "Ogni morte di papa."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "Hit the nail on the head.",
+    "target_text": "Colpire nel segno."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "Piece of cake.",
+    "target_text": "Un gioco da ragazzi."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "it",
+    "source_text": "Cost an arm and a leg.",
+    "target_text": "Costare un occhio della testa."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "Hello, how are you?",
+    "target_text": "Olá, como você está?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "Good morning!",
+    "target_text": "Bom dia!"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "Good evening.",
+    "target_text": "Boa noite."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "What is your name?",
+    "target_text": "Qual é o seu nome?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "My name is Alex.",
+    "target_text": "Meu nome é Alex."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "Please help me.",
+    "target_text": "Por favor, me ajude."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "Where is the nearest hospital?",
+    "target_text": "Onde fica o hospital mais próximo?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "I would like a glass of water.",
+    "target_text": "Eu gostaria de um copo de água."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "How much does this cost?",
+    "target_text": "Quanto custa isso?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "Thank you very much.",
+    "target_text": "Muito obrigado."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "I don't understand.",
+    "target_text": "Eu não entendo."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "Can you speak more slowly?",
+    "target_text": "Você pode falar mais devagar?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "It's raining cats and dogs.",
+    "target_text": "Está chovendo canivetes."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "Break the ice.",
+    "target_text": "Quebrar o gelo."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "The ball is in your court.",
+    "target_text": "A bola está com você."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "Spill the beans.",
+    "target_text": "Deixar escapar o gato."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "Once in a blue moon.",
+    "target_text": "Once em uma lua azul... de vez em nunca."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "Hit the nail on the head.",
+    "target_text": "Acertar na mosca."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "Piece of cake.",
+    "target_text": "Moleza."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "pt",
+    "source_text": "Cost an arm and a leg.",
+    "target_text": "Custar os olhos da cara."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "Hello, how are you?",
+    "target_text": "Hallo, hoe gaat het met je?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "Good morning!",
+    "target_text": "Goedemorgen!"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "Good evening.",
+    "target_text": "Goedenavond."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "What is your name?",
+    "target_text": "Hoe heet je?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "My name is Alex.",
+    "target_text": "Ik heet Alex."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "Please help me.",
+    "target_text": "Help me alsjeblieft."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "Where is the nearest hospital?",
+    "target_text": "Waar is het dichtstbijzijnde ziekenhuis?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "I would like a glass of water.",
+    "target_text": "Ik wil graag een glas water."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "How much does this cost?",
+    "target_text": "Hoeveel kost dit?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "Thank you very much.",
+    "target_text": "Heel erg bedankt."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "I don't understand.",
+    "target_text": "Ik begrijp het niet."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "Can you speak more slowly?",
+    "target_text": "Kun je langzamer praten?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "It's raining cats and dogs.",
+    "target_text": "Het regent pijpenstelen."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "Break the ice.",
+    "target_text": "Het ijs breken."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "The ball is in your court.",
+    "target_text": "De bal ligt bij jou."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "Spill the beans.",
+    "target_text": "Uit de school klappen."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "Once in a blue moon.",
+    "target_text": "Eens in de tijd dat de kraaien wit zien."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "Hit the nail on the head.",
+    "target_text": "De spijker op zijn kop slaan."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "Piece of cake.",
+    "target_text": "Een fluitje van een cent."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "nl",
+    "source_text": "Cost an arm and a leg.",
+    "target_text": "Een fortuin kosten."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "Hello, how are you?",
+    "target_text": "Привет, как ты?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "Good morning!",
+    "target_text": "Доброе утро!"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "Good evening.",
+    "target_text": "Добрый вечер."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "What is your name?",
+    "target_text": "Как тебя зовут?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "My name is Alex.",
+    "target_text": "Меня зовут Алекс."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "Please help me.",
+    "target_text": "Пожалуйста, помоги мне."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "Where is the nearest hospital?",
+    "target_text": "Где ближайшая больница?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "I would like a glass of water.",
+    "target_text": "Я хотел бы стакан воды."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "How much does this cost?",
+    "target_text": "Сколько это стоит?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "Thank you very much.",
+    "target_text": "Большое спасибо."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "I don't understand.",
+    "target_text": "Я не понимаю."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "Can you speak more slowly?",
+    "target_text": "Вы можете говорить медленнее?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "It's raining cats and dogs.",
+    "target_text": "Льёт как из ведра."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "Break the ice.",
+    "target_text": "Растопить лёд."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "The ball is in your court.",
+    "target_text": "Мяч на твоей стороне."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "Spill the beans.",
+    "target_text": "Проболтаться."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "Once in a blue moon.",
+    "target_text": "Раз в сто лет."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "Hit the nail on the head.",
+    "target_text": "Попасть в самую точку."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "Piece of cake.",
+    "target_text": "Проще пареной репы."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ru",
+    "source_text": "Cost an arm and a leg.",
+    "target_text": "Влететь в копеечку."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "Hello, how are you?",
+    "target_text": "你好，你好吗？"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "Good morning!",
+    "target_text": "早上好！"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "Good evening.",
+    "target_text": "晚上好。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "What is your name?",
+    "target_text": "你叫什么名字？"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "My name is Alex.",
+    "target_text": "我叫亚历克斯。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "Please help me.",
+    "target_text": "请帮帮我。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "Where is the nearest hospital?",
+    "target_text": "最近的医院在哪里？"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "I would like a glass of water.",
+    "target_text": "我想要一杯水。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "How much does this cost?",
+    "target_text": "这个多少钱？"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "Thank you very much.",
+    "target_text": "非常感谢。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "I don't understand.",
+    "target_text": "我不明白。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "Can you speak more slowly?",
+    "target_text": "你能说慢一点吗？"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "It's raining cats and dogs.",
+    "target_text": "倾盆大雨。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "Break the ice.",
+    "target_text": "打破僵局。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "The ball is in your court.",
+    "target_text": "球在你那边了。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "Spill the beans.",
+    "target_text": "泄露秘密。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "Once in a blue moon.",
+    "target_text": "千载难逢。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "Hit the nail on the head.",
+    "target_text": "一针见血。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "Piece of cake.",
+    "target_text": "小菜一碟。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "source_text": "Cost an arm and a leg.",
+    "target_text": "花费一大笔钱。"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "Hello, how are you?",
+    "target_text": "안녕하세요, 어떻게 지내세요?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "Good morning!",
+    "target_text": "좋은 아침입니다!"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "Good evening.",
+    "target_text": "좋은 저녁입니다."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "What is your name?",
+    "target_text": "이름이 뭐예요?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "My name is Alex.",
+    "target_text": "제 이름은 알렉스입니다."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "Please help me.",
+    "target_text": "도와주세요."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "Where is the nearest hospital?",
+    "target_text": "가장 가까운 병원이 어디인가요?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "I would like a glass of water.",
+    "target_text": "물 한 잔 주세요."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "How much does this cost?",
+    "target_text": "이거 얼마예요?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "Thank you very much.",
+    "target_text": "정말 감사합니다."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "I don't understand.",
+    "target_text": "이해가 안 돼요."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "Can you speak more slowly?",
+    "target_text": "좀 더 천천히 말씀해 주시겠어요?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "It's raining cats and dogs.",
+    "target_text": "비가 억수같이 온다."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "Break the ice.",
+    "target_text": "어색한 분위기를 깨다."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "The ball is in your court.",
+    "target_text": "이제 당신 차례예요."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "Spill the beans.",
+    "target_text": "비밀을 누설하다."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "Once in a blue moon.",
+    "target_text": "가뭄에 콩 나듯."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "Hit the nail on the head.",
+    "target_text": "정곡을 찌르다."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "Piece of cake.",
+    "target_text": "식은 죽 먹기."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ko",
+    "source_text": "Cost an arm and a leg.",
+    "target_text": "엄청난 돈이 들다."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "Hello, how are you?",
+    "target_text": "مرحبًا، كيف حالك؟"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "Good morning!",
+    "target_text": "صباح الخير!"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "Good evening.",
+    "target_text": "مساء الخير."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "What is your name?",
+    "target_text": "ما اسمك؟"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "My name is Alex.",
+    "target_text": "اسمي أليكس."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "Please help me.",
+    "target_text": "من فضلك ساعدني."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "Where is the nearest hospital?",
+    "target_text": "أين أقرب مستشفى؟"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "I would like a glass of water.",
+    "target_text": "أريد كوب ماء من فضلك."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "How much does this cost?",
+    "target_text": "كم يكلف هذا؟"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "Thank you very much.",
+    "target_text": "شكرًا جزيلاً."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "I don't understand.",
+    "target_text": "أنا لا أفهم."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "Can you speak more slowly?",
+    "target_text": "هل يمكنك التحدث ببطء أكثر؟"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "It's raining cats and dogs.",
+    "target_text": "إنها تمطر بغزارة شديدة."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "Break the ice.",
+    "target_text": "كسر الجليد."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "The ball is in your court.",
+    "target_text": "الكرة الآن في ملعبك."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "Spill the beans.",
+    "target_text": "يفشي السر."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "Once in a blue moon.",
+    "target_text": "مرة كل هجوم."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "Hit the nail on the head.",
+    "target_text": "يصيب المسمار على رأسه."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "Piece of cake.",
+    "target_text": "أسهل من شرب الماء."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "ar",
+    "source_text": "Cost an arm and a leg.",
+    "target_text": "يكلف ثروة."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "Hello, how are you?",
+    "target_text": "नमस्ते, आप कैसे हैं?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "Good morning!",
+    "target_text": "सुप्रभात!"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "Good evening.",
+    "target_text": "शुभ संध्या।"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "What is your name?",
+    "target_text": "आपका नाम क्या है?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "My name is Alex.",
+    "target_text": "मेरा नाम एलेक्स है।"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "Please help me.",
+    "target_text": "कृपया मेरी मदद करें।"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "Where is the nearest hospital?",
+    "target_text": "सबसे नज़दीकी अस्पताल कहाँ है?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "I would like a glass of water.",
+    "target_text": "मुझे एक गिलास पानी चाहिए।"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "How much does this cost?",
+    "target_text": "इसकी कीमत कितनी है?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "Thank you very much.",
+    "target_text": "बहुत बहुत धन्यवाद।"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "I don't understand.",
+    "target_text": "मुझे समझ नहीं आया।"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "Can you speak more slowly?",
+    "target_text": "क्या आप थोड़ा धीरे बोल सकते हैं?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "It's raining cats and dogs.",
+    "target_text": "मूसलाधार बारिश हो रही है।"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "Break the ice.",
+    "target_text": "बातचीत की शुरुआत करना।"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "The ball is in your court.",
+    "target_text": "अब बारी आपकी है।"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "Spill the beans.",
+    "target_text": "राज़ खोल देना।"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "Once in a blue moon.",
+    "target_text": "कभी-कभार।"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "Hit the nail on the head.",
+    "target_text": "बिल्कुल सही बात कहना।"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "Piece of cake.",
+    "target_text": "बाएँ हाथ का खेल।"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "hi",
+    "source_text": "Cost an arm and a leg.",
+    "target_text": "बहुत महंगा पड़ना।"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "Hello, how are you?",
+    "target_text": "Merhaba, nasılsın?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "Good morning!",
+    "target_text": "Günaydın!"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "Good evening.",
+    "target_text": "İyi akşamlar."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "What is your name?",
+    "target_text": "Adın ne?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "My name is Alex.",
+    "target_text": "Benim adım Alex."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "Please help me.",
+    "target_text": "Lütfen bana yardım et."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "Where is the nearest hospital?",
+    "target_text": "En yakın hastane nerede?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "I would like a glass of water.",
+    "target_text": "Bir bardak su istiyorum."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "How much does this cost?",
+    "target_text": "Bu ne kadar?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "Thank you very much.",
+    "target_text": "Çok teşekkür ederim."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "I don't understand.",
+    "target_text": "Anlamıyorum."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "Can you speak more slowly?",
+    "target_text": "Daha yavaş konuşabilir misiniz?"
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "It's raining cats and dogs.",
+    "target_text": "Bardaktan boşanırcasına yağmur yağıyor."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "Break the ice.",
+    "target_text": "Buzları eritmek."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "The ball is in your court.",
+    "target_text": "Top şimdi sende."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "Spill the beans.",
+    "target_text": "Baklayı ağzından çıkarmak."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "Once in a blue moon.",
+    "target_text": "Kırk yılda bir."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "Hit the nail on the head.",
+    "target_text": "Tam üstüne basmak."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "Piece of cake.",
+    "target_text": "Çocuk oyuncağı."
+  },
+  {
+    "source_lang": "en",
+    "target_lang": "tr",
+    "source_text": "Cost an arm and a leg.",
+    "target_text": "Bir servet kaybetmek."
+  }
+]
