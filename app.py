@@ -181,15 +181,15 @@ def build_index():
 
     # --- Lazy-import heavy deps so missing packages give a clear error ---
     try:
-        from sentence_transformers import SentenceTransformer
+        from fastembed import TextEmbedding
         import faiss as faiss_lib
     except ImportError as exc:
         log.error("Missing dependency: %s. Run: pip install -r requirements.txt", exc)
         return
 
-    log.info("Loading sentence-transformers model (all-MiniLM-L6-v2)…")
+    log.info("Loading fastembed model (all-MiniLM-L6-v2, ONNX runtime)…")
     try:
-        embedding_model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
+        embedding_model = TextEmbedding(model_name="sentence-transformers/all-MiniLM-L6-v2")
     except Exception as exc:
         log.error("Failed to load embedding model: %s", exc)
         return
@@ -202,8 +202,7 @@ def build_index():
     source_texts = [e["source_text"] for e in corpus_entries]
     log.info("Computing embeddings for %d corpus entries…", len(source_texts))
     try:
-        embeddings = embedding_model.encode(source_texts, convert_to_numpy=True, show_progress_bar=False)
-        embeddings = embeddings.astype("float32")
+        embeddings = np.array(list(embedding_model.embed(source_texts)), dtype="float32")
         # L2-normalize for cosine similarity via inner product
         faiss_lib.normalize_L2(embeddings)
     except Exception as exc:
@@ -230,7 +229,7 @@ def retrieve_examples(text: str, target_lang: str, k: int = 3) -> tuple[list[dic
 
     try:
         import faiss as faiss_lib
-        query_vec = embedding_model.encode([text], convert_to_numpy=True).astype("float32")
+        query_vec = np.array(list(embedding_model.embed([text])), dtype="float32")
         faiss_lib.normalize_L2(query_vec)
 
         # Search more candidates so we can filter by language

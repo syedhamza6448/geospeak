@@ -1,5 +1,6 @@
 flask
-sentence-transformers
+gunicorn
+fastembed
 faiss-cpu
 numpy
 python-dotenv
@@ -8,4 +9,3 @@ huggingface_hub
 pytest
 pytest-mock
 langdetect
-gunicorn
