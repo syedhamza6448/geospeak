@@ -131,18 +131,6 @@ def start_keep_alive():
     thread.start()
 
 
-# Build the index when the first request arrives — this guarantees it runs
-# even when Flask's reloader spawns a child process (avoids double-loading).
-@app.before_request
-def ensure_index_built():
-    start_keep_alive()
-    if request.path == "/health":
-        return
-    global faiss_index, embedding_model
-    if faiss_index is None and embedding_model is None:
-        build_index()
-
-
 # ---------------------------------------------------------------------------
 # Corpus loading
 # ---------------------------------------------------------------------------
@@ -567,10 +555,20 @@ def health():
 
 
 # ---------------------------------------------------------------------------
-# Entry point
+# Build the model + FAISS index once, at import time. This runs whether the
+# app is started via `python app.py` (local dev) OR via gunicorn
+# (`gunicorn app:app` on Render) — since gunicorn never executes the
+# `if __name__ == "__main__":` block below, building the index there only
+# worked locally and left every request on Render trying (and failing) to
+# build it lazily on first request.
+# ---------------------------------------------------------------------------
+start_keep_alive()
+build_index()
+
+
+# ---------------------------------------------------------------------------
+# Entry point (local dev only — gunicorn on Render skips this entirely)
 # ---------------------------------------------------------------------------
 if __name__ == "__main__":
-    start_keep_alive()
-    build_index()
     port = int(os.getenv("PORT", 5000))
     app.run(host="0.0.0.0", port=port, debug=False)
