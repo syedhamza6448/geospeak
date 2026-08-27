@@ -48,10 +48,13 @@ log = logging.getLogger(__name__)
 HUGGINGFACE_API_KEY = os.getenv("HUGGINGFACE_API_KEY")
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
-HF_API_URL = "https://api.groq.com/openai/v1/chat/completions"
-HF_MODEL = "llama-3.3-70b-versatile"
-HF_HEADERS = {"Authorization": f"Bearer {GROQ_API_KEY}"}
 
+GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
+GROQ_MODEL = "qwen/qwen3.6-27b"
+GROQ_HEADERS = {
+    "Authorization": f"Bearer {GROQ_API_KEY}",
+    "Content-Type": "application/json",
+}
 # Retry settings for HF cold-start (503 "Model is currently loading")
 MAX_RETRIES = 5
 BACKOFF_BASE = 10  # seconds — doubles each retry: 10, 20, 40 …
@@ -305,95 +308,79 @@ def build_prompt(text: str, target_lang: str, examples: list[dict]) -> str:
 # ---------------------------------------------------------------------------
 # Hugging Face Inference API call with retry-on-cold-start
 # ---------------------------------------------------------------------------
-def call_hf_api(prompt: str) -> str:
-    """
-    Send prompt to HF Inference API. Retries up to MAX_RETRIES times on
-    503 (model loading / cold-start) with exponential back-off.
-    Raises RuntimeError on unrecoverable failure.
-    """
+def call_groq_api(prompt: str) -> str:
     if not GROQ_API_KEY:
-        raise RuntimeError("GROQ_API_KEY not set. Add it to your .env file.")
+        raise RuntimeError("GROQ_API_KEY not set.")
+
     payload = {
-        "model": HF_MODEL,
-        "messages": [{"role": "user", "content": prompt}],
-        "max_tokens": 200,
-        "temperature": 0.3
+        "model": GROQ_MODEL,
+        "messages": [
+            {
+                "role": "user",
+                "content": prompt
+            }
+        ],
+        "max_tokens": 300,
+        "temperature": 0.3,
+        "reasoning_effort": "none"
     }
 
-    for attempt in range(1, MAX_RETRIES + 1):
-        try:
-            response = requests.post(HF_API_URL, headers=HF_HEADERS, json=payload, timeout=60)
-        except requests.exceptions.Timeout:
-            raise RuntimeError("Request to Hugging Face API timed out (60 s).")
-        except requests.exceptions.ConnectionError as exc:
-            raise RuntimeError(f"Network error reaching Hugging Face API: {exc}")
+    try:
+        response = requests.post(
+            GROQ_API_URL,
+            headers=GROQ_HEADERS,
+            json=payload,
+            timeout=60
+        )
+    except requests.exceptions.Timeout:
+        raise RuntimeError("Request to Groq API timed out.")
+    except requests.exceptions.ConnectionError as exc:
+        raise RuntimeError(f"Network error reaching Groq API: {exc}")
 
-        # ── Diagnostic logging on every response ──────────────────
-        log.info("HF API response — status: %d", response.status_code)
-        if response.status_code != 200:
-            log.error(
-                "HF API error details:\n"
-                "  Status : %d\n"
-                "  Headers: %s\n"
-                "  Body   : %s",
-                response.status_code,
-                dict(response.headers),
-                response.text[:1000],
-            )
+    log.info("Groq API response — status: %d", response.status_code)
 
-        if response.status_code == 200:
-            data = response.json()
-            # Response should follow OpenAI spec: {"choices": [{"message": {"content": "..."}}]}
-            if "choices" in data and len(data["choices"]) > 0:
-                translation = data["choices"][0].get("message", {}).get("content", "").strip()
-                if translation:
-                    return translation
-            log.error("Unexpected HF API 200 response format: %s", data)
-            raise RuntimeError(f"Unexpected HF API response format: {data}")
-
-        if response.status_code == 503:
-            # Model is loading (cold-start) — back off and retry
-            wait = BACKOFF_BASE * (2 ** (attempt - 1))
-            log.warning(
-                "HF model cold-starting (503). Attempt %d/%d — retrying in %ds…",
-                attempt, MAX_RETRIES, wait,
-            )
-            if attempt == MAX_RETRIES:
-                raise RuntimeError(
-                    "MODEL_COLD_START: Hugging Face model is still loading after "
-                    f"{MAX_RETRIES} retries. Please retry in ~30 seconds."
-                )
-            time.sleep(wait)
-            continue
-
-        if response.status_code == 429:
-            raise RuntimeError(
-                "RATE_LIMIT: Hugging Face free-tier rate limit reached. "
-                "Please wait a minute before retrying."
-            )
-
-        if response.status_code == 401:
-            raise RuntimeError(
-                "AUTH_ERROR: Invalid HUGGINGFACE_API_KEY. "
-                "Check your .env file and token at huggingface.co/settings/tokens."
-            )
-
-        if response.status_code == 403:
-            raise RuntimeError(
-                "PERMISSION_DENIED: 403 Forbidden. This authentication method does not have sufficient permissions to call Inference Providers."
-            )
-
-        # Any other HTTP error
-        raise RuntimeError(
-            f"HF API returned HTTP {response.status_code}: {response.text[:500]}"
+    if response.status_code != 200:
+        log.error(
+            "Groq API error — Status: %d — Body: %s",
+            response.status_code,
+            response.text[:1000]
         )
 
-    # Should never reach here due to raises inside loop, but just in case
-    raise RuntimeError("Failed to get a response from Hugging Face API.")
+    if response.status_code == 200:
+        data = response.json()
 
+        if "choices" in data and data["choices"]:
+            translation = (
+                data["choices"][0]
+                .get("message", {})
+                .get("content", "")
+                .strip()
+            )
 
+            if translation:
+                return translation
 
+        raise RuntimeError(
+            f"Empty translation returned by Groq: {data}"
+        )
 
+    if response.status_code == 401:
+        raise RuntimeError("AUTH_ERROR: Invalid GROQ_API_KEY.")
+
+    if response.status_code == 403:
+        raise RuntimeError(
+            "PERMISSION_DENIED: Model access denied."
+        )
+
+    if response.status_code == 429:
+        raise RuntimeError(
+            "RATE_LIMIT: Groq rate limit reached."
+        )
+
+    raise RuntimeError(
+        f"Groq API returned HTTP {response.status_code}: "
+        f"{response.text[:500]}"
+    )
 # ---------------------------------------------------------------------------
 # Main translation function
 # ---------------------------------------------------------------------------
@@ -409,10 +396,9 @@ def get_translation(text: str, target_lang: str) -> tuple[str, float | None, lis
     log.info("Retrieved %d examples for target_lang='%s'", len(examples), target_lang)
 
     prompt = build_prompt(text, target_lang, examples)
-    log.info("Sending prompt to HF API (model=%s)…", HF_MODEL)
+    log.info("Sending prompt to Groq API (model=%s)…", GROQ_MODEL)
 
-    raw_output = call_hf_api(prompt)
-
+    raw_output = call_groq_api(prompt)
     # Strip any residual instruction echoes or common model preambles
     cleaned = raw_output.strip().strip('"').strip("'")
     # Remove common preamble patterns the model sometimes adds
