@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="GeoSpeak — AI-powered real-time language translation. Break every language barrier with RAG-enhanced precision. Free, fast, and built for humans." />
+  <meta name="keywords" content="GeoSpeak, AI translation, language translation, RAG, NLP, free translation, multilingual" />
+  <meta property="og:title" content="GeoSpeak — AI Translation, Zero Barriers" />
+  <meta property="og:description" content="Real-time AI translation powered by RAG and open-source LLMs. No API costs. No limits." />
+  <title>GeoSpeak — AI Translation, Zero Barriers</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Landing Stylesheet -->
+  <link rel="stylesheet" href="/static/landing.css" />
+</head>
+<body>
+
+  <!-- ══ Top accent border ══════════════════════════════════════ -->
+  <div class="top-border" aria-hidden="true"></div>
+
+  <!-- ══ Dynamic pixel canvas — sides only (fixed, z-index:0) ════ -->
+  <canvas id="pixel-canvas" class="decor-canvas" aria-hidden="true"></canvas>
+
+  <!-- ══ Navbar ═════════════════════════════════════════════════ -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <a href="/" class="logo" id="logo-home">
+      <div class="logo-mark" aria-hidden="true">G</div>
+      geospeak
+    </a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="#features" id="nav-features">Features</a></li>
+      <li><a href="#how-it-works" id="nav-how">How It Works</a></li>
+      <li><a href="#languages" id="nav-languages">Languages</a></li>
+      <li><a href="#stack" id="nav-stack">Stack</a></li>
+    </ul>
+
+    <a href="/app" class="nav-cta" id="nav-cta-translate">
+      Start Translating
+    </a>
+  </nav>
+
+  <!-- ══ Announcement Ticker ════════════════════════════════════ -->
+  <div class="ticker" role="banner" aria-label="Announcement">
+    <span class="ticker-badge">New</span>
+    <span class="ticker-text">
+      GeoSpeak now supports 5 languages — French, Spanish, German, Urdu &amp; Japanese — powered by Llama 3.3 70B via Groq.
+    </span>
+    <a href="#languages" class="ticker-link" id="ticker-readmore">See languages &gt;</a>
+  </div>
+
+  <!-- ══ Hero Section ═══════════════════════════════════════════ -->
+  <section class="hero" id="hero" aria-label="Hero">
+
+    <!-- hero headline block -->
+
+    <div class="hero-block">
+      <h1>
+        <span class="hero-line" data-tier="1" data-delay="0">Every language spoken.</span>
+        <span class="hero-line" data-tier="2" data-delay="100">Every message translated.</span>
+        <span class="hero-line" data-tier="3" data-delay="200">Every barrier broken.</span>
+        <span class="hero-line" data-tier="4" data-delay="300">Every conversation bridged.</span>
+      </h1>
+
+      <span class="hero-gap"></span>
+
+      <p class="hero-para" data-tier="1" data-delay="480">That's GeoSpeak.</p>
+
+      <span class="hero-gap" style="height:24px;"></span>
+
+      <p class="hero-para" data-tier="2" data-delay="620">Training creates the model.</p>
+      <p class="hero-para" data-tier="3" data-delay="740">RAG creates the precision.</p>
+      <p class="hero-para" data-tier="4" data-delay="860">And real-time makes it effortless.</p>
+
+      <!-- CTA buttons -->
+      <div class="hero-cta-row" id="hero-cta-row">
+        <a href="/app" class="btn-primary" id="cta-translate-now">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          Translate Now
+        </a>
+        <a href="#how-it-works" class="btn-outline" id="cta-see-how">
+          See How It Works
+        </a>
+      </div>
+
+      <!-- Stats row -->
+      <div class="hero-stats" id="hero-stats">
+        <div class="stat-item">
+          <span class="stat-value">5</span>
+          <span class="stat-label">Languages</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat-item">
+          <span class="stat-value">100%</span>
+          <span class="stat-label">Free Stack</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat-item">
+          <span class="stat-value">RAG</span>
+          <span class="stat-label">Precision</span>
+        </div>
+        <div class="stat-sep"></div>
+        <div class="stat-item">
+          <span class="stat-value">70B</span>
+          <span class="stat-label">LLM Params</span>
+        </div>
+      </div>
+
+      <!-- Language pills -->
+      <div class="lang-strip" id="lang-strip">
+        <span class="lang-pill">🇫🇷 French</span>
+        <span class="lang-pill">🇪🇸 Spanish</span>
+        <span class="lang-pill">🇩🇪 German</span>
+        <span class="lang-pill">🇵🇰 Urdu</span>
+        <span class="lang-pill">🇯🇵 Japanese</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ Features Section ════════════════════════════════════════ -->
+  <section class="features" id="features" aria-label="Features">
+    <p class="section-eyebrow reveal">// capabilities</p>
+    <h2 class="section-title reveal">Built for precision.<br/>Designed for humans.</h2>
+
+    <div class="features-grid">
+
+      <div class="feature-card reveal">
+        <div class="feature-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </div>
+        <h3 class="feature-title">RAG-Enhanced Retrieval</h3>
+        <p class="feature-desc">Retrieval-Augmented Generation pulls the most relevant parallel corpus examples before every translation, injecting few-shot context that dramatically improves accuracy and idiomatic fidelity.</p>
+      </div>
+
+      <div class="feature-card reveal">
+        <div class="feature-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <h3 class="feature-title">Real-Time Translation</h3>
+        <p class="feature-desc">Powered by Llama 3.3 70B via Groq's blazing-fast inference API. Submit text and receive a high-quality translation in seconds — not minutes.</p>
+      </div>
+
+      <div class="feature-card reveal">
+        <div class="feature-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="3" x2="9" y2="21"/></svg>
+        </div>
+        <h3 class="feature-title">Language Detection</h3>
+        <p class="feature-desc">Automatic source language detection using offline <code style="font-family:var(--mono);font-size:12px;color:var(--accent);">langdetect</code> — no API calls, no extra cost. Know what you're translating before you even select a target.</p>
+      </div>
+
+      <div class="feature-card reveal">
+        <div class="feature-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3 class="feature-title">Rate Limiting & Safety</h3>
+        <p class="feature-desc">Built-in in-memory rate limiting (10 req/IP/60s) and robust error handling for cold-start delays, auth errors, and API failures — production-grade from day one.</p>
+      </div>
+
+      <div class="feature-card reveal">
+        <div class="feature-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+        </div>
+        <h3 class="feature-title">FAISS Vector Search</h3>
+        <p class="feature-desc">Facebook's FAISS library provides lightning-fast in-memory vector similarity search across the parallel corpus — fulfilling the Vector Database role without any standalone database service.</p>
+      </div>
+
+      <div class="feature-card reveal">
+        <div class="feature-icon" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        </div>
+        <h3 class="feature-title">100% Free Stack</h3>
+        <p class="feature-desc">Zero paid APIs. Sentence-transformers run locally for embeddings. Groq's free tier powers LLM inference. Open-source from embeddings to output.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ How It Works ════════════════════════════════════════════ -->
+  <section class="how-it-works" id="how-it-works" aria-label="How it works">
+    <p class="section-eyebrow reveal">// process</p>
+    <h2 class="section-title reveal">Four steps.<br/>One fluent translation.</h2>
+
+    <div class="steps-list">
+
+      <div class="step-item reveal">
+        <span class="step-num">01</span>
+        <div class="step-body">
+          <h3 class="step-title">Embed Your Input</h3>
+          <p class="step-desc">Your text is vectorized locally using <strong>sentence-transformers/all-MiniLM-L6-v2</strong> — a compact, highly efficient model that runs entirely on your server with zero external API calls.</p>
+        </div>
+      </div>
+
+      <div class="step-item reveal">
+        <span class="step-num">02</span>
+        <div class="step-body">
+          <h3 class="step-title">Retrieve Corpus Examples</h3>
+          <p class="step-desc">FAISS searches the in-memory parallel corpus index for the most semantically similar translation examples in your target language — pulling just the right few-shot context for the LLM.</p>
+        </div>
+      </div>
+
+      <div class="step-item reveal">
+        <span class="step-num">03</span>
+        <div class="step-body">
+          <h3 class="step-title">Build the Prompt</h3>
+          <p class="step-desc">Retrieved examples are assembled into a structured few-shot instruction prompt — giving Llama 3.3 70B exactly the linguistic context it needs to generate an idiomatic, accurate translation.</p>
+        </div>
+      </div>
+
+      <div class="step-item reveal">
+        <span class="step-num">04</span>
+        <div class="step-body">
+          <h3 class="step-title">Return the Translation</h3>
+          <p class="step-desc">The Groq inference API responds with a clean translation. GeoSpeak strips any model preamble, displays the result, and gives you a one-click copy — ready to use instantly.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ Languages Section ═══════════════════════════════════════ -->
+  <section class="languages" id="languages" aria-label="Supported languages">
+    <p class="section-eyebrow reveal">// languages</p>
+    <h2 class="section-title reveal" style="max-width:100%; text-align:center;">Five languages.<br/>One interface.</h2>
+
+    <div class="lang-grid">
+      <div class="lang-card reveal">
+        <span class="lang-flag">🇫🇷</span>
+        <span class="lang-name">French</span>
+      </div>
+      <div class="lang-card reveal">
+        <span class="lang-flag">🇪🇸</span>
+        <span class="lang-name">Spanish</span>
+      </div>
+      <div class="lang-card reveal">
+        <span class="lang-flag">🇩🇪</span>
+        <span class="lang-name">German</span>
+      </div>
+      <div class="lang-card reveal">
+        <span class="lang-flag">🇵🇰</span>
+        <span class="lang-name">Urdu</span>
+      </div>
+      <div class="lang-card reveal">
+        <span class="lang-flag">🇯🇵</span>
+        <span class="lang-name">Japanese</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ Tech Stack Section ═══════════════════════════════════════ -->
+  <section class="stack-section" id="stack" aria-label="Technology stack">
+    <p class="section-eyebrow reveal">// tech stack</p>
+    <h2 class="section-title reveal">Open source.<br/>Zero cost.</h2>
+
+    <div class="stack-grid">
+      <div class="stack-item reveal">
+        <span class="stack-label">Framework</span>
+        <span class="stack-name">Flask</span>
+        <span class="stack-sub">Routes, JSON API, template rendering</span>
+      </div>
+      <div class="stack-item reveal">
+        <span class="stack-label">Embeddings</span>
+        <span class="stack-name">sentence-transformers</span>
+        <span class="stack-sub">all-MiniLM-L6-v2 — runs locally</span>
+      </div>
+      <div class="stack-item reveal">
+        <span class="stack-label">Vector Search</span>
+        <span class="stack-name">FAISS</span>
+        <span class="stack-sub">In-memory similarity search</span>
+      </div>
+      <div class="stack-item reveal">
+        <span class="stack-label">LLM</span>
+        <span class="stack-name">Llama 3.3 70B</span>
+        <span class="stack-sub">via Groq Inference API (free tier)</span>
+      </div>
+      <div class="stack-item reveal">
+        <span class="stack-label">Detection</span>
+        <span class="stack-name">langdetect</span>
+        <span class="stack-sub">Offline language identification</span>
+      </div>
+      <div class="stack-item reveal">
+        <span class="stack-label">Testing</span>
+        <span class="stack-name">pytest</span>
+        <span class="stack-sub">5 test cases, fully mocked</span>
+      </div>
+      <div class="stack-item reveal">
+        <span class="stack-label">Math</span>
+        <span class="stack-name">NumPy</span>
+        <span class="stack-sub">Embedding array operations</span>
+      </div>
+      <div class="stack-item reveal">
+        <span class="stack-label">Frontend</span>
+        <span class="stack-name">HTML5 / CSS / JS</span>
+        <span class="stack-sub">Space Mono brutalist UI</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CTA Section ═════════════════════════════════════════════ -->
+  <section class="cta-section" id="cta" aria-label="Call to action">
+    <h2 class="cta-headline reveal">
+      Ready to break<br /><span>every language barrier?</span>
+    </h2>
+    <p class="cta-sub reveal">
+      GeoSpeak is free, open-source, and ready to translate. No sign-up. No API keys on your end. Just fluent, AI-powered communication.
+    </p>
+    <div class="hero-cta-row reveal" id="cta-buttons">
+      <a href="/app" class="btn-primary" id="cta-bottom-translate">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        Open Translator
+      </a>
+      <a href="https://github.com" class="btn-outline" id="cta-bottom-github" target="_blank" rel="noopener">
+        View on GitHub
+      </a>
+    </div>
+  </section>
+
+  <!-- ══ Footer ══════════════════════════════════════════════════ -->
+  <footer role="contentinfo">
+    <span class="footer-copy">&copy; 2026 GeoSpeak. Built for AZM 2026 by Hamza.</span>
+    <ul class="footer-links" role="list">
+      <li><a href="#features" id="footer-features">Features</a></li>
+      <li><a href="#stack" id="footer-stack">Stack</a></li>
+      <li><a href="/app" id="footer-app">Translator</a></li>
+    </ul>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // ── 1. Hero CTA / stats / lang-strip fade-in on load ──────────
+      setTimeout(() => document.getElementById('hero-cta-row')?.classList.add('visible'), 600);
+      setTimeout(() => document.getElementById('hero-stats')?.classList.add('visible'),   900);
+      setTimeout(() => document.getElementById('lang-strip')?.classList.add('visible'),  1100);
+
+      // ── 2. Hero lines & paras: increase opacity on scroll (0.5 -> 1.0) ──
+      const heroTextEls = document.querySelectorAll('.hero-line, .hero-para');
+
+      function updateHeroScroll() {
+        const scrollY = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || window.scrollY || 0;
+        
+        heroTextEls.forEach((el, index) => {
+          // Line-by-line staggered progression
+          const start = index * 40;
+          const duration = 80;
+          
+          let lineProgress = 0;
+          if (scrollY > start) {
+            lineProgress = Math.min((scrollY - start) / duration, 1);
+          }
+          
+          // Global scroll factor so all lines respond immediately
+          const globalProgress = Math.min(scrollY / 360, 1) * 0.4;
+          
+          const totalProgress = Math.min(Math.max(lineProgress, globalProgress), 1);
+          const opacity = (0.5 + 0.5 * totalProgress).toFixed(2);
+          
+          el.style.opacity = opacity;
+          
+          if (totalProgress >= 0.8) {
+            el.classList.add('focused');
+          } else {
+            el.classList.remove('focused');
+          }
+        });
+      }
+
+      window.addEventListener('scroll', updateHeroScroll, { passive: true });
+      document.addEventListener('scroll', updateHeroScroll, { passive: true });
+      window.addEventListener('resize', updateHeroScroll, { passive: true });
+      window.addEventListener('load', updateHeroScroll);
+      updateHeroScroll();
+
+      // ── 3. General scroll-reveal (.reveal elements) ───────────────
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+      document.querySelectorAll('.reveal').forEach((el, i) => {
+        el.style.transitionDelay = `${(i % 6) * 0.08}s`;
+        revealObserver.observe(el);
+      });
+
+      // ── 4. Smooth anchor scrolling ───────────────────────────────
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', e => {
+          const target = document.querySelector(anchor.getAttribute('href'));
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+
+      // ── 5. Pixel Merging & Detaching Simulation (Sides Only) ──────
+      const canvas = document.getElementById('pixel-canvas');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+
+      let width = window.innerWidth;
+      let height = window.innerHeight;
+
+      function resizeCanvas() {
+        const dpr = window.devicePixelRatio || 1;
+        width = window.innerWidth;
+        height = window.innerHeight;
+        canvas.width = Math.floor(width * dpr);
+        canvas.height = Math.floor(height * dpr);
+        canvas.style.width = width + 'px';
+        canvas.style.height = height + 'px';
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      }
+      window.addEventListener('resize', resizeCanvas);
+      resizeCanvas();
+
+      // Shape catalogs for different pixel counts
+      const SHAPES_2 = [
+        [[0, 0], [1, 0]],       // horizontal domino
+        [[0, 0], [0, 1]],       // vertical domino
+      ];
+      const SHAPES_3 = [
+        [[0, 0], [1, 0], [2, 0]], // horizontal 3-bar
+        [[0, 0], [0, 1], [0, 2]], // vertical 3-bar
+        [[0, 0], [0, 1], [1, 1]], // L-tromino
+        [[1, 0], [0, 1], [1, 1]], // reversed L
+        [[0, 0], [1, 0], [1, 1]], // top L
+      ];
+      const SHAPES_4 = [
+        [[0, 0], [1, 0], [0, 1], [1, 1]], // 2x2 square
+        [[0, 0], [1, 0], [2, 0], [3, 0]], // 4-bar
+        [[0, 0], [0, 1], [0, 2], [0, 3]], // vertical 4-bar
+        [[0, 0], [1, 0], [2, 0], [1, 1]], // T-shape
+        [[0, 0], [0, 1], [0, 2], [1, 2]], // L-tetromino
+      ];
+      const SHAPES_6 = [
+        [[0, 0], [1, 0], [2, 0], [0, 1], [1, 1], [2, 1]], // 2x3 chip block
+        [[0, 0], [1, 0], [0, 1], [1, 1], [0, 2], [1, 2]], // 3x2 chip block
+      ];
+
+      function getShapesForCount(count) {
+        if (count === 2) return SHAPES_2;
+        if (count === 3) return SHAPES_3;
+        if (count === 4) return SHAPES_4;
+        return SHAPES_6;
+      }
+
+      function easeInOutCubic(t) {
+        return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+      }
+      function easeOutQuad(t) {
+        return 1 - (1 - t) * (1 - t);
+      }
+
+      const PIXEL_SIZE = 9;
+      const PIXEL_GAP = 2;
+      const STEP = PIXEL_SIZE + PIXEL_GAP;
+
+      // Cluster configuration — STRICTLY ON SIDES ONLY (left: 2%-11%, right: 89%-97.5%)
+      const CLUSTER_DEFS = [
+        // Left side (5 clusters, evenly spread top to bottom)
+        { side: 'left', xPct: 0.035, yPct: 0.12, count: 4 },
+        { side: 'left', xPct: 0.080, yPct: 0.28, count: 6 },
+        { side: 'left', xPct: 0.028, yPct: 0.48, count: 3 },
+        { side: 'left', xPct: 0.090, yPct: 0.68, count: 4 },
+        { side: 'left', xPct: 0.040, yPct: 0.88, count: 6 },
+
+        // Right side (5 clusters, evenly spread top to bottom)
+        { side: 'right', xPct: 0.940, yPct: 0.15, count: 6 },
+        { side: 'right', xPct: 0.895, yPct: 0.35, count: 4 },
+        { side: 'right', xPct: 0.950, yPct: 0.55, count: 3 },
+        { side: 'right', xPct: 0.890, yPct: 0.72, count: 6 },
+        { side: 'right', xPct: 0.945, yPct: 0.90, count: 4 },
+      ];
+
+      class PixelCluster {
+        constructor(def, index) {
+          this.def = def;
+          this.count = def.count;
+          this.shapes = getShapesForCount(this.count);
+          this.currentShapeIndex = Math.floor(Math.random() * this.shapes.length);
+
+          // State: 'merged', 'detaching', 'detached', 'merging'
+          this.state = 'merged';
+          this.stateTime = 0;
+
+          // Stagger initial phase so clusters animate asynchronously
+          this.mergedDuration = 1800 + Math.random() * 1200;
+          this.detachDuration = 900;
+          this.detachedDuration = 1200 + Math.random() * 1000;
+          this.mergeDuration = 900;
+
+          this.stateTime = (index * 450) % this.mergedDuration;
+
+          this.pixels = [];
+          for (let i = 0; i < this.count; i++) {
+            this.pixels.push({
+              x: 0,
+              y: 0,
+              startX: 0,
+              startY: 0,
+              targetX: 0,
+              targetY: 0,
+              scatterX: 0,
+              scatterY: 0,
+              seed: Math.random() * 100,
+            });
+          }
+
+          this.setupPositions();
+        }
+
+        getBasePos() {
+          return {
+            x: this.def.xPct * width,
+            y: this.def.yPct * height
+          };
+        }
+
+        setupPositions() {
+          const base = this.getBasePos();
+          const shape = this.shapes[this.currentShapeIndex];
+
+          for (let i = 0; i < this.count; i++) {
+            const slot = shape[i] || [0, 0];
+            const px = base.x + slot[0] * STEP;
+            const py = base.y + slot[1] * STEP;
+            this.pixels[i].x = px;
+            this.pixels[i].y = py;
+            this.pixels[i].targetX = px;
+            this.pixels[i].targetY = py;
+          }
+        }
+
+        prepareDetaching() {
+          const base = this.getBasePos();
+          // Each pixel detaches in a completely random direction every time
+          for (let i = 0; i < this.count; i++) {
+            const p = this.pixels[i];
+            p.startX = p.x;
+            p.startY = p.y;
+
+            const angle = Math.random() * Math.PI * 2;
+            const dist = 18 + Math.random() * 32;
+
+            // Strict clamp to ensure pixels stay strictly on the side bands
+            let rawX = base.x + Math.cos(angle) * dist;
+            if (this.def.side === 'left') {
+              rawX = Math.max(8, Math.min(rawX, width * 0.125));
+            } else {
+              rawX = Math.max(width * 0.875, Math.min(rawX, width - 20));
+            }
+
+            p.scatterX = rawX;
+            p.scatterY = base.y + Math.sin(angle) * dist;
+          }
+        }
+
+        prepareMerging() {
+          const base = this.getBasePos();
+          // Pick a DIFFERENT shape from the catalog every cycle
+          let nextShapeIndex = Math.floor(Math.random() * this.shapes.length);
+          if (this.shapes.length > 1 && nextShapeIndex === this.currentShapeIndex) {
+            nextShapeIndex = (nextShapeIndex + 1) % this.shapes.length;
+          }
+          this.currentShapeIndex = nextShapeIndex;
+          const shape = this.shapes[this.currentShapeIndex];
+
+          for (let i = 0; i < this.count; i++) {
+            const p = this.pixels[i];
+            p.startX = p.x;
+            p.startY = p.y;
+
+            const slot = shape[i] || [0, 0];
+            p.targetX = base.x + slot[0] * STEP;
+            p.targetY = base.y + slot[1] * STEP;
+          }
+        }
+
+        update(dt, now) {
+          this.stateTime += dt;
+
+          if (this.state === 'merged') {
+            // Pixels stay locked in formation
+            const base = this.getBasePos();
+            const shape = this.shapes[this.currentShapeIndex];
+            for (let i = 0; i < this.count; i++) {
+              const slot = shape[i] || [0, 0];
+              this.pixels[i].x = base.x + slot[0] * STEP;
+              this.pixels[i].y = base.y + slot[1] * STEP;
+            }
+
+            if (this.stateTime >= this.mergedDuration) {
+              this.state = 'detaching';
+              this.stateTime = 0;
+              this.prepareDetaching();
+            }
+          } else if (this.state === 'detaching') {
+            const t = Math.min(this.stateTime / this.detachDuration, 1);
+            const ease = easeOutQuad(t);
+
+            for (let i = 0; i < this.count; i++) {
+              const p = this.pixels[i];
+              p.x = p.startX + (p.scatterX - p.startX) * ease;
+              p.y = p.startY + (p.scatterY - p.startY) * ease;
+            }
+
+            if (t >= 1) {
+              this.state = 'detached';
+              this.stateTime = 0;
+            }
+          } else if (this.state === 'detached') {
+            // Subtle floating drift while detached
+            for (let i = 0; i < this.count; i++) {
+              const p = this.pixels[i];
+              const driftX = Math.sin((now / 1000) * 1.5 + p.seed) * 0.4;
+              const driftY = Math.cos((now / 1000) * 1.5 + p.seed) * 0.4;
+              p.x = p.scatterX + driftX;
+              p.y = p.scatterY + driftY;
+            }
+
+            if (this.stateTime >= this.detachedDuration) {
+              this.state = 'merging';
+              this.stateTime = 0;
+              this.prepareMerging();
+            }
+          } else if (this.state === 'merging') {
+            const t = Math.min(this.stateTime / this.mergeDuration, 1);
+            const ease = easeInOutCubic(t);
+
+            for (let i = 0; i < this.count; i++) {
+              const p = this.pixels[i];
+              p.x = p.startX + (p.targetX - p.startX) * ease;
+              p.y = p.startY + (p.targetY - p.startY) * ease;
+            }
+
+            if (t >= 1) {
+              this.state = 'merged';
+              this.stateTime = 0;
+              this.mergedDuration = 1800 + Math.random() * 1200;
+            }
+          }
+        }
+
+        draw(ctx) {
+          ctx.fillStyle = '#FDE74C';
+
+          for (let i = 0; i < this.count; i++) {
+            const p = this.pixels[i];
+            const px = Math.round(p.x);
+            const py = Math.round(p.y);
+
+            // Merged pixels look solid and cohesive, detached pixels look slightly luminous
+            if (this.state === 'merged') {
+              ctx.globalAlpha = 0.95;
+            } else {
+              ctx.globalAlpha = 0.80;
+            }
+
+            ctx.fillRect(px, py, PIXEL_SIZE, PIXEL_SIZE);
+          }
+          ctx.globalAlpha = 1;
+        }
+      }
+
+      const clusters = CLUSTER_DEFS.map((def, i) => new PixelCluster(def, i));
+
+      let lastTime = performance.now();
+      function loop(now) {
+        const dt = Math.min(now - lastTime, 100);
+        lastTime = now;
+
+        ctx.clearRect(0, 0, width, height);
+
+        for (let i = 0; i < clusters.length; i++) {
+          clusters[i].update(dt, now);
+          clusters[i].draw(ctx);
+        }
+
+        requestAnimationFrame(loop);
+      }
+      requestAnimationFrame(loop);
+    });
+  </script>
+
+</body>
+</html>
