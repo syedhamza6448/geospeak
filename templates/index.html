@@ -3,234 +3,243 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="GeoSpeak — Geo-contextual AI translation with glassmorphism UI." />
-    <title>GeoSpeak AI — Context-Aware Translation</title>
+    <meta name="description" content="GeoSpeak — Geo-contextual AI translation powered by RAG and open LLMs." />
+    <title>GeoSpeak — Live AI Translator</title>
 
     <link rel="icon" type="image/png" href="static/robo_head.png" />
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts: Pixelify Sans + Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
     <!-- External Stylesheet -->
     <link rel="stylesheet" href="static/style.css" />
 </head>
 <body>
 
+    <!-- ══ Top Accent Border ══ -->
+    <div class="top-border" aria-hidden="true"></div>
 
-        <!-- ─── APP CONTAINER ─── -->
-        <div class="app-container">
+    <!-- ══ Dynamic Pixel Canvas (Sides Only) ══ -->
+    <canvas id="pixel-canvas" class="decor-canvas" aria-hidden="true"></canvas>
 
-            <!-- ─── LEFT SIDEBAR ───
-            <aside class="sidebar" aria-label="Navigation sidebar">
-                <div class="brand-card">
-                    <div class="brand-avatar" aria-hidden="true">
-                        <img src="static/robo_head.png" alt="GeoSpeak AI">
+    <!-- ══ Navigation Bar ══ -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <a href="/" class="logo" id="logo-home">
+            <div class="logo-mark" aria-hidden="true">G</div>
+            geospeak
+        </a>
+
+        <ul class="nav-links" role="list">
+            <li><a href="/" id="nav-home">Home</a></li>
+            <li><a href="/#features" id="nav-features">Features</a></li>
+            <li><a href="/#how-it-works" id="nav-how">How It Works</a></li>
+            <li><a href="/#languages" id="nav-languages">Languages</a></li>
+            <li><a href="/#stack" id="nav-stack">Stack</a></li>
+        </ul>
+
+        <div class="nav-status">
+            <span class="status-dot"></span>
+            <span>App // Live</span>
+        </div>
+    </nav>
+
+    <!-- ─── APP CONTAINER ─── -->
+    <div class="app-container">
+
+        <!-- ─── MAIN CONTENT ─── -->
+        <main class="main-content">
+
+            <!-- ─── HERO BANNER ─── -->
+            <header class="hero-banner" aria-label="Translator header">
+                <div class="hero-content">
+                    <div class="hero-mascot" aria-hidden="true">
+                        <div class="mascot-container">
+                            <video autoplay loop muted playsinline preload="auto">
+                                <source src="static/robo_pixel_transparent.webm" type="video/webm" />
+                            </video>
+                        </div>
                     </div>
-                    <span class="brand-card-sub">GeoSpeak AI Assistant</span>
-                    <span class="brand-card-title">GeoSpeak AI</span>
+                    <div class="hero-text">
+                        <div class="terminal-tag">
+                            <span class="pulse-square"></span>
+                            SYS_READY // CONTEXT-AWARE AI ENGINE
+                        </div>
+                        <h1><span class="accent-geo">Geo</span>Speak<span class="blink-cursor">_</span></h1>
+                        <p>Real-time neural translation with RAG-grounded precision</p>
+                    </div>
                 </div>
+            </header>
 
-                <nav class="sidebar-nav" aria-label="Main navigation">
-                    <a href="#" data-nav="home">
-                        <svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-                        Home
-                    </a>
-                    <a href="#" class="active" data-nav="explore">
-                        <svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="2"></rect><rect x="14" y="3" width="7" height="7" rx="2"></rect><rect x="14" y="14" width="7" height="7" rx="2"></rect><rect x="3" y="14" width="7" height="7" rx="2"></rect></svg>
-                        Explore Tools
-                    </a>
-                    <a href="#" id="sidebar-history-link" data-nav="conversations">
-                        <svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
-                        Conversations
-                    </a>
-                    <a href="#" data-nav="settings">
-                        <svg class="nav-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
-                        Settings
-                    </a>
-                </nav>
-            </aside> -->
+            <!-- ─── Workspace Grid ─── -->
+            <div class="workspace-grid">
 
-            <!-- ─── MAIN CONTENT ─── -->
-            <div class="main-content">
+                <!-- Source Panel -->
+                <section class="translation-panel" aria-label="Source text input">
+                    <div class="panel-header">
+                        <div class="panel-header-left">
+                            <span class="panel-tag">// 01</span>
+                            <span class="panel-title">Source Input</span>
+                        </div>
+                        <select class="lang-selector" id="source-lang" aria-label="Source language">
+                            <option value="auto">Auto Detect</option>
+                            <option value="English" selected>English (US)</option>
+                            <option value="Spanish">Spanish</option>
+                            <option value="French">French</option>
+                            <option value="German">German</option>
+                            <option value="Italian">Italian</option>
+                            <option value="Portuguese">Portuguese</option>
+                            <option value="Dutch">Dutch</option>
+                            <option value="Russian">Russian</option>
+                            <option value="Chinese">Chinese (Simplified)</option>
+                            <option value="Japanese">Japanese</option>
+                            <option value="Korean">Korean</option>
+                            <option value="Arabic">Arabic</option>
+                            <option value="Urdu">Urdu</option>
+                            <option value="Hindi">Hindi</option>
+                            <option value="Turkish">Turkish</option>
+                        </select>
+                    </div>
 
-                <!-- ─── HERO BANNER ─── -->
-<header class="hero-banner" aria-label="Hero banner">
-    <div class="hero-content">
-        <div class="hero-mascot" aria-hidden="true">
-            <div class="mascot-container">
-                <video autoplay loop muted playsinline preload="auto">
-                    <source src="static/vid.mp4" type="video/mp4" />
-                    <!-- <source src="static/robo.webm" type="video/webm" /> -->
-                </video>
-            </div>
-        </div>
-        <div class="hero-text">
-            <h1><span class="accent-geo">Geo</span>Speak</h1>
-            <p>Geo-Contextual &amp; Context-Aware Translation</p>
-        </div>
-    </div>
-</header>
+                    <div class="textarea-container">
+                        <textarea id="source-text" rows="4" placeholder="Explain the situation or enter text to translate here…" spellcheck="false" aria-describedby="char-counter-source"></textarea>
+                        <span class="char-counter" id="char-counter-source"><span id="char-num">0</span> / 1000</span>
+                    </div>
 
-                <!-- ─── Workspace Grid ─── -->
-                <div class="workspace-grid">
-
-                    <!-- Source Panel -->
-<section class="translation-panel glass-panel" aria-label="Source text input">
-    <div class="panel-header">
-        <span class="panel-title">Enter Text for Translation</span>
-        <select class="lang-selector" id="source-lang" aria-label="Source language">
-            <option value="auto">Auto Detect</option>
-            <option value="English" selected>English (US)</option>
-            <option value="Spanish">Spanish</option>
-            <option value="French">French</option>
-            <option value="German">German</option>
-            <option value="Italian">Italian</option>
-            <option value="Portuguese">Portuguese</option>
-            <option value="Dutch">Dutch</option>
-            <option value="Russian">Russian</option>
-            <option value="Chinese">Chinese (Simplified)</option>
-            <option value="Japanese">Japanese</option>
-            <option value="Korean">Korean</option>
-            <option value="Arabic">Arabic</option>
-            <option value="Urdu">Urdu</option>
-            <option value="Hindi">Hindi</option>
-            <option value="Turkish">Turkish</option>
-        </select>
-    </div>
-    <div class="textarea-container">
-        <textarea id="source-text" rows="4" placeholder="Explain the situation or add context for better accuracy (optional)…&#10;Enter text to translate here…" spellcheck="false" aria-describedby="char-counter-source"></textarea>
-        <span class="char-counter" id="char-counter-source"><span id="char-num">0</span> / 1000</span>
-    </div>
-    <div class="panel-footer">
-        <button class="detect-lang-btn" id="detect-lang-btn" type="button" title="Detect the language of the input text">
-            <span class="icon">🌐</span>
-            <span class="detect-label">Detect Language</span>
-            <span class="detected-badge" id="detected-lang-badge">✓ <span id="detected-lang-name">English</span></span>
-        </button>
-    </div>
-</section>
-
-                    <!-- Swap Button -->
-                    <div class="swap-container">
-                        <button class="swap-btn" id="swap-btn" type="button" aria-label="Swap source and target languages">
-                            <span class="arrow">⇆</span>
+                    <div class="panel-footer">
+                        <button class="detect-lang-btn" id="detect-lang-btn" type="button" title="Detect the language of the input text">
+                            <span class="icon">🌐</span>
+                            <span class="detect-label">Detect Language</span>
+                            <span class="detected-badge" id="detected-lang-badge">✓ <span id="detected-lang-name">English</span></span>
                         </button>
                     </div>
+                </section>
 
-                   <!-- Target Panel -->
-<section class="translation-panel glass-panel" aria-label="Translation output">
-    <div class="panel-header">
-        <span class="panel-title">Natural Translation</span>
-        <select class="lang-selector" id="target-lang" aria-label="Target language">
-            <option value="" disabled selected>— Select —</option>
-            <option value="English">English (US)</option>
-            <option value="Spanish">Spanish</option>
-            <option value="French">French</option>
-            <option value="German" selected>German (DE)</option>
-            <option value="Italian">Italian</option>
-            <option value="Portuguese">Portuguese</option>
-            <option value="Dutch">Dutch</option>
-            <option value="Russian">Russian</option>
-            <option value="Chinese">Chinese (Simplified)</option>
-            <option value="Japanese">Japanese</option>
-            <option value="Korean">Korean</option>
-            <option value="Arabic">Arabic</option>
-            <option value="Urdu">Urdu</option>
-            <option value="Hindi">Hindi</option>
-            <option value="Turkish">Turkish</option>
-        </select>
-    </div>
+                <!-- Swap Button -->
+                <div class="swap-container">
+                    <button class="swap-btn" id="swap-btn" type="button" aria-label="Swap source and target languages" title="Swap languages">
+                        <span class="arrow">⇆</span>
+                    </button>
+                </div>
 
+                <!-- Target Panel -->
+                <section class="translation-panel" aria-label="Translation output">
+                    <div class="panel-header">
+                        <div class="panel-header-left">
+                            <span class="panel-tag">// 02</span>
+                            <span class="panel-title">Natural Translation</span>
+                        </div>
+                        <select class="lang-selector" id="target-lang" aria-label="Target language">
+                            <option value="" disabled>— Select —</option>
+                            <option value="English">English (US)</option>
+                            <option value="Spanish">Spanish</option>
+                            <option value="French">French</option>
+                            <option value="German" selected>German (DE)</option>
+                            <option value="Italian">Italian</option>
+                            <option value="Portuguese">Portuguese</option>
+                            <option value="Dutch">Dutch</option>
+                            <option value="Russian">Russian</option>
+                            <option value="Chinese">Chinese (Simplified)</option>
+                            <option value="Japanese">Japanese</option>
+                            <option value="Korean">Korean</option>
+                            <option value="Arabic">Arabic</option>
+                            <option value="Urdu">Urdu</option>
+                            <option value="Hindi">Hindi</option>
+                            <option value="Turkish">Turkish</option>
+                        </select>
+                    </div>
 
-                        <div id="output-container" style="flex:1; display:flex; flex-direction:column; gap:8px;">
-                            <!-- IDLE -->
-                            <div id="state-idle" class="output-state active">
-                                <div class="idle-placeholder">
-                                    <span class="big-icon" aria-hidden="true">⟡</span>
-                                    <p>Awaiting translation…</p>
-                                </div>
-                            </div>
-                            <!-- LOADING -->
-                            <div id="state-loading" class="output-state">
-                                <div class="loading-placeholder">
-                                    <div class="loading-blocks" aria-hidden="true">
-                                        <span class="blk"></span><span class="blk"></span><span class="blk"></span><span class="blk"></span><span class="blk"></span>
-                                    </div>
-                                    <span class="loading-text">Translating…</span>
-                                    <span class="loading-note">First request may take 20–40 s<br>due to Hugging Face free-tier cold start.</span>
-                                </div>
-                            </div>
-                            <!-- RESULT -->
-                            <div id="state-result" class="output-state">
-                                <div id="confidence-container" style="display: none; align-self: flex-start; margin-bottom: 4px;">
-                                    <span class="confidence-badge">
-                                        <span class="dot-gold"></span>
-                                        MATCH CONFIDENCE: <span id="confidence-text">0%</span>
-                                    </span>
-                                </div>
-                                <div class="target-output" id="result-text" lang="auto"></div>
-                                <div class="context-hint" id="context-hint-card" style="display: none;">
-                                    <div class="hint-label"><span class="dot" aria-hidden="true"></span> Context understood</div>
-                                    <div class="hint-body" id="context-hint-body"></div>
-                                    <button class="hint-toggle" id="context-toggle-btn" type="button" style="display: none;">[ + Context Hint ]</button>
-                                    <div class="hint-detail" id="context-detail">
-                                        <span id="context-detail-text"></span>
-                                        <div class="context-examples-list" id="context-examples-list"></div>
-                                    </div>
-                                </div>
-                                <div class="panel-footer">
-                                    <div class="panel-actions">
-                                        <button class="action-btn pill-btn" id="copy-btn" type="button"><span class="icon">📋</span> Copy to Clipboard</button>
-                                        <button class="action-btn pill-btn" id="history-btn" type="button"><span class="icon">⏱</span> History</button>
-                                    </div>
-                                    <span id="copy-confirm">✓ Copied!</span>
-                                </div>
-                            </div>
-                            <!-- ERROR -->
-                            <div id="state-error" class="output-state">
-                                <div class="error-placeholder">
-                                    <div class="error-code" id="error-code">[ERROR]</div>
-                                    <div class="error-msg" id="error-message">Something went wrong</div>
-                                    <div class="error-hint" id="error-hint">Please try again.</div>
-                                </div>
+                    <div id="output-container">
+                        <!-- IDLE -->
+                        <div id="state-idle" class="output-state active">
+                            <div class="idle-placeholder">
+                                <span class="big-icon" aria-hidden="true">⟡</span>
+                                <p>Awaiting translation…</p>
                             </div>
                         </div>
-                    </section>
-                </div>
 
-                <!-- ─── BOTTOM CONTROLS ─── -->
-                <div class="bottom-controls">
-                    <div class="translate-btn-wrap">
-                        <button class="translate-btn" id="translate-btn" type="button">Translate</button>
-                    </div>
-                </div>
+                        <!-- LOADING -->
+                        <div id="state-loading" class="output-state">
+                            <div class="loading-placeholder">
+                                <div class="loading-blocks" aria-hidden="true">
+                                    <span class="blk"></span><span class="blk"></span><span class="blk"></span><span class="blk"></span><span class="blk"></span>
+                                </div>
+                                <span class="loading-text">Translating…</span>
+                                <span class="loading-note">First request may take 20–40 s<br>due to free-tier model cold start.</span>
+                            </div>
+                        </div>
 
-                <!-- ─── HISTORY PANEL ─── -->
-                <div class="history-panel collapsed" id="history-panel">
-                    <div class="history-header" id="history-header-toggle">
-                        <span class="h-label">📜 History <span class="count" id="history-count">(0)</span></span>
-                        <div class="h-controls">
-                            <button id="clear-history-btn" type="button">Clear</button>
-                            <button class="h-toggle" id="toggle-history-btn" type="button">[ + Expand ]</button>
+                        <!-- RESULT -->
+                        <div id="state-result" class="output-state">
+                            <div id="confidence-container" style="display: none; align-self: flex-start; margin-bottom: 4px;">
+                                <span class="confidence-badge">
+                                    <span class="dot-gold"></span>
+                                    MATCH CONFIDENCE: <span id="confidence-text">0%</span>
+                                </span>
+                            </div>
+                            <div class="target-output" id="result-text" lang="auto"></div>
+                            <div class="context-hint" id="context-hint-card" style="display: none;">
+                                <div class="hint-label"><span class="dot" aria-hidden="true"></span> Context Understood</div>
+                                <div class="hint-body" id="context-hint-body"></div>
+                                <button class="hint-toggle" id="context-toggle-btn" type="button" style="display: none;">[ + Context Hint ]</button>
+                                <div class="hint-detail" id="context-detail">
+                                    <span id="context-detail-text"></span>
+                                    <div class="context-examples-list" id="context-examples-list"></div>
+                                </div>
+                            </div>
+                            <div class="panel-footer">
+                                <div class="panel-actions">
+                                    <button class="action-btn" id="copy-btn" type="button"><span class="icon">📋</span> Copy</button>
+                                    <button class="action-btn" id="history-btn" type="button"><span class="icon">⏱</span> History</button>
+                                </div>
+                                <span id="copy-confirm">✓ Copied!</span>
+                            </div>
+                        </div>
+
+                        <!-- ERROR -->
+                        <div id="state-error" class="output-state">
+                            <div class="error-placeholder">
+                                <div class="error-code" id="error-code">[ERROR]</div>
+                                <div class="error-msg" id="error-message">Something went wrong</div>
+                                <div class="error-hint" id="error-hint">Please try again.</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="history-body" id="history-list">
-                        <div class="history-empty">No translations yet.</div>
-                    </div>
-                </div>
-
+                </section>
             </div>
-            <!-- /main-content -->
 
-        </div>
-        <!-- /app-container -->
+            <!-- ─── BOTTOM CONTROLS ─── -->
+            <div class="bottom-controls">
+                <div class="translate-btn-wrap">
+                    <button class="translate-btn" id="translate-btn" type="button">
+                        Translate
+                    </button>
+                </div>
+            </div>
+
+            <!-- ─── HISTORY PANEL ─── -->
+            <div class="history-panel collapsed" id="history-panel">
+                <div class="history-header" id="history-header-toggle">
+                    <span class="h-label">📜 History <span class="count" id="history-count">(0)</span></span>
+                    <div class="h-controls">
+                        <button id="clear-history-btn" type="button">Clear</button>
+                        <button class="h-toggle" id="toggle-history-btn" type="button">[ + Expand ]</button>
+                    </div>
+                </div>
+                <div class="history-body" id="history-list">
+                    <div class="history-empty">No translations yet.</div>
+                </div>
+            </div>
+
+        </main>
+        <!-- /main-content -->
 
     </div>
-    <!-- /window-mockup -->
+    <!-- /app-container -->
 
-    <!-- External JavaScript -->
+    <!-- Scripts -->
+    <script src="static/pixel-canvas.js"></script>
     <script src="static/script.js"></script>
 </body>
 </html>
