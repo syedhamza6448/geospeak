@@ -9,23 +9,25 @@
   <meta property="og:description" content="Real-time AI translation powered by RAG and open-source LLMs. No API costs. No limits." />
   <title>GeoSpeak — AI Translation, Zero Barriers</title>
 
-  <!-- Google Fonts -->
+  <!-- Google Fonts: Pixelify Sans + Outfit -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
   <!-- Landing Stylesheet -->
   <link rel="stylesheet" href="/static/landing.css" />
+  <!-- Cinematic Luxury Hero Stylesheet -->
+  <link rel="stylesheet" href="/static/hero-cinema.css" />
 </head>
 <body>
 
-  <!-- ══ Top accent border ══════════════════════════════════════ -->
+  <!-- ══ Top Accent Border ══════════════════════════════════════ -->
   <div class="top-border" aria-hidden="true"></div>
 
-  <!-- ══ Dynamic pixel canvas — sides only (fixed, z-index:0) ════ -->
+  <!-- ══ Full-Webpage Raining Pixels Canvas ═════════════════════ -->
   <canvas id="pixel-canvas" class="decor-canvas" aria-hidden="true"></canvas>
 
-  <!-- ══ Navbar ═════════════════════════════════════════════════ -->
+  <!-- ══ Apple Glass Top Navbar ═════════════════════════════════ -->
   <nav class="navbar" role="navigation" aria-label="Main navigation">
     <a href="/" class="logo" id="logo-home">
       <div class="logo-mark" aria-hidden="true">G</div>
@@ -53,75 +55,153 @@
     <a href="#languages" class="ticker-link" id="ticker-readmore">See languages &gt;</a>
   </div>
 
-  <!-- ══ Hero Section ═══════════════════════════════════════════ -->
-  <section class="hero" id="hero" aria-label="Hero">
+  <!-- ══ Cinematic Luxury Hero Section: The Linguistic Prism ════ -->
+  <section class="cinematic-hero" id="hero" aria-label="GeoSpeak Monolith">
+    
+    <!-- Volumetric Subsurface Glow (Optical Prism) -->
+    <div class="hero-prism-glow" aria-hidden="true"></div>
 
-    <!-- hero headline block -->
-
-    <div class="hero-block">
-      <h1>
-        <span class="hero-line" data-tier="1" data-delay="0">Every language spoken.</span>
-        <span class="hero-line" data-tier="2" data-delay="100">Every message translated.</span>
-        <span class="hero-line" data-tier="3" data-delay="200">Every barrier broken.</span>
-        <span class="hero-line" data-tier="4" data-delay="300">Every conversation bridged.</span>
-      </h1>
-
-      <span class="hero-gap"></span>
-
-      <p class="hero-para" data-tier="1" data-delay="480">That's GeoSpeak.</p>
-
-      <span class="hero-gap" style="height:24px;"></span>
-
-      <p class="hero-para" data-tier="2" data-delay="620">Training creates the model.</p>
-      <p class="hero-para" data-tier="3" data-delay="740">RAG creates the precision.</p>
-      <p class="hero-para" data-tier="4" data-delay="860">And real-time makes it effortless.</p>
-
-      <!-- CTA buttons -->
-      <div class="hero-cta-row" id="hero-cta-row">
-        <a href="/app" class="btn-primary" id="cta-translate-now">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-          Translate Now
-        </a>
-        <a href="#how-it-works" class="btn-outline" id="cta-see-how">
-          See How It Works
-        </a>
+    <!-- Ambient Telemetry Strip (Z-1 Coordinates) -->
+    <div class="hero-telemetry-strip" aria-hidden="true">
+      <div class="telemetry-node">
+        <span class="telemetry-ping"></span>
+        <span>LAT 48.8566° N // LON 2.3522° E [PARIS]</span>
       </div>
-
-      <!-- Stats row -->
-      <div class="hero-stats" id="hero-stats">
-        <div class="stat-item">
-          <span class="stat-value">5</span>
-          <span class="stat-label">Languages</span>
-        </div>
-        <div class="stat-sep"></div>
-        <div class="stat-item">
-          <span class="stat-value">100%</span>
-          <span class="stat-label">Free Stack</span>
-        </div>
-        <div class="stat-sep"></div>
-        <div class="stat-item">
-          <span class="stat-value">RAG</span>
-          <span class="stat-label">Precision</span>
-        </div>
-        <div class="stat-sep"></div>
-        <div class="stat-item">
-          <span class="stat-value">70B</span>
-          <span class="stat-label">LLM Params</span>
-        </div>
-      </div>
-
-      <!-- Language pills -->
-      <div class="lang-strip" id="lang-strip">
-        <span class="lang-pill">🇫🇷 French</span>
-        <span class="lang-pill">🇪🇸 Spanish</span>
-        <span class="lang-pill">🇩🇪 German</span>
-        <span class="lang-pill">🇵🇰 Urdu</span>
-        <span class="lang-pill">🇯🇵 Japanese</span>
+      <div class="telemetry-node">
+        <span class="telemetry-ping"></span>
+        <span>LAT 35.6762° N // LON 139.6503° E [TOKYO]</span>
       </div>
     </div>
+
+    <!-- Architectural Stage Grid -->
+    <div class="hero-stage">
+      
+      <!-- Left Column: The Monolithic Linguistic Typography -->
+      <div class="hero-editorial">
+        <div class="hero-jewel-pill">
+          <span class="jewel-beacon" aria-hidden="true"></span>
+          <span class="jewel-label">Llama 3.3 70B</span>
+          <span class="jewel-sep">//</span>
+          <span class="jewel-status">RAG Knowledge Engine</span>
+        </div>
+
+        <h1 class="hero-monolith-title">
+          <span class="monolith-line hero-line" data-tier="1">Every language spoken.</span>
+          <span class="monolith-line hero-line" data-tier="2">Every message translated.</span>
+          <span class="monolith-line hero-line accent-line" data-tier="3">Every barrier broken.</span>
+          <span class="monolith-line hero-line subtle-line" data-tier="4">Every conversation bridged.</span>
+        </h1>
+
+        <!-- Manifesto Triptych (Architectural Glass Panels) -->
+        <div class="hero-manifesto-triptych">
+          <div class="manifesto-panel hero-para" data-tier="1">
+            <span class="manifesto-num">01 // FOUNDATION</span>
+            <p>Training creates the model.</p>
+          </div>
+          <div class="manifesto-panel hero-para highlight" data-tier="2">
+            <span class="manifesto-num">02 // PRECISION</span>
+            <p>RAG creates the fidelity.</p>
+          </div>
+          <div class="manifesto-panel hero-para" data-tier="3">
+            <span class="manifesto-num">03 // VELOCITY</span>
+            <p>Real-time makes it effortless.</p>
+          </div>
+        </div>
+
+        <!-- Haute Action Cluster -->
+        <div class="hero-action-cluster" id="hero-cta-row">
+          <a href="/app" class="btn-monolith-primary" id="cta-translate-now">
+            <span>Start Translating</span>
+            <span class="btn-medallion" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </span>
+          </a>
+          <a href="#how-it-works" class="btn-monolith-glass" id="cta-see-how">
+            <span>The Architecture</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Column: Optical Sapphire Instrument (Floating Specimen) -->
+      <div class="hero-specimen-stage" id="specimen-stage" aria-label="Interactive Translation Instrument">
+        <div class="specimen-glass-card" id="specimen-card">
+          
+          <div class="specimen-topbar">
+            <div class="specimen-status-group">
+              <span class="specimen-beacon" aria-hidden="true"></span>
+              <span class="specimen-engine-name">GROQ QPU // INFERENCE ACTIVE</span>
+            </div>
+            <span class="specimen-latency-tag">0.08s LATENCY</span>
+          </div>
+
+          <div class="specimen-corpus-preview">
+            <div class="corpus-pane source-pane">
+              <div class="corpus-header">
+                <span class="corpus-tag">SOURCE SPECIMEN</span>
+                <span class="corpus-lang-pill" id="specimen-src-lang">🇫🇷 French</span>
+              </div>
+              <p class="corpus-quote" id="specimen-src-text">“Un langage différent est une vision différente de la vie.”</p>
+            </div>
+
+            <div class="specimen-optical-junction" aria-hidden="true">
+              <div class="optical-line"></div>
+              <div class="optical-orb">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg>
+              </div>
+              <div class="optical-line"></div>
+            </div>
+
+            <div class="corpus-pane target-pane">
+              <div class="corpus-header">
+                <span class="corpus-tag active">GEO-SYNTHESIS [EN]</span>
+                <span class="corpus-lang-pill">🇬🇧 English</span>
+              </div>
+              <p class="corpus-quote" id="specimen-target-text">“A different language is a different vision of life.”</p>
+            </div>
+          </div>
+
+          <div class="specimen-footer">
+            <div class="specimen-chip-row">
+              <span class="specimen-chip gold-spec" id="specimen-vector-chip">FAISS 100% MATCH</span>
+              <span class="specimen-chip">COSINE: 0.942</span>
+            </div>
+            <button class="specimen-cycle-btn" id="specimen-cycle-trigger" title="Cycle specimen quote">
+              <span>Next Specimen</span>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Chrono Horological Telemetry Dock -->
+    <div class="hero-chrono-dock" id="hero-stats">
+      <div class="chrono-module">
+        <span class="chrono-stat">5</span>
+        <span class="chrono-metric">Native Spheres</span>
+      </div>
+      <div class="chrono-separator" aria-hidden="true"></div>
+      <div class="chrono-module">
+        <span class="chrono-stat gold-stat">70B</span>
+        <span class="chrono-metric">Synapse Parameters</span>
+      </div>
+      <div class="chrono-separator" aria-hidden="true"></div>
+      <div class="chrono-module">
+        <span class="chrono-stat">100%</span>
+        <span class="chrono-metric">Free Open Stack</span>
+      </div>
+      <div class="chrono-separator" aria-hidden="true"></div>
+      <div class="chrono-module">
+        <span class="chrono-stat">RAG</span>
+        <span class="chrono-metric">Contextual Retrieval</span>
+      </div>
+    </div>
+
   </section>
 
-  <!-- ══ Features Section ════════════════════════════════════════ -->
+  <!-- ══ Features Section (Apple Liquid Glass Cards) ═════════════ -->
   <section class="features" id="features" aria-label="Features">
     <p class="section-eyebrow reveal">// capabilities</p>
     <h2 class="section-title reveal">Built for precision.<br/>Designed for humans.</h2>
@@ -130,7 +210,7 @@
 
       <div class="feature-card reveal">
         <div class="feature-icon" aria-hidden="true">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
         </div>
         <h3 class="feature-title">RAG-Enhanced Retrieval</h3>
         <p class="feature-desc">Retrieval-Augmented Generation pulls the most relevant parallel corpus examples before every translation, injecting few-shot context that dramatically improves accuracy and idiomatic fidelity.</p>
@@ -138,7 +218,7 @@
 
       <div class="feature-card reveal">
         <div class="feature-icon" aria-hidden="true">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
         </div>
         <h3 class="feature-title">Real-Time Translation</h3>
         <p class="feature-desc">Powered by Llama 3.3 70B via Groq's blazing-fast inference API. Submit text and receive a high-quality translation in seconds — not minutes.</p>
@@ -146,7 +226,7 @@
 
       <div class="feature-card reveal">
         <div class="feature-icon" aria-hidden="true">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="3" x2="9" y2="21"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="3" x2="9" y2="21"/></svg>
         </div>
         <h3 class="feature-title">Language Detection</h3>
         <p class="feature-desc">Automatic source language detection using offline <code style="font-family:var(--mono);font-size:12px;color:var(--accent);">langdetect</code> — no API calls, no extra cost. Know what you're translating before you even select a target.</p>
@@ -154,7 +234,7 @@
 
       <div class="feature-card reveal">
         <div class="feature-icon" aria-hidden="true">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
         </div>
         <h3 class="feature-title">Rate Limiting & Safety</h3>
         <p class="feature-desc">Built-in in-memory rate limiting (10 req/IP/60s) and robust error handling for cold-start delays, auth errors, and API failures — production-grade from day one.</p>
@@ -162,7 +242,7 @@
 
       <div class="feature-card reveal">
         <div class="feature-icon" aria-hidden="true">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
         </div>
         <h3 class="feature-title">FAISS Vector Search</h3>
         <p class="feature-desc">Facebook's FAISS library provides lightning-fast in-memory vector similarity search across the parallel corpus — fulfilling the Vector Database role without any standalone database service.</p>
@@ -170,7 +250,7 @@
 
       <div class="feature-card reveal">
         <div class="feature-icon" aria-hidden="true">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
         </div>
         <h3 class="feature-title">100% Free Stack</h3>
         <p class="feature-desc">Zero paid APIs. Sentence-transformers run locally for embeddings. Groq's free tier powers LLM inference. Open-source from embeddings to output.</p>
@@ -179,7 +259,7 @@
     </div>
   </section>
 
-  <!-- ══ How It Works ════════════════════════════════════════════ -->
+  <!-- ══ How It Works (Liquid Glass Process Cards) ════════════════ -->
   <section class="how-it-works" id="how-it-works" aria-label="How it works">
     <p class="section-eyebrow reveal">// process</p>
     <h2 class="section-title reveal">Four steps.<br/>One fluent translation.</h2>
@@ -221,7 +301,7 @@
     </div>
   </section>
 
-  <!-- ══ Languages Section ═══════════════════════════════════════ -->
+  <!-- ══ Languages Section (Liquid Glass Cards) ═══════════════════ -->
   <section class="languages" id="languages" aria-label="Supported languages">
     <p class="section-eyebrow reveal">// languages</p>
     <h2 class="section-title reveal" style="max-width:100%; text-align:center;">Five languages.<br/>One interface.</h2>
@@ -250,7 +330,7 @@
     </div>
   </section>
 
-  <!-- ══ Tech Stack Section ═══════════════════════════════════════ -->
+  <!-- ══ Tech Stack Section (Apple Glass Modular Tiles) ════════════ -->
   <section class="stack-section" id="stack" aria-label="Technology stack">
     <p class="section-eyebrow reveal">// tech stack</p>
     <h2 class="section-title reveal">Open source.<br/>Zero cost.</h2>
@@ -294,31 +374,33 @@
       <div class="stack-item reveal">
         <span class="stack-label">Frontend</span>
         <span class="stack-name">HTML5 / CSS / JS</span>
-        <span class="stack-sub">Space Mono brutalist UI</span>
+        <span class="stack-sub">Apple Liquid Glass UI</span>
       </div>
     </div>
   </section>
 
-  <!-- ══ CTA Section ═════════════════════════════════════════════ -->
+  <!-- ══ CTA Showcase Section (Apple Glass Large Surface) ═════════ -->
   <section class="cta-section" id="cta" aria-label="Call to action">
-    <h2 class="cta-headline reveal">
-      Ready to break<br /><span>every language barrier?</span>
-    </h2>
-    <p class="cta-sub reveal">
-      GeoSpeak is free, open-source, and ready to translate. No sign-up. No API keys on your end. Just fluent, AI-powered communication.
-    </p>
-    <div class="hero-cta-row reveal" id="cta-buttons">
-      <a href="/app" class="btn-primary" id="cta-bottom-translate">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-        Open Translator
-      </a>
-      <a href="https://github.com" class="btn-outline" id="cta-bottom-github" target="_blank" rel="noopener">
-        View on GitHub
-      </a>
+    <div class="cta-box reveal">
+      <h2 class="cta-headline">
+        Ready to break<br /><span>every language barrier?</span>
+      </h2>
+      <p class="cta-sub">
+        GeoSpeak is free, open-source, and ready to translate. No sign-up. No API keys on your end. Just fluent, AI-powered communication.
+      </p>
+      <div class="hero-cta-row visible" id="cta-buttons" style="opacity:1; transform:none; justify-content:flex-start; margin-top:0;">
+        <a href="/app" class="btn-primary" id="cta-bottom-translate">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          Open Translator
+        </a>
+        <a href="https://github.com/syedhamza6448/geospeak" class="btn-outline" id="cta-bottom-github" target="_blank">
+          View on GitHub
+        </a>
+      </div>
     </div>
   </section>
 
-  <!-- ══ Footer ══════════════════════════════════════════════════ -->
+  <!-- ══ Apple Glass Footer ═══════════════════════════════════════ -->
   <footer role="contentinfo">
     <span class="footer-copy">&copy; 2026 GeoSpeak. Built for AZM 2026 by Hamza.</span>
     <ul class="footer-links" role="list">
@@ -328,13 +410,18 @@
     </ul>
   </footer>
 
+  <!-- ══ Scripts ═════════════════════════════════════════════════ -->
+  <!-- Raining Pixels Animation Script (Full Webpage) -->
+  <script src="/static/pixel-rain.js"></script>
+
+  <!-- UI Interactions & Scroll Dynamics -->
   <script>
     document.addEventListener('DOMContentLoaded', () => {
 
       // ── 1. Hero CTA / stats / lang-strip fade-in on load ──────────
-      setTimeout(() => document.getElementById('hero-cta-row')?.classList.add('visible'), 600);
-      setTimeout(() => document.getElementById('hero-stats')?.classList.add('visible'),   900);
-      setTimeout(() => document.getElementById('lang-strip')?.classList.add('visible'),  1100);
+      setTimeout(() => document.getElementById('hero-cta-row')?.classList.add('visible'), 500);
+      setTimeout(() => document.getElementById('hero-stats')?.classList.add('visible'),   750);
+      setTimeout(() => document.getElementById('lang-strip')?.classList.add('visible'),  950);
 
       // ── 2. Hero lines & paras: increase opacity on scroll (0.5 -> 1.0) ──
       const heroTextEls = document.querySelectorAll('.hero-line, .hero-para');
@@ -343,7 +430,6 @@
         const scrollY = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || window.scrollY || 0;
         
         heroTextEls.forEach((el, index) => {
-          // Line-by-line staggered progression
           const start = index * 40;
           const duration = 80;
           
@@ -352,9 +438,7 @@
             lineProgress = Math.min((scrollY - start) / duration, 1);
           }
           
-          // Global scroll factor so all lines respond immediately
           const globalProgress = Math.min(scrollY / 360, 1) * 0.4;
-          
           const totalProgress = Math.min(Math.max(lineProgress, globalProgress), 1);
           const opacity = (0.5 + 0.5 * totalProgress).toFixed(2);
           
@@ -389,7 +473,97 @@
         revealObserver.observe(el);
       });
 
-      // ── 4. Smooth anchor scrolling ───────────────────────────────
+      // ── 5. Cinematic Luxury Specimen Interactions ─────────────────
+      const specimenStage = document.getElementById('specimen-stage');
+      const specimenCard = document.getElementById('specimen-card');
+      const srcLangEl = document.getElementById('specimen-src-lang');
+      const srcTextEl = document.getElementById('specimen-src-text');
+      const targetTextEl = document.getElementById('specimen-target-text');
+      const cycleBtn = document.getElementById('specimen-cycle-trigger');
+      const vectorChip = document.getElementById('specimen-vector-chip');
+
+      // 3D Magnetic Gyro Tilt
+      if (specimenStage && specimenCard) {
+        specimenStage.addEventListener('mousemove', (e) => {
+          const rect = specimenStage.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          const centerX = rect.width / 2;
+          const centerY = rect.height / 2;
+          const rotateX = ((y - centerY) / centerY) * -9;
+          const rotateY = ((x - centerX) / centerX) * 9;
+          specimenCard.style.transform = `perspective(1000px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg) translateY(-2px)`;
+        });
+
+        specimenStage.addEventListener('mouseleave', () => {
+          specimenCard.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0)';
+        });
+      }
+
+      // Bilingual Specimen Corpus Dataset
+      const specimens = [
+        {
+          lang: "🇫🇷 French",
+          src: "“Un langage différent est une vision différente de la vie.”",
+          target: "“A different language is a different vision of life.”",
+          match: "FAISS 100% MATCH"
+        },
+        {
+          lang: "🇪🇸 Spanish",
+          src: "“Los límites de mi lenguaje son los límites de mi mundo.”",
+          target: "“The limits of my language mean the limits of my world.”",
+          match: "FAISS 99.8% MATCH"
+        },
+        {
+          lang: "🇩🇪 German",
+          src: "“Wer fremde Sprachen nicht kennt, weiß nichts von seiner eigenen.”",
+          target: "“He who does not know foreign languages knows nothing of his own.”",
+          match: "FAISS 100% MATCH"
+        },
+        {
+          lang: "🇵🇰 Urdu",
+          src: "“زبان صرف الفاظ کا مجموعہ نہیں، تہذیب اور روح کی تصویر ہے۔”",
+          target: "“Language is not merely words, but a portrait of culture and soul.”",
+          match: "FAISS 99.4% MATCH"
+        },
+        {
+          lang: "🇯🇵 Japanese",
+          src: "“七転び八起き — 言葉は国境を越えて心を繋ぐ。”",
+          target: "“Fall seven times, stand up eight — words transcend borders to unite hearts.”",
+          match: "FAISS 100% MATCH"
+        }
+      ];
+
+      let currentSpecimenIdx = 0;
+      function cycleSpecimen() {
+        if (!srcTextEl || !targetTextEl) return;
+        currentSpecimenIdx = (currentSpecimenIdx + 1) % specimens.length;
+        const item = specimens[currentSpecimenIdx];
+
+        srcTextEl.style.opacity = '0';
+        targetTextEl.style.opacity = '0';
+
+        setTimeout(() => {
+          if (srcLangEl) srcLangEl.textContent = item.lang;
+          srcTextEl.textContent = item.src;
+          targetTextEl.textContent = item.target;
+          if (vectorChip) vectorChip.textContent = item.match;
+
+          srcTextEl.style.opacity = '1';
+          targetTextEl.style.opacity = '1';
+        }, 220);
+      }
+
+      cycleBtn?.addEventListener('click', cycleSpecimen);
+      let autoCycleTimer = setInterval(cycleSpecimen, 4200);
+
+      specimenCard?.addEventListener('mouseenter', () => clearInterval(autoCycleTimer));
+      specimenCard?.addEventListener('mouseleave', () => {
+        clearInterval(autoCycleTimer);
+        autoCycleTimer = setInterval(cycleSpecimen, 4200);
+      });
+
+      // ── 6. Smooth anchor scrolling ───────────────────────────────
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', e => {
           const target = document.querySelector(anchor.getAttribute('href'));
@@ -400,293 +574,6 @@
         });
       });
 
-      // ── 5. Pixel Merging & Detaching Simulation (Sides Only) ──────
-      const canvas = document.getElementById('pixel-canvas');
-      if (!canvas) return;
-      const ctx = canvas.getContext('2d');
-
-      let width = window.innerWidth;
-      let height = window.innerHeight;
-
-      function resizeCanvas() {
-        const dpr = window.devicePixelRatio || 1;
-        width = window.innerWidth;
-        height = window.innerHeight;
-        canvas.width = Math.floor(width * dpr);
-        canvas.height = Math.floor(height * dpr);
-        canvas.style.width = width + 'px';
-        canvas.style.height = height + 'px';
-        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      }
-      window.addEventListener('resize', resizeCanvas);
-      resizeCanvas();
-
-      // Shape catalogs for different pixel counts
-      const SHAPES_2 = [
-        [[0, 0], [1, 0]],       // horizontal domino
-        [[0, 0], [0, 1]],       // vertical domino
-      ];
-      const SHAPES_3 = [
-        [[0, 0], [1, 0], [2, 0]], // horizontal 3-bar
-        [[0, 0], [0, 1], [0, 2]], // vertical 3-bar
-        [[0, 0], [0, 1], [1, 1]], // L-tromino
-        [[1, 0], [0, 1], [1, 1]], // reversed L
-        [[0, 0], [1, 0], [1, 1]], // top L
-      ];
-      const SHAPES_4 = [
-        [[0, 0], [1, 0], [0, 1], [1, 1]], // 2x2 square
-        [[0, 0], [1, 0], [2, 0], [3, 0]], // 4-bar
-        [[0, 0], [0, 1], [0, 2], [0, 3]], // vertical 4-bar
-        [[0, 0], [1, 0], [2, 0], [1, 1]], // T-shape
-        [[0, 0], [0, 1], [0, 2], [1, 2]], // L-tetromino
-      ];
-      const SHAPES_6 = [
-        [[0, 0], [1, 0], [2, 0], [0, 1], [1, 1], [2, 1]], // 2x3 chip block
-        [[0, 0], [1, 0], [0, 1], [1, 1], [0, 2], [1, 2]], // 3x2 chip block
-      ];
-
-      function getShapesForCount(count) {
-        if (count === 2) return SHAPES_2;
-        if (count === 3) return SHAPES_3;
-        if (count === 4) return SHAPES_4;
-        return SHAPES_6;
-      }
-
-      function easeInOutCubic(t) {
-        return t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
-      }
-      function easeOutQuad(t) {
-        return 1 - (1 - t) * (1 - t);
-      }
-
-      const PIXEL_SIZE = 9;
-      const PIXEL_GAP = 2;
-      const STEP = PIXEL_SIZE + PIXEL_GAP;
-
-      // Cluster configuration — STRICTLY ON SIDES ONLY (left: 2%-11%, right: 89%-97.5%)
-      const CLUSTER_DEFS = [
-        // Left side (5 clusters, evenly spread top to bottom)
-        { side: 'left', xPct: 0.035, yPct: 0.12, count: 4 },
-        { side: 'left', xPct: 0.080, yPct: 0.28, count: 6 },
-        { side: 'left', xPct: 0.028, yPct: 0.48, count: 3 },
-        { side: 'left', xPct: 0.090, yPct: 0.68, count: 4 },
-        { side: 'left', xPct: 0.040, yPct: 0.88, count: 6 },
-
-        // Right side (5 clusters, evenly spread top to bottom)
-        { side: 'right', xPct: 0.940, yPct: 0.15, count: 6 },
-        { side: 'right', xPct: 0.895, yPct: 0.35, count: 4 },
-        { side: 'right', xPct: 0.950, yPct: 0.55, count: 3 },
-        { side: 'right', xPct: 0.890, yPct: 0.72, count: 6 },
-        { side: 'right', xPct: 0.945, yPct: 0.90, count: 4 },
-      ];
-
-      class PixelCluster {
-        constructor(def, index) {
-          this.def = def;
-          this.count = def.count;
-          this.shapes = getShapesForCount(this.count);
-          this.currentShapeIndex = Math.floor(Math.random() * this.shapes.length);
-
-          // State: 'merged', 'detaching', 'detached', 'merging'
-          this.state = 'merged';
-          this.stateTime = 0;
-
-          // Stagger initial phase so clusters animate asynchronously
-          this.mergedDuration = 1800 + Math.random() * 1200;
-          this.detachDuration = 900;
-          this.detachedDuration = 1200 + Math.random() * 1000;
-          this.mergeDuration = 900;
-
-          this.stateTime = (index * 450) % this.mergedDuration;
-
-          this.pixels = [];
-          for (let i = 0; i < this.count; i++) {
-            this.pixels.push({
-              x: 0,
-              y: 0,
-              startX: 0,
-              startY: 0,
-              targetX: 0,
-              targetY: 0,
-              scatterX: 0,
-              scatterY: 0,
-              seed: Math.random() * 100,
-            });
-          }
-
-          this.setupPositions();
-        }
-
-        getBasePos() {
-          return {
-            x: this.def.xPct * width,
-            y: this.def.yPct * height
-          };
-        }
-
-        setupPositions() {
-          const base = this.getBasePos();
-          const shape = this.shapes[this.currentShapeIndex];
-
-          for (let i = 0; i < this.count; i++) {
-            const slot = shape[i] || [0, 0];
-            const px = base.x + slot[0] * STEP;
-            const py = base.y + slot[1] * STEP;
-            this.pixels[i].x = px;
-            this.pixels[i].y = py;
-            this.pixels[i].targetX = px;
-            this.pixels[i].targetY = py;
-          }
-        }
-
-        prepareDetaching() {
-          const base = this.getBasePos();
-          // Each pixel detaches in a completely random direction every time
-          for (let i = 0; i < this.count; i++) {
-            const p = this.pixels[i];
-            p.startX = p.x;
-            p.startY = p.y;
-
-            const angle = Math.random() * Math.PI * 2;
-            const dist = 18 + Math.random() * 32;
-
-            // Strict clamp to ensure pixels stay strictly on the side bands
-            let rawX = base.x + Math.cos(angle) * dist;
-            if (this.def.side === 'left') {
-              rawX = Math.max(8, Math.min(rawX, width * 0.125));
-            } else {
-              rawX = Math.max(width * 0.875, Math.min(rawX, width - 20));
-            }
-
-            p.scatterX = rawX;
-            p.scatterY = base.y + Math.sin(angle) * dist;
-          }
-        }
-
-        prepareMerging() {
-          const base = this.getBasePos();
-          // Pick a DIFFERENT shape from the catalog every cycle
-          let nextShapeIndex = Math.floor(Math.random() * this.shapes.length);
-          if (this.shapes.length > 1 && nextShapeIndex === this.currentShapeIndex) {
-            nextShapeIndex = (nextShapeIndex + 1) % this.shapes.length;
-          }
-          this.currentShapeIndex = nextShapeIndex;
-          const shape = this.shapes[this.currentShapeIndex];
-
-          for (let i = 0; i < this.count; i++) {
-            const p = this.pixels[i];
-            p.startX = p.x;
-            p.startY = p.y;
-
-            const slot = shape[i] || [0, 0];
-            p.targetX = base.x + slot[0] * STEP;
-            p.targetY = base.y + slot[1] * STEP;
-          }
-        }
-
-        update(dt, now) {
-          this.stateTime += dt;
-
-          if (this.state === 'merged') {
-            // Pixels stay locked in formation
-            const base = this.getBasePos();
-            const shape = this.shapes[this.currentShapeIndex];
-            for (let i = 0; i < this.count; i++) {
-              const slot = shape[i] || [0, 0];
-              this.pixels[i].x = base.x + slot[0] * STEP;
-              this.pixels[i].y = base.y + slot[1] * STEP;
-            }
-
-            if (this.stateTime >= this.mergedDuration) {
-              this.state = 'detaching';
-              this.stateTime = 0;
-              this.prepareDetaching();
-            }
-          } else if (this.state === 'detaching') {
-            const t = Math.min(this.stateTime / this.detachDuration, 1);
-            const ease = easeOutQuad(t);
-
-            for (let i = 0; i < this.count; i++) {
-              const p = this.pixels[i];
-              p.x = p.startX + (p.scatterX - p.startX) * ease;
-              p.y = p.startY + (p.scatterY - p.startY) * ease;
-            }
-
-            if (t >= 1) {
-              this.state = 'detached';
-              this.stateTime = 0;
-            }
-          } else if (this.state === 'detached') {
-            // Subtle floating drift while detached
-            for (let i = 0; i < this.count; i++) {
-              const p = this.pixels[i];
-              const driftX = Math.sin((now / 1000) * 1.5 + p.seed) * 0.4;
-              const driftY = Math.cos((now / 1000) * 1.5 + p.seed) * 0.4;
-              p.x = p.scatterX + driftX;
-              p.y = p.scatterY + driftY;
-            }
-
-            if (this.stateTime >= this.detachedDuration) {
-              this.state = 'merging';
-              this.stateTime = 0;
-              this.prepareMerging();
-            }
-          } else if (this.state === 'merging') {
-            const t = Math.min(this.stateTime / this.mergeDuration, 1);
-            const ease = easeInOutCubic(t);
-
-            for (let i = 0; i < this.count; i++) {
-              const p = this.pixels[i];
-              p.x = p.startX + (p.targetX - p.startX) * ease;
-              p.y = p.startY + (p.targetY - p.startY) * ease;
-            }
-
-            if (t >= 1) {
-              this.state = 'merged';
-              this.stateTime = 0;
-              this.mergedDuration = 1800 + Math.random() * 1200;
-            }
-          }
-        }
-
-        draw(ctx) {
-          ctx.fillStyle = '#FDE74C';
-
-          for (let i = 0; i < this.count; i++) {
-            const p = this.pixels[i];
-            const px = Math.round(p.x);
-            const py = Math.round(p.y);
-
-            // Merged pixels look solid and cohesive, detached pixels look slightly luminous
-            if (this.state === 'merged') {
-              ctx.globalAlpha = 0.95;
-            } else {
-              ctx.globalAlpha = 0.80;
-            }
-
-            ctx.fillRect(px, py, PIXEL_SIZE, PIXEL_SIZE);
-          }
-          ctx.globalAlpha = 1;
-        }
-      }
-
-      const clusters = CLUSTER_DEFS.map((def, i) => new PixelCluster(def, i));
-
-      let lastTime = performance.now();
-      function loop(now) {
-        const dt = Math.min(now - lastTime, 100);
-        lastTime = now;
-
-        ctx.clearRect(0, 0, width, height);
-
-        for (let i = 0; i < clusters.length; i++) {
-          clusters[i].update(dt, now);
-          clusters[i].draw(ctx);
-        }
-
-        requestAnimationFrame(loop);
-      }
-      requestAnimationFrame(loop);
     });
   </script>
 
