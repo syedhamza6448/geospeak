@@ -3,28 +3,60 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="GeoSpeak — Geo-contextual AI translation powered by RAG and open LLMs." />
+    <meta name="description" content="GeoSpeak — AI-powered neural translation workspace with RAG-enhanced precision. Free, fast, and built for humans." />
+    <meta name="keywords" content="GeoSpeak, AI translation, live translator, language translation, RAG, NLP, free translation, multilingual" />
     <title>GeoSpeak — Live AI Translator</title>
 
-    <link rel="icon" type="image/png" href="static/robo_head.png" />
+    <link rel="icon" type="image/png" href="/static/robo_head.png" />
 
     <!-- Google Fonts: Pixelify Sans + Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
-    <!-- External Stylesheet -->
-    <link rel="stylesheet" href="static/style.css" />
+    <!-- Apple Glass App Stylesheet -->
+    <link rel="stylesheet" href="/static/style.css" />
+
+    <!-- Immediate Theme Application to prevent Flash-Of-Unstyled-Theme -->
+    <script>
+      (function(){
+        try {
+          var saved = localStorage.getItem('geospeak-theme');
+          var theme = saved || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+          document.documentElement.setAttribute('data-theme', theme);
+        } catch(e){}
+      })();
+    </script>
+    <script src="/static/theme.js" defer></script>
 </head>
 <body>
 
-    <!-- ══ Top Accent Border ══ -->
+    <!-- ══ Top Accent Border ══════════════════════════════════════ -->
     <div class="top-border" aria-hidden="true"></div>
 
-    <!-- ══ Dynamic Pixel Canvas (Sides Only) ══ -->
-    <canvas id="pixel-canvas" class="decor-canvas" aria-hidden="true"></canvas>
+    <!-- ══ Terminal Chic Cybernetic Canvas ══════════════════════════ -->
+    <canvas id="terminal-canvas" class="decor-canvas" aria-hidden="true"></canvas>
 
-    <!-- ══ Navigation Bar ══ -->
+    <!-- ══ Terminal Chic Viewport HUD Telemetry ═════════════════════ -->
+    <div class="terminal-hud terminal-hud-tl" aria-hidden="true">
+        <span class="hud-bracket">⌜</span>
+        <span class="hud-dot"></span>
+        <span>SYS.GRID // MATRIX-READY</span>
+    </div>
+    <div class="terminal-hud terminal-hud-tr" aria-hidden="true">
+        <span>RAG_VEC // 384-DIM</span>
+        <span class="hud-bracket">⌝</span>
+    </div>
+    <div class="terminal-hud terminal-hud-bl" aria-hidden="true">
+        <span class="hud-bracket">⌞</span>
+        <span>GROQ // QPU STREAM</span>
+    </div>
+    <div class="terminal-hud terminal-hud-br" aria-hidden="true">
+        <span>LOC // 35.6762°N, 139.6503°E</span>
+        <span class="hud-bracket">⌟</span>
+    </div>
+
+    <!-- ══ Apple Glass Navigation Bar ═════════════════════════════ -->
     <nav class="navbar" role="navigation" aria-label="Main navigation">
         <a href="/" class="logo" id="logo-home">
             <div class="logo-mark" aria-hidden="true">G</div>
@@ -39,9 +71,21 @@
             <li><a href="/#stack" id="nav-stack">Stack</a></li>
         </ul>
 
-        <div class="nav-status">
-            <span class="status-dot"></span>
-            <span>App // Live</span>
+        <div class="nav-actions">
+            <button class="theme-toggle-btn" id="theme-toggle-btn" type="button" aria-label="Toggle theme">
+                <span class="theme-icon sun-icon" aria-hidden="true">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                </span>
+                <span class="theme-icon moon-icon" aria-hidden="true">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </span>
+                <span class="theme-label" id="theme-label">Light</span>
+            </button>
+
+            <div class="nav-status">
+                <span class="status-dot"></span>
+                <span>App // Live</span>
+            </div>
         </div>
     </nav>
 
@@ -51,23 +95,39 @@
         <!-- ─── MAIN CONTENT ─── -->
         <main class="main-content">
 
-            <!-- ─── HERO BANNER ─── -->
+            <!-- ─── HERO BANNER (Apple Glass Mascot Card) ─── -->
             <header class="hero-banner" aria-label="Translator header">
+                <div class="hero-banner-glow" aria-hidden="true"></div>
                 <div class="hero-content">
                     <div class="hero-mascot" aria-hidden="true">
-                        <div class="mascot-container">
+                        <div class="mascot-lens">
                             <video autoplay loop muted playsinline preload="auto">
-                                <source src="static/robo_pixel_transparent.webm" type="video/webm" />
+                                <source src="/static/robo_pixel_transparent.webm" type="video/webm" />
                             </video>
                         </div>
                     </div>
                     <div class="hero-text">
-                        <div class="terminal-tag">
-                            <span class="pulse-square"></span>
-                            SYS_READY // CONTEXT-AWARE AI ENGINE
+                        <div class="hero-jewel-pill">
+                            <span class="jewel-beacon" aria-hidden="true"></span>
+                            <span class="jewel-label">SYS_READY</span>
+                            <span class="jewel-sep">//</span>
+                            <span class="jewel-status">Context-Aware Neural Engine</span>
                         </div>
-                        <h1><span class="accent-geo">Geo</span>Speak<span class="blink-cursor">_</span></h1>
-                        <p>Real-time neural translation with RAG-grounded precision</p>
+                        <h1 class="hero-title">
+                            <span class="accent-geo">Geo</span>Speak<span class="title-sub"> Translator</span><span class="blink-cursor">_</span>
+                        </h1>
+                        <p class="hero-desc">Real-time cross-lingual synthesis powered by Llama 3.3 70B &amp; RAG vector retrieval</p>
+                    </div>
+                    <div class="hero-telemetry-badge" aria-hidden="true">
+                        <div class="telemetry-item">
+                            <span class="telemetry-label">INFERENCE</span>
+                            <span class="telemetry-val">Groq QPU</span>
+                        </div>
+                        <div class="telemetry-sep"></div>
+                        <div class="telemetry-item">
+                            <span class="telemetry-label">RETRIEVAL</span>
+                            <span class="telemetry-val">FAISS Vector</span>
+                        </div>
                     </div>
                 </div>
             </header>
@@ -82,34 +142,41 @@
                             <span class="panel-tag">// 01</span>
                             <span class="panel-title">Source Input</span>
                         </div>
-                        <select class="lang-selector" id="source-lang" aria-label="Source language">
-                            <option value="auto">Auto Detect</option>
-                            <option value="English" selected>English (US)</option>
-                            <option value="Spanish">Spanish</option>
-                            <option value="French">French</option>
-                            <option value="German">German</option>
-                            <option value="Italian">Italian</option>
-                            <option value="Portuguese">Portuguese</option>
-                            <option value="Dutch">Dutch</option>
-                            <option value="Russian">Russian</option>
-                            <option value="Chinese">Chinese (Simplified)</option>
-                            <option value="Japanese">Japanese</option>
-                            <option value="Korean">Korean</option>
-                            <option value="Arabic">Arabic</option>
-                            <option value="Urdu">Urdu</option>
-                            <option value="Hindi">Hindi</option>
-                            <option value="Turkish">Turkish</option>
-                        </select>
+                        <div class="select-wrapper">
+                            <select class="lang-selector" id="source-lang" aria-label="Source language">
+                                <option value="auto">Auto Detect</option>
+                                <option value="English" selected>English (US)</option>
+                                <option value="Spanish">Spanish</option>
+                                <option value="French">French</option>
+                                <option value="German">German</option>
+                                <option value="Italian">Italian</option>
+                                <option value="Portuguese">Portuguese</option>
+                                <option value="Dutch">Dutch</option>
+                                <option value="Russian">Russian</option>
+                                <option value="Chinese">Chinese (Simplified)</option>
+                                <option value="Japanese">Japanese</option>
+                                <option value="Korean">Korean</option>
+                                <option value="Arabic">Arabic</option>
+                                <option value="Urdu">Urdu</option>
+                                <option value="Hindi">Hindi</option>
+                                <option value="Turkish">Turkish</option>
+                            </select>
+                            <span class="select-arrow" aria-hidden="true">
+                                <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                            </span>
+                        </div>
                     </div>
 
                     <div class="textarea-container">
-                        <textarea id="source-text" rows="4" placeholder="Explain the situation or enter text to translate here…" spellcheck="false" aria-describedby="char-counter-source"></textarea>
+                        <textarea id="source-text" rows="5" placeholder="Explain the situation or enter text to translate here…" spellcheck="false" aria-describedby="char-counter-source"></textarea>
                         <span class="char-counter" id="char-counter-source"><span id="char-num">0</span> / 1000</span>
                     </div>
 
                     <div class="panel-footer">
                         <button class="detect-lang-btn" id="detect-lang-btn" type="button" title="Detect the language of the input text">
-                            <span class="icon">🌐</span>
+                            <span class="icon" aria-hidden="true">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                            </span>
                             <span class="detect-label">Detect Language</span>
                             <span class="detected-badge" id="detected-lang-badge">✓ <span id="detected-lang-name">English</span></span>
                         </button>
@@ -119,7 +186,9 @@
                 <!-- Swap Button -->
                 <div class="swap-container">
                     <button class="swap-btn" id="swap-btn" type="button" aria-label="Swap source and target languages" title="Swap languages">
-                        <span class="arrow">⇆</span>
+                        <span class="arrow" aria-hidden="true">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3L4 7l4 4"/><path d="M4 7h16"/><path d="M16 21l4-4-4-4"/><path d="M20 17H4"/></svg>
+                        </span>
                     </button>
                 </div>
 
@@ -130,32 +199,40 @@
                             <span class="panel-tag">// 02</span>
                             <span class="panel-title">Natural Translation</span>
                         </div>
-                        <select class="lang-selector" id="target-lang" aria-label="Target language">
-                            <option value="" disabled>— Select —</option>
-                            <option value="English">English (US)</option>
-                            <option value="Spanish">Spanish</option>
-                            <option value="French">French</option>
-                            <option value="German" selected>German (DE)</option>
-                            <option value="Italian">Italian</option>
-                            <option value="Portuguese">Portuguese</option>
-                            <option value="Dutch">Dutch</option>
-                            <option value="Russian">Russian</option>
-                            <option value="Chinese">Chinese (Simplified)</option>
-                            <option value="Japanese">Japanese</option>
-                            <option value="Korean">Korean</option>
-                            <option value="Arabic">Arabic</option>
-                            <option value="Urdu">Urdu</option>
-                            <option value="Hindi">Hindi</option>
-                            <option value="Turkish">Turkish</option>
-                        </select>
+                        <div class="select-wrapper">
+                            <select class="lang-selector" id="target-lang" aria-label="Target language">
+                                <option value="" disabled>— Select —</option>
+                                <option value="English">English (US)</option>
+                                <option value="Spanish">Spanish</option>
+                                <option value="French">French</option>
+                                <option value="German" selected>German (DE)</option>
+                                <option value="Italian">Italian</option>
+                                <option value="Portuguese">Portuguese</option>
+                                <option value="Dutch">Dutch</option>
+                                <option value="Russian">Russian</option>
+                                <option value="Chinese">Chinese (Simplified)</option>
+                                <option value="Japanese">Japanese</option>
+                                <option value="Korean">Korean</option>
+                                <option value="Arabic">Arabic</option>
+                                <option value="Urdu">Urdu</option>
+                                <option value="Hindi">Hindi</option>
+                                <option value="Turkish">Turkish</option>
+                            </select>
+                            <span class="select-arrow" aria-hidden="true">
+                                <svg width="10" height="6" viewBox="0 0 10 6" fill="none"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                            </span>
+                        </div>
                     </div>
 
                     <div id="output-container">
                         <!-- IDLE -->
                         <div id="state-idle" class="output-state active">
                             <div class="idle-placeholder">
-                                <span class="big-icon" aria-hidden="true">⟡</span>
-                                <p>Awaiting translation…</p>
+                                <div class="idle-prism-icon" aria-hidden="true">
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"/><line x1="12" y1="22" x2="12" y2="15.5"/><polyline points="22 8.5 12 15.5 2 8.5"/></svg>
+                                </div>
+                                <p class="idle-title">Awaiting translation…</p>
+                                <span class="idle-sub">Enter your text or prompt on the left and hit Translate</span>
                             </div>
                         </div>
 
@@ -165,14 +242,14 @@
                                 <div class="loading-blocks" aria-hidden="true">
                                     <span class="blk"></span><span class="blk"></span><span class="blk"></span><span class="blk"></span><span class="blk"></span>
                                 </div>
-                                <span class="loading-text">Translating…</span>
-                                <span class="loading-note">First request may take 20–40 s<br>due to free-tier model cold start.</span>
+                                <span class="loading-text">Translating with Neural Precision…</span>
+                                <span class="loading-note">First request may take 15–30s if model is warming up.</span>
                             </div>
                         </div>
 
                         <!-- RESULT -->
                         <div id="state-result" class="output-state">
-                            <div id="confidence-container" style="display: none; align-self: flex-start; margin-bottom: 4px;">
+                            <div id="confidence-container" style="display: none; align-self: flex-start; margin-bottom: 6px;">
                                 <span class="confidence-badge">
                                     <span class="dot-gold"></span>
                                     MATCH CONFIDENCE: <span id="confidence-text">0%</span>
@@ -190,10 +267,20 @@
                             </div>
                             <div class="panel-footer">
                                 <div class="panel-actions">
-                                    <button class="action-btn" id="copy-btn" type="button"><span class="icon">📋</span> Copy</button>
-                                    <button class="action-btn" id="history-btn" type="button"><span class="icon">⏱</span> History</button>
+                                    <button class="action-btn" id="copy-btn" type="button">
+                                        <span class="icon" aria-hidden="true">
+                                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                                        </span>
+                                        <span>Copy</span>
+                                    </button>
+                                    <button class="action-btn" id="history-btn" type="button">
+                                        <span class="icon" aria-hidden="true">
+                                            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                        </span>
+                                        <span>History</span>
+                                    </button>
                                 </div>
-                                <span id="copy-confirm">✓ Copied!</span>
+                                <span id="copy-confirm">✓ Copied to clipboard!</span>
                             </div>
                         </div>
 
@@ -209,19 +296,26 @@
                 </section>
             </div>
 
-            <!-- ─── BOTTOM CONTROLS ─── -->
+            <!-- ─── BOTTOM CONTROLS & PRIMARY TRANSLATE CTA ─── -->
             <div class="bottom-controls">
                 <div class="translate-btn-wrap">
                     <button class="translate-btn" id="translate-btn" type="button">
-                        Translate
+                        <span class="icon" aria-hidden="true">✦</span>
+                        <span>Translate</span>
                     </button>
+                    <span class="shortcut-hint">Press <strong>Ctrl</strong> + <strong>Enter</strong> to translate</span>
                 </div>
             </div>
 
             <!-- ─── HISTORY PANEL ─── -->
             <div class="history-panel collapsed" id="history-panel">
                 <div class="history-header" id="history-header-toggle">
-                    <span class="h-label">📜 History <span class="count" id="history-count">(0)</span></span>
+                    <span class="h-label">
+                        <span class="h-icon" aria-hidden="true">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8v4l3 3"/><circle cx="12" cy="12" r="9"/></svg>
+                        </span>
+                        History <span class="count" id="history-count">(0)</span>
+                    </span>
                     <div class="h-controls">
                         <button id="clear-history-btn" type="button">Clear</button>
                         <button class="h-toggle" id="toggle-history-btn" type="button">[ + Expand ]</button>
@@ -238,8 +332,12 @@
     </div>
     <!-- /app-container -->
 
-    <!-- Scripts -->
-    <script src="static/pixel-canvas.js"></script>
-    <script src="static/script.js"></script>
+    <!-- Scripts: Terminal Chic Cybernetic Canvas & Application Logic -->
+    <script src="/static/terminal-canvas.js"></script>
+
+    <!-- Lenis Momentum Smooth Scroll Engine -->
+    <script src="/static/lenis.min.js"></script>
+    <script src="/static/smooth-scroll.js"></script>
+    <script src="/static/script.js"></script>
 </body>
 </html>

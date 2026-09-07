@@ -18,14 +18,45 @@
   <link rel="stylesheet" href="/static/landing.css" />
   <!-- Cinematic Luxury Hero Stylesheet -->
   <link rel="stylesheet" href="/static/hero-cinema.css" />
+
+  <!-- Immediate Theme Application to prevent Flash-Of-Unstyled-Theme -->
+  <script>
+    (function(){
+      try {
+        var saved = localStorage.getItem('geospeak-theme');
+        var theme = saved || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch(e){}
+    })();
+  </script>
+  <script src="/static/theme.js" defer></script>
 </head>
 <body>
 
   <!-- ══ Top Accent Border ══════════════════════════════════════ -->
   <div class="top-border" aria-hidden="true"></div>
 
-  <!-- ══ Full-Webpage Raining Pixels Canvas ═════════════════════ -->
-  <canvas id="pixel-canvas" class="decor-canvas" aria-hidden="true"></canvas>
+  <!-- ══ Terminal Chic Cybernetic Canvas ══════════════════════════ -->
+  <canvas id="terminal-canvas" class="decor-canvas" aria-hidden="true"></canvas>
+
+  <!-- ══ Terminal Chic Viewport HUD Telemetry ═════════════════════ -->
+  <div class="terminal-hud terminal-hud-tl" aria-hidden="true">
+    <span class="hud-bracket">⌜</span>
+    <span class="hud-dot"></span>
+    <span>SYS.GRID // MATRIX-READY</span>
+  </div>
+  <div class="terminal-hud terminal-hud-tr" aria-hidden="true">
+    <span>RAG_VEC // 384-DIM</span>
+    <span class="hud-bracket">⌝</span>
+  </div>
+  <div class="terminal-hud terminal-hud-bl" aria-hidden="true">
+    <span class="hud-bracket">⌞</span>
+    <span>GROQ // QPU STREAM</span>
+  </div>
+  <div class="terminal-hud terminal-hud-br" aria-hidden="true">
+    <span>LOC // 35.6762°N, 139.6503°E</span>
+    <span class="hud-bracket">⌟</span>
+  </div>
 
   <!-- ══ Apple Glass Top Navbar ═════════════════════════════════ -->
   <nav class="navbar" role="navigation" aria-label="Main navigation">
@@ -41,9 +72,21 @@
       <li><a href="#stack" id="nav-stack">Stack</a></li>
     </ul>
 
-    <a href="/app" class="nav-cta" id="nav-cta-translate">
-      Start Translating
-    </a>
+    <div class="nav-actions">
+      <button class="theme-toggle-btn" id="theme-toggle-btn" type="button" aria-label="Toggle theme">
+        <span class="theme-icon sun-icon" aria-hidden="true">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+        </span>
+        <span class="theme-icon moon-icon" aria-hidden="true">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </span>
+        <span class="theme-label" id="theme-label">Light</span>
+      </button>
+
+      <a href="/app" class="nav-cta" id="nav-cta-translate">
+        Start Translating
+      </a>
+    </div>
   </nav>
 
   <!-- ══ Announcement Ticker ════════════════════════════════════ -->
@@ -62,16 +105,6 @@
     <div class="hero-prism-glow" aria-hidden="true"></div>
 
     <!-- Ambient Telemetry Strip (Z-1 Coordinates) -->
-    <div class="hero-telemetry-strip" aria-hidden="true">
-      <div class="telemetry-node">
-        <span class="telemetry-ping"></span>
-        <span>LAT 48.8566° N // LON 2.3522° E [PARIS]</span>
-      </div>
-      <div class="telemetry-node">
-        <span class="telemetry-ping"></span>
-        <span>LAT 35.6762° N // LON 139.6503° E [TOKYO]</span>
-      </div>
-    </div>
 
     <!-- Architectural Stage Grid -->
     <div class="hero-stage">
@@ -411,8 +444,12 @@
   </footer>
 
   <!-- ══ Scripts ═════════════════════════════════════════════════ -->
-  <!-- Raining Pixels Animation Script (Full Webpage) -->
-  <script src="/static/pixel-rain.js"></script>
+  <!-- Terminal Chic Cybernetic Canvas Animation Script (Full Webpage) -->
+  <script src="/static/terminal-canvas.js"></script>
+
+  <!-- Lenis Momentum Smooth Scroll Engine -->
+  <script src="/static/lenis.min.js"></script>
+  <script src="/static/smooth-scroll.js"></script>
 
   <!-- UI Interactions & Scroll Dynamics -->
   <script>
@@ -561,17 +598,6 @@
       specimenCard?.addEventListener('mouseleave', () => {
         clearInterval(autoCycleTimer);
         autoCycleTimer = setInterval(cycleSpecimen, 4200);
-      });
-
-      // ── 6. Smooth anchor scrolling ───────────────────────────────
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', e => {
-          const target = document.querySelector(anchor.getAttribute('href'));
-          if (target) {
-            e.preventDefault();
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }
-        });
       });
 
     });

@@ -645,3 +645,32 @@
         min-width: 40%;
     }
 }
+
+/* ── Dark Mode Overrides: Hero Chrono Dock ── */
+[data-theme="dark"] .hero-chrono-dock {
+    background: linear-gradient(135deg, rgba(16, 25, 46, 0.85) 0%, rgba(10, 16, 32, 0.68) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.65), 
+                inset 0 1.5px 0.5px rgba(255, 255, 255, 0.18), 
+                inset 0 -1px 1px rgba(0, 0, 0, 0.8),
+                0 0 24px rgba(56, 189, 248, 0.08);
+}
+
+[data-theme="dark"] .chrono-stat {
+    color: var(--accent);
+    text-shadow: 0 0 16px rgba(56, 189, 248, 0.35);
+}
+
+[data-theme="dark"] .chrono-stat.gold-stat {
+    color: #FDE047;
+    text-shadow: 0 0 16px rgba(253, 224, 71, 0.35);
+}
+
+[data-theme="dark"] .chrono-metric {
+    color: #94A3B8;
+}
+
+[data-theme="dark"] .chrono-separator {
+    background: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 0 6px rgba(56, 189, 248, 0.15);
+}

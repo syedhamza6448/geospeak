@@ -8,18 +8,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-    /* ── Luminous Light Blue Background & Atmosphere ── */
+    /* ── Luminous Light Blue Background & Atmosphere (Terminal Chic Aura) ── */
     --bg: #EDF4FC;
     --bg-dark: #E2EDFA;
-    --bg-canvas: linear-gradient(180deg, #F2F7FD 0%, #E8F1FB 50%, #E2EDFA 100%);
-    
+    --bg-canvas:
+        radial-gradient(ellipse 75% 45% at 50% -5%, rgba(23, 116, 238, 0.16), transparent 70%),
+        radial-gradient(ellipse 55% 40% at 95% 50%, rgba(56, 189, 248, 0.12), transparent 60%),
+        radial-gradient(ellipse 50% 45% at 5% 85%, rgba(23, 116, 238, 0.09), transparent 60%),
+        linear-gradient(180deg, #F3F8FE 0%, #E8F2FC 50%, #DFEBF8 100%);
+
     /* ── Brand Accents ── */
     --accent: #1774EE;
     --accent-hover: #1D4ED8;
     --accent-active: #1E40AF;
     --accent-dim: rgba(23, 116, 238, 0.12);
     --accent-glow: 0 0 28px rgba(23, 116, 238, 0.35);
-    
+
     --accent-yellow: #FDE74C;
     --accent-gold: #B45309;
 
@@ -116,7 +120,7 @@ body::selection {
     box-shadow: 0 0 12px rgba(23, 116, 238, 0.5);
 }
 
-/* ── Full-Webpage Raining Pixels Canvas ── */
+/* ── Terminal Chic Cybernetic Canvas ── */
 .decor-canvas {
     position: fixed;
     top: 0;
@@ -125,6 +129,80 @@ body::selection {
     height: 100vh;
     pointer-events: none;
     z-index: 0;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+}
+
+/* ── Terminal Chic Viewport HUD Telemetry ── */
+.terminal-hud {
+    position: fixed;
+    pointer-events: none;
+    z-index: 4;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    color: rgba(23, 116, 238, 0.45);
+    text-transform: uppercase;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: opacity 0.3s ease;
+}
+
+.terminal-hud .hud-bracket {
+    color: rgba(23, 116, 238, 0.3);
+    font-weight: 700;
+}
+
+.terminal-hud .hud-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #1774EE;
+    box-shadow: 0 0 8px #1774EE;
+    display: inline-block;
+    animation: hudDotPulse 2.4s ease-in-out infinite;
+}
+
+@keyframes hudDotPulse {
+
+    0%,
+    100% {
+        opacity: 0.3;
+        transform: scale(0.9);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+}
+
+.terminal-hud-tl {
+    top: 76px;
+    left: 28px;
+}
+
+.terminal-hud-tr {
+    top: 76px;
+    right: 28px;
+}
+
+.terminal-hud-bl {
+    bottom: 18px;
+    left: 28px;
+}
+
+.terminal-hud-br {
+    bottom: 18px;
+    right: 28px;
+}
+
+@media (max-width: 960px) {
+    .terminal-hud {
+        display: none;
+    }
 }
 
 /* ── Apple Glass Top Navigation ── */
@@ -1045,4 +1123,332 @@ footer {
         flex-direction: column;
         align-items: flex-start;
     }
+}
+
+/* ============================================================
+   GeoSpeak — Apple Liquid Glass Theme Engine (Dark Mode)
+   Landing Page Cybernetic Obsidian Void & Luminous Apple Glass
+   ============================================================ */
+
+/* ── Smooth Theme Transition ── */
+html.theme-transitioning,
+html.theme-transitioning *,
+html.theme-transitioning *::before,
+html.theme-transitioning *::after {
+    transition: background 0.35s ease, background-color 0.35s ease, border-color 0.35s ease, color 0.35s ease, fill 0.35s ease, box-shadow 0.35s ease !important;
+}
+
+/* ── Nav Actions Container ── */
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+/* ── Theme Toggle Button ── */
+.theme-toggle-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    height: 36px;
+    padding: 0 14px;
+    background: var(--gl-surface-pill);
+    backdrop-filter: blur(12px) saturate(var(--gl-saturate));
+    -webkit-backdrop-filter: blur(12px) saturate(var(--gl-saturate));
+    border: var(--gl-border-glass);
+    border-radius: var(--gl-radius-full);
+    color: var(--text-secondary);
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: var(--gl-shadow-soft), var(--gl-shadow-inner);
+    transition: all 0.25s var(--ease-apple);
+    user-select: none;
+}
+
+.theme-toggle-btn:hover {
+    color: var(--accent);
+    background: var(--gl-surface-pill-hover);
+    border-color: var(--gl-border-accent);
+    transform: translateY(-1px);
+    box-shadow: var(--gl-shadow-md), var(--gl-shadow-inner);
+}
+
+.theme-toggle-btn:active {
+    transform: translateY(0) scale(0.97);
+}
+
+.theme-toggle-btn .theme-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+/* Default / Light mode toggle icon visibility */
+.theme-toggle-btn .sun-icon {
+    display: inline-flex;
+    color: #F59E0B;
+}
+
+.theme-toggle-btn .moon-icon {
+    display: none;
+}
+
+/* Dark mode toggle icon visibility */
+[data-theme="dark"] .theme-toggle-btn .sun-icon {
+    display: none;
+}
+
+[data-theme="dark"] .theme-toggle-btn .moon-icon {
+    display: inline-flex;
+    color: var(--accent);
+}
+
+/* ── Landing Page Dark Mode Tokens & Overrides ── */
+[data-theme="dark"] {
+    --bg: #070B14;
+    --bg-dark: #0A101D;
+    --bg-canvas:
+        radial-gradient(ellipse 80% 50% at 50% -5%, rgba(23, 116, 238, 0.22), transparent 70%),
+        radial-gradient(ellipse 60% 45% at 95% 45%, rgba(56, 189, 248, 0.15), transparent 60%),
+        radial-gradient(ellipse 55% 50% at 5% 85%, rgba(14, 165, 233, 0.12), transparent 60%),
+        linear-gradient(180deg, #070B14 0%, #0A1122 50%, #05080F 100%);
+
+    --accent: #38BDF8;
+    --accent-hover: #60A5FA;
+    --accent-active: #2563EB;
+    --accent-dim: rgba(56, 189, 248, 0.15);
+    --accent-glow: 0 0 32px rgba(56, 189, 248, 0.42);
+
+    --accent-yellow: #FDE047;
+    --accent-gold: #F59E0B;
+    --status-online: #4ADE80;
+
+    --text-primary: #F8FAFC;
+    --text-secondary: #CBD5E1;
+    --text-muted: #94A3B8;
+    --text-faint: #475569;
+
+    --gl-surface-nav: rgba(10, 16, 30, 0.72);
+    --gl-surface-ticker: rgba(13, 21, 38, 0.65);
+    --gl-surface-card: linear-gradient(135deg, rgba(17, 26, 44, 0.75) 0%, rgba(13, 20, 36, 0.55) 100%);
+    --gl-surface-card-hover: linear-gradient(135deg, rgba(26, 38, 64, 0.85) 0%, rgba(17, 26, 44, 0.65) 100%);
+    --gl-surface-pill: rgba(255, 255, 255, 0.08);
+    --gl-surface-pill-hover: rgba(255, 255, 255, 0.15);
+    --gl-surface-elevated: rgba(18, 27, 46, 0.92);
+
+    --gl-border-glass: 1px solid rgba(255, 255, 255, 0.12);
+    --gl-border-glass-strong: 1px solid rgba(255, 255, 255, 0.20);
+    --gl-border-accent: 1px solid rgba(56, 189, 248, 0.45);
+    --gl-border-light: rgba(255, 255, 255, 0.06);
+
+    --gl-shadow-soft: 0 12px 36px rgba(0, 0, 0, 0.50);
+    --gl-shadow-md: 0 18px 48px rgba(0, 0, 0, 0.65);
+    --gl-shadow-lg: 0 24px 64px rgba(0, 0, 0, 0.80);
+    --gl-shadow-inner: inset 0 1.5px 0.5px rgba(255, 255, 255, 0.14), inset 0 -1px 0.5px rgba(0, 0, 0, 0.5);
+    --gl-shadow-inner-strong: inset 0 2px 1px rgba(255, 255, 255, 0.22), inset 0 -1px 1px rgba(0, 0, 0, 0.7);
+}
+
+/* ── Dark Mode Component Refinements ── */
+[data-theme="dark"] .navbar {
+    border-bottom-color: rgba(255, 255, 255, 0.10);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+[data-theme="dark"] .nav-links a:hover {
+    background: rgba(255, 255, 255, 0.10);
+    border-color: rgba(56, 189, 248, 0.3);
+}
+
+[data-theme="dark"] .ticker {
+    background: var(--gl-surface-ticker);
+    border-bottom-color: rgba(255, 255, 255, 0.10);
+}
+
+[data-theme="dark"] .feature-card {
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
+[data-theme="dark"] .feature-card:hover {
+    border-color: rgba(56, 189, 248, 0.4);
+}
+
+[data-theme="dark"] .feature-icon {
+    background: rgba(14, 22, 38, 0.75);
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+[data-theme="dark"] .step-item {
+    background: var(--gl-surface-card);
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
+[data-theme="dark"] .step-num {
+    background: rgba(56, 189, 248, 0.12);
+    border-color: rgba(56, 189, 248, 0.35);
+    color: var(--accent);
+}
+
+[data-theme="dark"] .lang-card {
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
+[data-theme="dark"] .lang-card:hover,
+[data-theme="dark"] .lang-card.active {
+    background: rgba(20, 31, 54, 0.85);
+    border-color: var(--accent);
+}
+
+[data-theme="dark"] .stack-card {
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
+[data-theme="dark"] .stack-card:hover {
+    border-color: rgba(56, 189, 248, 0.4);
+}
+
+[data-theme="dark"] .stack-badge {
+    background: rgba(56, 189, 248, 0.12);
+    border-color: rgba(56, 189, 248, 0.3);
+    color: var(--accent);
+}
+
+[data-theme="dark"] .cta-box {
+    background: linear-gradient(135deg, rgba(20, 31, 54, 0.85) 0%, rgba(13, 20, 38, 0.65) 100%);
+    border-color: rgba(255, 255, 255, 0.15);
+}
+
+[data-theme="dark"] footer {
+    border-top-color: rgba(255, 255, 255, 0.08);
+}
+
+/* ── Dark Mode Overrides for Cinematic Hero Section ── */
+[data-theme="dark"] .manifesto-panel {
+    background: linear-gradient(135deg, rgba(18, 28, 50, 0.65) 0%, rgba(12, 19, 36, 0.45) 100%);
+    border-color: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4), inset 0 1px 0.5px rgba(255, 255, 255, 0.12);
+}
+
+[data-theme="dark"] .manifesto-panel:hover,
+[data-theme="dark"] .manifesto-panel.highlight {
+    background: linear-gradient(135deg, rgba(26, 40, 72, 0.85) 0%, rgba(17, 26, 48, 0.65) 100%);
+    border-color: rgba(56, 189, 248, 0.45);
+    box-shadow: 0 10px 28px rgba(56, 189, 248, 0.18), inset 0 1.5px 1px rgba(255, 255, 255, 0.2);
+}
+
+[data-theme="dark"] .btn-monolith-glass {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.03) 100%);
+    border-color: rgba(255, 255, 255, 0.18);
+    color: var(--text-primary);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4), inset 0 1.5px 0.5px rgba(255, 255, 255, 0.15);
+}
+
+[data-theme="dark"] .btn-monolith-glass:hover {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.06) 100%);
+    border-color: rgba(56, 189, 248, 0.5);
+    color: var(--accent);
+}
+
+[data-theme="dark"] .specimen-glass-card {
+    background: linear-gradient(145deg, rgba(18, 28, 50, 0.78) 0%, rgba(11, 18, 34, 0.60) 100%);
+    border-color: rgba(255, 255, 255, 0.16);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.7), inset 0 2px 1px rgba(255, 255, 255, 0.2);
+}
+
+[data-theme="dark"] .specimen-subhead {
+    border-bottom-color: rgba(255, 255, 255, 0.10);
+}
+
+[data-theme="dark"] .specimen-target-wrap {
+    background: rgba(10, 16, 32, 0.85);
+    border-color: rgba(255, 255, 255, 0.14);
+}
+
+[data-theme="dark"] .cycle-specimen-btn {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.16);
+    color: var(--text-secondary);
+}
+
+[data-theme="dark"] .cycle-specimen-btn:hover {
+    background: rgba(255, 255, 255, 0.16);
+    border-color: var(--accent);
+    color: var(--accent);
+}
+
+[data-theme="dark"] .terminal-hud {
+    color: rgba(56, 189, 248, 0.55);
+}
+
+[data-theme="dark"] .terminal-hud .hud-bracket {
+    color: rgba(56, 189, 248, 0.35);
+}
+
+[data-theme="dark"] .terminal-hud .hud-dot {
+    background: #38BDF8;
+    box-shadow: 0 0 10px #38BDF8;
+}
+
+/* ── Hero Chrono Dock Dark Mode ── */
+[data-theme="dark"] .hero-chrono-dock {
+    background: linear-gradient(135deg, rgba(16, 25, 46, 0.85) 0%, rgba(10, 16, 32, 0.68) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.65),
+        inset 0 1.5px 0.5px rgba(255, 255, 255, 0.18),
+        inset 0 -1px 1px rgba(0, 0, 0, 0.8),
+        0 0 24px rgba(56, 189, 248, 0.08);
+}
+
+[data-theme="dark"] .hero-jewel-pill {
+    background: linear-gradient(135deg, rgba(16, 25, 46, 0.85) 0%, rgba(10, 16, 32, 0.68) 100%);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.65),
+        inset 0 1.5px 0.5px rgba(255, 255, 255, 0.18),
+        inset 0 -1px 1px rgba(0, 0, 0, 0.8),
+        0 0 24px rgba(56, 189, 248, 0.08);
+}
+
+[data-theme="dark"] .chrono-stat {
+    color: var(--accent);
+    text-shadow: 0 0 16px rgba(56, 189, 248, 0.35);
+}
+
+[data-theme="dark"] .chrono-stat.gold-stat {
+    color: #FDE047;
+    text-shadow: 0 0 16px rgba(253, 224, 71, 0.35);
+}
+
+[data-theme="dark"] .chrono-metric {
+    color: #94A3B8;
+}
+
+[data-theme="dark"] .chrono-separator {
+    background: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 0 6px rgba(56, 189, 248, 0.15);
+}
+
+/* ── Lenis Smooth Scroll Engine ── */
+html.lenis,
+html.lenis body {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+    pointer-events: none;
 }
