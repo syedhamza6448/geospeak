@@ -420,9 +420,16 @@ def get_translation(text: str, target_lang: str) -> tuple[str, float | None, lis
 # Flask routes
 # ---------------------------------------------------------------------------
 @app.route("/")
+def landing():
+    """Render the GeoSpeak landing page."""
+    return render_template("landing.html")
+
+
+@app.route("/app")
 def index():
-    """Render the main GeoSpeak UI."""
+    """Render the main GeoSpeak translator UI."""
     return render_template("index.html")
+
 
 
 # Simple in-memory rate limiter: { ip_address: [timestamp1, timestamp2, ...] }
