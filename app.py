@@ -47,13 +47,14 @@ log = logging.getLogger(__name__)
 
 HUGGINGFACE_API_KEY = os.getenv("HUGGINGFACE_API_KEY")
 
-# Hugging Face Settings
-HF_API_URL = "https://router.huggingface.co/v1/chat/completions"
-# The ":featherless-ai" suffix pins the provider explicitly, since Hugging Face's
-# router doesn't reliably auto-select a working provider for every model.
-HF_MODEL = "meta-llama/Llama-3.2-3B-Instruct:featherless-ai"
-HF_HEADERS = {"Authorization": f"Bearer {HUGGINGFACE_API_KEY}"}
+GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
+GROQ_API_URL = "https://api.groq.com/openai/v1/chat/completions"
+GROQ_MODEL = "qwen/qwen3.6-27b"
+GROQ_HEADERS = {
+    "Authorization": f"Bearer {GROQ_API_KEY}",
+    "Content-Type": "application/json",
+}
 # Retry settings for HF cold-start (503 "Model is currently loading")
 MAX_RETRIES = 5
 BACKOFF_BASE = 10  # seconds — doubles each retry: 10, 20, 40 …
@@ -66,13 +67,14 @@ _keep_alive_started = False
 # Supported target languages (plain-name keys shown in UI)
 # NOTE: keep this in sync with the <option> values in templates/index.html
 SUPPORTED_LANGUAGES = {
-    "French", "Spanish", "German", "Urdu", "Japanese",
+    "English", "French", "Spanish", "German", "Urdu", "Japanese",
     "Italian", "Portuguese", "Dutch", "Russian", "Chinese",
     "Korean", "Arabic", "Hindi", "Turkish",
 }
 
 # Map UI language names → corpus 2-letter ISO codes
 LANGUAGE_CODE_MAP = {
+    "English": "en",
     "French": "fr", "Spanish": "es", "German": "de",
     "Urdu": "ur", "Japanese": "ja",
     "Italian": "it", "Portuguese": "pt", "Dutch": "nl",
@@ -131,18 +133,6 @@ def start_keep_alive():
     thread.start()
 
 
-# Build the index when the first request arrives — this guarantees it runs
-# even when Flask's reloader spawns a child process (avoids double-loading).
-@app.before_request
-def ensure_index_built():
-    start_keep_alive()
-    if request.path == "/health":
-        return
-    global faiss_index, embedding_model
-    if faiss_index is None and embedding_model is None:
-        build_index()
-
-
 # ---------------------------------------------------------------------------
 # Corpus loading
 # ---------------------------------------------------------------------------
@@ -187,47 +177,55 @@ faiss_index = None
 embedding_model = None
 
 
+FAISS_INDEX_PATH = os.path.join(os.path.dirname(__file__), "data", "faiss_index.bin")
+CORPUS_META_PATH = os.path.join(os.path.dirname(__file__), "data", "corpus_meta.json")
+
+
 def build_index():
-    """Load sentence-transformer model and build FAISS index at startup."""
+    """Load the fastembed model and the PREBUILT FAISS index/corpus metadata.
+
+    The corpus embeddings are computed offline (see build_index_offline.py)
+    and committed to the repo as data/faiss_index.bin and data/corpus_meta.json.
+    This avoids computing embeddings for the whole corpus at server startup,
+    which was causing out-of-memory kills on Render's free tier.
+    """
     global corpus_entries, faiss_index, embedding_model
 
-    # --- Lazy-import heavy deps so missing packages give a clear error ---
     try:
-        from sentence_transformers import SentenceTransformer
+        from fastembed import TextEmbedding
         import faiss as faiss_lib
+        import json
     except ImportError as exc:
         log.error("Missing dependency: %s. Run: pip install -r requirements.txt", exc)
         return
 
-    log.info("Loading sentence-transformers model (all-MiniLM-L6-v2)…")
+    # Load the embedding model — still needed to embed each incoming query at
+    # request time (a single short string), which is cheap.
+    log.info("Loading fastembed model (all-MiniLM-L6-v2, ONNX runtime)…")
     try:
-        embedding_model = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
+        embedding_model = TextEmbedding(model_name="sentence-transformers/all-MiniLM-L6-v2")
     except Exception as exc:
         log.error("Failed to load embedding model: %s", exc)
         return
 
-    corpus_entries = load_corpus(CORPUS_PATH)
-    if not corpus_entries:
-        log.warning("Corpus is empty — FAISS index not built.")
+    if not os.path.exists(FAISS_INDEX_PATH) or not os.path.exists(CORPUS_META_PATH):
+        log.error(
+            "Prebuilt index files not found (%s, %s). "
+            "Run build_index_offline.py locally and commit the output files.",
+            FAISS_INDEX_PATH, CORPUS_META_PATH,
+        )
         return
 
-    source_texts = [e["source_text"] for e in corpus_entries]
-    log.info("Computing embeddings for %d corpus entries…", len(source_texts))
+    log.info("Loading prebuilt FAISS index and corpus metadata…")
     try:
-        embeddings = embedding_model.encode(source_texts, convert_to_numpy=True, show_progress_bar=False)
-        embeddings = embeddings.astype("float32")
-        # L2-normalize for cosine similarity via inner product
-        faiss_lib.normalize_L2(embeddings)
+        faiss_index = faiss_lib.read_index(FAISS_INDEX_PATH)
+        with open(CORPUS_META_PATH, encoding="utf-8") as f:
+            corpus_entries = json.load(f)
     except Exception as exc:
-        log.error("Embedding computation failed: %s", exc)
+        log.error("Failed to load prebuilt index/metadata: %s", exc)
         return
 
-    dim = embeddings.shape[1]
-    faiss_index = faiss_lib.IndexFlatIP(dim)  # Inner-product ≡ cosine on L2-normed vecs
-    faiss_index.add(embeddings)
-    log.info("FAISS index built: %d vectors, dim=%d", faiss_index.ntotal, dim)
-
-
+    log.info("Loaded FAISS index: %d vectors. Corpus entries: %d", faiss_index.ntotal, len(corpus_entries))
 # ---------------------------------------------------------------------------
 # RAG retrieval
 # ---------------------------------------------------------------------------
@@ -242,7 +240,7 @@ def retrieve_examples(text: str, target_lang: str, k: int = 3) -> tuple[list[dic
 
     try:
         import faiss as faiss_lib
-        query_vec = embedding_model.encode([text], convert_to_numpy=True).astype("float32")
+        query_vec = np.array(list(embedding_model.embed([text])), dtype="float32")
         faiss_lib.normalize_L2(query_vec)
 
         # Search more candidates so we can filter by language
@@ -310,96 +308,79 @@ def build_prompt(text: str, target_lang: str, examples: list[dict]) -> str:
 # ---------------------------------------------------------------------------
 # Hugging Face Inference API call with retry-on-cold-start
 # ---------------------------------------------------------------------------
-def call_hf_api(prompt: str) -> str:
-    """
-    Send prompt to HF Inference API. Retries up to MAX_RETRIES times on
-    503 (model loading / cold-start) with exponential back-off.
-    Raises RuntimeError on unrecoverable failure.
-    """
-    if not HUGGINGFACE_API_KEY or HUGGINGFACE_API_KEY == "hf_your_token_here":
-        raise RuntimeError("HUGGINGFACE_API_KEY not set. Add it to your .env file.")
+def call_groq_api(prompt: str) -> str:
+    if not GROQ_API_KEY:
+        raise RuntimeError("GROQ_API_KEY not set.")
 
     payload = {
-        "model": HF_MODEL,
-        "messages": [{"role": "user", "content": prompt}],
-        "max_tokens": 200,
-        "temperature": 0.3
+        "model": GROQ_MODEL,
+        "messages": [
+            {
+                "role": "user",
+                "content": prompt
+            }
+        ],
+        "max_tokens": 300,
+        "temperature": 0.3,
+        "reasoning_effort": "none"
     }
 
-    for attempt in range(1, MAX_RETRIES + 1):
-        try:
-            response = requests.post(HF_API_URL, headers=HF_HEADERS, json=payload, timeout=60)
-        except requests.exceptions.Timeout:
-            raise RuntimeError("Request to Hugging Face API timed out (60 s).")
-        except requests.exceptions.ConnectionError as exc:
-            raise RuntimeError(f"Network error reaching Hugging Face API: {exc}")
+    try:
+        response = requests.post(
+            GROQ_API_URL,
+            headers=GROQ_HEADERS,
+            json=payload,
+            timeout=60
+        )
+    except requests.exceptions.Timeout:
+        raise RuntimeError("Request to Groq API timed out.")
+    except requests.exceptions.ConnectionError as exc:
+        raise RuntimeError(f"Network error reaching Groq API: {exc}")
 
-        # ── Diagnostic logging on every response ──────────────────
-        log.info("HF API response — status: %d", response.status_code)
-        if response.status_code != 200:
-            log.error(
-                "HF API error details:\n"
-                "  Status : %d\n"
-                "  Headers: %s\n"
-                "  Body   : %s",
-                response.status_code,
-                dict(response.headers),
-                response.text[:1000],
-            )
+    log.info("Groq API response — status: %d", response.status_code)
 
-        if response.status_code == 200:
-            data = response.json()
-            # Response should follow OpenAI spec: {"choices": [{"message": {"content": "..."}}]}
-            if "choices" in data and len(data["choices"]) > 0:
-                translation = data["choices"][0].get("message", {}).get("content", "").strip()
-                if translation:
-                    return translation
-            log.error("Unexpected HF API 200 response format: %s", data)
-            raise RuntimeError(f"Unexpected HF API response format: {data}")
-
-        if response.status_code == 503:
-            # Model is loading (cold-start) — back off and retry
-            wait = BACKOFF_BASE * (2 ** (attempt - 1))
-            log.warning(
-                "HF model cold-starting (503). Attempt %d/%d — retrying in %ds…",
-                attempt, MAX_RETRIES, wait,
-            )
-            if attempt == MAX_RETRIES:
-                raise RuntimeError(
-                    "MODEL_COLD_START: Hugging Face model is still loading after "
-                    f"{MAX_RETRIES} retries. Please retry in ~30 seconds."
-                )
-            time.sleep(wait)
-            continue
-
-        if response.status_code == 429:
-            raise RuntimeError(
-                "RATE_LIMIT: Hugging Face free-tier rate limit reached. "
-                "Please wait a minute before retrying."
-            )
-
-        if response.status_code == 401:
-            raise RuntimeError(
-                "AUTH_ERROR: Invalid HUGGINGFACE_API_KEY. "
-                "Check your .env file and token at huggingface.co/settings/tokens."
-            )
-
-        if response.status_code == 403:
-            raise RuntimeError(
-                "PERMISSION_DENIED: 403 Forbidden. This authentication method does not have sufficient permissions to call Inference Providers."
-            )
-
-        # Any other HTTP error
-        raise RuntimeError(
-            f"HF API returned HTTP {response.status_code}: {response.text[:500]}"
+    if response.status_code != 200:
+        log.error(
+            "Groq API error — Status: %d — Body: %s",
+            response.status_code,
+            response.text[:1000]
         )
 
-    # Should never reach here due to raises inside loop, but just in case
-    raise RuntimeError("Failed to get a response from Hugging Face API.")
+    if response.status_code == 200:
+        data = response.json()
 
+        if "choices" in data and data["choices"]:
+            translation = (
+                data["choices"][0]
+                .get("message", {})
+                .get("content", "")
+                .strip()
+            )
 
+            if translation:
+                return translation
 
+        raise RuntimeError(
+            f"Empty translation returned by Groq: {data}"
+        )
 
+    if response.status_code == 401:
+        raise RuntimeError("AUTH_ERROR: Invalid GROQ_API_KEY.")
+
+    if response.status_code == 403:
+        raise RuntimeError(
+            "PERMISSION_DENIED: Model access denied."
+        )
+
+    if response.status_code == 429:
+        raise RuntimeError(
+            "RATE_LIMIT: Groq rate limit reached."
+        )
+
+    raise RuntimeError(
+        f"Groq API returned HTTP {response.status_code}: "
+        f"{response.text[:500]}"
+    )
 # ---------------------------------------------------------------------------
 # Main translation function
 # ---------------------------------------------------------------------------
@@ -415,10 +396,9 @@ def get_translation(text: str, target_lang: str) -> tuple[str, float | None, lis
     log.info("Retrieved %d examples for target_lang='%s'", len(examples), target_lang)
 
     prompt = build_prompt(text, target_lang, examples)
-    log.info("Sending prompt to HF API (model=%s)…", HF_MODEL)
+    log.info("Sending prompt to Groq API (model=%s)…", GROQ_MODEL)
 
-    raw_output = call_hf_api(prompt)
-
+    raw_output = call_groq_api(prompt)
     # Strip any residual instruction echoes or common model preambles
     cleaned = raw_output.strip().strip('"').strip("'")
     # Remove common preamble patterns the model sometimes adds
@@ -538,6 +518,16 @@ def detect_language():
     text = data.get("text", "").strip()
     if not text:
         return jsonify({"error": "Field 'text' is required and cannot be empty.", "code": "EMPTY_TEXT"}), 400
+    # langdetect is unreliable on very short input (1-3 words) — it relies on
+    # character n-gram statistics that need enough text to be meaningful.
+    # Short strings frequently get misclassified as unrelated languages
+    # (e.g. short English phrases flagged as Swahili, Indonesian, etc).
+    word_count = len(text.split())
+    if word_count < 4:
+        return jsonify({
+            "error": "Text is too short to reliably detect language. Please enter at least a short sentence (4+ words).",
+            "code": "DETECTION_FAILED",
+        }), 422
 
     try:
         detected_code = langdetect_detect(text)
@@ -567,10 +557,20 @@ def health():
 
 
 # ---------------------------------------------------------------------------
-# Entry point
+# Build the model + FAISS index once, at import time. This runs whether the
+# app is started via `python app.py` (local dev) OR via gunicorn
+# (`gunicorn app:app` on Render) — since gunicorn never executes the
+# `if __name__ == "__main__":` block below, building the index there only
+# worked locally and left every request on Render trying (and failing) to
+# build it lazily on first request.
+# ---------------------------------------------------------------------------
+start_keep_alive()
+build_index()
+
+
+# ---------------------------------------------------------------------------
+# Entry point (local dev only — gunicorn on Render skips this entirely)
 # ---------------------------------------------------------------------------
 if __name__ == "__main__":
-    start_keep_alive()
-    build_index()
     port = int(os.getenv("PORT", 5000))
     app.run(host="0.0.0.0", port=port, debug=False)
